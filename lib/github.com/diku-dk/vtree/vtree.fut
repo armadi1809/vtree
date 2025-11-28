@@ -119,16 +119,19 @@ module vtree : vtree = {
     let parents = map (.parent) ns
     -- Compute depths of each node in tree.
     let ds = wyllie_scan (+) (tabulate n (i64.bool <-< (!= 0))) parents
-    -- Every node can be seen as taking an edge down the tree, if the
-    -- depth changes then it meant that a path is taking up the tree.
-    -- These are the missing right parenthesis in the euler tree.
+    -- Every node can be seen as edge on the euler tour in the
+    -- downwards direction, if the depth changes then it meant that
+    -- some subpath is taken up the tree.  These are the missing edges
+    -- in the euler path. The upwards going edges and downwards going
+    -- edges can be seen as parenthesis so these are the number of
+    -- missing right parenthesis after an given left parenthesis.
     let missing =
       map3 (\i d d' -> if i != n - 1 && d >= d' then d - d' + 1 else 0)
            (indices ds)
            ds
            (rotate 1 ds)
-    -- Adjust left parenthesis indices to account for the right
-    -- parenthesis that are needed to be added.
+    -- Adjust left parenthesis indices to account for the number of
+    -- right parenthesis that are needed to be added.
     let is = exscan (+) 0 missing |> map2 (+) (iota n)
     -- Scatter the left parenthesis to their new position and
     -- partition to get the right parenthesis positions.
