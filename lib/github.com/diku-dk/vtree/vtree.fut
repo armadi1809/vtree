@@ -114,6 +114,47 @@ module vtree : vtree = {
          (indices xs)
          (rotate (-1) (scan f ne xs))
 
+  def size (h: i64) : i64 =
+    (1 << h) - 1
+
+  def mk_tree [n] 't (op: t -> t -> t) (ne: t) (arr: [n]t) =
+    let temp = i64.num_bits - i64.clz n
+    let h = i64.i32 <| if i64.popc n == 1 then temp else temp + 1
+    let tree_size = size h
+    let offset = size (h - 1)
+    let offsets = iota n |> map (+ offset)
+    let tree = scatter (replicate tree_size ne) offsets arr
+    let arr = copy tree[offset:]
+    let (tree, _, _) =
+      loop (tree, arr, level) = (tree, arr, h - 2)
+      while level >= 0 do
+        let new_size = length arr / 2
+        let new_arr =
+          tabulate new_size (\i -> arr[2 * i] `op` arr[2 * i + 1])
+        let offset = size level
+        let offsets = iota new_size |> map (+ offset)
+        let new_tree = scatter tree offsets new_arr
+        in (new_tree, new_arr, level - 1)
+    in tree
+
+  def find_next [n] 't
+                (op: t -> t -> bool)
+                (tree: [n]t)
+                (idx: i64) : i64 =
+    let sibling i = i - i64.bool (i % 2 == 0) + i64.bool (i % 2 == 1)
+    let parent i = (i - 1) / 2
+    let is_right i = i % 2 == 0
+    let h = i64.i32 <| i64.num_bits - i64.clz n
+    let offset = size (h - 1)
+    let start = offset + idx
+    let v = tree[start]
+    let ascent i = i != 0 && (is_right i || !(tree[sibling i] `op` v))
+    let descent i = 2 * i + 2 - i64.bool (tree[2 * i + 1] `op` v)
+    let index = iterate_while ascent parent start
+    in if index != 0
+       then iterate_while (< offset) descent (sibling index) - offset
+       else -1
+
   def mk_preorder 'a [n] (ns: t0 a [n]) : t a [n] =
     let data = map (.data) ns
     let parents = map (.parent) ns
@@ -132,14 +173,19 @@ module vtree : vtree = {
            (rotate 1 ds)
     -- Adjust left parenthesis indices to account for the number of
     -- right parenthesis that are needed to be added.
-    let is = exscan (+) 0 missing |> map2 (+) (iota n)
-    -- Scatter the left parenthesis to their new position and
-    -- partition to get the right parenthesis positions.
-    in scatter (replicate (2 * n) false) is (rep true)
-       |> zip (iota (2 * n))
-       |> partition (.1)
-       |> (\(lp, rp) -> (sized n <| map (.0) lp, sized n <| map (.0) rp))
-       |> (\(lp, rp) -> {lp, rp, data})
+    let lp = map2 (+) (indices ds) (exscan (+) 0 missing)
+    -- Scatter the left parenthesis to their new position.
+    let parens = scatter (replicate (2 * n) (-1)) lp (rep 1)
+    -- Compute the depth of every parenthesis.
+    let depths =
+      parens
+      |> scan (+) 0
+      |> map2 (\p d -> d - i64.bool (p == 1)) parens
+    -- Construct a prefix tree of minima.
+    let min_tree = mk_tree i64.min i64.highest depths
+    -- Find the next smaller or equal element.
+    let rp = map (find_next (<=) min_tree) lp
+    in {lp, rp, data}
 
   def lprp 'a [n] (x: t a [n]) : t a [n] = x
 
