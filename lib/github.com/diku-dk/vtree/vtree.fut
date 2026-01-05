@@ -49,6 +49,7 @@ module type vtree = {
        , t a []
        )
   val deleteVertices 'a[n]: t a [n] -> [n]bool -> t a []
+  val getData 'a[n]: t a [n] -> {lp: [n]i64, rp: [n]i64, data: [n]a}
 }
 
 -- [mk_preorder a] creates a vtree from the preorder specification `a` of a tree
@@ -304,4 +305,12 @@ module vtree : vtree = {
   def depth 'a [n] (t: t a [n]) : [n]i64 =
     let t' = map (\_ -> 1) t
     in rootfix (i64.+) i64.neg 0 t'
+
+  def getData 'a[n] (t: t a [n]): {lp: [n]i64, rp: [n]i64, data: [n]a} = 
+    {
+      lp =  t.lp, 
+      rp = t.rp, 
+      data = t.data
+    }
+
 }
