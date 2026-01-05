@@ -288,6 +288,38 @@ def split 'a [n]
 
   in ({ subtrees, offsets }, remainder)
 
+  def merge 'a [n][m][k] 
+  ({subtrees: t a [n], offsets: [k]i64}) 
+  (parent_tree: t a [m]) 
+  (parent_pointers: [m]i64): t a [n+m] = 
+    let paren_basis = replicate (n+m) 0i64
+    let data_basis = replicate (n+m) parent_tree.data[0]
+    
+    -- These are the offsets for the parent trees original vertices
+    let spaces_to_offset : [m]i64 = map (\p -> if p < 0 then 0 else offsets[p]) parent_pointers
+
+    let is = map2 (+) (iota m) spaces_to_offset
+    let new_lp = scatter (copy paren_basis) is parent_tree.lp
+    let new_rp = scatter paren_basis is parent_tree.rp
+    let new_data = scatter data_basis is parent_tree.data
+
+    let b = scatter (replicate (n+m) true) is (replicate m false)
+    let is' = filter (\i -> b[i]) (iota (n+m)) -- The indices which are skipped in is
+
+    -- vertices of the subtrees which are selected by parent_pointers
+    let vs_lp = ??? 
+    let vs_rp = ??? 
+    let vs_data = ???
+
+    let new_lp = scatter new_lp is' vs_lp
+    let new_rp = scatter new_rp is' vs_rp
+    let new_data = scatter new_data is' vs_data
+    in {
+      lp = new_lp,
+      rp = new_rp,
+      data = new_data
+    }
+
   def map 'a 'b [n] (f: a -> b) ({lp, rp, data}: t a [n]) : t b [n] =
     {lp, rp, data = map f data}
 
