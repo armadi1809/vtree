@@ -268,8 +268,9 @@ module vtree : vtree = {
     let L_local = map2 (-) t.lp dist
     let R_local = map2 (-) t.rp dist
     let is_sub = map (\d -> d != 0) dist
-    let t_splits = { lp = t.lp, rp = t.rp, data = splits }
-    let in_subtree = irootfix (||) not false t_splits
+    let t_splits = { lp = t.lp, rp = t.rp, data = map (\b -> if b then 1i64 else 0i64) splits }
+    let in_subtree_count = irootfix (i64.+) i64.neg 0 t_splits
+    let in_subtree = map (> 0) in_subtree_count
     let is_rem = map not in_subtree
 
     let sub_zipped =
