@@ -39,6 +39,16 @@ module type vtree = {
     -> t a [n] -> [n]a
 
   val depth 'a [n] : t a [n] -> [n]i64
+
+  val split 'a [n] :
+    t a [n]
+    -> [n]bool
+    -> ( { subtrees: t a []
+         , offsets: []i64
+         }
+       , t a []
+       )
+  val deleteVertices 'a[n]: t a [n] -> [n]bool -> t a []
 }
 
 -- [mk_preorder a] creates a vtree from the preorder specification `a` of a tree
@@ -209,6 +219,83 @@ module vtree : vtree = {
 
   def leaffix 'a [n] (op: a -> a -> a) (inv: a -> a) (ne: a) (t: t a [n]) : [n]a =
     map2 op (ileaffix op inv ne t) (map inv t.data)
+
+  def enumerate [n] (flags: [n]bool) : [n]i64 =
+    let ints = map (\b -> if b then 1 else 0) flags
+    let ps = scan (+) 0 ints
+    in map (\(b, s) -> if b then s - 1 else -1)
+           (zip flags ps)
+
+  def pack [n] 'a (flags: [n]bool) (xs: [n]a) : []a =
+    map (.1) (filter (.0) (zip flags xs))
+
+  def deleteVertices 'a [n] (t: t a [n]) (keep: [n]bool) : t a [] =
+    let m = i64.sum (map (\b -> if b then 1 else 0) keep)
+    let paren_flags =
+      scatter (replicate (2 * n) false)
+              (concat t.lp t.rp)
+              (concat keep keep)
+    let paren_enum = enumerate paren_flags
+    let new_left =
+      map (\(k, l) -> if k then paren_enum[l] else -1)
+          (zip keep t.lp)
+    let new_right =
+      map (\(k, r) -> if k then paren_enum[r] else -1)
+          (zip keep t.rp)
+    let lp = pack keep new_left :> [m]i64
+    let rp = pack keep new_right :> [m]i64
+    let data = pack keep t.data :> [m] a
+    in {lp, rp, data}
+
+  def split 'a [n]
+            (t: t a [n])
+            (splits: [n]bool) : ( { subtrees: t a []
+                                  , offsets: []i64
+                                  }
+                                , t a []
+                                ) =
+    let root_idx =
+      map2 (\is_root l -> if is_root then l else 0)
+           splits
+           t.lp
+    let t_root =
+      { lp = t.lp
+      , rp = t.rp
+      , data = root_idx
+      }
+    let dist =
+      irootfix (i64.+) i64.neg 0 t_root
+    let L_local = map2 (-) t.lp dist
+    let R_local = map2 (-) t.rp dist
+    let is_sub = map (\d -> d != 0) dist
+    let t_splits = { lp = t.lp, rp = t.rp, data = splits }
+    let in_subtree = irootfix (||) not false t_splits
+    let is_rem = map not in_subtree
+
+    let sub_zipped =
+      filter (\(keep, _, _, _) -> keep)
+             (zip4 is_sub L_local R_local t.data)
+    let sub_L = map (.1) sub_zipped
+    let sub_R = map (.2) sub_zipped
+    let sub_data = map (.3) sub_zipped
+    let subtrees =
+      { lp = sub_L
+      , rp = sub_R
+      , data = sub_data
+      }
+
+    let offsets =
+      exscan (+)
+             0
+             (map (\_ -> 1i64)
+                  (filter id splits))
+
+    let remainder = deleteVertices t is_rem
+    in ( { subtrees = subtrees
+         , offsets = offsets
+         }
+       , remainder
+       )
 
   def map 'a 'b [n] (f: a -> b) ({lp, rp, data}: t a [n]) : t b [n] =
     {lp, rp, data = map f data}
