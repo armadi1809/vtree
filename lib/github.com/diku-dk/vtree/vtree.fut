@@ -289,35 +289,69 @@ def split 'a [n]
   in ({ subtrees, offsets }, remainder)
 
   def merge 'a [n][m][k] 
-  ({subtrees: t a [n], offsets: [k]i64}) 
-  (parent_tree: t a [m]) 
-  (parent_pointers: [m]i64): t a [n+m] = 
-    let paren_basis = replicate (n+m) 0i64
-    let data_basis = replicate (n+m) parent_tree.data[0]
+  ({subtrees: t a [n], offsets: [k]i64})  -- There are k subtrees, n vertices in total
+  (parent_tree: t a [m])                  -- Parent has m vertices
+  (parent_pointers: [m]i64): t a [] = 
+    let sgm_sizes = map (\i -> (if i < k then offsets[i+1] else k) - offsets[i]) (iota k)
+    let sizes_alloc = map (\i -> sgm_sizes[i]) parent_pointers
+    let sizes_inc_alloc = map (+1) sizes_alloc
+    let parent_is = exscan (+) 0 sizes_inc_alloc
+
+    let num_of_children = reduce (+) 0 sizes_alloc
+    let result_size = m + num_of_children
+
+    -- The indices in the result which are not parent indices
+    let child_is = 
+      let flag_basis = replicate result_size true
+      let flag_array = scatter flag_basis parent_is (replicate m false)
+      in filter (\i -> flag_array[i]) (iota result_size) :> [num_of_children]i64
+
+    let spacious_parent_lp = scatter (replicate result_size 0i64) parent_is parent_tree.lp
+    let spacious_parent_rp = scatter (replicate result_size 0i64) parent_is parent_tree.rp
+    let spacious_parent_data = scatter (replicate result_size parent_tree.data[0]) parent_is parent_tree.data
     
-    -- These are the offsets for the parent trees original vertices
-    let spaces_to_offset : [m]i64 = map (\p -> if p < 0 then 0 else offsets[p]) parent_pointers
+    let segmented_scan 't [n] (g:t->t->t) (ne: t) (flags: [n]bool) (vals: [n]t): [n]t =
+      let pairs = scan ( \ (v1,f1) (v2,f2) ->
+                          let f = f1 || f2
+                          let v = if f2 then v2 else g v1 v2
+                          in (v,f) ) (ne,false) (zip vals flags)
+      let (res,_) = unzip pairs
+      in res
 
-    let is = map2 (+) (iota m) spaces_to_offset
-    let new_lp = scatter (copy paren_basis) is parent_tree.lp
-    let new_rp = scatter paren_basis is parent_tree.rp
-    let new_data = scatter data_basis is parent_tree.data
+    let replicated_iota [n] (reps:[n]i64) : []i64 =
+      let s1 = scan (+) 0 reps
+      let s2 = map (\i -> if i==0 then 0 else s1[i-1]) (iota n)
+      let tmp = scatter (replicate num_of_children 0) s2 (iota n)
+      let flags = map (>0) tmp
+      in segmented_scan (+) 0 flags tmp
 
-    let b = scatter (replicate (n+m) true) is (replicate m false)
-    let is' = filter (\i -> b[i]) (iota (n+m)) -- The indices which are skipped in is
+    let segmented_replicate [n] (reps:[n]i64) (vs:[n]i64) : []i64 =
+      let idxs = replicated_iota reps
+      in map (\i -> vs[i]) idxs
 
-    -- vertices of the subtrees which are selected by parent_pointers
-    let vs_lp = ??? 
-    let vs_rp = ??? 
-    let vs_data = ???
+    let segmented_iota [n] (flags: [n]bool): [n]i64  =
+      let iotas = segmented_scan (+) 0 flags (replicate n 1)
+      in map (\x -> x-1) iotas
+      
+    let child_vs_is =
+      let flags = scatter (replicate num_of_children false) offsets (replicate k true)
+      let iotas = segmented_iota flags
+      let iota_offsets = segmented_replicate sizes_alloc parent_pointers
+      in map2 (+) iotas iota_offsets
 
-    let new_lp = scatter new_lp is' vs_lp
-    let new_rp = scatter new_rp is' vs_rp
-    let new_data = scatter new_data is' vs_data
+    let filled_parent_lp = scatter spacious_parent_lp child_is (map (\i -> subtrees.lp[i]) child_vs_is)
+    let filled_parent_rp = ???
+    let filled_parent_data = ???
+
+
+    let lp_parent_offsets = ???
+    let lp_child_offsets = ???
+    
+    let new_lp = map2 (+) filled_parent_lp lp_parent_offsets
     in {
-      lp = new_lp,
-      rp = new_rp,
-      data = new_data
+      lp = ???,
+      rp = ???,
+      data = ???
     }
 
   def map 'a 'b [n] (f: a -> b) ({lp, rp, data}: t a [n]) : t b [n] =
