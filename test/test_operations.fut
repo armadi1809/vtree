@@ -132,14 +132,14 @@ entry test_merge_tree =
       rp = [3,2,5,2,4],
       data = [4,5,6,7,8]
     }
-  let offsets = [0i64,2i64]
+  let subtree_offsets = [0i64,2i64]
   let parent_pointers = [0i64,1i64,0i64,-1i64]
   let expected = {
       lp = [0,1,2,5,6,7,9,13,14,15,18],
       rp = [21,4,3,12,11,8,10,20,17,16,19],
       data = [0,4,5,1,6,7,8,2,4,5,3]
     }
-  let actual = T.getData (T.merge {subtrees = subtrees, offsets = offsets} parent_tree parent_pointers)
+  let actual = T.getData (T.merge {subtrees = subtrees, subtree_offsets = subtree_offsets} parent_tree parent_pointers)
   let ok = 
     length actual.data == 11
     && and (map2 (==) (sized (11) actual.lp) expected.lp) 
@@ -160,10 +160,10 @@ entry test_merge_no_subtrees =
       rp = [],
       data = []
     }
-  let offsets = []
+  let subtree_offsets = []
   let parent_pointers = [-1i64,-1i64,-1i64,-1i64]
   let expected = T.getData parent_tree
-  let actual = T.getData (T.merge {subtrees = subtrees, offsets = offsets} parent_tree parent_pointers)
+  let actual = T.getData (T.merge {subtrees = subtrees, subtree_offsets = subtree_offsets} parent_tree parent_pointers)
   let ok = 
     length actual.data == 4
     && and (map2 (==) (sized (4) actual.lp) expected.lp) 
