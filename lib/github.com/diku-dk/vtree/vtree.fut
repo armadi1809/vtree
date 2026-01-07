@@ -425,8 +425,8 @@ def split 'a [n]
       in map2 (+) iotas iota_offsets
 
     let filled_parent_lp = scatter spacious_parent_lp child_is (map (\i -> subtrees.lp[i]) child_vs_is)
-    let filled_parent_rp = ???
-    let filled_parent_data = ???
+    let filled_parent_rp = scatter spacious_parent_rp child_is (map (\i -> subtrees.rp[i]) child_vs_is)
+    let filled_parent_data = scatter spacious_parent_data child_is (map (\i -> subtrees.data[i]) child_vs_is)
 
     let double_sizes = map (2*) sizes_alloc
     let lp_parent_offsets = exscan (+) 0 double_sizes
@@ -434,14 +434,26 @@ def split 'a [n]
     let lp_child_offsets = map (\i -> filled_parent_lp[i] + lp_offsets[i] + 1) parent_is 
     let lp_child_offsets = segmented_replicate sizes_alloc lp_child_offsets
     let lp_offsets = reduce_by_index lp_offsets (+) 0 child_is lp_child_offsets
-    let new_lp = map2 (+) filled_parent_lp lp_offsets
-
     
+    let parent_tree_with_child_counts = lprp {
+      data = sizes_alloc,
+      lp = parent_tree.lp,
+      rp = parent_tree.rp
+    }
+    let subtree_sizes = leaffix (+) i64.neg 0i64 parent_tree_with_child_counts
+    let rp_parent_offsets = map2 (+) parent_is subtree_sizes
+    let rp_child_offsets = lp_child_offsets
+    let rp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_is rp_parent_offsets
+    let rp_offsets = reduce_by_index rp_offsets (+) 0 child_is rp_child_offsets
+
+    let new_lp = map2 (+) filled_parent_lp lp_offsets
+    let new_rp = map2 (+) filled_parent_rp rp_offsets
+    let new_data = filled_parent_data
 
     in {
-      lp = ???,
-      rp = ???,
-      data = ???
+      lp = new_lp,
+      rp = new_rp,
+      data = new_data
     }
 
   def map 'a 'b [n] (f: a -> b) ({lp, rp, data}: t a [n]) : t b [n] =
