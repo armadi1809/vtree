@@ -2,6 +2,8 @@
 -- and Vishkin) and Blelloch's insights (see "Guy Blelloch. Vector Models for Data-Parallel
 -- Computing, MIT Press, 1990" (https://www.cs.cmu.edu/~guyb/papers/Ble90.pdf)
 
+import "../segmented/segmented"
+
 module type vtree = {
   type t 'a [n]
 
@@ -316,36 +318,17 @@ def split 'a [n]
     let spacious_parent_rp = scatter (replicate result_size 0i64) parent_indices parent_tree.rp 
     let spacious_parent_data = scatter (replicate result_size parent_tree.data[0]) parent_indices parent_tree.data 
     
-    let segmented_scan 't [n] (g:t->t->t) (ne: t) (flags: [n]bool) (vals: [n]t): [n]t =
-      let pairs = scan ( \ (v1,f1) (v2,f2) ->
-                          let f = f1 || f2
-                          let v = if f2 then v2 else g v1 v2
-                          in (v,f) ) (ne,false) (zip vals flags)
-      let (res,_) = unzip pairs
-      in res
-
-    let replicated_iota [n] (reps:[n]i64) : []i64 =
-      let s1 = scan (+) 0 reps
-      let s2 = map (\i -> if i==0 then 0 else s1[i-1]) (iota n)
-      let tmp = scatter (replicate num_of_children 0) s2 (iota n)
-      let flags = map (>0) tmp
-      in segmented_scan (+) 0 flags tmp
-
     let segmented_replicate [n] (reps:[n]i64) (vs:[n]i64) : []i64 =
       let idxs = replicated_iota reps
       in map (\i -> vs[i]) idxs
 
-    let segmented_iota [n] (flags: [n]bool): [n]i64  =
-      let iotas = segmented_scan (+) 0 flags (replicate n 1)
-      in map (\x -> x-1) iotas
-      
     -- The indices of the vertices of subtrees which are to be inserted  
     let subtree_indices =
       let iota_flags = scatter (replicate num_of_children false) number_of_new_children_to_the_left_of_each_parent (replicate m true) 
       let iotas = segmented_iota iota_flags 
       let iota_subtrees = segmented_replicate size_to_allocate_for_each_parent parent_pointers 
       let iota_offsets = map (\i -> subtree_offsets[i]) iota_subtrees
-      in map2 (+) iotas iota_offsets  
+      in map2 (+) iotas (iota_offsets :> [num_of_children]i64)  
 
     let filled_parent_lp = scatter spacious_parent_lp child_indices (map (\i -> subtrees.lp[i]) subtree_indices) 
     let filled_parent_rp = scatter spacious_parent_rp child_indices (map (\i -> subtrees.rp[i]) subtree_indices) 
@@ -353,9 +336,9 @@ def split 'a [n]
 
     let lp_parent_offsets = map (2*) number_of_new_children_to_the_left_of_each_parent
     let lp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_indices lp_parent_offsets 
-    let lp_child_offsets = map (\i -> filled_parent_lp[i] + lp_offsets[i] + 1) parent_indices  
-    let lp_child_offsets = segmented_replicate size_to_allocate_for_each_parent lp_child_offsets 
-    let lp_offsets = reduce_by_index lp_offsets (+) 0 child_indices lp_child_offsets 
+    let lp_child_offsets_values = map (\i -> filled_parent_lp[i] + lp_offsets[i] + 1) parent_indices  
+    let lp_child_offsets = segmented_replicate size_to_allocate_for_each_parent lp_child_offsets_values |> sized num_of_children
+    let lp_offsets = reduce_by_index lp_offsets (+) 0 child_indices lp_child_offsets
     
     let parent_tree_with_child_counts = lprp {
       data = size_to_allocate_for_each_parent,
