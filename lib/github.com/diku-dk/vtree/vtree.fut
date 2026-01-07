@@ -232,21 +232,23 @@ module vtree : vtree = {
     map (.1) (filter (.0) (zip flags xs))
 
   def deleteVertices 'a [n] (t: t a [n]) (keep: [n]bool) : t a [] =
+    -- compute the size of the resulting tree after deletion
     let m = i64.sum (map (\b -> if b then 1 else 0) keep)
+    -- permute the keep flags to right and left parenthesis
     let paren_flags =
       scatter (replicate (2 * n) false)
               (concat t.lp t.rp)
               (concat keep keep)
+    -- enumerate the parentheses to keep and get the new, renumbered parentheses indices
     let paren_enum = enumerate paren_flags
-    let new_left =
-      map (\(k, l) -> if k then paren_enum[l] else -1)
-          (zip keep t.lp)
-    let new_right =
-      map (\(k, r) -> if k then paren_enum[r] else -1)
-          (zip keep t.rp)
-    let lp = pack keep new_left :> [m]i64
-    let rp = pack keep new_right :> [m]i64
-    let data = pack keep t.data :> [m]a
+    let (new_left, new_right) = unzip (
+      map (\(k, l, r) -> if k then (paren_enum[l], paren_enum[r]) else (-1, -1))
+          (zip3 keep t.lp t.rp)
+      )
+    -- Pack the final results to get rid of the deleted vertices
+    let zipped_tree_info = zip3 new_left new_right t.data
+    let packed_tree_info = pack keep zipped_tree_info :> [m](i64, i64, a)
+    let (lp, rp, data) = unzip3 packed_tree_info
     in {lp, rp, data}
 
 def split 'a [n]
