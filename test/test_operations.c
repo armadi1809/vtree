@@ -5575,41 +5575,41 @@ struct memblock {
 };
 struct constants {
     int dummy;
+    bool ok_13169;
+    bool ok_13252;
     bool ok_13331;
-    bool ok_13414;
-    bool ok_13493;
-    bool x_19472;
-    bool x_19475;
-    bool x_19481;
-    bool x_19487;
+    bool x_19124;
+    bool x_19127;
+    bool x_19133;
+    bool x_19139;
 };
-static int64_t static_array_realtype_29248[6] = { (int64_t) 0,(int64_t) 1,(int64_t) 2,(int64_t) 4,(int64_t) 6,(int64_t) 9};
-static int64_t static_array_realtype_29249[6] = { (int64_t) 11,(int64_t) 8,(int64_t) 3,(int64_t) 5,(int64_t) 7,(int64_t) 10};
-static bool static_array_realtype_29250[6] = { 0,1,0,0,0,0};
-static int64_t static_array_realtype_29251[4] = { (int64_t) 1,(int64_t) 2,(int64_t) 3,(int64_t) 4};
-static int64_t static_array_realtype_29252[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 3,(int64_t) 5};
-static int64_t static_array_realtype_29253[4] = { (int64_t) 7,(int64_t) 2,(int64_t) 4,(int64_t) 6};
-static int64_t static_array_realtype_29254[1] = { (int64_t) 0};
-static int64_t static_array_realtype_29255[2] = { (int64_t) 0,(int64_t) 5};
-static int64_t static_array_realtype_29256[2] = { (int64_t) 0,(int64_t) 1};
-static int64_t static_array_realtype_29257[2] = { (int64_t) 3,(int64_t) 2};
-static bool static_array_realtype_29258[6] = { 0,0,1,0,0,0};
-static bool static_array_realtype_29259[6] = { 0,1,0,0,0,1};
-static int64_t static_array_realtype_29260[2] = { (int64_t) 0,(int64_t) 4};
-static bool static_array_realtype_29261[6] = { 0,0,0,0,0,0};
-static bool static_array_realtype_29262[6] = { 1,1,0,0,0,1};
-static int64_t static_array_realtype_29263[3] = { (int64_t) 0,(int64_t) 1,(int64_t) 5};
-static int64_t static_array_realtype_29264[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 3,(int64_t) 4};
-static int64_t static_array_realtype_29265[4] = { (int64_t) 7,(int64_t) 2,(int64_t) 6,(int64_t) 5};
-static int64_t static_array_realtype_29266[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 2,(int64_t) 3};
-static int64_t static_array_realtype_29267[5] = { (int64_t) 0,(int64_t) 1,(int64_t) 0,(int64_t) 1,(int64_t) 3};
-static int64_t static_array_realtype_29268[5] = { (int64_t) 3,(int64_t) 2,(int64_t) 5,(int64_t) 2,(int64_t) 4};
-static int64_t static_array_realtype_29269[5] = { (int64_t) 4,(int64_t) 5,(int64_t) 6,(int64_t) 7,(int64_t) 8};
-static int64_t static_array_realtype_29270[2] = { (int64_t) 0,(int64_t) 2};
-static int64_t static_array_realtype_29271[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 0,(int64_t) -1};
-static int64_t static_array_realtype_29272[11] = { (int64_t) 0,(int64_t) 1,(int64_t) 2,(int64_t) 5,(int64_t) 6,(int64_t) 7,(int64_t) 9,(int64_t) 13,(int64_t) 14,(int64_t) 15,(int64_t) 18};
-static int64_t static_array_realtype_29273[11] = { (int64_t) 21,(int64_t) 4,(int64_t) 3,(int64_t) 12,(int64_t) 11,(int64_t) 8,(int64_t) 10,(int64_t) 20,(int64_t) 17,(int64_t) 16,(int64_t) 19};
-static int64_t static_array_realtype_29274[11] = { (int64_t) 0,(int64_t) 4,(int64_t) 5,(int64_t) 1,(int64_t) 6,(int64_t) 7,(int64_t) 8,(int64_t) 2,(int64_t) 4,(int64_t) 5,(int64_t) 3};
+static int64_t static_array_realtype_28290[6] = { (int64_t) 0,(int64_t) 1,(int64_t) 2,(int64_t) 4,(int64_t) 6,(int64_t) 9};
+static int64_t static_array_realtype_28291[6] = { (int64_t) 11,(int64_t) 8,(int64_t) 3,(int64_t) 5,(int64_t) 7,(int64_t) 10};
+static bool static_array_realtype_28292[6] = { 0,1,0,0,0,0};
+static int64_t static_array_realtype_28293[4] = { (int64_t) 1,(int64_t) 2,(int64_t) 3,(int64_t) 4};
+static int64_t static_array_realtype_28294[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 3,(int64_t) 5};
+static int64_t static_array_realtype_28295[4] = { (int64_t) 7,(int64_t) 2,(int64_t) 4,(int64_t) 6};
+static int64_t static_array_realtype_28296[1] = { (int64_t) 0};
+static int64_t static_array_realtype_28297[2] = { (int64_t) 0,(int64_t) 5};
+static int64_t static_array_realtype_28298[2] = { (int64_t) 0,(int64_t) 1};
+static int64_t static_array_realtype_28299[2] = { (int64_t) 3,(int64_t) 2};
+static bool static_array_realtype_28300[6] = { 0,0,1,0,0,0};
+static bool static_array_realtype_28301[6] = { 0,1,0,0,0,1};
+static int64_t static_array_realtype_28302[2] = { (int64_t) 0,(int64_t) 4};
+static bool static_array_realtype_28303[6] = { 0,0,0,0,0,0};
+static bool static_array_realtype_28304[6] = { 1,1,0,0,0,1};
+static int64_t static_array_realtype_28305[3] = { (int64_t) 0,(int64_t) 1,(int64_t) 5};
+static int64_t static_array_realtype_28306[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 3,(int64_t) 4};
+static int64_t static_array_realtype_28307[4] = { (int64_t) 7,(int64_t) 2,(int64_t) 6,(int64_t) 5};
+static int64_t static_array_realtype_28308[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 2,(int64_t) 3};
+static int64_t static_array_realtype_28309[5] = { (int64_t) 0,(int64_t) 1,(int64_t) 0,(int64_t) 1,(int64_t) 3};
+static int64_t static_array_realtype_28310[5] = { (int64_t) 3,(int64_t) 2,(int64_t) 5,(int64_t) 2,(int64_t) 4};
+static int64_t static_array_realtype_28311[5] = { (int64_t) 4,(int64_t) 5,(int64_t) 6,(int64_t) 7,(int64_t) 8};
+static int64_t static_array_realtype_28312[2] = { (int64_t) 0,(int64_t) 2};
+static int64_t static_array_realtype_28313[4] = { (int64_t) 0,(int64_t) 1,(int64_t) 0,(int64_t) -1};
+static int64_t static_array_realtype_28314[11] = { (int64_t) 0,(int64_t) 1,(int64_t) 2,(int64_t) 5,(int64_t) 6,(int64_t) 7,(int64_t) 9,(int64_t) 13,(int64_t) 14,(int64_t) 15,(int64_t) 18};
+static int64_t static_array_realtype_28315[11] = { (int64_t) 21,(int64_t) 4,(int64_t) 3,(int64_t) 12,(int64_t) 11,(int64_t) 8,(int64_t) 10,(int64_t) 20,(int64_t) 17,(int64_t) 16,(int64_t) 19};
+static int64_t static_array_realtype_28316[11] = { (int64_t) 0,(int64_t) 4,(int64_t) 5,(int64_t) 1,(int64_t) 6,(int64_t) 7,(int64_t) 8,(int64_t) 2,(int64_t) 4,(int64_t) 5,(int64_t) 3};
 struct tuning_params {
     int dummy;
 };
@@ -6290,15 +6290,15 @@ GEN_LMAD_COPY(8b, uint64_t)
 
 #define FUTHARK_FUN_ATTR static
 
-FUTHARK_FUN_ATTR int futrts_deleteVertices_7592(struct futhark_context *ctx, struct memblock *mem_out_p_29275, struct memblock *mem_out_p_29276, struct memblock *mem_out_p_29277, int64_t *out_prim_out_29278, struct memblock data_mem_28968, struct memblock lp_mem_28969, struct memblock rp_mem_28970, struct memblock keep_mem_28971, int64_t n_14357);
-FUTHARK_FUN_ATTR int futrts_entry_test_delete_vertices(struct futhark_context *ctx, bool *out_prim_out_29290);
-FUTHARK_FUN_ATTR int futrts_entry_test_merge_no_subtrees(struct futhark_context *ctx, bool *out_prim_out_29291);
-FUTHARK_FUN_ATTR int futrts_entry_test_merge_tree(struct futhark_context *ctx, bool *out_prim_out_29292);
-FUTHARK_FUN_ATTR int futrts_entry_test_split(struct futhark_context *ctx, bool *out_prim_out_29293);
-FUTHARK_FUN_ATTR int futrts_entry_test_split_at_leaf(struct futhark_context *ctx, bool *out_prim_out_29294);
-FUTHARK_FUN_ATTR int futrts_entry_test_split_multiple(struct futhark_context *ctx, bool *out_prim_out_29295);
-FUTHARK_FUN_ATTR int futrts_entry_test_split_none(struct futhark_context *ctx, bool *out_prim_out_29296);
-FUTHARK_FUN_ATTR int futrts_split_7593(struct futhark_context *ctx, struct memblock *mem_out_p_29297, struct memblock *mem_out_p_29298, struct memblock *mem_out_p_29299, struct memblock *mem_out_p_29300, struct memblock *mem_out_p_29301, struct memblock *mem_out_p_29302, struct memblock *mem_out_p_29303, int64_t *out_prim_out_29304, int64_t *out_prim_out_29305, int64_t *out_prim_out_29306, struct memblock data_mem_28968, struct memblock lp_mem_28969, struct memblock rp_mem_28970, struct memblock splits_mem_28971, int64_t n_15266);
+FUTHARK_FUN_ATTR int futrts_deleteVertices_7584(struct futhark_context *ctx, struct memblock *mem_out_p_28317, struct memblock *mem_out_p_28318, struct memblock *mem_out_p_28319, int64_t *out_prim_out_28320, struct memblock data_mem_28012, struct memblock lp_mem_28013, struct memblock rp_mem_28014, struct memblock keep_mem_28015, int64_t n_14195);
+FUTHARK_FUN_ATTR int futrts_entry_test_delete_vertices(struct futhark_context *ctx, bool *out_prim_out_28332);
+FUTHARK_FUN_ATTR int futrts_entry_test_merge_no_subtrees(struct futhark_context *ctx, bool *out_prim_out_28333);
+FUTHARK_FUN_ATTR int futrts_entry_test_merge_tree(struct futhark_context *ctx, bool *out_prim_out_28334);
+FUTHARK_FUN_ATTR int futrts_entry_test_split(struct futhark_context *ctx, bool *out_prim_out_28335);
+FUTHARK_FUN_ATTR int futrts_entry_test_split_at_leaf(struct futhark_context *ctx, bool *out_prim_out_28336);
+FUTHARK_FUN_ATTR int futrts_entry_test_split_multiple(struct futhark_context *ctx, bool *out_prim_out_28337);
+FUTHARK_FUN_ATTR int futrts_entry_test_split_none(struct futhark_context *ctx, bool *out_prim_out_28338);
+FUTHARK_FUN_ATTR int futrts_split_7585(struct futhark_context *ctx, struct memblock *mem_out_p_28339, struct memblock *mem_out_p_28340, struct memblock *mem_out_p_28341, struct memblock *mem_out_p_28342, struct memblock *mem_out_p_28343, struct memblock *mem_out_p_28344, struct memblock *mem_out_p_28345, int64_t *out_prim_out_28346, int64_t *out_prim_out_28347, int64_t *out_prim_out_28348, struct memblock data_mem_28012, struct memblock lp_mem_28013, struct memblock rp_mem_28014, struct memblock splits_mem_28015, int64_t n_15104);
 
 static int init_constants(struct futhark_context *ctx)
 {
@@ -6306,3640 +6306,3596 @@ static int init_constants(struct futhark_context *ctx)
     
     int err = 0;
     
+    #define ok_13169 (ctx->constants->ok_13169)
+    #define ok_13252 (ctx->constants->ok_13252)
     #define ok_13331 (ctx->constants->ok_13331)
-    #define ok_13414 (ctx->constants->ok_13414)
-    #define ok_13493 (ctx->constants->ok_13493)
-    #define x_19472 (ctx->constants->x_19472)
-    #define x_19475 (ctx->constants->x_19475)
-    #define x_19481 (ctx->constants->x_19481)
-    #define x_19487 (ctx->constants->x_19487)
+    #define x_19124 (ctx->constants->x_19124)
+    #define x_19127 (ctx->constants->x_19127)
+    #define x_19133 (ctx->constants->x_19133)
+    #define x_19139 (ctx->constants->x_19139)
     
-    struct memblock mem_28961;
+    struct memblock mem_28005;
     
-    mem_28961.references = NULL;
+    mem_28005.references = NULL;
     
-    struct memblock mem_28954;
+    struct memblock mem_27992;
     
-    mem_28954.references = NULL;
+    mem_27992.references = NULL;
     
-    struct memblock mem_28946;
+    struct memblock mem_27991;
     
-    mem_28946.references = NULL;
+    mem_27991.references = NULL;
     
-    struct memblock mem_28926;
+    struct memblock mem_27984;
     
-    mem_28926.references = NULL;
+    mem_27984.references = NULL;
     
-    struct memblock mem_28918;
+    struct memblock mem_27976;
     
-    mem_28918.references = NULL;
+    mem_27976.references = NULL;
     
-    struct memblock mem_28893;
+    struct memblock mem_27956;
     
-    mem_28893.references = NULL;
+    mem_27956.references = NULL;
     
-    struct memblock mem_28891;
+    struct memblock mem_27948;
     
-    mem_28891.references = NULL;
+    mem_27948.references = NULL;
     
-    struct memblock mem_28889;
+    struct memblock mem_27935;
     
-    mem_28889.references = NULL;
+    mem_27935.references = NULL;
     
-    struct memblock mem_28888;
+    struct memblock mem_27933;
     
-    mem_28888.references = NULL;
+    mem_27933.references = NULL;
     
-    struct memblock mem_28871;
+    struct memblock mem_27915;
     
-    mem_28871.references = NULL;
+    mem_27915.references = NULL;
     
-    struct memblock mem_28869;
+    struct memblock mem_27913;
     
-    mem_28869.references = NULL;
+    mem_27913.references = NULL;
     
-    struct memblock mem_28887;
+    struct memblock mem_27931;
     
-    mem_28887.references = NULL;
+    mem_27931.references = NULL;
     
-    struct memblock mem_28885;
+    struct memblock mem_27929;
     
-    mem_28885.references = NULL;
+    mem_27929.references = NULL;
     
-    struct memblock mem_28867;
+    struct memblock mem_27911;
     
-    mem_28867.references = NULL;
+    mem_27911.references = NULL;
     
-    struct memblock mem_28859;
+    struct memblock mem_27897;
     
-    mem_28859.references = NULL;
+    mem_27897.references = NULL;
     
-    struct memblock mem_28846;
+    struct memblock mem_27896;
     
-    mem_28846.references = NULL;
+    mem_27896.references = NULL;
     
-    struct memblock mem_28845;
+    struct memblock mem_27889;
     
-    mem_28845.references = NULL;
+    mem_27889.references = NULL;
     
-    struct memblock mem_28832;
+    struct memblock mem_27876;
     
-    mem_28832.references = NULL;
+    mem_27876.references = NULL;
     
-    struct memblock mem_28830;
+    struct memblock mem_27874;
     
-    mem_28830.references = NULL;
+    mem_27874.references = NULL;
     
-    struct memblock mem_28807;
+    struct memblock mem_27844;
     
-    mem_28807.references = NULL;
+    mem_27844.references = NULL;
     
-    struct memblock mem_28806;
+    struct memblock mem_27843;
     
-    mem_28806.references = NULL;
+    mem_27843.references = NULL;
     
-    struct memblock mem_28805;
+    struct memblock mem_27842;
     
-    mem_28805.references = NULL;
+    mem_27842.references = NULL;
     
-    struct memblock mem_28828;
+    struct memblock mem_27841;
     
-    mem_28828.references = NULL;
+    mem_27841.references = NULL;
     
-    struct memblock mem_28827;
+    struct memblock mem_27872;
     
-    mem_28827.references = NULL;
+    mem_27872.references = NULL;
     
-    struct memblock mem_28826;
+    struct memblock mem_27871;
     
-    mem_28826.references = NULL;
+    mem_27871.references = NULL;
     
-    struct memblock mem_28804;
+    struct memblock mem_27870;
     
-    mem_28804.references = NULL;
+    mem_27870.references = NULL;
     
-    struct memblock mem_28803;
+    struct memblock mem_27869;
     
-    mem_28803.references = NULL;
+    mem_27869.references = NULL;
     
-    struct memblock mem_28801;
+    struct memblock mem_27840;
     
-    mem_28801.references = NULL;
+    mem_27840.references = NULL;
     
-    struct memblock mem_28799;
+    struct memblock mem_27839;
     
-    mem_28799.references = NULL;
+    mem_27839.references = NULL;
     
-    struct memblock mem_28797;
+    struct memblock mem_27837;
     
-    mem_28797.references = NULL;
+    mem_27837.references = NULL;
     
-    struct memblock mem_28796;
+    struct memblock mem_27835;
     
-    mem_28796.references = NULL;
+    mem_27835.references = NULL;
     
-    struct memblock mem_28794;
+    struct memblock mem_27833;
     
-    mem_28794.references = NULL;
+    mem_27833.references = NULL;
     
-    struct memblock mem_28780;
+    struct memblock mem_27832;
     
-    mem_28780.references = NULL;
+    mem_27832.references = NULL;
     
-    struct memblock mem_28779;
+    struct memblock mem_27830;
     
-    mem_28779.references = NULL;
+    mem_27830.references = NULL;
     
-    struct memblock mem_28766;
+    struct memblock mem_27816;
     
-    mem_28766.references = NULL;
+    mem_27816.references = NULL;
     
-    struct memblock mem_28765;
+    struct memblock mem_27815;
     
-    mem_28765.references = NULL;
+    mem_27815.references = NULL;
     
-    struct memblock mem_28758;
+    struct memblock mem_27802;
     
-    mem_28758.references = NULL;
+    mem_27802.references = NULL;
     
-    struct memblock mem_28751;
+    struct memblock mem_27801;
     
-    mem_28751.references = NULL;
+    mem_27801.references = NULL;
     
-    struct memblock mem_28750;
+    struct memblock mem_27794;
     
-    mem_28750.references = NULL;
+    mem_27794.references = NULL;
     
-    struct memblock mem_28749;
+    struct memblock mem_27787;
     
-    mem_28749.references = NULL;
+    mem_27787.references = NULL;
     
-    struct memblock mem_28748;
+    struct memblock mem_27786;
     
-    mem_28748.references = NULL;
+    mem_27786.references = NULL;
     
-    struct memblock mem_28741;
+    struct memblock mem_27785;
     
-    mem_28741.references = NULL;
+    mem_27785.references = NULL;
     
-    struct memblock mem_28740;
+    struct memblock mem_27784;
     
-    mem_28740.references = NULL;
+    mem_27784.references = NULL;
     
-    struct memblock mem_28739;
+    struct memblock mem_27777;
     
-    mem_28739.references = NULL;
+    mem_27777.references = NULL;
     
-    struct memblock mem_28738;
+    struct memblock mem_27776;
     
-    mem_28738.references = NULL;
+    mem_27776.references = NULL;
     
-    struct memblock mem_28695;
+    struct memblock mem_27775;
     
-    mem_28695.references = NULL;
+    mem_27775.references = NULL;
     
-    struct memblock mem_28694;
+    struct memblock mem_27774;
     
-    mem_28694.references = NULL;
+    mem_27774.references = NULL;
     
-    struct memblock mem_28693;
+    struct memblock mem_27743;
     
-    mem_28693.references = NULL;
+    mem_27743.references = NULL;
     
-    struct memblock mem_28692;
+    struct memblock mem_27742;
     
-    mem_28692.references = NULL;
+    mem_27742.references = NULL;
     
-    struct memblock mem_28691;
+    struct memblock mem_27741;
     
-    mem_28691.references = NULL;
+    mem_27741.references = NULL;
     
-    struct memblock mem_28690;
+    struct memblock mem_27740;
     
-    mem_28690.references = NULL;
+    mem_27740.references = NULL;
     
-    struct memblock mem_28689;
+    struct memblock mem_27739;
     
-    mem_28689.references = NULL;
+    mem_27739.references = NULL;
     
-    struct memblock mem_28682;
+    struct memblock mem_27732;
     
-    mem_28682.references = NULL;
+    mem_27732.references = NULL;
     
-    struct memblock mem_28681;
+    struct memblock mem_27731;
     
-    mem_28681.references = NULL;
+    mem_27731.references = NULL;
     
-    struct memblock mem_28680;
+    struct memblock mem_27730;
     
-    mem_28680.references = NULL;
+    mem_27730.references = NULL;
     
-    struct memblock mem_28679;
+    struct memblock mem_27729;
     
-    mem_28679.references = NULL;
+    mem_27729.references = NULL;
     
-    struct memblock mem_28678;
+    struct memblock mem_27728;
     
-    mem_28678.references = NULL;
+    mem_27728.references = NULL;
     
-    struct memblock mem_28677;
+    struct memblock mem_27727;
     
-    mem_28677.references = NULL;
+    mem_27727.references = NULL;
     
-    struct memblock mem_28676;
+    struct memblock mem_27726;
     
-    mem_28676.references = NULL;
+    mem_27726.references = NULL;
     
-    struct memblock mem_28675;
+    struct memblock mem_27725;
     
-    mem_28675.references = NULL;
+    mem_27725.references = NULL;
     
-    struct memblock mem_28674;
+    struct memblock mem_27724;
     
-    mem_28674.references = NULL;
+    mem_27724.references = NULL;
     
-    struct memblock mem_28673;
+    struct memblock mem_27723;
     
-    mem_28673.references = NULL;
+    mem_27723.references = NULL;
     
-    struct memblock mem_28672;
+    struct memblock mem_27722;
     
-    mem_28672.references = NULL;
+    mem_27722.references = NULL;
     
-    struct memblock mem_28671;
+    struct memblock mem_27721;
     
-    mem_28671.references = NULL;
+    mem_27721.references = NULL;
     
-    struct memblock mem_28670;
+    struct memblock mem_27720;
     
-    mem_28670.references = NULL;
+    mem_27720.references = NULL;
     
-    struct memblock ext_mem_28667;
+    struct memblock ext_mem_27717;
     
-    ext_mem_28667.references = NULL;
+    ext_mem_27717.references = NULL;
     
-    struct memblock ext_mem_28668;
+    struct memblock ext_mem_27718;
     
-    ext_mem_28668.references = NULL;
+    ext_mem_27718.references = NULL;
     
-    struct memblock ext_mem_28669;
+    struct memblock ext_mem_27719;
     
-    ext_mem_28669.references = NULL;
+    ext_mem_27719.references = NULL;
     
-    struct memblock mem_28666;
+    struct memblock mem_27716;
     
-    mem_28666.references = NULL;
+    mem_27716.references = NULL;
     
-    struct memblock ext_mem_28659;
+    struct memblock ext_mem_27709;
     
-    ext_mem_28659.references = NULL;
+    ext_mem_27709.references = NULL;
     
-    struct memblock ext_mem_28660;
+    struct memblock ext_mem_27710;
     
-    ext_mem_28660.references = NULL;
+    ext_mem_27710.references = NULL;
     
-    struct memblock ext_mem_28661;
+    struct memblock ext_mem_27711;
     
-    ext_mem_28661.references = NULL;
+    ext_mem_27711.references = NULL;
     
-    struct memblock ext_mem_28662;
+    struct memblock ext_mem_27712;
     
-    ext_mem_28662.references = NULL;
+    ext_mem_27712.references = NULL;
     
-    struct memblock ext_mem_28663;
+    struct memblock ext_mem_27713;
     
-    ext_mem_28663.references = NULL;
+    ext_mem_27713.references = NULL;
     
-    struct memblock ext_mem_28664;
+    struct memblock ext_mem_27714;
     
-    ext_mem_28664.references = NULL;
+    ext_mem_27714.references = NULL;
     
-    struct memblock ext_mem_28665;
+    struct memblock ext_mem_27715;
     
-    ext_mem_28665.references = NULL;
+    ext_mem_27715.references = NULL;
     
-    struct memblock mem_28658;
+    struct memblock mem_27708;
     
-    mem_28658.references = NULL;
+    mem_27708.references = NULL;
     
-    struct memblock mem_28657;
+    struct memblock mem_27707;
     
-    mem_28657.references = NULL;
+    mem_27707.references = NULL;
     
-    struct memblock ext_mem_28650;
+    struct memblock ext_mem_27700;
     
-    ext_mem_28650.references = NULL;
+    ext_mem_27700.references = NULL;
     
-    struct memblock ext_mem_28651;
+    struct memblock ext_mem_27701;
     
-    ext_mem_28651.references = NULL;
+    ext_mem_27701.references = NULL;
     
-    struct memblock ext_mem_28652;
+    struct memblock ext_mem_27702;
     
-    ext_mem_28652.references = NULL;
+    ext_mem_27702.references = NULL;
     
-    struct memblock ext_mem_28653;
+    struct memblock ext_mem_27703;
     
-    ext_mem_28653.references = NULL;
+    ext_mem_27703.references = NULL;
     
-    struct memblock ext_mem_28654;
+    struct memblock ext_mem_27704;
     
-    ext_mem_28654.references = NULL;
+    ext_mem_27704.references = NULL;
     
-    struct memblock ext_mem_28655;
+    struct memblock ext_mem_27705;
     
-    ext_mem_28655.references = NULL;
+    ext_mem_27705.references = NULL;
     
-    struct memblock ext_mem_28656;
+    struct memblock ext_mem_27706;
     
-    ext_mem_28656.references = NULL;
+    ext_mem_27706.references = NULL;
     
-    struct memblock mem_28649;
+    struct memblock mem_27699;
     
-    mem_28649.references = NULL;
+    mem_27699.references = NULL;
     
-    struct memblock ext_mem_28642;
+    struct memblock ext_mem_27692;
     
-    ext_mem_28642.references = NULL;
+    ext_mem_27692.references = NULL;
     
-    struct memblock ext_mem_28643;
+    struct memblock ext_mem_27693;
     
-    ext_mem_28643.references = NULL;
+    ext_mem_27693.references = NULL;
     
-    struct memblock ext_mem_28644;
+    struct memblock ext_mem_27694;
     
-    ext_mem_28644.references = NULL;
+    ext_mem_27694.references = NULL;
     
-    struct memblock ext_mem_28645;
+    struct memblock ext_mem_27695;
     
-    ext_mem_28645.references = NULL;
+    ext_mem_27695.references = NULL;
     
-    struct memblock ext_mem_28646;
+    struct memblock ext_mem_27696;
     
-    ext_mem_28646.references = NULL;
+    ext_mem_27696.references = NULL;
     
-    struct memblock ext_mem_28647;
+    struct memblock ext_mem_27697;
     
-    ext_mem_28647.references = NULL;
+    ext_mem_27697.references = NULL;
     
-    struct memblock ext_mem_28648;
+    struct memblock ext_mem_27698;
     
-    ext_mem_28648.references = NULL;
+    ext_mem_27698.references = NULL;
     
-    struct memblock mem_28641;
+    struct memblock mem_27691;
     
-    mem_28641.references = NULL;
+    mem_27691.references = NULL;
     
-    struct memblock mem_28640;
+    struct memblock mem_27690;
     
-    mem_28640.references = NULL;
+    mem_27690.references = NULL;
     
-    struct memblock mem_28639;
+    struct memblock mem_27689;
     
-    mem_28639.references = NULL;
+    mem_27689.references = NULL;
     
-    struct memblock mem_28638;
+    struct memblock mem_27688;
     
-    mem_28638.references = NULL;
+    mem_27688.references = NULL;
     
-    struct memblock mem_28637;
+    struct memblock mem_27687;
     
-    mem_28637.references = NULL;
+    mem_27687.references = NULL;
     
-    struct memblock mem_28636;
+    struct memblock mem_27686;
     
-    mem_28636.references = NULL;
+    mem_27686.references = NULL;
     
-    struct memblock mem_28635;
+    struct memblock mem_27685;
     
-    mem_28635.references = NULL;
+    mem_27685.references = NULL;
     
-    struct memblock mem_28634;
+    struct memblock mem_27684;
     
-    mem_28634.references = NULL;
+    mem_27684.references = NULL;
     
-    struct memblock ext_mem_28627;
+    struct memblock ext_mem_27677;
     
-    ext_mem_28627.references = NULL;
+    ext_mem_27677.references = NULL;
     
-    struct memblock ext_mem_28628;
+    struct memblock ext_mem_27678;
     
-    ext_mem_28628.references = NULL;
+    ext_mem_27678.references = NULL;
     
-    struct memblock ext_mem_28629;
+    struct memblock ext_mem_27679;
     
-    ext_mem_28629.references = NULL;
+    ext_mem_27679.references = NULL;
     
-    struct memblock ext_mem_28630;
+    struct memblock ext_mem_27680;
     
-    ext_mem_28630.references = NULL;
+    ext_mem_27680.references = NULL;
     
-    struct memblock ext_mem_28631;
+    struct memblock ext_mem_27681;
     
-    ext_mem_28631.references = NULL;
+    ext_mem_27681.references = NULL;
     
-    struct memblock ext_mem_28632;
+    struct memblock ext_mem_27682;
     
-    ext_mem_28632.references = NULL;
+    ext_mem_27682.references = NULL;
     
-    struct memblock ext_mem_28633;
+    struct memblock ext_mem_27683;
     
-    ext_mem_28633.references = NULL;
+    ext_mem_27683.references = NULL;
     
-    struct memblock mem_28626;
+    struct memblock mem_27676;
     
-    mem_28626.references = NULL;
+    mem_27676.references = NULL;
     
-    struct memblock mem_28625;
+    struct memblock mem_27675;
     
-    mem_28625.references = NULL;
+    mem_27675.references = NULL;
     
-    struct memblock mem_28624;
+    struct memblock mem_27674;
     
-    mem_28624.references = NULL;
+    mem_27674.references = NULL;
     
-    struct memblock mem_28623;
+    struct memblock mem_27673;
     
-    mem_28623.references = NULL;
+    mem_27673.references = NULL;
     // ./test_operations.fut:9:21-27
-    if (memblock_alloc(ctx, &mem_28623, (int64_t) 48, "mem_28623")) {
+    if (memblock_alloc(ctx, &mem_27673, (int64_t) 48, "mem_27673")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:9:21-27
-    for (int64_t i_29099 = 0; i_29099 < (int64_t) 6; i_29099++) {
-        int64_t x_29100 = (int64_t) 0 + i_29099 * (int64_t) 1;
+    for (int64_t i_28143 = 0; i_28143 < (int64_t) 6; i_28143++) {
+        int64_t x_28144 = (int64_t) 0 + i_28143 * (int64_t) 1;
         
-        ((int64_t *) mem_28623.mem)[i_29099] = x_29100;
+        ((int64_t *) mem_27673.mem)[i_28143] = x_28144;
     }
     // ./test_operations.fut:7:5-10:13
-    if (memblock_alloc(ctx, &mem_28624, (int64_t) 48, "mem_28624")) {
+    if (memblock_alloc(ctx, &mem_27674, (int64_t) 48, "mem_27674")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:7:5-10:13
     
-    struct memblock static_array_29101 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29248, 0, "static_array_29101"};
+    struct memblock static_array_28145 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28290, 0, "static_array_28145"};
     
     // ./test_operations.fut:7:5-10:13
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28624.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29101.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27674.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28145.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:7:5-10:13
-    if (memblock_alloc(ctx, &mem_28625, (int64_t) 48, "mem_28625")) {
+    if (memblock_alloc(ctx, &mem_27675, (int64_t) 48, "mem_27675")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:7:5-10:13
     
-    struct memblock static_array_29102 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29249, 0, "static_array_29102"};
+    struct memblock static_array_28146 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28291, 0, "static_array_28146"};
     
     // ./test_operations.fut:7:5-10:13
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28625.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29102.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27675.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28146.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:11:16-57
-    if (memblock_alloc(ctx, &mem_28626, (int64_t) 6, "mem_28626")) {
+    if (memblock_alloc(ctx, &mem_27676, (int64_t) 6, "mem_27676")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:11:16-57
     
-    struct memblock static_array_29103 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29250, 0, "static_array_29103"};
+    struct memblock static_array_28147 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28292, 0, "static_array_28147"};
     
     // ./test_operations.fut:11:16-57
-    lmad_copy_1b(ctx, 1, (uint8_t *) mem_28626.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_29103.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_1b(ctx, 1, (uint8_t *) mem_27676.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_28147.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:6:7-12:50
     
-    int64_t test_split_res_12970;
-    int64_t test_split_res_12971;
-    int64_t test_split_res_12972;
+    int64_t test_split_res_12808;
+    int64_t test_split_res_12809;
+    int64_t test_split_res_12810;
     
-    if (futrts_split_7593(ctx, &ext_mem_28633, &ext_mem_28632, &ext_mem_28631, &ext_mem_28630, &ext_mem_28629, &ext_mem_28628, &ext_mem_28627, &test_split_res_12970, &test_split_res_12971, &test_split_res_12972, mem_28623, mem_28624, mem_28625, mem_28626, (int64_t) 6) != 0) {
+    if (futrts_split_7585(ctx, &ext_mem_27683, &ext_mem_27682, &ext_mem_27681, &ext_mem_27680, &ext_mem_27679, &ext_mem_27678, &ext_mem_27677, &test_split_res_12808, &test_split_res_12809, &test_split_res_12810, mem_27673, mem_27674, mem_27675, mem_27676, (int64_t) 6) != 0) {
         err = 1;
         goto cleanup;
     }
-    if (memblock_unref(ctx, &mem_28626, "mem_28626") != 0)
+    if (memblock_unref(ctx, &mem_27676, "mem_27676") != 0)
         return 1;
     // ./test_operations.fut:16:5-19:63
     
-    bool cond_13001 = test_split_res_12971 == (int64_t) 4;
+    bool cond_12839 = test_split_res_12809 == (int64_t) 4;
     
     // ./test_operations.fut:17:13-61
-    if (memblock_alloc(ctx, &mem_28634, (int64_t) 32, "mem_28634")) {
+    if (memblock_alloc(ctx, &mem_27684, (int64_t) 32, "mem_27684")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:17:13-61
     
-    struct memblock static_array_29104 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29251, 0, "static_array_29104"};
+    struct memblock static_array_28148 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28293, 0, "static_array_28148"};
     
     // ./test_operations.fut:17:13-61
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28634.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29104.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27684.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28148.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
     // ./test_operations.fut:16:5-19:63
     
-    bool cond_13002;
+    bool cond_12840;
     
-    if (cond_13001) {
+    if (cond_12839) {
         // ./test_operations.fut:17:24-47
         
-        bool dim_match_26926 = (int64_t) 4 == test_split_res_12971;
+        bool dim_match_25993 = (int64_t) 4 == test_split_res_12809;
         
         // ./test_operations.fut:17:24-47
         
-        bool empty_or_match_cert_26927;
+        bool empty_or_match_cert_25994;
         
-        if (!dim_match_26926) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12971, "] cannot match shape of type \"[", (long long) (int64_t) 4, "]i64\".", "-> #0  ./test_operations.fut:17:24-47\n"));
+        if (!dim_match_25993) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12809, "] cannot match shape of type \"[", (long long) (int64_t) 4, "]i64\".", "-> #0  ./test_operations.fut:17:24-47\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:17:8-61
         
-        bool defunc_0_reduce_res_26929;
-        bool redout_28055 = 1;
+        bool defunc_0_reduce_res_25996;
+        bool redout_27102 = 1;
         
-        for (int64_t i_28056 = 0; i_28056 < (int64_t) 4; i_28056++) {
-            int64_t eta_p_26930 = ((int64_t *) ext_mem_28632.mem)[i_28056];
-            int64_t eta_p_26931 = ((int64_t *) mem_28634.mem)[i_28056];
+        for (int64_t i_27103 = 0; i_27103 < (int64_t) 4; i_27103++) {
+            int64_t eta_p_25997 = ((int64_t *) ext_mem_27682.mem)[i_27103];
+            int64_t eta_p_25998 = ((int64_t *) mem_27684.mem)[i_27103];
             
             // ./test_operations.fut:17:18-22
             
-            bool defunc_0_f_res_26932 = eta_p_26930 == eta_p_26931;
+            bool defunc_0_f_res_25999 = eta_p_25997 == eta_p_25998;
             
             // ./test_operations.fut:17:8-61
             
-            bool x_26935 = defunc_0_f_res_26932 && redout_28055;
-            bool redout_tmp_29105 = x_26935;
+            bool x_26002 = defunc_0_f_res_25999 && redout_27102;
+            bool redout_tmp_28149 = x_26002;
             
-            redout_28055 = redout_tmp_29105;
+            redout_27102 = redout_tmp_28149;
         }
-        defunc_0_reduce_res_26929 = redout_28055;
-        cond_13002 = defunc_0_reduce_res_26929;
+        defunc_0_reduce_res_25996 = redout_27102;
+        cond_12840 = defunc_0_reduce_res_25996;
     } else {
-        cond_13002 = 0;
+        cond_12840 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28632, "ext_mem_28632") != 0)
+    if (memblock_unref(ctx, &ext_mem_27682, "ext_mem_27682") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28634, "mem_28634") != 0)
+    if (memblock_unref(ctx, &mem_27684, "mem_27684") != 0)
         return 1;
     // ./test_operations.fut:18:13-62
-    if (memblock_alloc(ctx, &mem_28635, (int64_t) 32, "mem_28635")) {
+    if (memblock_alloc(ctx, &mem_27685, (int64_t) 32, "mem_27685")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:18:13-62
     
-    struct memblock static_array_29106 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29252, 0, "static_array_29106"};
+    struct memblock static_array_28150 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28294, 0, "static_array_28150"};
     
     // ./test_operations.fut:18:13-62
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28635.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29106.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27685.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28150.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
     // ./test_operations.fut:16:5-19:63
     
-    bool cond_13012;
+    bool cond_12850;
     
-    if (cond_13002) {
+    if (cond_12840) {
         // ./test_operations.fut:18:24-45
         
-        bool dim_match_26941 = (int64_t) 4 == test_split_res_12971;
+        bool dim_match_26007 = (int64_t) 4 == test_split_res_12809;
         
         // ./test_operations.fut:18:24-45
         
-        bool empty_or_match_cert_26942;
+        bool empty_or_match_cert_26008;
         
-        if (!dim_match_26941) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12971, "] cannot match shape of type \"[", (long long) (int64_t) 4, "]i64\".", "-> #0  ./test_operations.fut:18:24-45\n"));
+        if (!dim_match_26007) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12809, "] cannot match shape of type \"[", (long long) (int64_t) 4, "]i64\".", "-> #0  ./test_operations.fut:18:24-45\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:18:8-62
         
-        bool defunc_0_reduce_res_26944;
-        bool redout_28057 = 1;
+        bool defunc_0_reduce_res_26010;
+        bool redout_27104 = 1;
         
-        for (int64_t i_28058 = 0; i_28058 < (int64_t) 4; i_28058++) {
-            int64_t eta_p_26945 = ((int64_t *) ext_mem_28631.mem)[i_28058];
-            int64_t eta_p_26946 = ((int64_t *) mem_28635.mem)[i_28058];
+        for (int64_t i_27105 = 0; i_27105 < (int64_t) 4; i_27105++) {
+            int64_t eta_p_26011 = ((int64_t *) ext_mem_27681.mem)[i_27105];
+            int64_t eta_p_26012 = ((int64_t *) mem_27685.mem)[i_27105];
             
             // ./test_operations.fut:18:18-22
             
-            bool defunc_0_f_res_26947 = eta_p_26945 == eta_p_26946;
+            bool defunc_0_f_res_26013 = eta_p_26011 == eta_p_26012;
             
             // ./test_operations.fut:18:8-62
             
-            bool x_26950 = defunc_0_f_res_26947 && redout_28057;
-            bool redout_tmp_29107 = x_26950;
+            bool x_26016 = defunc_0_f_res_26013 && redout_27104;
+            bool redout_tmp_28151 = x_26016;
             
-            redout_28057 = redout_tmp_29107;
+            redout_27104 = redout_tmp_28151;
         }
-        defunc_0_reduce_res_26944 = redout_28057;
-        cond_13012 = defunc_0_reduce_res_26944;
+        defunc_0_reduce_res_26010 = redout_27104;
+        cond_12850 = defunc_0_reduce_res_26010;
     } else {
-        cond_13012 = 0;
+        cond_12850 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28631, "ext_mem_28631") != 0)
+    if (memblock_unref(ctx, &ext_mem_27681, "ext_mem_27681") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28635, "mem_28635") != 0)
+    if (memblock_unref(ctx, &mem_27685, "mem_27685") != 0)
         return 1;
     // ./test_operations.fut:19:13-62
-    if (memblock_alloc(ctx, &mem_28636, (int64_t) 32, "mem_28636")) {
+    if (memblock_alloc(ctx, &mem_27686, (int64_t) 32, "mem_27686")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:19:13-62
     
-    struct memblock static_array_29108 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29253, 0, "static_array_29108"};
+    struct memblock static_array_28152 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28295, 0, "static_array_28152"};
     
     // ./test_operations.fut:19:13-62
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28636.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29108.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27686.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28152.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
     // ./test_operations.fut:16:5-19:63
     
-    bool subtrees_ok_13022;
+    bool subtrees_ok_12860;
     
-    if (cond_13012) {
+    if (cond_12850) {
         // ./test_operations.fut:19:24-45
         
-        bool dim_match_26956 = (int64_t) 4 == test_split_res_12971;
+        bool dim_match_26021 = (int64_t) 4 == test_split_res_12809;
         
         // ./test_operations.fut:19:24-45
         
-        bool empty_or_match_cert_26957;
+        bool empty_or_match_cert_26022;
         
-        if (!dim_match_26956) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12971, "] cannot match shape of type \"[", (long long) (int64_t) 4, "]i64\".", "-> #0  ./test_operations.fut:19:24-45\n"));
+        if (!dim_match_26021) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12809, "] cannot match shape of type \"[", (long long) (int64_t) 4, "]i64\".", "-> #0  ./test_operations.fut:19:24-45\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:19:8-62
         
-        bool defunc_0_reduce_res_26959;
-        bool redout_28059 = 1;
+        bool defunc_0_reduce_res_26024;
+        bool redout_27106 = 1;
         
-        for (int64_t i_28060 = 0; i_28060 < (int64_t) 4; i_28060++) {
-            int64_t eta_p_26960 = ((int64_t *) ext_mem_28630.mem)[i_28060];
-            int64_t eta_p_26961 = ((int64_t *) mem_28636.mem)[i_28060];
+        for (int64_t i_27107 = 0; i_27107 < (int64_t) 4; i_27107++) {
+            int64_t eta_p_26025 = ((int64_t *) ext_mem_27680.mem)[i_27107];
+            int64_t eta_p_26026 = ((int64_t *) mem_27686.mem)[i_27107];
             
             // ./test_operations.fut:19:18-22
             
-            bool defunc_0_f_res_26962 = eta_p_26960 == eta_p_26961;
+            bool defunc_0_f_res_26027 = eta_p_26025 == eta_p_26026;
             
             // ./test_operations.fut:19:8-62
             
-            bool x_26965 = defunc_0_f_res_26962 && redout_28059;
-            bool redout_tmp_29109 = x_26965;
+            bool x_26030 = defunc_0_f_res_26027 && redout_27106;
+            bool redout_tmp_28153 = x_26030;
             
-            redout_28059 = redout_tmp_29109;
+            redout_27106 = redout_tmp_28153;
         }
-        defunc_0_reduce_res_26959 = redout_28059;
-        subtrees_ok_13022 = defunc_0_reduce_res_26959;
+        defunc_0_reduce_res_26024 = redout_27106;
+        subtrees_ok_12860 = defunc_0_reduce_res_26024;
     } else {
-        subtrees_ok_13022 = 0;
+        subtrees_ok_12860 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28630, "ext_mem_28630") != 0)
+    if (memblock_unref(ctx, &ext_mem_27680, "ext_mem_27680") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28636, "mem_28636") != 0)
+    if (memblock_unref(ctx, &mem_27686, "mem_27686") != 0)
         return 1;
     // ./test_operations.fut:22:5-23:62
     
-    bool cond_13035 = test_split_res_12970 == (int64_t) 1;
+    bool cond_12873 = test_split_res_12808 == (int64_t) 1;
     
     // ./test_operations.fut:22:5-23:62
     
-    bool offsets_ok_13036;
+    bool offsets_ok_12874;
     
-    if (cond_13035) {
+    if (cond_12873) {
         // ./test_operations.fut:23:24-53
         
-        bool dim_match_26969 = (int64_t) 1 == test_split_res_12970;
+        bool dim_match_26033 = (int64_t) 1 == test_split_res_12808;
         
         // ./test_operations.fut:23:24-53
         
-        bool empty_or_match_cert_26970;
+        bool empty_or_match_cert_26034;
         
-        if (!dim_match_26969) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12970, "] cannot match shape of type \"[", (long long) (int64_t) 1, "]i64\".", "-> #0  ./test_operations.fut:23:24-53\n"));
+        if (!dim_match_26033) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12808, "] cannot match shape of type \"[", (long long) (int64_t) 1, "]i64\".", "-> #0  ./test_operations.fut:23:24-53\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:23:13-61
-        if (memblock_alloc(ctx, &mem_28637, (int64_t) 8, "mem_28637")) {
+        if (memblock_alloc(ctx, &mem_27687, (int64_t) 8, "mem_27687")) {
             err = 1;
             goto cleanup;
         }
         // ./test_operations.fut:23:13-61
         
-        struct memblock static_array_29110 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29254, 0, "static_array_29110"};
+        struct memblock static_array_28154 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28296, 0, "static_array_28154"};
         
         // ./test_operations.fut:23:13-61
-        lmad_copy_8b(ctx, 1, (uint64_t *) mem_28637.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29110.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 1});
+        lmad_copy_8b(ctx, 1, (uint64_t *) mem_27687.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28154.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 1});
         
-        int64_t eta_p_26972 = ((int64_t *) ext_mem_28633.mem)[(int64_t) 0];
-        int64_t eta_p_26973 = ((int64_t *) mem_28637.mem)[(int64_t) 0];
+        int64_t eta_p_26036 = ((int64_t *) ext_mem_27683.mem)[(int64_t) 0];
+        int64_t eta_p_26037 = ((int64_t *) mem_27687.mem)[(int64_t) 0];
         
-        if (memblock_unref(ctx, &mem_28637, "mem_28637") != 0)
+        if (memblock_unref(ctx, &mem_27687, "mem_27687") != 0)
             return 1;
         // ./test_operations.fut:23:18-22
         
-        bool defunc_0_f_res_26974 = eta_p_26972 == eta_p_26973;
+        bool defunc_0_f_res_26038 = eta_p_26036 == eta_p_26037;
         
-        offsets_ok_13036 = defunc_0_f_res_26974;
+        offsets_ok_12874 = defunc_0_f_res_26038;
     } else {
-        offsets_ok_13036 = 0;
+        offsets_ok_12874 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28633, "ext_mem_28633") != 0)
+    if (memblock_unref(ctx, &ext_mem_27683, "ext_mem_27683") != 0)
         return 1;
     // ./test_operations.fut:27:5-30:52
     
-    bool cond_13055 = test_split_res_12972 == (int64_t) 2;
+    bool cond_12893 = test_split_res_12810 == (int64_t) 2;
     
     // ./test_operations.fut:28:13-50
-    if (memblock_alloc(ctx, &mem_28638, (int64_t) 16, "mem_28638")) {
+    if (memblock_alloc(ctx, &mem_27688, (int64_t) 16, "mem_27688")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:28:13-50
     
-    struct memblock static_array_29111 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29255, 0, "static_array_29111"};
+    struct memblock static_array_28155 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28297, 0, "static_array_28155"};
     
     // ./test_operations.fut:28:13-50
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28638.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29111.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27688.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28155.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
     // ./test_operations.fut:27:5-30:52
     
-    bool cond_13056;
+    bool cond_12894;
     
-    if (cond_13055) {
+    if (cond_12893) {
         // ./test_operations.fut:28:24-42
         
-        bool dim_match_26977 = (int64_t) 2 == test_split_res_12972;
+        bool dim_match_26041 = (int64_t) 2 == test_split_res_12810;
         
         // ./test_operations.fut:28:24-42
         
-        bool empty_or_match_cert_26978;
+        bool empty_or_match_cert_26042;
         
-        if (!dim_match_26977) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12972, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:28:24-42\n"));
+        if (!dim_match_26041) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12810, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:28:24-42\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:28:8-50
         
-        bool defunc_0_reduce_res_26980;
-        bool redout_28061 = 1;
+        bool defunc_0_reduce_res_26044;
+        bool redout_27108 = 1;
         
-        for (int64_t i_28062 = 0; i_28062 < (int64_t) 2; i_28062++) {
-            int64_t eta_p_26981 = ((int64_t *) ext_mem_28629.mem)[i_28062];
-            int64_t eta_p_26982 = ((int64_t *) mem_28638.mem)[i_28062];
+        for (int64_t i_27109 = 0; i_27109 < (int64_t) 2; i_27109++) {
+            int64_t eta_p_26045 = ((int64_t *) ext_mem_27679.mem)[i_27109];
+            int64_t eta_p_26046 = ((int64_t *) mem_27688.mem)[i_27109];
             
             // ./test_operations.fut:28:18-22
             
-            bool defunc_0_f_res_26983 = eta_p_26981 == eta_p_26982;
+            bool defunc_0_f_res_26047 = eta_p_26045 == eta_p_26046;
             
             // ./test_operations.fut:28:8-50
             
-            bool x_26986 = defunc_0_f_res_26983 && redout_28061;
-            bool redout_tmp_29112 = x_26986;
+            bool x_26050 = defunc_0_f_res_26047 && redout_27108;
+            bool redout_tmp_28156 = x_26050;
             
-            redout_28061 = redout_tmp_29112;
+            redout_27108 = redout_tmp_28156;
         }
-        defunc_0_reduce_res_26980 = redout_28061;
-        cond_13056 = defunc_0_reduce_res_26980;
+        defunc_0_reduce_res_26044 = redout_27108;
+        cond_12894 = defunc_0_reduce_res_26044;
     } else {
-        cond_13056 = 0;
+        cond_12894 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28629, "ext_mem_28629") != 0)
+    if (memblock_unref(ctx, &ext_mem_27679, "ext_mem_27679") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28638, "mem_28638") != 0)
+    if (memblock_unref(ctx, &mem_27688, "mem_27688") != 0)
         return 1;
     // ./test_operations.fut:29:13-51
-    if (memblock_alloc(ctx, &mem_28639, (int64_t) 16, "mem_28639")) {
+    if (memblock_alloc(ctx, &mem_27689, (int64_t) 16, "mem_27689")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:29:13-51
     
-    struct memblock static_array_29113 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29256, 0, "static_array_29113"};
+    struct memblock static_array_28157 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28298, 0, "static_array_28157"};
     
     // ./test_operations.fut:29:13-51
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28639.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29113.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27689.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28157.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
     // ./test_operations.fut:27:5-30:52
     
-    bool cond_13066;
+    bool cond_12904;
     
-    if (cond_13056) {
+    if (cond_12894) {
         // ./test_operations.fut:29:24-40
         
-        bool dim_match_26992 = (int64_t) 2 == test_split_res_12972;
+        bool dim_match_26055 = (int64_t) 2 == test_split_res_12810;
         
         // ./test_operations.fut:29:24-40
         
-        bool empty_or_match_cert_26993;
+        bool empty_or_match_cert_26056;
         
-        if (!dim_match_26992) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12972, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:29:24-40\n"));
+        if (!dim_match_26055) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12810, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:29:24-40\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:29:8-51
         
-        bool defunc_0_reduce_res_26995;
-        bool redout_28063 = 1;
+        bool defunc_0_reduce_res_26058;
+        bool redout_27110 = 1;
         
-        for (int64_t i_28064 = 0; i_28064 < (int64_t) 2; i_28064++) {
-            int64_t eta_p_26996 = ((int64_t *) ext_mem_28628.mem)[i_28064];
-            int64_t eta_p_26997 = ((int64_t *) mem_28639.mem)[i_28064];
+        for (int64_t i_27111 = 0; i_27111 < (int64_t) 2; i_27111++) {
+            int64_t eta_p_26059 = ((int64_t *) ext_mem_27678.mem)[i_27111];
+            int64_t eta_p_26060 = ((int64_t *) mem_27689.mem)[i_27111];
             
             // ./test_operations.fut:29:18-22
             
-            bool defunc_0_f_res_26998 = eta_p_26996 == eta_p_26997;
+            bool defunc_0_f_res_26061 = eta_p_26059 == eta_p_26060;
             
             // ./test_operations.fut:29:8-51
             
-            bool x_27001 = defunc_0_f_res_26998 && redout_28063;
-            bool redout_tmp_29114 = x_27001;
+            bool x_26064 = defunc_0_f_res_26061 && redout_27110;
+            bool redout_tmp_28158 = x_26064;
             
-            redout_28063 = redout_tmp_29114;
+            redout_27110 = redout_tmp_28158;
         }
-        defunc_0_reduce_res_26995 = redout_28063;
-        cond_13066 = defunc_0_reduce_res_26995;
+        defunc_0_reduce_res_26058 = redout_27110;
+        cond_12904 = defunc_0_reduce_res_26058;
     } else {
-        cond_13066 = 0;
+        cond_12904 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28628, "ext_mem_28628") != 0)
+    if (memblock_unref(ctx, &ext_mem_27678, "ext_mem_27678") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28639, "mem_28639") != 0)
+    if (memblock_unref(ctx, &mem_27689, "mem_27689") != 0)
         return 1;
     // ./test_operations.fut:30:13-51
-    if (memblock_alloc(ctx, &mem_28640, (int64_t) 16, "mem_28640")) {
+    if (memblock_alloc(ctx, &mem_27690, (int64_t) 16, "mem_27690")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:30:13-51
     
-    struct memblock static_array_29115 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29257, 0, "static_array_29115"};
+    struct memblock static_array_28159 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28299, 0, "static_array_28159"};
     
     // ./test_operations.fut:30:13-51
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28640.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29115.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27690.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28159.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
     // ./test_operations.fut:27:5-30:52
     
-    bool remainder_ok_13076;
+    bool remainder_ok_12914;
     
-    if (cond_13066) {
+    if (cond_12904) {
         // ./test_operations.fut:30:24-40
         
-        bool dim_match_27007 = (int64_t) 2 == test_split_res_12972;
+        bool dim_match_26069 = (int64_t) 2 == test_split_res_12810;
         
         // ./test_operations.fut:30:24-40
         
-        bool empty_or_match_cert_27008;
+        bool empty_or_match_cert_26070;
         
-        if (!dim_match_27007) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12972, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:30:24-40\n"));
+        if (!dim_match_26069) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_res_12810, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:30:24-40\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:30:8-51
         
-        bool defunc_0_reduce_res_27010;
-        bool redout_28065 = 1;
+        bool defunc_0_reduce_res_26072;
+        bool redout_27112 = 1;
         
-        for (int64_t i_28066 = 0; i_28066 < (int64_t) 2; i_28066++) {
-            int64_t eta_p_27011 = ((int64_t *) ext_mem_28627.mem)[i_28066];
-            int64_t eta_p_27012 = ((int64_t *) mem_28640.mem)[i_28066];
+        for (int64_t i_27113 = 0; i_27113 < (int64_t) 2; i_27113++) {
+            int64_t eta_p_26073 = ((int64_t *) ext_mem_27677.mem)[i_27113];
+            int64_t eta_p_26074 = ((int64_t *) mem_27690.mem)[i_27113];
             
             // ./test_operations.fut:30:18-22
             
-            bool defunc_0_f_res_27013 = eta_p_27011 == eta_p_27012;
+            bool defunc_0_f_res_26075 = eta_p_26073 == eta_p_26074;
             
             // ./test_operations.fut:30:8-51
             
-            bool x_27016 = defunc_0_f_res_27013 && redout_28065;
-            bool redout_tmp_29116 = x_27016;
+            bool x_26078 = defunc_0_f_res_26075 && redout_27112;
+            bool redout_tmp_28160 = x_26078;
             
-            redout_28065 = redout_tmp_29116;
+            redout_27112 = redout_tmp_28160;
         }
-        defunc_0_reduce_res_27010 = redout_28065;
-        remainder_ok_13076 = defunc_0_reduce_res_27010;
+        defunc_0_reduce_res_26072 = redout_27112;
+        remainder_ok_12914 = defunc_0_reduce_res_26072;
     } else {
-        remainder_ok_13076 = 0;
+        remainder_ok_12914 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28627, "ext_mem_28627") != 0)
+    if (memblock_unref(ctx, &ext_mem_27677, "ext_mem_27677") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28640, "mem_28640") != 0)
+    if (memblock_unref(ctx, &mem_27690, "mem_27690") != 0)
         return 1;
     
-    bool x_19469 = subtrees_ok_13022 && offsets_ok_13036;
+    bool x_19121 = subtrees_ok_12860 && offsets_ok_12874;
     
-    x_19472 = remainder_ok_13076 && x_19469;
+    x_19124 = remainder_ok_12914 && x_19121;
     // ./test_operations.fut:55:16-57
-    if (memblock_alloc(ctx, &mem_28641, (int64_t) 6, "mem_28641")) {
+    if (memblock_alloc(ctx, &mem_27691, (int64_t) 6, "mem_27691")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:55:16-57
     
-    struct memblock static_array_29117 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29258, 0, "static_array_29117"};
+    struct memblock static_array_28161 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28300, 0, "static_array_28161"};
     
     // ./test_operations.fut:55:16-57
-    lmad_copy_1b(ctx, 1, (uint8_t *) mem_28641.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_29117.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_1b(ctx, 1, (uint8_t *) mem_27691.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_28161.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:49:7-56:50
     
-    int64_t test_split_at_leaf_res_13102;
-    int64_t test_split_at_leaf_res_13103;
-    int64_t test_split_at_leaf_res_13104;
+    int64_t test_split_at_leaf_res_12940;
+    int64_t test_split_at_leaf_res_12941;
+    int64_t test_split_at_leaf_res_12942;
     
-    if (futrts_split_7593(ctx, &ext_mem_28648, &ext_mem_28647, &ext_mem_28646, &ext_mem_28645, &ext_mem_28644, &ext_mem_28643, &ext_mem_28642, &test_split_at_leaf_res_13102, &test_split_at_leaf_res_13103, &test_split_at_leaf_res_13104, mem_28623, mem_28624, mem_28625, mem_28641, (int64_t) 6) != 0) {
+    if (futrts_split_7585(ctx, &ext_mem_27698, &ext_mem_27697, &ext_mem_27696, &ext_mem_27695, &ext_mem_27694, &ext_mem_27693, &ext_mem_27692, &test_split_at_leaf_res_12940, &test_split_at_leaf_res_12941, &test_split_at_leaf_res_12942, mem_27673, mem_27674, mem_27675, mem_27691, (int64_t) 6) != 0) {
         err = 1;
         goto cleanup;
     }
-    if (memblock_unref(ctx, &mem_28641, "mem_28641") != 0)
+    if (memblock_unref(ctx, &mem_27691, "mem_27691") != 0)
         return 1;
     // ./test_operations.fut:61:5-62:53
     
-    bool cond_13139 = test_split_at_leaf_res_13103 == (int64_t) 1;
+    bool cond_12977 = test_split_at_leaf_res_12941 == (int64_t) 1;
     
     // ./test_operations.fut:61:5-62:53
     
-    bool subtrees_ok_13140;
+    bool subtrees_ok_12978;
     
-    if (cond_13139) {
+    if (cond_12977) {
         // ./test_operations.fut:62:24-47
         
-        bool dim_match_27020 = (int64_t) 1 == test_split_at_leaf_res_13103;
+        bool dim_match_26081 = (int64_t) 1 == test_split_at_leaf_res_12941;
         
         // ./test_operations.fut:62:24-47
         
-        bool empty_or_match_cert_27021;
+        bool empty_or_match_cert_26082;
         
-        if (!dim_match_27020) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_at_leaf_res_13103, "] cannot match shape of type \"[", (long long) (int64_t) 1, "]i64\".", "-> #0  ./test_operations.fut:62:24-47\n"));
+        if (!dim_match_26081) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_at_leaf_res_12941, "] cannot match shape of type \"[", (long long) (int64_t) 1, "]i64\".", "-> #0  ./test_operations.fut:62:24-47\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         
-        int64_t eta_p_27022 = ((int64_t *) ext_mem_28647.mem)[(int64_t) 0];
+        int64_t eta_p_26083 = ((int64_t *) ext_mem_27697.mem)[(int64_t) 0];
         
         // ./test_operations.fut:62:18-22
         
-        bool defunc_0_f_res_27023 = eta_p_27022 == (int64_t) 2;
+        bool defunc_0_f_res_26084 = eta_p_26083 == (int64_t) 2;
         
-        subtrees_ok_13140 = defunc_0_f_res_27023;
+        subtrees_ok_12978 = defunc_0_f_res_26084;
     } else {
-        subtrees_ok_13140 = 0;
+        subtrees_ok_12978 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28647, "ext_mem_28647") != 0)
+    if (memblock_unref(ctx, &ext_mem_27697, "ext_mem_27697") != 0)
         return 1;
     // ./test_operations.fut:64:38-42
     
-    bool remainder_ok_13153 = test_split_at_leaf_res_13104 == (int64_t) 5;
+    bool remainder_ok_12991 = test_split_at_leaf_res_12942 == (int64_t) 5;
     
-    x_19475 = subtrees_ok_13140 && remainder_ok_13153;
+    x_19127 = subtrees_ok_12978 && remainder_ok_12991;
     // ./test_operations.fut:74:16-56
-    if (memblock_alloc(ctx, &mem_28649, (int64_t) 6, "mem_28649")) {
+    if (memblock_alloc(ctx, &mem_27699, (int64_t) 6, "mem_27699")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:74:16-56
     
-    struct memblock static_array_29118 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29259, 0, "static_array_29118"};
+    struct memblock static_array_28162 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28301, 0, "static_array_28162"};
     
     // ./test_operations.fut:74:16-56
-    lmad_copy_1b(ctx, 1, (uint8_t *) mem_28649.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_29118.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_1b(ctx, 1, (uint8_t *) mem_27699.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_28162.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:68:7-75:50
     
-    int64_t test_split_multiple_res_13169;
-    int64_t test_split_multiple_res_13170;
-    int64_t test_split_multiple_res_13171;
+    int64_t test_split_multiple_res_13007;
+    int64_t test_split_multiple_res_13008;
+    int64_t test_split_multiple_res_13009;
     
-    if (futrts_split_7593(ctx, &ext_mem_28656, &ext_mem_28655, &ext_mem_28654, &ext_mem_28653, &ext_mem_28652, &ext_mem_28651, &ext_mem_28650, &test_split_multiple_res_13169, &test_split_multiple_res_13170, &test_split_multiple_res_13171, mem_28623, mem_28624, mem_28625, mem_28649, (int64_t) 6) != 0) {
+    if (futrts_split_7585(ctx, &ext_mem_27706, &ext_mem_27705, &ext_mem_27704, &ext_mem_27703, &ext_mem_27702, &ext_mem_27701, &ext_mem_27700, &test_split_multiple_res_13007, &test_split_multiple_res_13008, &test_split_multiple_res_13009, mem_27673, mem_27674, mem_27675, mem_27699, (int64_t) 6) != 0) {
         err = 1;
         goto cleanup;
     }
-    if (memblock_unref(ctx, &mem_28649, "mem_28649") != 0)
+    if (memblock_unref(ctx, &mem_27699, "mem_27699") != 0)
         return 1;
     // ./test_operations.fut:79:42-46
     
-    bool subtrees_ok_13206 = test_split_multiple_res_13170 == (int64_t) 5;
+    bool subtrees_ok_13044 = test_split_multiple_res_13008 == (int64_t) 5;
     
     // ./test_operations.fut:82:5-83:65
     
-    bool cond_13210 = test_split_multiple_res_13169 == (int64_t) 2;
+    bool cond_13048 = test_split_multiple_res_13007 == (int64_t) 2;
     
     // ./test_operations.fut:83:13-64
-    if (memblock_alloc(ctx, &mem_28657, (int64_t) 16, "mem_28657")) {
+    if (memblock_alloc(ctx, &mem_27707, (int64_t) 16, "mem_27707")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:83:13-64
     
-    struct memblock static_array_29119 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29260, 0, "static_array_29119"};
+    struct memblock static_array_28163 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28302, 0, "static_array_28163"};
     
     // ./test_operations.fut:83:13-64
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28657.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29119.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27707.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28163.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
     // ./test_operations.fut:82:5-83:65
     
-    bool offsets_ok_13211;
+    bool offsets_ok_13049;
     
-    if (cond_13210) {
+    if (cond_13048) {
         // ./test_operations.fut:83:24-53
         
-        bool dim_match_27026 = (int64_t) 2 == test_split_multiple_res_13169;
+        bool dim_match_26087 = (int64_t) 2 == test_split_multiple_res_13007;
         
         // ./test_operations.fut:83:24-53
         
-        bool empty_or_match_cert_27027;
+        bool empty_or_match_cert_26088;
         
-        if (!dim_match_27026) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_multiple_res_13169, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:83:24-53\n"));
+        if (!dim_match_26087) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_multiple_res_13007, "] cannot match shape of type \"[", (long long) (int64_t) 2, "]i64\".", "-> #0  ./test_operations.fut:83:24-53\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:83:8-64
         
-        bool defunc_0_reduce_res_27029;
-        bool redout_28067 = 1;
+        bool defunc_0_reduce_res_26090;
+        bool redout_27114 = 1;
         
-        for (int64_t i_28068 = 0; i_28068 < (int64_t) 2; i_28068++) {
-            int64_t eta_p_27030 = ((int64_t *) ext_mem_28656.mem)[i_28068];
-            int64_t eta_p_27031 = ((int64_t *) mem_28657.mem)[i_28068];
+        for (int64_t i_27115 = 0; i_27115 < (int64_t) 2; i_27115++) {
+            int64_t eta_p_26091 = ((int64_t *) ext_mem_27706.mem)[i_27115];
+            int64_t eta_p_26092 = ((int64_t *) mem_27707.mem)[i_27115];
             
             // ./test_operations.fut:83:18-22
             
-            bool defunc_0_f_res_27032 = eta_p_27030 == eta_p_27031;
+            bool defunc_0_f_res_26093 = eta_p_26091 == eta_p_26092;
             
             // ./test_operations.fut:83:8-64
             
-            bool x_27035 = defunc_0_f_res_27032 && redout_28067;
-            bool redout_tmp_29120 = x_27035;
+            bool x_26096 = defunc_0_f_res_26093 && redout_27114;
+            bool redout_tmp_28164 = x_26096;
             
-            redout_28067 = redout_tmp_29120;
+            redout_27114 = redout_tmp_28164;
         }
-        defunc_0_reduce_res_27029 = redout_28067;
-        offsets_ok_13211 = defunc_0_reduce_res_27029;
+        defunc_0_reduce_res_26090 = redout_27114;
+        offsets_ok_13049 = defunc_0_reduce_res_26090;
     } else {
-        offsets_ok_13211 = 0;
+        offsets_ok_13049 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28656, "ext_mem_28656") != 0)
+    if (memblock_unref(ctx, &ext_mem_27706, "ext_mem_27706") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28657, "mem_28657") != 0)
+    if (memblock_unref(ctx, &mem_27707, "mem_27707") != 0)
         return 1;
     // ./test_operations.fut:86:5-87:48
     
-    bool cond_13224 = test_split_multiple_res_13171 == (int64_t) 1;
+    bool cond_13062 = test_split_multiple_res_13009 == (int64_t) 1;
     
     // ./test_operations.fut:86:5-87:48
     
-    bool remainder_ok_13225;
+    bool remainder_ok_13063;
     
-    if (cond_13224) {
+    if (cond_13062) {
         // ./test_operations.fut:87:24-42
         
-        bool dim_match_27039 = (int64_t) 1 == test_split_multiple_res_13171;
+        bool dim_match_26099 = (int64_t) 1 == test_split_multiple_res_13009;
         
         // ./test_operations.fut:87:24-42
         
-        bool empty_or_match_cert_27040;
+        bool empty_or_match_cert_26100;
         
-        if (!dim_match_27039) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_multiple_res_13171, "] cannot match shape of type \"[", (long long) (int64_t) 1, "]i64\".", "-> #0  ./test_operations.fut:87:24-42\n"));
+        if (!dim_match_26099) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_split_multiple_res_13009, "] cannot match shape of type \"[", (long long) (int64_t) 1, "]i64\".", "-> #0  ./test_operations.fut:87:24-42\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         
-        int64_t eta_p_27041 = ((int64_t *) ext_mem_28652.mem)[(int64_t) 0];
+        int64_t eta_p_26101 = ((int64_t *) ext_mem_27702.mem)[(int64_t) 0];
         
         // ./test_operations.fut:87:18-22
         
-        bool defunc_0_f_res_27042 = eta_p_27041 == (int64_t) 0;
+        bool defunc_0_f_res_26102 = eta_p_26101 == (int64_t) 0;
         
-        remainder_ok_13225 = defunc_0_f_res_27042;
+        remainder_ok_13063 = defunc_0_f_res_26102;
     } else {
-        remainder_ok_13225 = 0;
+        remainder_ok_13063 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28652, "ext_mem_28652") != 0)
+    if (memblock_unref(ctx, &ext_mem_27702, "ext_mem_27702") != 0)
         return 1;
     
-    bool x_19478 = subtrees_ok_13206 && offsets_ok_13211;
+    bool x_19130 = subtrees_ok_13044 && offsets_ok_13049;
     
-    x_19481 = remainder_ok_13225 && x_19478;
+    x_19133 = remainder_ok_13063 && x_19130;
     // ./test_operations.fut:96:16-58
-    if (memblock_alloc(ctx, &mem_28658, (int64_t) 6, "mem_28658")) {
+    if (memblock_alloc(ctx, &mem_27708, (int64_t) 6, "mem_27708")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:96:16-58
     
-    struct memblock static_array_29121 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29261, 0, "static_array_29121"};
+    struct memblock static_array_28165 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28303, 0, "static_array_28165"};
     
     // ./test_operations.fut:96:16-58
-    lmad_copy_1b(ctx, 1, (uint8_t *) mem_28658.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_29121.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_1b(ctx, 1, (uint8_t *) mem_27708.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_28165.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:91:7-97:50
     
-    int64_t test_split_none_res_13251;
-    int64_t test_split_none_res_13252;
-    int64_t test_split_none_res_13253;
+    int64_t test_split_none_res_13089;
+    int64_t test_split_none_res_13090;
+    int64_t test_split_none_res_13091;
     
-    if (futrts_split_7593(ctx, &ext_mem_28665, &ext_mem_28664, &ext_mem_28663, &ext_mem_28662, &ext_mem_28661, &ext_mem_28660, &ext_mem_28659, &test_split_none_res_13251, &test_split_none_res_13252, &test_split_none_res_13253, mem_28623, mem_28624, mem_28625, mem_28658, (int64_t) 6) != 0) {
+    if (futrts_split_7585(ctx, &ext_mem_27715, &ext_mem_27714, &ext_mem_27713, &ext_mem_27712, &ext_mem_27711, &ext_mem_27710, &ext_mem_27709, &test_split_none_res_13089, &test_split_none_res_13090, &test_split_none_res_13091, mem_27673, mem_27674, mem_27675, mem_27708, (int64_t) 6) != 0) {
         err = 1;
         goto cleanup;
     }
-    if (memblock_unref(ctx, &mem_28658, "mem_28658") != 0)
+    if (memblock_unref(ctx, &mem_27708, "mem_27708") != 0)
         return 1;
     // ./test_operations.fut:101:42-46
     
-    bool subtrees_ok_13288 = test_split_none_res_13252 == (int64_t) 0;
+    bool subtrees_ok_13126 = test_split_none_res_13090 == (int64_t) 0;
     
     // ./test_operations.fut:102:47-51
     
-    bool offsets_ok_13292 = test_split_none_res_13251 == (int64_t) 0;
+    bool offsets_ok_13130 = test_split_none_res_13089 == (int64_t) 0;
     
     // ./test_operations.fut:104:38-42
     
-    bool remainder_ok_13296 = test_split_none_res_13253 == (int64_t) 6;
-    bool x_19484 = subtrees_ok_13288 && offsets_ok_13292;
+    bool remainder_ok_13134 = test_split_none_res_13091 == (int64_t) 6;
+    bool x_19136 = subtrees_ok_13126 && offsets_ok_13130;
     
-    x_19487 = remainder_ok_13296 && x_19484;
+    x_19139 = remainder_ok_13134 && x_19136;
     // ./test_operations.fut:114:14-53
-    if (memblock_alloc(ctx, &mem_28666, (int64_t) 6, "mem_28666")) {
+    if (memblock_alloc(ctx, &mem_27716, (int64_t) 6, "mem_27716")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:114:14-53
     
-    struct memblock static_array_29122 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29262, 0, "static_array_29122"};
+    struct memblock static_array_28166 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28304, 0, "static_array_28166"};
     
     // ./test_operations.fut:114:14-53
-    lmad_copy_1b(ctx, 1, (uint8_t *) mem_28666.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_29122.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
+    lmad_copy_1b(ctx, 1, (uint8_t *) mem_27716.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) static_array_28166.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 6});
     // ./test_operations.fut:108:7-115:39
     
-    int64_t test_delete_vertices_res_13313;
+    int64_t test_delete_vertices_res_13151;
     
-    if (futrts_deleteVertices_7592(ctx, &ext_mem_28669, &ext_mem_28668, &ext_mem_28667, &test_delete_vertices_res_13313, mem_28623, mem_28624, mem_28625, mem_28666, (int64_t) 6) != 0) {
+    if (futrts_deleteVertices_7584(ctx, &ext_mem_27719, &ext_mem_27718, &ext_mem_27717, &test_delete_vertices_res_13151, mem_27673, mem_27674, mem_27675, mem_27716, (int64_t) 6) != 0) {
         err = 1;
         goto cleanup;
     }
-    if (memblock_unref(ctx, &mem_28623, "mem_28623") != 0)
+    if (memblock_unref(ctx, &mem_27673, "mem_27673") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28624, "mem_28624") != 0)
+    if (memblock_unref(ctx, &mem_27674, "mem_27674") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28625, "mem_28625") != 0)
+    if (memblock_unref(ctx, &mem_27675, "mem_27675") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28666, "mem_28666") != 0)
+    if (memblock_unref(ctx, &mem_27716, "mem_27716") != 0)
         return 1;
     // ./test_operations.fut:118:5-119:54
     
-    bool cond_13330 = test_delete_vertices_res_13313 == (int64_t) 3;
+    bool cond_13168 = test_delete_vertices_res_13151 == (int64_t) 3;
     
     // ./test_operations.fut:119:13-53
-    if (memblock_alloc(ctx, &mem_28670, (int64_t) 24, "mem_28670")) {
+    if (memblock_alloc(ctx, &mem_27720, (int64_t) 24, "mem_27720")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:119:13-53
     
-    struct memblock static_array_29123 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29263, 0, "static_array_29123"};
+    struct memblock static_array_28167 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28305, 0, "static_array_28167"};
     
     // ./test_operations.fut:119:13-53
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28670.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29123.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 3});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27720.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28167.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 3});
     // ./test_operations.fut:118:5-119:54
-    if (cond_13330) {
+    if (cond_13168) {
         // ./test_operations.fut:119:24-42
         
-        bool dim_match_27045 = (int64_t) 3 == test_delete_vertices_res_13313;
+        bool dim_match_26105 = (int64_t) 3 == test_delete_vertices_res_13151;
         
         // ./test_operations.fut:119:24-42
         
-        bool empty_or_match_cert_27046;
+        bool empty_or_match_cert_26106;
         
-        if (!dim_match_27045) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_delete_vertices_res_13313, "] cannot match shape of type \"[", (long long) (int64_t) 3, "]i64\".", "-> #0  ./test_operations.fut:119:24-42\n"));
+        if (!dim_match_26105) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) test_delete_vertices_res_13151, "] cannot match shape of type \"[", (long long) (int64_t) 3, "]i64\".", "-> #0  ./test_operations.fut:119:24-42\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:119:8-53
         
-        bool defunc_0_reduce_res_27048;
-        bool redout_28069 = 1;
+        bool defunc_0_reduce_res_26108;
+        bool redout_27116 = 1;
         
-        for (int64_t i_28070 = 0; i_28070 < (int64_t) 3; i_28070++) {
-            int64_t eta_p_27049 = ((int64_t *) ext_mem_28669.mem)[i_28070];
-            int64_t eta_p_27050 = ((int64_t *) mem_28670.mem)[i_28070];
+        for (int64_t i_27117 = 0; i_27117 < (int64_t) 3; i_27117++) {
+            int64_t eta_p_26109 = ((int64_t *) ext_mem_27719.mem)[i_27117];
+            int64_t eta_p_26110 = ((int64_t *) mem_27720.mem)[i_27117];
             
             // ./test_operations.fut:119:18-22
             
-            bool defunc_0_f_res_27051 = eta_p_27049 == eta_p_27050;
+            bool defunc_0_f_res_26111 = eta_p_26109 == eta_p_26110;
             
             // ./test_operations.fut:119:8-53
             
-            bool x_27054 = defunc_0_f_res_27051 && redout_28069;
-            bool redout_tmp_29124 = x_27054;
+            bool x_26114 = defunc_0_f_res_26111 && redout_27116;
+            bool redout_tmp_28168 = x_26114;
             
-            redout_28069 = redout_tmp_29124;
+            redout_27116 = redout_tmp_28168;
         }
-        defunc_0_reduce_res_27048 = redout_28069;
-        ok_13331 = defunc_0_reduce_res_27048;
+        defunc_0_reduce_res_26108 = redout_27116;
+        ok_13169 = defunc_0_reduce_res_26108;
     } else {
-        ok_13331 = 0;
+        ok_13169 = 0;
     }
-    if (memblock_unref(ctx, &ext_mem_28669, "ext_mem_28669") != 0)
+    if (memblock_unref(ctx, &ext_mem_27719, "ext_mem_27719") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28670, "mem_28670") != 0)
+    if (memblock_unref(ctx, &mem_27720, "mem_27720") != 0)
         return 1;
     // ./test_operations.fut:124:5-128:4
-    if (memblock_alloc(ctx, &mem_28671, (int64_t) 32, "mem_28671")) {
+    if (memblock_alloc(ctx, &mem_27721, (int64_t) 32, "mem_27721")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:124:5-128:4
     
-    struct memblock static_array_29125 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29264, 0, "static_array_29125"};
+    struct memblock static_array_28169 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28306, 0, "static_array_28169"};
     
     // ./test_operations.fut:124:5-128:4
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28671.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29125.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27721.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28169.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
     // ./test_operations.fut:124:5-128:4
-    if (memblock_alloc(ctx, &mem_28672, (int64_t) 32, "mem_28672")) {
-        err = 1;
-        goto cleanup;
-    }
-    // ./test_operations.fut:124:5-128:4
-    
-    struct memblock static_array_29126 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29265, 0, "static_array_29126"};
-    
-    // ./test_operations.fut:124:5-128:4
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28672.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29126.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
-    // ./test_operations.fut:124:5-128:4
-    if (memblock_alloc(ctx, &mem_28673, (int64_t) 32, "mem_28673")) {
+    if (memblock_alloc(ctx, &mem_27722, (int64_t) 32, "mem_27722")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:124:5-128:4
     
-    struct memblock static_array_29127 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29266, 0, "static_array_29127"};
+    struct memblock static_array_28170 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28307, 0, "static_array_28170"};
     
     // ./test_operations.fut:124:5-128:4
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28673.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29127.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27722.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28170.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    // ./test_operations.fut:124:5-128:4
+    if (memblock_alloc(ctx, &mem_27723, (int64_t) 32, "mem_27723")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ./test_operations.fut:124:5-128:4
+    
+    struct memblock static_array_28171 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28308, 0, "static_array_28171"};
+    
+    // ./test_operations.fut:124:5-128:4
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27723.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28171.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
     // ./test_operations.fut:130:5-134:6
-    if (memblock_alloc(ctx, &mem_28674, (int64_t) 40, "mem_28674")) {
+    if (memblock_alloc(ctx, &mem_27724, (int64_t) 40, "mem_27724")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:130:5-134:6
     
-    struct memblock static_array_29128 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29267, 0, "static_array_29128"};
+    struct memblock static_array_28172 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28309, 0, "static_array_28172"};
     
     // ./test_operations.fut:130:5-134:6
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28674.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29128.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 5});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27724.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28172.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 5});
     // ./test_operations.fut:130:5-134:6
-    if (memblock_alloc(ctx, &mem_28675, (int64_t) 40, "mem_28675")) {
-        err = 1;
-        goto cleanup;
-    }
-    // ./test_operations.fut:130:5-134:6
-    
-    struct memblock static_array_29129 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29268, 0, "static_array_29129"};
-    
-    // ./test_operations.fut:130:5-134:6
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28675.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29129.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 5});
-    // ./test_operations.fut:130:5-134:6
-    if (memblock_alloc(ctx, &mem_28676, (int64_t) 40, "mem_28676")) {
+    if (memblock_alloc(ctx, &mem_27725, (int64_t) 40, "mem_27725")) {
         err = 1;
         goto cleanup;
     }
     // ./test_operations.fut:130:5-134:6
     
-    struct memblock static_array_29130 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29269, 0, "static_array_29130"};
+    struct memblock static_array_28173 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28310, 0, "static_array_28173"};
     
     // ./test_operations.fut:130:5-134:6
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28676.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29130.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 5});
-    // ./test_operations.fut:135:17-28
-    if (memblock_alloc(ctx, &mem_28677, (int64_t) 16, "mem_28677")) {
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27725.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28173.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 5});
+    // ./test_operations.fut:130:5-134:6
+    if (memblock_alloc(ctx, &mem_27726, (int64_t) 40, "mem_27726")) {
         err = 1;
         goto cleanup;
     }
-    // ./test_operations.fut:135:17-28
+    // ./test_operations.fut:130:5-134:6
     
-    struct memblock static_array_29131 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29270, 0, "static_array_29131"};
+    struct memblock static_array_28174 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28311, 0, "static_array_28174"};
     
-    // ./test_operations.fut:135:17-28
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28677.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29131.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
-    if (memblock_alloc(ctx, &mem_28678, (int64_t) 32, "mem_28678")) {
+    // ./test_operations.fut:130:5-134:6
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27726.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28174.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 5});
+    // ./test_operations.fut:135:25-36
+    if (memblock_alloc(ctx, &mem_27727, (int64_t) 16, "mem_27727")) {
         err = 1;
         goto cleanup;
     }
+    // ./test_operations.fut:135:25-36
     
-    struct memblock static_array_29132 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29271, 0, "static_array_29132"};
+    struct memblock static_array_28175 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28312, 0, "static_array_28175"};
     
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28678.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29132.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
-    if (memblock_alloc(ctx, &mem_28679, (int64_t) 88, "mem_28679")) {
-        err = 1;
-        goto cleanup;
-    }
-    
-    struct memblock static_array_29133 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29272, 0, "static_array_29133"};
-    
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28679.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29133.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 11});
-    if (memblock_alloc(ctx, &mem_28680, (int64_t) 88, "mem_28680")) {
+    // ./test_operations.fut:135:25-36
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27727.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28175.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 2});
+    if (memblock_alloc(ctx, &mem_27728, (int64_t) 32, "mem_27728")) {
         err = 1;
         goto cleanup;
     }
     
-    struct memblock static_array_29134 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29273, 0, "static_array_29134"};
+    struct memblock static_array_28176 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28313, 0, "static_array_28176"};
     
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28680.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29134.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 11});
-    if (memblock_alloc(ctx, &mem_28681, (int64_t) 88, "mem_28681")) {
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27728.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28176.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    if (memblock_alloc(ctx, &mem_27729, (int64_t) 88, "mem_27729")) {
         err = 1;
         goto cleanup;
     }
     
-    struct memblock static_array_29135 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_29274, 0, "static_array_29135"};
+    struct memblock static_array_28177 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28314, 0, "static_array_28177"};
     
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28681.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_29135.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 11});
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:300:21-93
-    if (memblock_alloc(ctx, &mem_28682, (int64_t) 16, "mem_28682")) {
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27729.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28177.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 11});
+    if (memblock_alloc(ctx, &mem_27730, (int64_t) 88, "mem_27730")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:300:21-93
-    for (int64_t i_28073 = 0; i_28073 < (int64_t) 2; i_28073++) {
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:33-70
+    
+    struct memblock static_array_28178 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28315, 0, "static_array_28178"};
+    
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27730.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28178.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 11});
+    if (memblock_alloc(ctx, &mem_27731, (int64_t) 88, "mem_27731")) {
+        err = 1;
+        goto cleanup;
+    }
+    
+    struct memblock static_array_28179 = (struct memblock) {NULL, (unsigned char *) static_array_realtype_28316, 0, "static_array_28179"};
+    
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27731.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) static_array_28179.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 11});
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:300:33-121
+    if (memblock_alloc(ctx, &mem_27732, (int64_t) 16, "mem_27732")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:300:33-121
+    for (int64_t i_27120 = 0; i_27120 < (int64_t) 2; i_27120++) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:45-90
         
-        bool cond_21141 = slt64(i_28073, (int64_t) 1);
+        bool cond_20767 = slt64(i_27120, (int64_t) 1);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:33-70
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:45-90
         
-        int64_t zm_lhs_21142;
+        int64_t zm_lhs_20768;
         
-        if (cond_21141) {
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:60-62
+        if (cond_20767) {
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:80-82
             
-            int64_t tmp_27058 = add64((int64_t) 1, i_28073);
+            int64_t tmp_26117 = add64((int64_t) 1, i_27120);
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:51-63
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:63-83
             
-            bool x_27059 = sle64((int64_t) 0, tmp_27058);
+            bool x_26118 = sle64((int64_t) 0, tmp_26117);
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:51-63
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:63-83
             
-            bool y_27060 = slt64(tmp_27058, (int64_t) 2);
+            bool y_26119 = slt64(tmp_26117, (int64_t) 2);
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:51-63
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:63-83
             
-            bool bounds_check_27061 = x_27059 && y_27060;
+            bool bounds_check_26120 = x_26118 && y_26119;
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:51-63
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:63-83
             
-            bool index_certs_27062;
+            bool index_certs_26121;
             
-            if (!bounds_check_27061) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_27058, "] out of bounds for array of shape [", (long long) (int64_t) 2, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:300:51-63\n   #1  ./test_operations.fut:123:7-142:103\n"));
+            if (!bounds_check_26120) {
+                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_26117, "] out of bounds for array of shape [", (long long) (int64_t) 2, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:300:63-83\n   #1  ./test_operations.fut:123:7-142:119\n"));
                 err = FUTHARK_PROGRAM_ERROR;
                 goto cleanup;
             }
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:51-63
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:300:63-83
             
-            int64_t zm_lhs_t_res_27063 = ((int64_t *) mem_28677.mem)[tmp_27058];
+            int64_t zm_lhs_t_res_26122 = ((int64_t *) mem_27727.mem)[tmp_26117];
             
-            zm_lhs_21142 = zm_lhs_t_res_27063;
+            zm_lhs_20768 = zm_lhs_t_res_26122;
         } else {
-            zm_lhs_21142 = (int64_t) 5;
+            zm_lhs_20768 = (int64_t) 5;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:74-84
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:94-112
         
-        int64_t zm_rhs_21153 = ((int64_t *) mem_28677.mem)[i_28073];
+        int64_t zm_rhs_20779 = ((int64_t *) mem_27727.mem)[i_27120];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:72-84
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:300:92-112
         
-        int64_t lifted_lambda_res_21154 = sub64(zm_lhs_21142, zm_rhs_21153);
+        int64_t lifted_lambda_res_20780 = sub64(zm_lhs_20768, zm_rhs_20779);
         
-        ((int64_t *) mem_28682.mem)[i_28073] = lifted_lambda_res_21154;
+        ((int64_t *) mem_27732.mem)[i_27120] = lifted_lambda_res_20780;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28689, (int64_t) 32, "mem_28689")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
+    if (memblock_alloc(ctx, &mem_27739, (int64_t) 32, "mem_27739")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28690, (int64_t) 32, "mem_28690")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
+    if (memblock_alloc(ctx, &mem_27740, (int64_t) 32, "mem_27740")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28691, (int64_t) 32, "mem_28691")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
+    if (memblock_alloc(ctx, &mem_27741, (int64_t) 32, "mem_27741")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28692, (int64_t) 32, "mem_28692")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
+    if (memblock_alloc(ctx, &mem_27742, (int64_t) 32, "mem_27742")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28693, (int64_t) 32, "mem_28693")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
+    if (memblock_alloc(ctx, &mem_27743, (int64_t) 32, "mem_27743")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28694, (int64_t) 32, "mem_28694")) {
-        err = 1;
-        goto cleanup;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
-    if (memblock_alloc(ctx, &mem_28695, (int64_t) 32, "mem_28695")) {
-        err = 1;
-        goto cleanup;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:346:28-90
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
     
-    int64_t discard_28103;
-    int64_t discard_28104;
-    int64_t discard_28105;
-    int64_t discard_28106;
-    int64_t discard_28107;
-    int64_t defunc_0_reduce_res_27289;
-    int64_t scanacc_28082;
-    int64_t scanacc_28083;
-    int64_t scanacc_28084;
-    int64_t scanacc_28085;
-    int64_t scanacc_28086;
-    int64_t redout_28092;
+    int64_t discard_27143;
+    int64_t discard_27144;
+    int64_t discard_27145;
+    int64_t discard_27146;
+    int64_t defunc_0_reduce_res_26337;
+    int64_t scanacc_27127;
+    int64_t scanacc_27128;
+    int64_t scanacc_27129;
+    int64_t scanacc_27130;
+    int64_t redout_27135;
     
-    scanacc_28082 = (int64_t) 0;
-    scanacc_28083 = (int64_t) 0;
-    scanacc_28084 = (int64_t) 0;
-    scanacc_28085 = (int64_t) 0;
-    scanacc_28086 = (int64_t) 0;
-    redout_28092 = (int64_t) 0;
-    for (int64_t i_28095 = 0; i_28095 < (int64_t) 4; i_28095++) {
-        int64_t eta_p_25345 = ((int64_t *) mem_28678.mem)[i_28095];
+    scanacc_27127 = (int64_t) 0;
+    scanacc_27128 = (int64_t) 0;
+    scanacc_27129 = (int64_t) 0;
+    scanacc_27130 = (int64_t) 0;
+    redout_27135 = (int64_t) 0;
+    for (int64_t i_27137 = 0; i_27137 < (int64_t) 4; i_27137++) {
+        int64_t eta_p_24956 = ((int64_t *) mem_27728.mem)[i_27137];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:301:34-68
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:301:55-100
         
-        bool cond_25347 = sle64((int64_t) 0, eta_p_25345);
+        bool cond_24957 = slt64(eta_p_24956, (int64_t) 0);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:301:34-68
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:301:55-100
         
-        int64_t lifted_lambda_res_25348;
+        int64_t lifted_lambda_res_24958;
         
-        if (cond_25347) {
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:49-61
+        if (cond_24957) {
+            lifted_lambda_res_24958 = (int64_t) 0;
+        } else {
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:76-100
             
-            bool y_27064 = slt64(eta_p_25345, (int64_t) 2);
+            bool x_24959 = sle64((int64_t) 0, eta_p_24956);
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:49-61
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:76-100
             
-            bool bounds_check_27065 = cond_25347 && y_27064;
+            bool y_24960 = slt64(eta_p_24956, (int64_t) 2);
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:49-61
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:76-100
             
-            bool index_certs_27066;
+            bool bounds_check_24961 = x_24959 && y_24960;
             
-            if (!bounds_check_27065) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_25345, "] out of bounds for array of shape [", (long long) (int64_t) 2, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:301:49-61\n   #1  ./test_operations.fut:123:7-142:103\n"));
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:76-100
+            
+            bool index_certs_24962;
+            
+            if (!bounds_check_24961) {
+                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_24956, "] out of bounds for array of shape [", (long long) (int64_t) 2, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:301:76-100\n   #1  ./test_operations.fut:123:7-142:119\n"));
                 err = FUTHARK_PROGRAM_ERROR;
                 goto cleanup;
             }
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:49-61
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:301:76-100
             
-            int64_t lifted_lambda_res_t_res_27067 = ((int64_t *) mem_28682.mem)[eta_p_25345];
+            int64_t lifted_lambda_res_f_res_24963 = ((int64_t *) mem_27732.mem)[eta_p_24956];
             
-            lifted_lambda_res_25348 = lifted_lambda_res_t_res_27067;
-        } else {
-            lifted_lambda_res_25348 = (int64_t) 0;
+            lifted_lambda_res_24958 = lifted_lambda_res_f_res_24963;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:303:31-35
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:303:41-45
         
-        int64_t lifted_lambda_res_25354 = add64((int64_t) 1, lifted_lambda_res_25348);
+        int64_t lifted_lambda_res_24965 = add64((int64_t) 1, lifted_lambda_res_24958);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:354:28-32
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:304:33-36
         
-        int64_t lifted_lambda_res_25357 = mul64((int64_t) 2, lifted_lambda_res_25348);
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:346:39-73
-        
-        bool cond_25364 = eta_p_25345 == (int64_t) -1;
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:346:39-73
-        
-        int64_t lifted_lambda_res_25365;
-        
-        if (cond_25364) {
-            lifted_lambda_res_25365 = (int64_t) -1;
-        } else {
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:346:63-73
-            
-            bool y_25367 = slt64(eta_p_25345, (int64_t) 2);
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:346:63-73
-            
-            bool bounds_check_25368 = cond_25347 && y_25367;
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:346:63-73
-            
-            bool index_certs_25369;
-            
-            if (!bounds_check_25368) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_25345, "] out of bounds for array of shape [", (long long) (int64_t) 2, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:346:63-73\n   #1  ./test_operations.fut:123:7-142:103\n"));
-                err = FUTHARK_PROGRAM_ERROR;
-                goto cleanup;
-            }
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:346:63-73
-            
-            int64_t lifted_lambda_res_f_res_25370 = ((int64_t *) mem_28677.mem)[eta_p_25345];
-            
-            lifted_lambda_res_25365 = lifted_lambda_res_f_res_25370;
-        }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:304:28-31
-        
-        int64_t defunc_0_op_res_21186 = add64(lifted_lambda_res_25354, scanacc_28082);
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:355:36-39
-        
-        int64_t defunc_0_op_res_21419 = add64(lifted_lambda_res_25357, scanacc_28083);
+        int64_t defunc_0_op_res_20813 = add64(lifted_lambda_res_24965, scanacc_27127);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:328:21-24
         
-        int64_t defunc_0_op_res_21452 = add64(lifted_lambda_res_25348, scanacc_28084);
+        int64_t defunc_0_op_res_21061 = add64(lifted_lambda_res_24958, scanacc_27128);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:328:21-24
         
-        int64_t defunc_0_op_res_21321 = add64(lifted_lambda_res_25348, scanacc_28085);
+        int64_t defunc_0_op_res_20939 = add64(lifted_lambda_res_24958, scanacc_27129);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:302:40-43
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:302:68-71
         
-        int64_t defunc_0_op_res_21167 = add64(lifted_lambda_res_25348, scanacc_28086);
+        int64_t defunc_0_op_res_20794 = add64(lifted_lambda_res_24958, scanacc_27130);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:306:34-37
         
-        int64_t defunc_0_op_res_21202 = add64(lifted_lambda_res_25348, redout_28092);
+        int64_t defunc_0_op_res_20829 = add64(lifted_lambda_res_24958, redout_27135);
         
-        ((int64_t *) mem_28689.mem)[i_28095] = defunc_0_op_res_21186;
-        ((int64_t *) mem_28690.mem)[i_28095] = defunc_0_op_res_21419;
-        ((int64_t *) mem_28691.mem)[i_28095] = defunc_0_op_res_21452;
-        ((int64_t *) mem_28692.mem)[i_28095] = defunc_0_op_res_21321;
-        ((int64_t *) mem_28693.mem)[i_28095] = defunc_0_op_res_21167;
-        ((int64_t *) mem_28694.mem)[i_28095] = lifted_lambda_res_25365;
-        ((int64_t *) mem_28695.mem)[i_28095] = lifted_lambda_res_25348;
+        ((int64_t *) mem_27739.mem)[i_27137] = defunc_0_op_res_20813;
+        ((int64_t *) mem_27740.mem)[i_27137] = defunc_0_op_res_21061;
+        ((int64_t *) mem_27741.mem)[i_27137] = defunc_0_op_res_20939;
+        ((int64_t *) mem_27742.mem)[i_27137] = defunc_0_op_res_20794;
+        ((int64_t *) mem_27743.mem)[i_27137] = lifted_lambda_res_24958;
         
-        int64_t scanacc_tmp_29137 = defunc_0_op_res_21186;
-        int64_t scanacc_tmp_29138 = defunc_0_op_res_21419;
-        int64_t scanacc_tmp_29139 = defunc_0_op_res_21452;
-        int64_t scanacc_tmp_29140 = defunc_0_op_res_21321;
-        int64_t scanacc_tmp_29141 = defunc_0_op_res_21167;
-        int64_t redout_tmp_29147 = defunc_0_op_res_21202;
+        int64_t scanacc_tmp_28181 = defunc_0_op_res_20813;
+        int64_t scanacc_tmp_28182 = defunc_0_op_res_21061;
+        int64_t scanacc_tmp_28183 = defunc_0_op_res_20939;
+        int64_t scanacc_tmp_28184 = defunc_0_op_res_20794;
+        int64_t redout_tmp_28189 = defunc_0_op_res_20829;
         
-        scanacc_28082 = scanacc_tmp_29137;
-        scanacc_28083 = scanacc_tmp_29138;
-        scanacc_28084 = scanacc_tmp_29139;
-        scanacc_28085 = scanacc_tmp_29140;
-        scanacc_28086 = scanacc_tmp_29141;
-        redout_28092 = redout_tmp_29147;
+        scanacc_27127 = scanacc_tmp_28181;
+        scanacc_27128 = scanacc_tmp_28182;
+        scanacc_27129 = scanacc_tmp_28183;
+        scanacc_27130 = scanacc_tmp_28184;
+        redout_27135 = redout_tmp_28189;
     }
-    discard_28103 = scanacc_28082;
-    discard_28104 = scanacc_28083;
-    discard_28105 = scanacc_28084;
-    discard_28106 = scanacc_28085;
-    discard_28107 = scanacc_28086;
-    defunc_0_reduce_res_27289 = redout_28092;
-    if (memblock_unref(ctx, &mem_28677, "mem_28677") != 0)
-        return 1;
-    if (memblock_unref(ctx, &mem_28678, "mem_28678") != 0)
-        return 1;
-    if (memblock_unref(ctx, &mem_28682, "mem_28682") != 0)
+    discard_27143 = scanacc_27127;
+    discard_27144 = scanacc_27128;
+    discard_27145 = scanacc_27129;
+    discard_27146 = scanacc_27130;
+    defunc_0_reduce_res_26337 = redout_27135;
+    if (memblock_unref(ctx, &mem_27732, "mem_27732") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:317:41-82
-    if (memblock_alloc(ctx, &mem_28738, (int64_t) 32, "mem_28738")) {
+    if (memblock_alloc(ctx, &mem_27774, (int64_t) 32, "mem_27774")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:317:41-82
-    for (int64_t nest_i_29150 = 0; nest_i_29150 < (int64_t) 4; nest_i_29150++) {
-        ((int64_t *) mem_28738.mem)[nest_i_29150] = (int64_t) 0;
+    for (int64_t nest_i_28191 = 0; nest_i_28191 < (int64_t) 4; nest_i_28191++) {
+        ((int64_t *) mem_27774.mem)[nest_i_28191] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:316:39-65
-    if (memblock_alloc(ctx, &mem_28739, (int64_t) 32, "mem_28739")) {
+    if (memblock_alloc(ctx, &mem_27775, (int64_t) 32, "mem_27775")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:316:39-65
-    for (int64_t nest_i_29151 = 0; nest_i_29151 < (int64_t) 4; nest_i_29151++) {
-        ((int64_t *) mem_28739.mem)[nest_i_29151] = (int64_t) 0;
+    for (int64_t nest_i_28192 = 0; nest_i_28192 < (int64_t) 4; nest_i_28192++) {
+        ((int64_t *) mem_27775.mem)[nest_i_28192] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:315:39-65
-    if (memblock_alloc(ctx, &mem_28740, (int64_t) 32, "mem_28740")) {
+    if (memblock_alloc(ctx, &mem_27776, (int64_t) 32, "mem_27776")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:315:39-65
-    for (int64_t nest_i_29152 = 0; nest_i_29152 < (int64_t) 4; nest_i_29152++) {
-        ((int64_t *) mem_28740.mem)[nest_i_29152] = (int64_t) 0;
+    for (int64_t nest_i_28193 = 0; nest_i_28193 < (int64_t) 4; nest_i_28193++) {
+        ((int64_t *) mem_27776.mem)[nest_i_28193] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    if (memblock_alloc(ctx, &mem_28741, (int64_t) 32, "mem_28741")) {
+    if (memblock_alloc(ctx, &mem_27777, (int64_t) 32, "mem_27777")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
     
-    int64_t discard_28113;
-    int64_t scanacc_28109 = (int64_t) 0;
+    int64_t discard_27152;
+    int64_t scanacc_27148 = (int64_t) 0;
     
-    for (int64_t i_28111 = 0; i_28111 < (int64_t) 4; i_28111++) {
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:304:28-31
+    for (int64_t i_27150 = 0; i_27150 < (int64_t) 4; i_27150++) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:304:33-36
         
-        int64_t defunc_0_op_res_21640 = add64((int64_t) 1, scanacc_28109);
+        int64_t defunc_0_op_res_21250 = add64((int64_t) 1, scanacc_27148);
         
-        ((int64_t *) mem_28741.mem)[i_28111] = defunc_0_op_res_21640;
+        ((int64_t *) mem_27777.mem)[i_27150] = defunc_0_op_res_21250;
         
-        int64_t scanacc_tmp_29153 = defunc_0_op_res_21640;
+        int64_t scanacc_tmp_28194 = defunc_0_op_res_21250;
         
-        scanacc_28109 = scanacc_tmp_29153;
+        scanacc_27148 = scanacc_tmp_28194;
     }
-    discard_28113 = scanacc_28109;
+    discard_27152 = scanacc_27148;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:220:13-33
-    if (memblock_alloc(ctx, &mem_28748, (int64_t) 64, "mem_28748")) {
+    if (memblock_alloc(ctx, &mem_27784, (int64_t) 64, "mem_27784")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:220:13-33
-    for (int64_t nest_i_29155 = 0; nest_i_29155 < (int64_t) 8; nest_i_29155++) {
-        ((int64_t *) mem_28748.mem)[nest_i_29155] = (int64_t) 0;
+    for (int64_t nest_i_28196 = 0; nest_i_28196 < (int64_t) 8; nest_i_28196++) {
+        ((int64_t *) mem_27784.mem)[nest_i_28196] = (int64_t) 0;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:301:23-85
-    if (memblock_alloc(ctx, &mem_28749, (int64_t) 32, "mem_28749")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:301:44-117
+    if (memblock_alloc(ctx, &mem_27785, (int64_t) 32, "mem_27785")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:301:23-85
-    for (int64_t nest_i_29156 = 0; nest_i_29156 < (int64_t) 4; nest_i_29156++) {
-        ((int64_t *) mem_28749.mem)[nest_i_29156] = (int64_t) 0;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:301:44-117
+    for (int64_t nest_i_28197 = 0; nest_i_28197 < (int64_t) 4; nest_i_28197++) {
+        ((int64_t *) mem_27785.mem)[nest_i_28197] = (int64_t) 0;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:365:10-15
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:364:10-15
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29157 = 0; nest_i_29157 < (int64_t) 4; nest_i_29157++) {
-        int64_t arr_elem_29158 = ((int64_t *) mem_28749.mem)[nest_i_29157];
+    for (int64_t nest_i_28198 = 0; nest_i_28198 < (int64_t) 4; nest_i_28198++) {
+        int64_t arr_elem_28199 = ((int64_t *) mem_27785.mem)[nest_i_28198];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29158, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28199, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ../lib/github.com/diku-dk/vtree/vtree.fut:220:13-33
-    if (memblock_alloc(ctx, &mem_28750, (int64_t) 64, "mem_28750")) {
+    if (memblock_alloc(ctx, &mem_27786, (int64_t) 64, "mem_27786")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:220:13-33
-    for (int64_t nest_i_29159 = 0; nest_i_29159 < (int64_t) 8; nest_i_29159++) {
-        ((int64_t *) mem_28750.mem)[nest_i_29159] = (int64_t) 0;
+    for (int64_t nest_i_28200 = 0; nest_i_28200 < (int64_t) 8; nest_i_28200++) {
+        ((int64_t *) mem_27786.mem)[nest_i_28200] = (int64_t) 0;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:365:10-15
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:364:10-15
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29160 = 0; nest_i_29160 < (int64_t) 4; nest_i_29160++) {
-        int64_t arr_elem_29161 = ((int64_t *) mem_28671.mem)[nest_i_29160];
+    for (int64_t nest_i_28201 = 0; nest_i_28201 < (int64_t) 4; nest_i_28201++) {
+        int64_t arr_elem_28202 = ((int64_t *) mem_27721.mem)[nest_i_28201];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29161, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28202, " ");
     }
     fprintf(ctx->log, "%s", "\n");
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:365:10-15
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:364:10-15
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29162 = 0; nest_i_29162 < (int64_t) 4; nest_i_29162++) {
-        int64_t arr_elem_29163 = ((int64_t *) mem_28695.mem)[nest_i_29162];
+    for (int64_t nest_i_28203 = 0; nest_i_28203 < (int64_t) 4; nest_i_28203++) {
+        int64_t arr_elem_28204 = ((int64_t *) mem_27743.mem)[nest_i_28203];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29163, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28204, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ../lib/github.com/diku-dk/vtree/vtree.fut:221:13-30
     
-    bool acc_cert_21506;
-    bool acc_cert_21960;
+    bool acc_cert_21115;
+    bool acc_cert_21552;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:221:13-30
-    for (int64_t i_28116 = 0; i_28116 < (int64_t) 4; i_28116++) {
-        int64_t v_26153 = ((int64_t *) mem_28671.mem)[i_28116];
-        int64_t v_26154 = ((int64_t *) mem_28695.mem)[i_28116];
-        int64_t v_26156 = ((int64_t *) mem_28749.mem)[i_28116];
+    for (int64_t i_27155 = 0; i_27155 < (int64_t) 4; i_27155++) {
+        int64_t v_25746 = ((int64_t *) mem_27721.mem)[i_27155];
+        int64_t v_25747 = ((int64_t *) mem_27743.mem)[i_27155];
+        int64_t v_25749 = ((int64_t *) mem_27785.mem)[i_27155];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:221:13-30
         // UpdateAcc
-        if (sle64((int64_t) 0, v_26153) && slt64(v_26153, (int64_t) 8)) {
-            ((int64_t *) mem_28750.mem)[v_26153] = v_26154;
+        if (sle64((int64_t) 0, v_25746) && slt64(v_25746, (int64_t) 8)) {
+            ((int64_t *) mem_27786.mem)[v_25746] = v_25747;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:221:13-30
         // UpdateAcc
-        if (sle64((int64_t) 0, v_26153) && slt64(v_26153, (int64_t) 8)) {
-            ((int64_t *) mem_28748.mem)[v_26153] = v_26156;
+        if (sle64((int64_t) 0, v_25746) && slt64(v_25746, (int64_t) 8)) {
+            ((int64_t *) mem_27784.mem)[v_25746] = v_25749;
         }
     }
-    if (memblock_unref(ctx, &mem_28695, "mem_28695") != 0)
+    if (memblock_unref(ctx, &mem_27743, "mem_27743") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28749, "mem_28749") != 0)
+    if (memblock_unref(ctx, &mem_27785, "mem_27785") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    if (memblock_alloc(ctx, &mem_28751, (int64_t) 64, "mem_28751")) {
+    if (memblock_alloc(ctx, &mem_27787, (int64_t) 64, "mem_27787")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
     
-    int64_t discard_28122;
-    int64_t scanacc_28118 = (int64_t) 0;
+    int64_t discard_27161;
+    int64_t scanacc_27157 = (int64_t) 0;
     
-    for (int64_t i_28120 = 0; i_28120 < (int64_t) 8; i_28120++) {
-        int64_t x_21968 = ((int64_t *) mem_28748.mem)[i_28120];
+    for (int64_t i_27159 = 0; i_27159 < (int64_t) 8; i_27159++) {
+        int64_t x_21560 = ((int64_t *) mem_27784.mem)[i_27159];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:34-37
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:365:67-70
         
-        int64_t defunc_0_op_res_21971 = add64(x_21968, scanacc_28118);
+        int64_t defunc_0_op_res_21563 = add64(x_21560, scanacc_27157);
         
-        ((int64_t *) mem_28751.mem)[i_28120] = defunc_0_op_res_21971;
+        ((int64_t *) mem_27787.mem)[i_27159] = defunc_0_op_res_21563;
         
-        int64_t scanacc_tmp_29166 = defunc_0_op_res_21971;
+        int64_t scanacc_tmp_28207 = defunc_0_op_res_21563;
         
-        scanacc_28118 = scanacc_tmp_29166;
+        scanacc_27157 = scanacc_tmp_28207;
     }
-    discard_28122 = scanacc_28118;
-    if (memblock_unref(ctx, &mem_28748, "mem_28748") != 0)
+    discard_27161 = scanacc_27157;
+    if (memblock_unref(ctx, &mem_27784, "mem_27784") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    if (memblock_alloc(ctx, &mem_28758, (int64_t) 64, "mem_28758")) {
+    if (memblock_alloc(ctx, &mem_27794, (int64_t) 64, "mem_27794")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
     
-    int64_t discard_28128;
-    int64_t scanacc_28124 = (int64_t) 0;
+    int64_t discard_27167;
+    int64_t scanacc_27163 = (int64_t) 0;
     
-    for (int64_t i_28126 = 0; i_28126 < (int64_t) 8; i_28126++) {
-        int64_t x_21514 = ((int64_t *) mem_28750.mem)[i_28126];
+    for (int64_t i_27165 = 0; i_27165 < (int64_t) 8; i_27165++) {
+        int64_t x_21123 = ((int64_t *) mem_27786.mem)[i_27165];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:34-37
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:365:67-70
         
-        int64_t defunc_0_op_res_21517 = add64(x_21514, scanacc_28124);
+        int64_t defunc_0_op_res_21126 = add64(x_21123, scanacc_27163);
         
-        ((int64_t *) mem_28758.mem)[i_28126] = defunc_0_op_res_21517;
+        ((int64_t *) mem_27794.mem)[i_27165] = defunc_0_op_res_21126;
         
-        int64_t scanacc_tmp_29168 = defunc_0_op_res_21517;
+        int64_t scanacc_tmp_28209 = defunc_0_op_res_21126;
         
-        scanacc_28124 = scanacc_tmp_29168;
+        scanacc_27163 = scanacc_tmp_28209;
     }
-    discard_28128 = scanacc_28124;
-    if (memblock_unref(ctx, &mem_28750, "mem_28750") != 0)
+    discard_27167 = scanacc_27163;
+    if (memblock_unref(ctx, &mem_27786, "mem_27786") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:130:5-132:37
-    if (memblock_alloc(ctx, &mem_28765, (int64_t) 64, "mem_28765")) {
-        err = 1;
-        goto cleanup;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:130:5-132:37
-    if (memblock_alloc(ctx, &mem_28766, (int64_t) 64, "mem_28766")) {
+    if (memblock_alloc(ctx, &mem_27801, (int64_t) 64, "mem_27801")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:130:5-132:37
-    for (int64_t i_28133 = 0; i_28133 < (int64_t) 8; i_28133++) {
+    if (memblock_alloc(ctx, &mem_27802, (int64_t) 64, "mem_27802")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:130:5-132:37
+    for (int64_t i_27172 = 0; i_27172 < (int64_t) 8; i_27172++) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t zv_lhs_25416 = add64((int64_t) -1, i_28133);
+        int64_t zv_lhs_24980 = add64((int64_t) -1, i_27172);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t tmp_25417 = smod64(zv_lhs_25416, (int64_t) 8);
+        int64_t tmp_24981 = smod64(zv_lhs_24980, (int64_t) 8);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_25418 = ((int64_t *) mem_28758.mem)[tmp_25417];
+        int64_t lifted_lambda_res_24982 = ((int64_t *) mem_27794.mem)[tmp_24981];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        bool cond_25420 = i_28133 == (int64_t) 0;
+        bool cond_24984 = i_27172 == (int64_t) 0;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_25421;
+        int64_t lifted_lambda_res_24985;
         
-        if (cond_25420) {
-            lifted_lambda_res_25421 = (int64_t) 0;
+        if (cond_24984) {
+            lifted_lambda_res_24985 = (int64_t) 0;
         } else {
-            lifted_lambda_res_25421 = lifted_lambda_res_25418;
+            lifted_lambda_res_24985 = lifted_lambda_res_24982;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_25426 = ((int64_t *) mem_28751.mem)[tmp_25417];
+        int64_t lifted_lambda_res_24990 = ((int64_t *) mem_27787.mem)[tmp_24981];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_25429;
+        int64_t lifted_lambda_res_24993;
         
-        if (cond_25420) {
-            lifted_lambda_res_25429 = (int64_t) 0;
+        if (cond_24984) {
+            lifted_lambda_res_24993 = (int64_t) 0;
         } else {
-            lifted_lambda_res_25429 = lifted_lambda_res_25426;
+            lifted_lambda_res_24993 = lifted_lambda_res_24990;
         }
-        ((int64_t *) mem_28765.mem)[i_28133] = lifted_lambda_res_25429;
-        ((int64_t *) mem_28766.mem)[i_28133] = lifted_lambda_res_25421;
+        ((int64_t *) mem_27801.mem)[i_27172] = lifted_lambda_res_24993;
+        ((int64_t *) mem_27802.mem)[i_27172] = lifted_lambda_res_24985;
     }
-    if (memblock_unref(ctx, &mem_28751, "mem_28751") != 0)
+    if (memblock_unref(ctx, &mem_27787, "mem_27787") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28758, "mem_28758") != 0)
+    if (memblock_unref(ctx, &mem_27794, "mem_27794") != 0)
         return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:365:10-15
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:364:10-15
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29172 = 0; nest_i_29172 < (int64_t) 4; nest_i_29172++) {
-        int64_t arr_elem_29173 = ((int64_t *) mem_28672.mem)[nest_i_29172];
+    for (int64_t nest_i_28213 = 0; nest_i_28213 < (int64_t) 4; nest_i_28213++) {
+        int64_t arr_elem_28214 = ((int64_t *) mem_27722.mem)[nest_i_28213];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29173, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28214, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ../lib/github.com/diku-dk/vtree/vtree.fut:223:14-225:21
-    if (memblock_alloc(ctx, &mem_28779, (int64_t) 32, "mem_28779")) {
+    if (memblock_alloc(ctx, &mem_27815, (int64_t) 32, "mem_27815")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:223:14-225:21
-    if (memblock_alloc(ctx, &mem_28780, (int64_t) 32, "mem_28780")) {
+    if (memblock_alloc(ctx, &mem_27816, (int64_t) 32, "mem_27816")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:223:14-225:21
-    for (int64_t i_28140 = 0; i_28140 < (int64_t) 4; i_28140++) {
-        int64_t eta_p_25431 = ((int64_t *) mem_28672.mem)[i_28140];
-        int64_t eta_p_25432 = ((int64_t *) mem_28671.mem)[i_28140];
+    for (int64_t i_27179 = 0; i_27179 < (int64_t) 4; i_27179++) {
+        int64_t eta_p_24995 = ((int64_t *) mem_27722.mem)[i_27179];
+        int64_t eta_p_24996 = ((int64_t *) mem_27721.mem)[i_27179];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29
         
-        bool x_25435 = sle64((int64_t) 0, eta_p_25431);
+        bool x_24999 = sle64((int64_t) 0, eta_p_24995);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29
         
-        bool y_25436 = slt64(eta_p_25431, (int64_t) 8);
+        bool y_25000 = slt64(eta_p_24995, (int64_t) 8);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29
         
-        bool bounds_check_25437 = x_25435 && y_25436;
+        bool bounds_check_25001 = x_24999 && y_25000;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29
         
-        bool index_certs_25438;
+        bool index_certs_25002;
         
-        if (!bounds_check_25437) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_25431, "] out of bounds for array of shape [", (long long) (int64_t) 8, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:361:9-366:33\n   #2  ./test_operations.fut:123:7-142:103\n"));
+        if (!bounds_check_25001) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_24995, "] out of bounds for array of shape [", (long long) (int64_t) 8, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:360:9-365:66\n   #2  ./test_operations.fut:123:7-142:119\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29
         
-        int64_t lifted_lambda_res_25439 = ((int64_t *) mem_28766.mem)[eta_p_25431];
+        int64_t lifted_lambda_res_25003 = ((int64_t *) mem_27802.mem)[eta_p_24995];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34
         
-        bool x_25441 = sle64((int64_t) 0, eta_p_25432);
+        bool x_25005 = sle64((int64_t) 0, eta_p_24996);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34
         
-        bool y_25442 = slt64(eta_p_25432, (int64_t) 8);
+        bool y_25006 = slt64(eta_p_24996, (int64_t) 8);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34
         
-        bool bounds_check_25443 = x_25441 && y_25442;
+        bool bounds_check_25007 = x_25005 && y_25006;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34
         
-        bool index_certs_25444;
+        bool index_certs_25008;
         
-        if (!bounds_check_25443) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_25432, "] out of bounds for array of shape [", (long long) (int64_t) 8, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:361:9-366:33\n   #2  ./test_operations.fut:123:7-142:103\n"));
+        if (!bounds_check_25007) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_24996, "] out of bounds for array of shape [", (long long) (int64_t) 8, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:360:9-365:66\n   #2  ./test_operations.fut:123:7-142:119\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34
         
-        int64_t inv_arg0_25445 = ((int64_t *) mem_28766.mem)[eta_p_25432];
+        int64_t inv_arg0_25009 = ((int64_t *) mem_27802.mem)[eta_p_24996];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:38-45
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:365:71-78
         
-        int64_t neg_res_25446 = -inv_arg0_25445;
+        int64_t neg_res_25010 = -inv_arg0_25009;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:34-37
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:365:67-70
         
-        int64_t defunc_0_f_res_25448 = add64(lifted_lambda_res_25439, neg_res_25446);
+        int64_t defunc_0_f_res_25012 = add64(lifted_lambda_res_25003, neg_res_25010);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:223:25-29
         
-        int64_t lifted_lambda_res_25454 = ((int64_t *) mem_28765.mem)[eta_p_25431];
+        int64_t lifted_lambda_res_25018 = ((int64_t *) mem_27801.mem)[eta_p_24995];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:224:30-34
         
-        int64_t inv_arg0_25460 = ((int64_t *) mem_28765.mem)[eta_p_25432];
+        int64_t inv_arg0_25024 = ((int64_t *) mem_27801.mem)[eta_p_24996];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:38-45
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:365:71-78
         
-        int64_t neg_res_25461 = -inv_arg0_25460;
+        int64_t neg_res_25025 = -inv_arg0_25024;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:34-37
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:365:67-70
         
-        int64_t defunc_0_f_res_25463 = add64(lifted_lambda_res_25454, neg_res_25461);
+        int64_t defunc_0_f_res_25027 = add64(lifted_lambda_res_25018, neg_res_25025);
         
-        ((int64_t *) mem_28779.mem)[i_28140] = defunc_0_f_res_25463;
-        ((int64_t *) mem_28780.mem)[i_28140] = defunc_0_f_res_25448;
+        ((int64_t *) mem_27815.mem)[i_27179] = defunc_0_f_res_25027;
+        ((int64_t *) mem_27816.mem)[i_27179] = defunc_0_f_res_25012;
     }
-    if (memblock_unref(ctx, &mem_28765, "mem_28765") != 0)
+    if (memblock_unref(ctx, &mem_27801, "mem_27801") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28766, "mem_28766") != 0)
+    if (memblock_unref(ctx, &mem_27802, "mem_27802") != 0)
         return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:366:84-89
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:365:117-122
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29176 = 0; nest_i_29176 < (int64_t) 4; nest_i_29176++) {
-        int64_t arr_elem_29177 = ((int64_t *) mem_28780.mem)[nest_i_29176];
+    for (int64_t nest_i_28217 = 0; nest_i_28217 < (int64_t) 4; nest_i_28217++) {
+        int64_t arr_elem_28218 = ((int64_t *) mem_27816.mem)[nest_i_28217];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29177, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28218, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ../lib/github.com/diku-dk/vtree/vtree.fut:330:26-53
     
-    int64_t bytes_28793 = (int64_t) 8 * defunc_0_reduce_res_27289;
+    int64_t bytes_27829 = (int64_t) 8 * defunc_0_reduce_res_26337;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:330:26-53
-    if (memblock_alloc(ctx, &mem_28794, bytes_28793, "mem_28794")) {
+    if (memblock_alloc(ctx, &mem_27830, bytes_27829, "mem_27830")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:330:26-53
-    for (int64_t nest_i_29178 = 0; nest_i_29178 < defunc_0_reduce_res_27289; nest_i_29178++) {
-        ((int64_t *) mem_28794.mem)[nest_i_29178] = (int64_t) 0;
+    for (int64_t nest_i_28219 = 0; nest_i_28219 < defunc_0_reduce_res_26337; nest_i_28219++) {
+        ((int64_t *) mem_27830.mem)[nest_i_28219] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:330:26-53
-    if (memblock_alloc(ctx, &mem_28796, bytes_28793, "mem_28796")) {
+    if (memblock_alloc(ctx, &mem_27832, bytes_27829, "mem_27832")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:330:26-53
-    for (int64_t nest_i_29179 = 0; nest_i_29179 < defunc_0_reduce_res_27289; nest_i_29179++) {
-        ((int64_t *) mem_28796.mem)[nest_i_29179] = (int64_t) 0;
+    for (int64_t nest_i_28220 = 0; nest_i_28220 < defunc_0_reduce_res_26337; nest_i_28220++) {
+        ((int64_t *) mem_27832.mem)[nest_i_28220] = (int64_t) 0;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:344:28-59
-    if (memblock_alloc(ctx, &mem_28797, defunc_0_reduce_res_27289, "mem_28797")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:344:33-64
+    if (memblock_alloc(ctx, &mem_27833, defunc_0_reduce_res_26337, "mem_27833")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:344:28-59
-    for (int64_t nest_i_29180 = 0; nest_i_29180 < defunc_0_reduce_res_27289; nest_i_29180++) {
-        ((bool *) mem_28797.mem)[nest_i_29180] = 0;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:344:33-64
+    for (int64_t nest_i_28221 = 0; nest_i_28221 < defunc_0_reduce_res_26337; nest_i_28221++) {
+        ((bool *) mem_27833.mem)[nest_i_28221] = 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:307:25-42
     
-    int64_t result_sizze_21203 = add64((int64_t) 4, defunc_0_reduce_res_27289);
+    int64_t result_sizze_20830 = add64((int64_t) 4, defunc_0_reduce_res_26337);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:317:41-82
     
-    int64_t bytes_28798 = (int64_t) 8 * result_sizze_21203;
+    int64_t bytes_27834 = (int64_t) 8 * result_sizze_20830;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:317:41-82
-    if (memblock_alloc(ctx, &mem_28799, bytes_28798, "mem_28799")) {
+    if (memblock_alloc(ctx, &mem_27835, bytes_27834, "mem_27835")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:317:41-82
-    for (int64_t nest_i_29181 = 0; nest_i_29181 < result_sizze_21203; nest_i_29181++) {
-        ((int64_t *) mem_28799.mem)[nest_i_29181] = (int64_t) 0;
+    for (int64_t nest_i_28222 = 0; nest_i_28222 < result_sizze_20830; nest_i_28222++) {
+        ((int64_t *) mem_27835.mem)[nest_i_28222] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:316:39-65
-    if (memblock_alloc(ctx, &mem_28801, bytes_28798, "mem_28801")) {
+    if (memblock_alloc(ctx, &mem_27837, bytes_27834, "mem_27837")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:316:39-65
-    for (int64_t nest_i_29182 = 0; nest_i_29182 < result_sizze_21203; nest_i_29182++) {
-        ((int64_t *) mem_28801.mem)[nest_i_29182] = (int64_t) 0;
+    for (int64_t nest_i_28223 = 0; nest_i_28223 < result_sizze_20830; nest_i_28223++) {
+        ((int64_t *) mem_27837.mem)[nest_i_28223] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:315:39-65
-    if (memblock_alloc(ctx, &mem_28803, bytes_28798, "mem_28803")) {
+    if (memblock_alloc(ctx, &mem_27839, bytes_27834, "mem_27839")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:315:39-65
-    for (int64_t nest_i_29183 = 0; nest_i_29183 < result_sizze_21203; nest_i_29183++) {
-        ((int64_t *) mem_28803.mem)[nest_i_29183] = (int64_t) 0;
+    for (int64_t nest_i_28224 = 0; nest_i_28224 < result_sizze_20830; nest_i_28224++) {
+        ((int64_t *) mem_27839.mem)[nest_i_28224] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:311:24-50
-    if (memblock_alloc(ctx, &mem_28804, result_sizze_21203, "mem_28804")) {
+    if (memblock_alloc(ctx, &mem_27840, result_sizze_20830, "mem_27840")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:311:24-50
-    for (int64_t nest_i_29184 = 0; nest_i_29184 < result_sizze_21203; nest_i_29184++) {
-        ((bool *) mem_28804.mem)[nest_i_29184] = 1;
+    for (int64_t nest_i_28225 = 0; nest_i_28225 < result_sizze_20830; nest_i_28225++) {
+        ((bool *) mem_27840.mem)[nest_i_28225] = 1;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    if (memblock_alloc(ctx, &mem_28826, (int64_t) 32, "mem_28826")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27869, (int64_t) 32, "mem_27869")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    if (memblock_alloc(ctx, &mem_28827, (int64_t) 32, "mem_28827")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27870, (int64_t) 32, "mem_27870")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    if (memblock_alloc(ctx, &mem_28828, (int64_t) 32, "mem_28828")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27871, (int64_t) 32, "mem_27871")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    if (memblock_alloc(ctx, &mem_28805, (int64_t) 32, "mem_28805")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27872, (int64_t) 32, "mem_27872")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    if (memblock_alloc(ctx, &mem_28806, (int64_t) 32, "mem_28806")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27841, (int64_t) 32, "mem_27841")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    if (memblock_alloc(ctx, &mem_28807, (int64_t) 32, "mem_28807")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27842, (int64_t) 32, "mem_27842")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27843, (int64_t) 32, "mem_27843")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    if (memblock_alloc(ctx, &mem_27844, (int64_t) 32, "mem_27844")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
     
-    bool acc_cert_22418;
-    bool acc_cert_22419;
-    bool acc_cert_22420;
-    bool acc_cert_22755;
-    bool acc_cert_23648;
-    bool acc_cert_24994;
-    bool acc_cert_24995;
-    bool acc_cert_24996;
-    bool acc_cert_24997;
-    bool acc_cert_25160;
+    bool acc_cert_22001;
+    bool acc_cert_22002;
+    bool acc_cert_22003;
+    bool acc_cert_22347;
+    bool acc_cert_23369;
+    bool acc_cert_24625;
+    bool acc_cert_24626;
+    bool acc_cert_24627;
+    bool acc_cert_24628;
+    bool acc_cert_24806;
     
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    for (int64_t i_28160 = 0; i_28160 < (int64_t) 4; i_28160++) {
-        int64_t v_25861 = ((int64_t *) mem_28673.mem)[i_28160];
-        int64_t v_25863 = ((int64_t *) mem_28672.mem)[i_28160];
-        int64_t v_25865 = ((int64_t *) mem_28671.mem)[i_28160];
-        int64_t eta_p_25873 = ((int64_t *) mem_28780.mem)[i_28160];
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    for (int64_t i_27201 = 0; i_27201 < (int64_t) 4; i_27201++) {
+        int64_t v_25445 = ((int64_t *) mem_27723.mem)[i_27201];
+        int64_t v_25447 = ((int64_t *) mem_27722.mem)[i_27201];
+        int64_t v_25449 = ((int64_t *) mem_27721.mem)[i_27201];
+        int64_t eta_p_25457 = ((int64_t *) mem_27816.mem)[i_27201];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t zv_lhs_25882 = add64((int64_t) -1, i_28160);
+        int64_t zv_lhs_25466 = add64((int64_t) -1, i_27201);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t tmp_25883 = smod64(zv_lhs_25882, (int64_t) 4);
+        int64_t tmp_25467 = smod64(zv_lhs_25466, (int64_t) 4);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_25884 = ((int64_t *) mem_28693.mem)[tmp_25883];
+        int64_t lifted_lambda_res_25468 = ((int64_t *) mem_27742.mem)[tmp_25467];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        bool cond_25885 = i_28160 == (int64_t) 0;
+        bool cond_25469 = i_27201 == (int64_t) 0;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_25886;
+        int64_t lifted_lambda_res_25470;
         
-        if (cond_25885) {
-            lifted_lambda_res_25886 = (int64_t) 0;
+        if (cond_25469) {
+            lifted_lambda_res_25470 = (int64_t) 0;
         } else {
-            lifted_lambda_res_25886 = lifted_lambda_res_25884;
+            lifted_lambda_res_25470 = lifted_lambda_res_25468;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:367:44-47
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:354:33-37
         
-        int64_t defunc_0_f_res_25887 = add64(eta_p_25873, lifted_lambda_res_25886);
+        int64_t lifted_lambda_res_25471 = mul64((int64_t) 2, lifted_lambda_res_25470);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:344:19-100
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:61-65
+        
+        int64_t lifted_lambda_res_25472 = mul64((int64_t) 2, eta_p_25457);
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:34-37
+        
+        int64_t defunc_0_f_res_25473 = add64(lifted_lambda_res_25471, lifted_lambda_res_25472);
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:344:24-133
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25886) && slt64(lifted_lambda_res_25886, defunc_0_reduce_res_27289)) {
-            ((bool *) mem_28797.mem)[lifted_lambda_res_25886] = 1;
+        if (sle64((int64_t) 0, lifted_lambda_res_25470) && slt64(lifted_lambda_res_25470, defunc_0_reduce_res_26337)) {
+            ((bool *) mem_27833.mem)[lifted_lambda_res_25470] = 1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_25895 = ((int64_t *) mem_28689.mem)[tmp_25883];
+        int64_t lifted_lambda_res_25482 = ((int64_t *) mem_27739.mem)[tmp_25467];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_25897;
+        int64_t lifted_lambda_res_25484;
         
-        if (cond_25885) {
-            lifted_lambda_res_25897 = (int64_t) 0;
+        if (cond_25469) {
+            lifted_lambda_res_25484 = (int64_t) 0;
         } else {
-            lifted_lambda_res_25897 = lifted_lambda_res_25895;
+            lifted_lambda_res_25484 = lifted_lambda_res_25482;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:317:32-110
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:317:32-115
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25897) && slt64(lifted_lambda_res_25897, result_sizze_21203)) {
-            ((int64_t *) mem_28799.mem)[lifted_lambda_res_25897] = v_25861;
+        if (sle64((int64_t) 0, lifted_lambda_res_25484) && slt64(lifted_lambda_res_25484, result_sizze_20830)) {
+            ((int64_t *) mem_27835.mem)[lifted_lambda_res_25484] = v_25445;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:316:30-91
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:316:30-96
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25897) && slt64(lifted_lambda_res_25897, result_sizze_21203)) {
-            ((int64_t *) mem_28801.mem)[lifted_lambda_res_25897] = v_25863;
+        if (sle64((int64_t) 0, lifted_lambda_res_25484) && slt64(lifted_lambda_res_25484, result_sizze_20830)) {
+            ((int64_t *) mem_27837.mem)[lifted_lambda_res_25484] = v_25447;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:315:30-91
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:315:30-96
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25897) && slt64(lifted_lambda_res_25897, result_sizze_21203)) {
-            ((int64_t *) mem_28803.mem)[lifted_lambda_res_25897] = v_25865;
+        if (sle64((int64_t) 0, lifted_lambda_res_25484) && slt64(lifted_lambda_res_25484, result_sizze_20830)) {
+            ((int64_t *) mem_27839.mem)[lifted_lambda_res_25484] = v_25449;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-71
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-76
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25897) && slt64(lifted_lambda_res_25897, result_sizze_21203)) {
-            ((bool *) mem_28804.mem)[lifted_lambda_res_25897] = 0;
+        if (sle64((int64_t) 0, lifted_lambda_res_25484) && slt64(lifted_lambda_res_25484, result_sizze_20830)) {
+            ((bool *) mem_27840.mem)[lifted_lambda_res_25484] = 0;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:329:27-54
         
-        int64_t lifted_lambda_res_25913;
+        int64_t lifted_lambda_res_25501;
         
-        if (cond_25885) {
-            lifted_lambda_res_25913 = (int64_t) 0;
+        if (cond_25469) {
+            lifted_lambda_res_25501 = (int64_t) 0;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:51-53
             
-            int64_t tmp_25914 = sub64(i_28160, (int64_t) 1);
+            int64_t tmp_25502 = sub64(i_27201, (int64_t) 1);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool x_25915 = sle64((int64_t) 0, tmp_25914);
+            bool x_25503 = sle64((int64_t) 0, tmp_25502);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool y_25916 = slt64(tmp_25914, (int64_t) 4);
+            bool y_25504 = slt64(tmp_25502, (int64_t) 4);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool bounds_check_25917 = x_25915 && y_25916;
+            bool bounds_check_25505 = x_25503 && y_25504;
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool index_certs_25918;
+            bool index_certs_25506;
             
-            if (!bounds_check_25917) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_25914, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:335:34-38\n   #2  ../lib/github.com/diku-dk/vtree/vtree.fut:347:46-72\n   #3  ./test_operations.fut:123:7-142:103\n"));
+            if (!bounds_check_25505) {
+                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_25502, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:335:34-38\n   #2  ../lib/github.com/diku-dk/vtree/vtree.fut:346:47-95\n   #3  ./test_operations.fut:123:7-142:119\n"));
                 err = FUTHARK_PROGRAM_ERROR;
                 goto cleanup;
             }
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            int64_t lifted_lambda_res_f_res_25919 = ((int64_t *) mem_28692.mem)[tmp_25914];
+            int64_t lifted_lambda_res_f_res_25507 = ((int64_t *) mem_27741.mem)[tmp_25502];
             
-            lifted_lambda_res_25913 = lifted_lambda_res_f_res_25919;
+            lifted_lambda_res_25501 = lifted_lambda_res_f_res_25507;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:330:17-65
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25913) && slt64(lifted_lambda_res_25913, defunc_0_reduce_res_27289)) {
-            ((int64_t *) mem_28796.mem)[lifted_lambda_res_25913] = i_28160;
+        if (sle64((int64_t) 0, lifted_lambda_res_25501) && slt64(lifted_lambda_res_25501, defunc_0_reduce_res_26337)) {
+            ((int64_t *) mem_27832.mem)[lifted_lambda_res_25501] = i_27201;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:329:27-54
         
-        int64_t lifted_lambda_res_25934;
+        int64_t lifted_lambda_res_25523;
         
-        if (cond_25885) {
-            lifted_lambda_res_25934 = (int64_t) 0;
+        if (cond_25469) {
+            lifted_lambda_res_25523 = (int64_t) 0;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:51-53
             
-            int64_t tmp_25935 = sub64(i_28160, (int64_t) 1);
+            int64_t tmp_25524 = sub64(i_27201, (int64_t) 1);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool x_25936 = sle64((int64_t) 0, tmp_25935);
+            bool x_25525 = sle64((int64_t) 0, tmp_25524);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool y_25937 = slt64(tmp_25935, (int64_t) 4);
+            bool y_25526 = slt64(tmp_25524, (int64_t) 4);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool bounds_check_25938 = x_25936 && y_25937;
+            bool bounds_check_25527 = x_25525 && y_25526;
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            bool index_certs_25939;
+            bool index_certs_25528;
             
-            if (!bounds_check_25938) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_25935, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:335:34-38\n   #2  ../lib/github.com/diku-dk/vtree/vtree.fut:358:48-76\n   #3  ./test_operations.fut:123:7-142:103\n"));
+            if (!bounds_check_25527) {
+                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_25524, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:335:34-38\n   #2  ../lib/github.com/diku-dk/vtree/vtree.fut:357:48-97\n   #3  ./test_operations.fut:123:7-142:119\n"));
                 err = FUTHARK_PROGRAM_ERROR;
                 goto cleanup;
             }
             // ../lib/github.com/diku-dk/vtree/vtree.fut:329:47-54
             
-            int64_t lifted_lambda_res_f_res_25940 = ((int64_t *) mem_28691.mem)[tmp_25935];
+            int64_t lifted_lambda_res_f_res_25529 = ((int64_t *) mem_27740.mem)[tmp_25524];
             
-            lifted_lambda_res_25934 = lifted_lambda_res_f_res_25940;
+            lifted_lambda_res_25523 = lifted_lambda_res_f_res_25529;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:330:17-65
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25934) && slt64(lifted_lambda_res_25934, defunc_0_reduce_res_27289)) {
-            ((int64_t *) mem_28794.mem)[lifted_lambda_res_25934] = i_28160;
+        if (sle64((int64_t) 0, lifted_lambda_res_25523) && slt64(lifted_lambda_res_25523, defunc_0_reduce_res_26337)) {
+            ((int64_t *) mem_27830.mem)[lifted_lambda_res_25523] = i_27201;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_25958 = ((int64_t *) mem_28741.mem)[tmp_25883];
+        int64_t lifted_lambda_res_25548 = ((int64_t *) mem_27777.mem)[tmp_25467];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_25960;
+        int64_t lifted_lambda_res_25550;
         
-        if (cond_25885) {
-            lifted_lambda_res_25960 = (int64_t) 0;
+        if (cond_25469) {
+            lifted_lambda_res_25550 = (int64_t) 0;
         } else {
-            lifted_lambda_res_25960 = lifted_lambda_res_25958;
+            lifted_lambda_res_25550 = lifted_lambda_res_25548;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:317:32-110
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:317:32-115
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25960) && slt64(lifted_lambda_res_25960, (int64_t) 4)) {
-            ((int64_t *) mem_28738.mem)[lifted_lambda_res_25960] = v_25861;
+        if (sle64((int64_t) 0, lifted_lambda_res_25550) && slt64(lifted_lambda_res_25550, (int64_t) 4)) {
+            ((int64_t *) mem_27774.mem)[lifted_lambda_res_25550] = v_25445;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:316:30-91
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:316:30-96
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25960) && slt64(lifted_lambda_res_25960, (int64_t) 4)) {
-            ((int64_t *) mem_28739.mem)[lifted_lambda_res_25960] = v_25863;
+        if (sle64((int64_t) 0, lifted_lambda_res_25550) && slt64(lifted_lambda_res_25550, (int64_t) 4)) {
+            ((int64_t *) mem_27775.mem)[lifted_lambda_res_25550] = v_25447;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:315:30-91
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:315:30-96
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_25960) && slt64(lifted_lambda_res_25960, (int64_t) 4)) {
-            ((int64_t *) mem_28740.mem)[lifted_lambda_res_25960] = v_25865;
+        if (sle64((int64_t) 0, lifted_lambda_res_25550) && slt64(lifted_lambda_res_25550, (int64_t) 4)) {
+            ((int64_t *) mem_27776.mem)[lifted_lambda_res_25550] = v_25449;
         }
-        ((int64_t *) mem_28805.mem)[i_28160] = lifted_lambda_res_25960;
-        ((int64_t *) mem_28806.mem)[i_28160] = lifted_lambda_res_25897;
-        ((int64_t *) mem_28807.mem)[i_28160] = defunc_0_f_res_25887;
+        ((int64_t *) mem_27841.mem)[i_27201] = lifted_lambda_res_25550;
+        ((int64_t *) mem_27842.mem)[i_27201] = lifted_lambda_res_25484;
+        ((int64_t *) mem_27843.mem)[i_27201] = defunc_0_f_res_25473;
+        ((int64_t *) mem_27844.mem)[i_27201] = lifted_lambda_res_25471;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28826.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28807.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28827.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28806.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:110
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28828.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28805.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
-    if (memblock_unref(ctx, &mem_28689, "mem_28689") != 0)
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27869.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_27843.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27870.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_27844.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27871.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_27842.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:312:24-317:115
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27872.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_27841.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {(int64_t) 4});
+    if (memblock_unref(ctx, &mem_27739, "mem_27739") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28691, "mem_28691") != 0)
+    if (memblock_unref(ctx, &mem_27740, "mem_27740") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28692, "mem_28692") != 0)
+    if (memblock_unref(ctx, &mem_27741, "mem_27741") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28693, "mem_28693") != 0)
+    if (memblock_unref(ctx, &mem_27742, "mem_27742") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28741, "mem_28741") != 0)
+    if (memblock_unref(ctx, &mem_27777, "mem_27777") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28780, "mem_28780") != 0)
+    if (memblock_unref(ctx, &mem_27816, "mem_27816") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28805, "mem_28805") != 0)
+    if (memblock_unref(ctx, &mem_27841, "mem_27841") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28806, "mem_28806") != 0)
+    if (memblock_unref(ctx, &mem_27842, "mem_27842") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28807, "mem_28807") != 0)
+    if (memblock_unref(ctx, &mem_27843, "mem_27843") != 0)
+        return 1;
+    if (memblock_unref(ctx, &mem_27844, "mem_27844") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
-    if (memblock_alloc(ctx, &mem_28830, bytes_28798, "mem_28830")) {
+    if (memblock_alloc(ctx, &mem_27874, bytes_27834, "mem_27874")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
-    if (memblock_alloc(ctx, &mem_28832, bytes_28798, "mem_28832")) {
+    if (memblock_alloc(ctx, &mem_27876, bytes_27834, "mem_27876")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    int64_t discard_28172;
-    int64_t scanacc_28166 = (int64_t) 0;
+    int64_t discard_27214;
+    int64_t scanacc_27208 = (int64_t) 0;
     
-    for (int64_t i_28169 = 0; i_28169 < result_sizze_21203; i_28169++) {
+    for (int64_t i_27211 = 0; i_27211 < result_sizze_20830; i_27211++) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:24-37
         
-        bool lifted_lambda_res_24795 = ((bool *) mem_28804.mem)[i_28169];
+        bool lifted_lambda_res_24426 = ((bool *) mem_27840.mem)[i_27211];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
         
-        int64_t defunc_0_f_res_24796 = btoi_bool_i64(lifted_lambda_res_24795);
+        int64_t defunc_0_f_res_24427 = btoi_bool_i64(lifted_lambda_res_24426);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
         
-        int64_t defunc_0_op_res_21225 = add64(defunc_0_f_res_24796, scanacc_28166);
+        int64_t defunc_0_op_res_20852 = add64(defunc_0_f_res_24427, scanacc_27208);
         
-        ((int64_t *) mem_28830.mem)[i_28169] = defunc_0_op_res_21225;
-        ((int64_t *) mem_28832.mem)[i_28169] = defunc_0_f_res_24796;
+        ((int64_t *) mem_27874.mem)[i_27211] = defunc_0_op_res_20852;
+        ((int64_t *) mem_27876.mem)[i_27211] = defunc_0_f_res_24427;
         
-        int64_t scanacc_tmp_29198 = defunc_0_op_res_21225;
+        int64_t scanacc_tmp_28240 = defunc_0_op_res_20852;
         
-        scanacc_28166 = scanacc_tmp_29198;
+        scanacc_27208 = scanacc_tmp_28240;
     }
-    discard_28172 = scanacc_28166;
-    if (memblock_unref(ctx, &mem_28804, "mem_28804") != 0)
+    discard_27214 = scanacc_27208;
+    if (memblock_unref(ctx, &mem_27840, "mem_27840") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool cond_21226 = result_sizze_21203 == (int64_t) 0;
+    bool cond_20853 = result_sizze_20830 == (int64_t) 0;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool x_21227 = !cond_21226;
+    bool x_20854 = !cond_20853;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    int64_t tmp_21228 = sub64(result_sizze_21203, (int64_t) 1);
+    int64_t tmp_20855 = sub64(result_sizze_20830, (int64_t) 1);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool x_21229 = sle64((int64_t) 0, tmp_21228);
+    bool x_20856 = sle64((int64_t) 0, tmp_20855);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool y_21230 = slt64(tmp_21228, result_sizze_21203);
+    bool y_20857 = slt64(tmp_20855, result_sizze_20830);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool bounds_check_21231 = x_21229 && y_21230;
+    bool bounds_check_20858 = x_20856 && y_20857;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool protect_assert_disj_21232 = cond_21226 || bounds_check_21231;
+    bool protect_assert_disj_20859 = cond_20853 || bounds_check_20858;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    bool index_certs_21233;
+    bool index_certs_20860;
     
-    if (!protect_assert_disj_21232) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_21228, "] out of bounds for array of shape [", (long long) result_sizze_21203, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56\n   #1  ./test_operations.fut:123:7-142:103\n"));
+    if (!protect_assert_disj_20859) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_20855, "] out of bounds for array of shape [", (long long) result_sizze_20830, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56\n   #1  ./test_operations.fut:123:7-142:119\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    int64_t m_f_res_21234;
+    int64_t m_f_res_20861;
     
-    if (x_21227) {
+    if (x_20854) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
         
-        int64_t x_27088 = ((int64_t *) mem_28830.mem)[tmp_21228];
+        int64_t x_26144 = ((int64_t *) mem_27874.mem)[tmp_20855];
         
-        m_f_res_21234 = x_27088;
+        m_f_res_20861 = x_26144;
     } else {
-        m_f_res_21234 = (int64_t) 0;
+        m_f_res_20861 = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    int64_t m_21236;
+    int64_t m_20863;
     
-    if (cond_21226) {
-        m_21236 = (int64_t) 0;
+    if (cond_20853) {
+        m_20863 = (int64_t) 0;
     } else {
-        m_21236 = m_f_res_21234;
+        m_20863 = m_f_res_20861;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:366:84-89
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:365:117-122
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29201 = 0; nest_i_29201 < (int64_t) 4; nest_i_29201++) {
-        int64_t arr_elem_29202 = ((int64_t *) mem_28779.mem)[nest_i_29201];
+    for (int64_t nest_i_28243 = 0; nest_i_28243 < (int64_t) 4; nest_i_28243++) {
+        int64_t arr_elem_28244 = ((int64_t *) mem_27815.mem)[nest_i_28243];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29202, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28244, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    if (memblock_alloc(ctx, &mem_28845, (int64_t) 32, "mem_28845")) {
+    if (memblock_alloc(ctx, &mem_27889, (int64_t) 32, "mem_27889")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    if (memblock_alloc(ctx, &mem_28846, (int64_t) 32, "mem_28846")) {
+    for (int64_t i_27218 = 0; i_27218 < (int64_t) 4; i_27218++) {
+        ((int64_t *) mem_27889.mem)[i_27218] = (int64_t) 0;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-366:112
+    if (memblock_alloc(ctx, &mem_27896, (int64_t) 32, "mem_27896")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    for (int64_t i_28179 = 0; i_28179 < (int64_t) 4; i_28179++) {
-        ((int64_t *) mem_28845.mem)[i_28179] = (int64_t) 0;
-        ((int64_t *) mem_28846.mem)[i_28179] = (int64_t) 0;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-367:83
-    if (memblock_alloc(ctx, &mem_28859, (int64_t) 32, "mem_28859")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-366:112
+    if (memblock_alloc(ctx, &mem_27897, (int64_t) 32, "mem_27897")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-367:83
-    for (int64_t i_28189 = 0; i_28189 < (int64_t) 4; i_28189++) {
-        int64_t eta_p_25469 = ((int64_t *) mem_28779.mem)[i_28189];
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-366:112
+    for (int64_t i_27228 = 0; i_27228 < (int64_t) 4; i_27228++) {
+        int64_t eta_p_25031 = ((int64_t *) mem_27815.mem)[i_27228];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t zv_lhs_25472 = add64((int64_t) -1, i_28189);
+        int64_t zv_lhs_25034 = add64((int64_t) -1, i_27228);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t tmp_25473 = smod64(zv_lhs_25472, (int64_t) 4);
+        int64_t tmp_25035 = smod64(zv_lhs_25034, (int64_t) 4);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_25474 = ((int64_t *) mem_28845.mem)[tmp_25473];
+        int64_t lifted_lambda_res_25036 = ((int64_t *) mem_27889.mem)[tmp_25035];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        bool cond_25476 = i_28189 == (int64_t) 0;
+        bool cond_25038 = i_27228 == (int64_t) 0;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_25477;
+        int64_t lifted_lambda_res_25039;
         
-        if (cond_25476) {
-            lifted_lambda_res_25477 = (int64_t) 0;
+        if (cond_25038) {
+            lifted_lambda_res_25039 = (int64_t) 0;
         } else {
-            lifted_lambda_res_25477 = lifted_lambda_res_25474;
+            lifted_lambda_res_25039 = lifted_lambda_res_25036;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:367:44-47
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:354:33-37
         
-        int64_t defunc_0_f_res_25479 = add64(eta_p_25469, lifted_lambda_res_25477);
+        int64_t lifted_lambda_res_25041 = mul64((int64_t) 2, lifted_lambda_res_25039);
         
-        ((int64_t *) mem_28859.mem)[i_28189] = defunc_0_f_res_25479;
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:61-65
+        
+        int64_t lifted_lambda_res_25043 = mul64((int64_t) 2, eta_p_25031);
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:366:34-37
+        
+        int64_t defunc_0_f_res_25045 = add64(lifted_lambda_res_25041, lifted_lambda_res_25043);
+        
+        ((int64_t *) mem_27896.mem)[i_27228] = defunc_0_f_res_25045;
+        ((int64_t *) mem_27897.mem)[i_27228] = lifted_lambda_res_25041;
     }
-    if (memblock_unref(ctx, &mem_28779, "mem_28779") != 0)
+    if (memblock_unref(ctx, &mem_27815, "mem_27815") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28845, "mem_28845") != 0)
+    if (memblock_unref(ctx, &mem_27889, "mem_27889") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
     
-    int64_t bytes_28866 = (int64_t) 8 * m_21236;
+    int64_t bytes_27910 = (int64_t) 8 * m_20863;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
-    if (memblock_alloc(ctx, &mem_28867, bytes_28866, "mem_28867")) {
+    if (memblock_alloc(ctx, &mem_27911, bytes_27910, "mem_27911")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
     
-    bool acc_cert_24761;
+    bool acc_cert_24392;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
-    for (int64_t i_28194 = 0; i_28194 < result_sizze_21203; i_28194++) {
-        int64_t eta_p_24776 = ((int64_t *) mem_28832.mem)[i_28194];
-        int64_t eta_p_24777 = ((int64_t *) mem_28830.mem)[i_28194];
+    for (int64_t i_27234 = 0; i_27234 < result_sizze_20830; i_27234++) {
+        int64_t eta_p_24407 = ((int64_t *) mem_27876.mem)[i_27234];
+        int64_t eta_p_24408 = ((int64_t *) mem_27874.mem)[i_27234];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
         
-        bool cond_24780 = eta_p_24776 == (int64_t) 1;
+        bool cond_24411 = eta_p_24407 == (int64_t) 1;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
         
-        int64_t lifted_lambda_res_24781;
+        int64_t lifted_lambda_res_24412;
         
-        if (cond_24780) {
+        if (cond_24411) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
             
-            int64_t lifted_lambda_res_t_res_27089 = sub64(eta_p_24777, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_26145 = sub64(eta_p_24408, (int64_t) 1);
             
-            lifted_lambda_res_24781 = lifted_lambda_res_t_res_27089;
+            lifted_lambda_res_24412 = lifted_lambda_res_t_res_26145;
         } else {
-            lifted_lambda_res_24781 = (int64_t) -1;
+            lifted_lambda_res_24412 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:313:10-56
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_24781) && slt64(lifted_lambda_res_24781, m_21236)) {
-            ((int64_t *) mem_28867.mem)[lifted_lambda_res_24781] = i_28194;
+        if (sle64((int64_t) 0, lifted_lambda_res_24412) && slt64(lifted_lambda_res_24412, m_20863)) {
+            ((int64_t *) mem_27911.mem)[lifted_lambda_res_24412] = i_27234;
         }
     }
-    if (memblock_unref(ctx, &mem_28830, "mem_28830") != 0)
+    if (memblock_unref(ctx, &mem_27874, "mem_27874") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28832, "mem_28832") != 0)
+    if (memblock_unref(ctx, &mem_27876, "mem_27876") != 0)
         return 1;
     
-    bool eq_x_y_22034 = defunc_0_reduce_res_27289 == (int64_t) 0;
-    bool eq_x_zz_22035 = defunc_0_reduce_res_27289 == m_f_res_21234;
-    bool p_and_eq_x_y_22036 = cond_21226 && eq_x_y_22034;
-    bool p_and_eq_x_y_22038 = x_21227 && eq_x_zz_22035;
-    bool dim_match_21252 = p_and_eq_x_y_22036 || p_and_eq_x_y_22038;
+    bool eq_x_y_21626 = defunc_0_reduce_res_26337 == (int64_t) 0;
+    bool eq_x_zz_21627 = defunc_0_reduce_res_26337 == m_f_res_20861;
+    bool p_and_eq_x_y_21628 = cond_20853 && eq_x_y_21626;
+    bool p_and_eq_x_y_21630 = x_20854 && eq_x_zz_21627;
+    bool dim_match_20879 = p_and_eq_x_y_21628 || p_and_eq_x_y_21630;
     
-    // ./test_operations.fut:123:7-142:103
+    // ./test_operations.fut:123:7-142:119
     
-    bool empty_or_match_cert_21253;
+    bool empty_or_match_cert_20880;
     
-    if (!dim_match_21252) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_21236, "] cannot match shape of type \"[", (long long) defunc_0_reduce_res_27289, "]i64\".", "-> #0  ./test_operations.fut:123:7-142:103\n"));
+    if (!dim_match_20879) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_20863, "] cannot match shape of type \"[", (long long) defunc_0_reduce_res_26337, "]i64\".", "-> #0  ./test_operations.fut:123:7-142:119\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
-    if (memblock_alloc(ctx, &mem_28885, bytes_28793, "mem_28885")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
+    if (memblock_alloc(ctx, &mem_27929, bytes_27829, "mem_27929")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
-    if (memblock_alloc(ctx, &mem_28887, bytes_28793, "mem_28887")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
+    if (memblock_alloc(ctx, &mem_27931, bytes_27829, "mem_27931")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:348:10-352:109
-    if (memblock_alloc(ctx, &mem_28869, bytes_28793, "mem_28869")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:347:26-352:118
+    if (memblock_alloc(ctx, &mem_27913, bytes_27829, "mem_27913")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:348:10-352:109
-    if (memblock_alloc(ctx, &mem_28871, bytes_28793, "mem_28871")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:347:26-352:118
+    if (memblock_alloc(ctx, &mem_27915, bytes_27829, "mem_27915")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
     
-    bool acc_cert_24160;
+    bool acc_cert_23753;
     
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:348:10-352:109
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:347:26-352:118
     
-    int64_t inpacc_27109;
-    int64_t inpacc_27111;
-    int64_t inpacc_24315;
-    int64_t inpacc_24317;
+    int64_t inpacc_26166;
+    int64_t inpacc_26168;
+    int64_t inpacc_23917;
+    int64_t inpacc_23919;
     
-    inpacc_24315 = (int64_t) 0;
-    inpacc_24317 = (int64_t) 0;
-    for (int64_t i_28277 = 0; i_28277 < defunc_0_reduce_res_27289; i_28277++) {
-        bool x_28517 = ((bool *) mem_28797.mem)[i_28277];
-        int64_t eta_p_28533 = ((int64_t *) mem_28796.mem)[i_28277];
+    inpacc_23917 = (int64_t) 0;
+    inpacc_23919 = (int64_t) 0;
+    for (int64_t i_27322 = 0; i_27322 < defunc_0_reduce_res_26337; i_27322++) {
+        bool x_27560 = ((bool *) mem_27833.mem)[i_27322];
+        int64_t eta_p_27576 = ((int64_t *) mem_27832.mem)[i_27322];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:331:23-27
         
-        bool lifted_lambda_res_28534 = slt64((int64_t) 0, eta_p_28533);
-        int64_t v_28562 = ((int64_t *) mem_28867.mem)[i_28277];
+        bool lifted_lambda_res_27577 = slt64((int64_t) 0, eta_p_27576);
+        int64_t v_27606 = ((int64_t *) mem_27911.mem)[i_27322];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:322:35-61
         
-        int64_t v_28564;
+        int64_t v_27608;
         
-        if (x_28517) {
-            v_28564 = (int64_t) 1;
+        if (x_27560) {
+            v_27608 = (int64_t) 1;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:339:34-37
             
-            int64_t defunc_0_g_res_28565 = add64((int64_t) 1, inpacc_24315);
+            int64_t defunc_0_g_res_27609 = add64((int64_t) 1, inpacc_23917);
             
-            v_28564 = defunc_0_g_res_28565;
+            v_27608 = defunc_0_g_res_27609;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:340:22-24
         
-        int64_t lifted_lambda_res_28566 = sub64(v_28564, (int64_t) 1);
+        int64_t lifted_lambda_res_27610 = sub64(v_27608, (int64_t) 1);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:322:35-61
         
-        int64_t v_28568;
+        int64_t v_27612;
         
-        if (lifted_lambda_res_28534) {
-            v_28568 = eta_p_28533;
+        if (lifted_lambda_res_27577) {
+            v_27612 = eta_p_27576;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:332:25-28
             
-            int64_t defunc_0_g_res_28569 = add64(inpacc_24317, eta_p_28533);
+            int64_t defunc_0_g_res_27613 = add64(inpacc_23919, eta_p_27576);
             
-            v_28568 = defunc_0_g_res_28569;
+            v_27612 = defunc_0_g_res_27613;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool x_28570 = sle64((int64_t) 0, v_28568);
+        bool x_27614 = sle64((int64_t) 0, v_27612);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool y_28571 = slt64(v_28568, (int64_t) 4);
+        bool y_27615 = slt64(v_27612, (int64_t) 4);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool bounds_check_28572 = x_28570 && y_28571;
+        bool bounds_check_27616 = x_27614 && y_27615;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool index_certs_28573;
+        bool index_certs_27617;
         
-        if (!bounds_check_28572) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) v_28568, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:347:46-72\n   #2  ./test_operations.fut:123:7-142:103\n"));
+        if (!bounds_check_27616) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) v_27612, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:346:47-95\n   #2  ./test_operations.fut:123:7-142:119\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        int64_t lifted_lambda_res_28574 = ((int64_t *) mem_28694.mem)[v_28568];
+        int64_t lifted_lambda_res_27618 = ((int64_t *) mem_27728.mem)[v_27612];
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:347:37-55
+        
+        bool x_27619 = sle64((int64_t) 0, lifted_lambda_res_27618);
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:347:37-55
+        
+        bool y_27620 = slt64(lifted_lambda_res_27618, (int64_t) 2);
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:347:37-55
+        
+        bool bounds_check_27621 = x_27619 && y_27620;
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:347:37-55
+        
+        bool index_certs_27622;
+        
+        if (!bounds_check_27621) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) lifted_lambda_res_27618, "] out of bounds for array of shape [", (long long) (int64_t) 2, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:347:37-55\n   #1  ./test_operations.fut:123:7-142:119\n"));
+            err = FUTHARK_PROGRAM_ERROR;
+            goto cleanup;
+        }
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:347:37-55
+        
+        int64_t lifted_lambda_res_27623 = ((int64_t *) mem_27727.mem)[lifted_lambda_res_27618];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:348:15-18
         
-        int64_t defunc_0_f_res_28575 = add64(lifted_lambda_res_28566, lifted_lambda_res_28574);
+        int64_t defunc_0_f_res_27624 = add64(lifted_lambda_res_27610, lifted_lambda_res_27623);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:76-90
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:81-95
         
-        bool x_28576 = sle64((int64_t) 0, defunc_0_f_res_28575);
+        bool x_27625 = sle64((int64_t) 0, defunc_0_f_res_27624);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:76-90
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:81-95
         
-        bool y_28577 = slt64(defunc_0_f_res_28575, (int64_t) 5);
+        bool y_27626 = slt64(defunc_0_f_res_27624, (int64_t) 5);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:76-90
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:81-95
         
-        bool bounds_check_28578 = x_28576 && y_28577;
+        bool bounds_check_27627 = x_27625 && y_27626;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:76-90
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:81-95
         
-        bool index_certs_28579;
+        bool index_certs_27628;
         
-        if (!bounds_check_28578) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) defunc_0_f_res_28575, "] out of bounds for array of shape [", (long long) (int64_t) 5, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:350:76-90\n   #1  ./test_operations.fut:123:7-142:103\n"));
+        if (!bounds_check_27627) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) defunc_0_f_res_27624, "] out of bounds for array of shape [", (long long) (int64_t) 5, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:350:81-95\n   #1  ./test_operations.fut:123:7-142:119\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:76-90
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:81-95
         
-        int64_t lifted_lambda_res_28580 = ((int64_t *) mem_28674.mem)[defunc_0_f_res_28575];
+        int64_t lifted_lambda_res_27629 = ((int64_t *) mem_27724.mem)[defunc_0_f_res_27624];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
         // UpdateAcc
-        if (sle64((int64_t) 0, v_28562) && slt64(v_28562, result_sizze_21203)) {
-            ((int64_t *) mem_28803.mem)[v_28562] = lifted_lambda_res_28580;
+        if (sle64((int64_t) 0, v_27606) && slt64(v_27606, result_sizze_20830)) {
+            ((int64_t *) mem_27839.mem)[v_27606] = lifted_lambda_res_27629;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:352:80-96
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:352:85-101
         
-        int64_t lifted_lambda_res_28582 = ((int64_t *) mem_28676.mem)[defunc_0_f_res_28575];
+        int64_t lifted_lambda_res_27631 = ((int64_t *) mem_27726.mem)[defunc_0_f_res_27624];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:351:76-90
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:351:81-95
         
-        int64_t lifted_lambda_res_28583 = ((int64_t *) mem_28675.mem)[defunc_0_f_res_28575];
+        int64_t lifted_lambda_res_27632 = ((int64_t *) mem_27725.mem)[defunc_0_f_res_27624];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:322:35-61
         
-        int64_t v_24355;
+        int64_t v_23957;
         
-        if (x_28517) {
-            v_24355 = (int64_t) 1;
+        if (x_27560) {
+            v_23957 = (int64_t) 1;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:339:34-37
             
-            int64_t defunc_0_g_res_24356 = add64((int64_t) 1, inpacc_24315);
+            int64_t defunc_0_g_res_23958 = add64((int64_t) 1, inpacc_23917);
             
-            v_24355 = defunc_0_g_res_24356;
+            v_23957 = defunc_0_g_res_23958;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:322:35-61
         
-        int64_t v_24418;
+        int64_t v_24026;
         
-        if (lifted_lambda_res_28534) {
-            v_24418 = eta_p_28533;
+        if (lifted_lambda_res_27577) {
+            v_24026 = eta_p_27576;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:332:25-28
             
-            int64_t defunc_0_g_res_24419 = add64(inpacc_24317, eta_p_28533);
+            int64_t defunc_0_g_res_24027 = add64(inpacc_23919, eta_p_27576);
             
-            v_24418 = defunc_0_g_res_24419;
+            v_24026 = defunc_0_g_res_24027;
         }
-        ((int64_t *) mem_28869.mem)[i_28277] = lifted_lambda_res_28583;
-        ((int64_t *) mem_28871.mem)[i_28277] = lifted_lambda_res_28582;
+        ((int64_t *) mem_27913.mem)[i_27322] = lifted_lambda_res_27632;
+        ((int64_t *) mem_27915.mem)[i_27322] = lifted_lambda_res_27631;
         
-        int64_t inpacc_tmp_29207 = v_24355;
-        int64_t inpacc_tmp_29208 = v_24418;
+        int64_t inpacc_tmp_28249 = v_23957;
+        int64_t inpacc_tmp_28250 = v_24026;
         
-        inpacc_24315 = inpacc_tmp_29207;
-        inpacc_24317 = inpacc_tmp_29208;
+        inpacc_23917 = inpacc_tmp_28249;
+        inpacc_23919 = inpacc_tmp_28250;
     }
-    inpacc_27109 = inpacc_24315;
-    inpacc_27111 = inpacc_24317;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28885.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28871.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_0_reduce_res_27289});
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-103
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28887.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28869.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_0_reduce_res_27289});
-    if (memblock_unref(ctx, &mem_28674, "mem_28674") != 0)
+    inpacc_26166 = inpacc_23917;
+    inpacc_26168 = inpacc_23919;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27929.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_27915.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_0_reduce_res_26337});
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:350:28-112
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_27931.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_27913.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_0_reduce_res_26337});
+    if (memblock_unref(ctx, &mem_27724, "mem_27724") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28675, "mem_28675") != 0)
+    if (memblock_unref(ctx, &mem_27725, "mem_27725") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28676, "mem_28676") != 0)
+    if (memblock_unref(ctx, &mem_27726, "mem_27726") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28694, "mem_28694") != 0)
+    if (memblock_unref(ctx, &mem_27727, "mem_27727") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28796, "mem_28796") != 0)
+    if (memblock_unref(ctx, &mem_27728, "mem_27728") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28797, "mem_28797") != 0)
+    if (memblock_unref(ctx, &mem_27832, "mem_27832") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28869, "mem_28869") != 0)
+    if (memblock_unref(ctx, &mem_27833, "mem_27833") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28871, "mem_28871") != 0)
+    if (memblock_unref(ctx, &mem_27913, "mem_27913") != 0)
         return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:39-65
-    if (memblock_alloc(ctx, &mem_28888, (int64_t) 32, "mem_28888")) {
+    if (memblock_unref(ctx, &mem_27915, "mem_27915") != 0)
+        return 1;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:368:39-65
+    if (memblock_alloc(ctx, &mem_27933, bytes_27834, "mem_27933")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:39-65
-    for (int64_t nest_i_29212 = 0; nest_i_29212 < (int64_t) 4; nest_i_29212++) {
-        ((int64_t *) mem_28888.mem)[nest_i_29212] = (int64_t) 0;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:368:39-65
+    for (int64_t nest_i_28254 = 0; nest_i_28254 < result_sizze_20830; nest_i_28254++) {
+        ((int64_t *) mem_27933.mem)[nest_i_28254] = (int64_t) 0;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:367:87-92
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:366:117-122
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29213 = 0; nest_i_29213 < (int64_t) 4; nest_i_29213++) {
-        int64_t arr_elem_29214 = ((int64_t *) mem_28859.mem)[nest_i_29213];
+    for (int64_t nest_i_28255 = 0; nest_i_28255 < (int64_t) 4; nest_i_28255++) {
+        int64_t arr_elem_28256 = ((int64_t *) mem_27869.mem)[nest_i_28255];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29214, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28256, " ");
     }
     fprintf(ctx->log, "%s", "\n");
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-65
-    if (memblock_alloc(ctx, &mem_28889, (int64_t) 32, "mem_28889")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:355:39-65
+    if (memblock_alloc(ctx, &mem_27935, bytes_27834, "mem_27935")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-65
-    for (int64_t nest_i_29215 = 0; nest_i_29215 < (int64_t) 4; nest_i_29215++) {
-        ((int64_t *) mem_28889.mem)[nest_i_29215] = (int64_t) 0;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:355:39-65
+    for (int64_t nest_i_28257 = 0; nest_i_28257 < result_sizze_20830; nest_i_28257++) {
+        ((int64_t *) mem_27935.mem)[nest_i_28257] = (int64_t) 0;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:39-65
-    if (memblock_alloc(ctx, &mem_28891, bytes_28798, "mem_28891")) {
-        err = 1;
-        goto cleanup;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:355:22-368:105
+    for (int64_t iter_27335 = 0; iter_27335 < (int64_t) 4; iter_27335++) {
+        int64_t pixel_27338 = ((int64_t *) mem_27871.mem)[iter_27335];
+        int64_t pixel_27339 = ((int64_t *) mem_27869.mem)[iter_27335];
+        int64_t pixel_27341 = ((int64_t *) mem_27870.mem)[iter_27335];
+        bool less_than_zzero_27342 = slt64(pixel_27338, (int64_t) 0);
+        bool greater_than_sizze_27343 = sle64(result_sizze_20830, pixel_27338);
+        bool outside_bounds_dim_27344 = less_than_zzero_27342 || greater_than_sizze_27343;
+        
+        if (!outside_bounds_dim_27344) {
+            int64_t read_hist_27346 = ((int64_t *) mem_27933.mem)[pixel_27338];
+            
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:368:67-70
+            
+            int64_t defunc_0_f_res_21170 = add64(pixel_27339, read_hist_27346);
+            
+            ((int64_t *) mem_27933.mem)[pixel_27338] = defunc_0_f_res_21170;
+        }
+        if (!outside_bounds_dim_27344) {
+            int64_t read_hist_27353 = ((int64_t *) mem_27935.mem)[pixel_27338];
+            
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:355:67-70
+            
+            int64_t defunc_0_f_res_21044 = add64(pixel_27341, read_hist_27353);
+            
+            ((int64_t *) mem_27935.mem)[pixel_27338] = defunc_0_f_res_21044;
+        }
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:39-65
-    for (int64_t nest_i_29216 = 0; nest_i_29216 < result_sizze_21203; nest_i_29216++) {
-        ((int64_t *) mem_28891.mem)[nest_i_29216] = (int64_t) 0;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:367:87-92
+    if (memblock_unref(ctx, &mem_27869, "mem_27869") != 0)
+        return 1;
+    if (memblock_unref(ctx, &mem_27870, "mem_27870") != 0)
+        return 1;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:368:109-114
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29217 = 0; nest_i_29217 < (int64_t) 4; nest_i_29217++) {
-        int64_t arr_elem_29218 = ((int64_t *) mem_28826.mem)[nest_i_29217];
+    for (int64_t nest_i_28260 = 0; nest_i_28260 < result_sizze_20830; nest_i_28260++) {
+        int64_t arr_elem_28261 = ((int64_t *) mem_27933.mem)[nest_i_28260];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29218, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28261, " ");
     }
     fprintf(ctx->log, "%s", "\n");
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-65
-    if (memblock_alloc(ctx, &mem_28893, bytes_28798, "mem_28893")) {
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:28-94
+    if (memblock_alloc(ctx, &mem_27948, (int64_t) 32, "mem_27948")) {
         err = 1;
         goto cleanup;
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-65
-    for (int64_t nest_i_29219 = 0; nest_i_29219 < result_sizze_21203; nest_i_29219++) {
-        ((int64_t *) mem_28893.mem)[nest_i_29219] = (int64_t) 0;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:22-369:100
-    for (int64_t iter_28289 = 0; iter_28289 < (int64_t) 4; iter_28289++) {
-        int64_t pixel_28294 = ((int64_t *) mem_28859.mem)[iter_28289];
-        int64_t pixel_28295 = ((int64_t *) mem_28828.mem)[iter_28289];
-        int64_t pixel_28298 = ((int64_t *) mem_28826.mem)[iter_28289];
-        int64_t pixel_28299 = ((int64_t *) mem_28827.mem)[iter_28289];
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:356:28-94
+    for (int64_t i_27358 = 0; i_27358 < (int64_t) 4; i_27358++) {
+        int64_t eta_p_21048 = ((int64_t *) mem_27871.mem)[i_27358];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-58
         
-        int64_t zv_lhs_26403 = add64((int64_t) -1, iter_28289);
+        bool x_21049 = sle64((int64_t) 0, eta_p_21048);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-58
         
-        int64_t tmp_26404 = smod64(zv_lhs_26403, (int64_t) 4);
+        bool y_21050 = slt64(eta_p_21048, result_sizze_20830);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-58
         
-        int64_t lifted_lambda_res_26405 = ((int64_t *) mem_28690.mem)[tmp_26404];
+        bool bounds_check_21051 = x_21049 && y_21050;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-58
         
-        bool cond_26406 = iter_28289 == (int64_t) 0;
+        bool index_certs_21052;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
-        
-        int64_t lifted_lambda_res_26407;
-        
-        if (cond_26406) {
-            lifted_lambda_res_26407 = (int64_t) 0;
-        } else {
-            lifted_lambda_res_26407 = lifted_lambda_res_26405;
-        }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:367:33-37
-        
-        int64_t lifted_lambda_res_26408 = mul64((int64_t) 2, pixel_28298);
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
-        
-        int64_t lifted_lambda_res_26411 = ((int64_t *) mem_28846.mem)[tmp_26404];
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
-        
-        int64_t lifted_lambda_res_26413;
-        
-        if (cond_26406) {
-            lifted_lambda_res_26413 = (int64_t) 0;
-        } else {
-            lifted_lambda_res_26413 = lifted_lambda_res_26411;
-        }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:367:33-37
-        
-        int64_t lifted_lambda_res_26414 = mul64((int64_t) 2, pixel_28294);
-        bool less_than_zzero_28302 = slt64(pixel_28295, (int64_t) 0);
-        bool greater_than_sizze_28303 = sle64((int64_t) 4, pixel_28295);
-        bool outside_bounds_dim_28304 = less_than_zzero_28302 || greater_than_sizze_28303;
-        
-        if (!outside_bounds_dim_28304) {
-            int64_t read_hist_28306 = ((int64_t *) mem_28888.mem)[pixel_28295];
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:369:67-70
-            
-            int64_t defunc_0_f_res_22015 = add64(lifted_lambda_res_26414, read_hist_28306);
-            
-            ((int64_t *) mem_28888.mem)[pixel_28295] = defunc_0_f_res_22015;
-        }
-        if (!outside_bounds_dim_28304) {
-            int64_t read_hist_28313 = ((int64_t *) mem_28889.mem)[pixel_28295];
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:356:67-70
-            
-            int64_t defunc_0_f_res_21889 = add64(lifted_lambda_res_26413, read_hist_28313);
-            
-            ((int64_t *) mem_28889.mem)[pixel_28295] = defunc_0_f_res_21889;
-        }
-        
-        bool less_than_zzero_28316 = slt64(pixel_28299, (int64_t) 0);
-        bool greater_than_sizze_28317 = sle64(result_sizze_21203, pixel_28299);
-        bool outside_bounds_dim_28318 = less_than_zzero_28316 || greater_than_sizze_28317;
-        
-        if (!outside_bounds_dim_28318) {
-            int64_t read_hist_28320 = ((int64_t *) mem_28891.mem)[pixel_28299];
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:369:67-70
-            
-            int64_t defunc_0_f_res_21561 = add64(lifted_lambda_res_26408, read_hist_28320);
-            
-            ((int64_t *) mem_28891.mem)[pixel_28299] = defunc_0_f_res_21561;
-        }
-        if (!outside_bounds_dim_28318) {
-            int64_t read_hist_28327 = ((int64_t *) mem_28893.mem)[pixel_28299];
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:356:67-70
-            
-            int64_t defunc_0_f_res_21435 = add64(lifted_lambda_res_26407, read_hist_28327);
-            
-            ((int64_t *) mem_28893.mem)[pixel_28299] = defunc_0_f_res_21435;
-        }
-    }
-    if (memblock_unref(ctx, &mem_28690, "mem_28690") != 0)
-        return 1;
-    if (memblock_unref(ctx, &mem_28826, "mem_28826") != 0)
-        return 1;
-    if (memblock_unref(ctx, &mem_28828, "mem_28828") != 0)
-        return 1;
-    if (memblock_unref(ctx, &mem_28846, "mem_28846") != 0)
-        return 1;
-    if (memblock_unref(ctx, &mem_28859, "mem_28859") != 0)
-        return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:104-109
-    // Trace: trace
-    fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29224 = 0; nest_i_29224 < result_sizze_21203; nest_i_29224++) {
-        int64_t arr_elem_29225 = ((int64_t *) mem_28891.mem)[nest_i_29224];
-        
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29225, " ");
-    }
-    fprintf(ctx->log, "%s", "\n");
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:357:28-89
-    if (memblock_alloc(ctx, &mem_28918, (int64_t) 32, "mem_28918")) {
-        err = 1;
-        goto cleanup;
-    }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:357:28-89
-    for (int64_t i_28332 = 0; i_28332 < (int64_t) 4; i_28332++) {
-        int64_t eta_p_21439 = ((int64_t *) mem_28827.mem)[i_28332];
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:39-58
-        
-        bool x_21440 = sle64((int64_t) 0, eta_p_21439);
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:39-58
-        
-        bool y_21441 = slt64(eta_p_21439, result_sizze_21203);
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:39-58
-        
-        bool bounds_check_21442 = x_21440 && y_21441;
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:39-58
-        
-        bool index_certs_21443;
-        
-        if (!bounds_check_21442) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_21439, "] out of bounds for array of shape [", (long long) result_sizze_21203, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:357:39-58\n   #1  ./test_operations.fut:123:7-142:103\n"));
+        if (!bounds_check_21051) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_21048, "] out of bounds for array of shape [", (long long) result_sizze_20830, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-58\n   #1  ./test_operations.fut:123:7-142:119\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:39-58
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:39-58
         
-        int64_t zp_lhs_21444 = ((int64_t *) mem_28803.mem)[eta_p_21439];
+        int64_t zp_lhs_21053 = ((int64_t *) mem_27839.mem)[eta_p_21048];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:61-74
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:61-74
         
-        int64_t zp_rhs_21445 = ((int64_t *) mem_28893.mem)[eta_p_21439];
+        int64_t zp_rhs_21054 = ((int64_t *) mem_27935.mem)[eta_p_21048];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:59-74
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:59-74
         
-        int64_t zp_lhs_21446 = add64(zp_lhs_21444, zp_rhs_21445);
+        int64_t zp_lhs_21055 = add64(zp_lhs_21053, zp_rhs_21054);
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:357:75-78
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:356:75-78
         
-        int64_t lifted_lambda_res_21447 = add64((int64_t) 1, zp_lhs_21446);
+        int64_t lifted_lambda_res_21056 = add64((int64_t) 1, zp_lhs_21055);
         
-        ((int64_t *) mem_28918.mem)[i_28332] = lifted_lambda_res_21447;
+        ((int64_t *) mem_27948.mem)[i_27358] = lifted_lambda_res_21056;
     }
-    if (memblock_unref(ctx, &mem_28827, "mem_28827") != 0)
+    if (memblock_unref(ctx, &mem_27871, "mem_27871") != 0)
         return 1;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:336:10-32
-    if (memblock_alloc(ctx, &mem_28926, bytes_28793, "mem_28926")) {
+    if (memblock_alloc(ctx, &mem_27956, bytes_27829, "mem_27956")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:336:10-32
     
-    int64_t inpacc_27310;
-    int64_t inpacc_22704 = (int64_t) 0;
+    int64_t inpacc_26355;
+    int64_t inpacc_22296 = (int64_t) 0;
     
-    for (int64_t i_28351 = 0; i_28351 < defunc_0_reduce_res_27289; i_28351++) {
-        int64_t eta_p_28484 = ((int64_t *) mem_28794.mem)[i_28351];
+    for (int64_t i_27377 = 0; i_27377 < defunc_0_reduce_res_26337; i_27377++) {
+        int64_t eta_p_27531 = ((int64_t *) mem_27830.mem)[i_27377];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:331:23-27
         
-        bool lifted_lambda_res_28485 = slt64((int64_t) 0, eta_p_28484);
+        bool lifted_lambda_res_27532 = slt64((int64_t) 0, eta_p_27531);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:322:35-61
         
-        int64_t v_28499;
+        int64_t v_27546;
         
-        if (lifted_lambda_res_28485) {
-            v_28499 = eta_p_28484;
+        if (lifted_lambda_res_27532) {
+            v_27546 = eta_p_27531;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:332:25-28
             
-            int64_t defunc_0_g_res_28500 = add64(inpacc_22704, eta_p_28484);
+            int64_t defunc_0_g_res_27547 = add64(inpacc_22296, eta_p_27531);
             
-            v_28499 = defunc_0_g_res_28500;
+            v_27546 = defunc_0_g_res_27547;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool x_28501 = sle64((int64_t) 0, v_28499);
+        bool x_27548 = sle64((int64_t) 0, v_27546);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool y_28502 = slt64(v_28499, (int64_t) 4);
+        bool y_27549 = slt64(v_27546, (int64_t) 4);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool bounds_check_28503 = x_28501 && y_28502;
+        bool bounds_check_27550 = x_27548 && y_27549;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        bool index_certs_28504;
+        bool index_certs_27551;
         
-        if (!bounds_check_28503) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) v_28499, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:358:48-76\n   #2  ./test_operations.fut:123:7-142:103\n"));
+        if (!bounds_check_27550) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) v_27546, "] out of bounds for array of shape [", (long long) (int64_t) 4, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:357:48-97\n   #2  ./test_operations.fut:123:7-142:119\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:336:21-26
         
-        int64_t lifted_lambda_res_28505 = ((int64_t *) mem_28918.mem)[v_28499];
+        int64_t lifted_lambda_res_27552 = ((int64_t *) mem_27948.mem)[v_27546];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:322:35-61
         
-        int64_t v_22743;
+        int64_t v_22335;
         
-        if (lifted_lambda_res_28485) {
-            v_22743 = eta_p_28484;
+        if (lifted_lambda_res_27532) {
+            v_22335 = eta_p_27531;
         } else {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:332:25-28
             
-            int64_t defunc_0_g_res_22744 = add64(inpacc_22704, eta_p_28484);
+            int64_t defunc_0_g_res_22336 = add64(inpacc_22296, eta_p_27531);
             
-            v_22743 = defunc_0_g_res_22744;
+            v_22335 = defunc_0_g_res_22336;
         }
-        ((int64_t *) mem_28926.mem)[i_28351] = lifted_lambda_res_28505;
+        ((int64_t *) mem_27956.mem)[i_27377] = lifted_lambda_res_27552;
         
-        int64_t inpacc_tmp_29227 = v_22743;
+        int64_t inpacc_tmp_28263 = v_22335;
         
-        inpacc_22704 = inpacc_tmp_29227;
+        inpacc_22296 = inpacc_tmp_28263;
     }
-    inpacc_27310 = inpacc_22704;
-    if (memblock_unref(ctx, &mem_28794, "mem_28794") != 0)
+    inpacc_26355 = inpacc_22296;
+    if (memblock_unref(ctx, &mem_27830, "mem_27830") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28918, "mem_28918") != 0)
+    if (memblock_unref(ctx, &mem_27948, "mem_27948") != 0)
         return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:370:22-80
-    for (int64_t iter_28353 = 0; iter_28353 < defunc_0_reduce_res_27289; iter_28353++) {
-        int64_t pixel_28355 = ((int64_t *) mem_28867.mem)[iter_28353];
-        int64_t pixel_28356 = ((int64_t *) mem_28926.mem)[iter_28353];
-        bool less_than_zzero_28357 = slt64(pixel_28355, (int64_t) 0);
-        bool greater_than_sizze_28358 = sle64(result_sizze_21203, pixel_28355);
-        bool outside_bounds_dim_28359 = less_than_zzero_28357 || greater_than_sizze_28358;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:22-85
+    for (int64_t iter_27379 = 0; iter_27379 < defunc_0_reduce_res_26337; iter_27379++) {
+        int64_t pixel_27381 = ((int64_t *) mem_27911.mem)[iter_27379];
+        int64_t pixel_27382 = ((int64_t *) mem_27956.mem)[iter_27379];
+        bool less_than_zzero_27383 = slt64(pixel_27381, (int64_t) 0);
+        bool greater_than_sizze_27384 = sle64(result_sizze_20830, pixel_27381);
+        bool outside_bounds_dim_27385 = less_than_zzero_27383 || greater_than_sizze_27384;
         
-        if (!outside_bounds_dim_28359) {
-            int64_t read_hist_28361 = ((int64_t *) mem_28891.mem)[pixel_28355];
+        if (!outside_bounds_dim_27385) {
+            int64_t read_hist_27387 = ((int64_t *) mem_27933.mem)[pixel_27381];
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:370:49-52
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:369:49-52
             
-            int64_t defunc_0_f_res_21568 = add64(pixel_28356, read_hist_28361);
+            int64_t defunc_0_f_res_21177 = add64(pixel_27382, read_hist_27387);
             
-            ((int64_t *) mem_28891.mem)[pixel_28355] = defunc_0_f_res_21568;
+            ((int64_t *) mem_27933.mem)[pixel_27381] = defunc_0_f_res_21177;
         }
     }
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:370:84-89
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:89-94
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29230 = 0; nest_i_29230 < result_sizze_21203; nest_i_29230++) {
-        int64_t arr_elem_29231 = ((int64_t *) mem_28891.mem)[nest_i_29230];
+    for (int64_t nest_i_28266 = 0; nest_i_28266 < result_sizze_20830; nest_i_28266++) {
+        int64_t arr_elem_28267 = ((int64_t *) mem_27933.mem)[nest_i_28266];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29231, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28267, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ./test_operations.fut:144:5-147:62
     
-    bool cond_13395 = result_sizze_21203 == (int64_t) 11;
+    bool cond_13233 = result_sizze_20830 == (int64_t) 11;
     
     // ./test_operations.fut:144:5-147:62
     
-    bool cond_13396;
+    bool cond_13234;
     
-    if (cond_13395) {
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:359:22-80
-        for (int64_t iter_28364 = 0; iter_28364 < defunc_0_reduce_res_27289; iter_28364++) {
-            int64_t pixel_28366 = ((int64_t *) mem_28867.mem)[iter_28364];
-            int64_t pixel_28367 = ((int64_t *) mem_28926.mem)[iter_28364];
-            bool less_than_zzero_28368 = slt64(pixel_28366, (int64_t) 0);
-            bool greater_than_sizze_28369 = sle64(result_sizze_21203, pixel_28366);
-            bool outside_bounds_dim_28370 = less_than_zzero_28368 || greater_than_sizze_28369;
+    if (cond_13233) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:358:22-85
+        for (int64_t iter_27390 = 0; iter_27390 < defunc_0_reduce_res_26337; iter_27390++) {
+            int64_t pixel_27392 = ((int64_t *) mem_27911.mem)[iter_27390];
+            int64_t pixel_27393 = ((int64_t *) mem_27956.mem)[iter_27390];
+            bool less_than_zzero_27394 = slt64(pixel_27392, (int64_t) 0);
+            bool greater_than_sizze_27395 = sle64(result_sizze_20830, pixel_27392);
+            bool outside_bounds_dim_27396 = less_than_zzero_27394 || greater_than_sizze_27395;
             
-            if (!outside_bounds_dim_28370) {
-                int64_t read_hist_28372 = ((int64_t *) mem_28893.mem)[pixel_28366];
+            if (!outside_bounds_dim_27396) {
+                int64_t read_hist_27398 = ((int64_t *) mem_27935.mem)[pixel_27392];
                 
-                // ../lib/github.com/diku-dk/vtree/vtree.fut:359:49-52
+                // ../lib/github.com/diku-dk/vtree/vtree.fut:358:49-52
                 
-                int64_t defunc_0_f_res_27197 = add64(pixel_28367, read_hist_28372);
+                int64_t defunc_0_f_res_26252 = add64(pixel_27393, read_hist_27398);
                 
-                ((int64_t *) mem_28893.mem)[pixel_28366] = defunc_0_f_res_27197;
+                ((int64_t *) mem_27935.mem)[pixel_27392] = defunc_0_f_res_26252;
             }
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:18-54
-        if (memblock_alloc(ctx, &mem_28946, bytes_28798, "mem_28946")) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:371:18-54
+        if (memblock_alloc(ctx, &mem_27976, bytes_27834, "mem_27976")) {
             err = 1;
             goto cleanup;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:18-54
-        for (int64_t i_28377 = 0; i_28377 < result_sizze_21203; i_28377++) {
-            int64_t eta_p_27205 = ((int64_t *) mem_28803.mem)[i_28377];
-            int64_t eta_p_27206 = ((int64_t *) mem_28893.mem)[i_28377];
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:371:18-54
+        for (int64_t i_27403 = 0; i_27403 < result_sizze_20830; i_27403++) {
+            int64_t eta_p_26259 = ((int64_t *) mem_27839.mem)[i_27403];
+            int64_t eta_p_26260 = ((int64_t *) mem_27935.mem)[i_27403];
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:372:23-26
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:371:23-26
             
-            int64_t defunc_0_f_res_27207 = add64(eta_p_27205, eta_p_27206);
+            int64_t defunc_0_f_res_26261 = add64(eta_p_26259, eta_p_26260);
             
-            ((int64_t *) mem_28946.mem)[i_28377] = defunc_0_f_res_27207;
+            ((int64_t *) mem_27976.mem)[i_27403] = defunc_0_f_res_26261;
         }
         // ./test_operations.fut:145:24-44
         
-        bool dim_match_27212 = (int64_t) 11 == result_sizze_21203;
+        bool dim_match_26265 = (int64_t) 11 == result_sizze_20830;
         
         // ./test_operations.fut:145:24-44
         
-        bool empty_or_match_cert_27213;
+        bool empty_or_match_cert_26266;
         
-        if (!dim_match_27212) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) result_sizze_21203, "] cannot match shape of type \"[", (long long) (int64_t) 11, "]i64\".", "-> #0  ./test_operations.fut:145:24-44\n"));
+        if (!dim_match_26265) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) result_sizze_20830, "] cannot match shape of type \"[", (long long) (int64_t) 11, "]i64\".", "-> #0  ./test_operations.fut:145:24-44\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:145:8-57
         
-        bool defunc_0_reduce_res_27215;
-        bool redout_28379 = 1;
+        bool defunc_0_reduce_res_26268;
+        bool redout_27405 = 1;
         
-        for (int64_t i_28380 = 0; i_28380 < (int64_t) 11; i_28380++) {
-            int64_t eta_p_27216 = ((int64_t *) mem_28946.mem)[i_28380];
-            int64_t eta_p_27217 = ((int64_t *) mem_28679.mem)[i_28380];
+        for (int64_t i_27406 = 0; i_27406 < (int64_t) 11; i_27406++) {
+            int64_t eta_p_26269 = ((int64_t *) mem_27976.mem)[i_27406];
+            int64_t eta_p_26270 = ((int64_t *) mem_27729.mem)[i_27406];
             
             // ./test_operations.fut:145:18-22
             
-            bool defunc_0_f_res_27218 = eta_p_27216 == eta_p_27217;
+            bool defunc_0_f_res_26271 = eta_p_26269 == eta_p_26270;
             
             // ./test_operations.fut:145:8-57
             
-            bool x_27221 = defunc_0_f_res_27218 && redout_28379;
-            bool redout_tmp_29234 = x_27221;
+            bool x_26274 = defunc_0_f_res_26271 && redout_27405;
+            bool redout_tmp_28270 = x_26274;
             
-            redout_28379 = redout_tmp_29234;
+            redout_27405 = redout_tmp_28270;
         }
-        defunc_0_reduce_res_27215 = redout_28379;
-        if (memblock_unref(ctx, &mem_28946, "mem_28946") != 0)
+        defunc_0_reduce_res_26268 = redout_27405;
+        if (memblock_unref(ctx, &mem_27976, "mem_27976") != 0)
             return 1;
-        cond_13396 = defunc_0_reduce_res_27215;
+        cond_13234 = defunc_0_reduce_res_26268;
     } else {
-        cond_13396 = 0;
+        cond_13234 = 0;
     }
-    if (memblock_unref(ctx, &mem_28679, "mem_28679") != 0)
+    if (memblock_unref(ctx, &mem_27729, "mem_27729") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28803, "mem_28803") != 0)
+    if (memblock_unref(ctx, &mem_27839, "mem_27839") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28893, "mem_28893") != 0)
+    if (memblock_unref(ctx, &mem_27935, "mem_27935") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28926, "mem_28926") != 0)
+    if (memblock_unref(ctx, &mem_27956, "mem_27956") != 0)
         return 1;
     // ./test_operations.fut:144:5-147:62
     
-    bool cond_13405;
+    bool cond_13243;
     
-    if (cond_13396) {
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:351:28-103
+    if (cond_13234) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:351:28-112
         
-        bool acc_cert_27130;
+        bool acc_cert_26188;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:351:28-103
-        for (int64_t i_28382 = 0; i_28382 < defunc_0_reduce_res_27289; i_28382++) {
-            int64_t v_27134 = ((int64_t *) mem_28867.mem)[i_28382];
-            int64_t v_27135 = ((int64_t *) mem_28887.mem)[i_28382];
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:351:28-112
+        for (int64_t i_27408 = 0; i_27408 < defunc_0_reduce_res_26337; i_27408++) {
+            int64_t v_26192 = ((int64_t *) mem_27911.mem)[i_27408];
+            int64_t v_26193 = ((int64_t *) mem_27931.mem)[i_27408];
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:351:28-103
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:351:28-112
             // UpdateAcc
-            if (sle64((int64_t) 0, v_27134) && slt64(v_27134, result_sizze_21203)) {
-                ((int64_t *) mem_28801.mem)[v_27134] = v_27135;
+            if (sle64((int64_t) 0, v_26192) && slt64(v_26192, result_sizze_20830)) {
+                ((int64_t *) mem_27837.mem)[v_26192] = v_26193;
             }
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:373:18-54
-        if (memblock_alloc(ctx, &mem_28954, bytes_28798, "mem_28954")) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:18-54
+        if (memblock_alloc(ctx, &mem_27984, bytes_27834, "mem_27984")) {
             err = 1;
             goto cleanup;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:373:18-54
-        for (int64_t i_28385 = 0; i_28385 < result_sizze_21203; i_28385++) {
-            int64_t eta_p_27139 = ((int64_t *) mem_28801.mem)[i_28385];
-            int64_t eta_p_27140 = ((int64_t *) mem_28891.mem)[i_28385];
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:18-54
+        for (int64_t i_27411 = 0; i_27411 < result_sizze_20830; i_27411++) {
+            int64_t eta_p_26197 = ((int64_t *) mem_27837.mem)[i_27411];
+            int64_t eta_p_26198 = ((int64_t *) mem_27933.mem)[i_27411];
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:373:23-26
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:372:23-26
             
-            int64_t defunc_0_f_res_27141 = add64(eta_p_27139, eta_p_27140);
+            int64_t defunc_0_f_res_26199 = add64(eta_p_26197, eta_p_26198);
             
-            ((int64_t *) mem_28954.mem)[i_28385] = defunc_0_f_res_27141;
+            ((int64_t *) mem_27984.mem)[i_27411] = defunc_0_f_res_26199;
         }
         // ./test_operations.fut:146:24-44
         
-        bool dim_match_27146 = (int64_t) 11 == result_sizze_21203;
+        bool dim_match_26203 = (int64_t) 11 == result_sizze_20830;
         
         // ./test_operations.fut:146:24-44
         
-        bool empty_or_match_cert_27147;
+        bool empty_or_match_cert_26204;
         
-        if (!dim_match_27146) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) result_sizze_21203, "] cannot match shape of type \"[", (long long) (int64_t) 11, "]i64\".", "-> #0  ./test_operations.fut:146:24-44\n"));
+        if (!dim_match_26203) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) result_sizze_20830, "] cannot match shape of type \"[", (long long) (int64_t) 11, "]i64\".", "-> #0  ./test_operations.fut:146:24-44\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:146:8-57
         
-        bool defunc_0_reduce_res_27149;
-        bool redout_28387 = 1;
+        bool defunc_0_reduce_res_26206;
+        bool redout_27413 = 1;
         
-        for (int64_t i_28388 = 0; i_28388 < (int64_t) 11; i_28388++) {
-            int64_t eta_p_27150 = ((int64_t *) mem_28954.mem)[i_28388];
-            int64_t eta_p_27151 = ((int64_t *) mem_28680.mem)[i_28388];
+        for (int64_t i_27414 = 0; i_27414 < (int64_t) 11; i_27414++) {
+            int64_t eta_p_26207 = ((int64_t *) mem_27984.mem)[i_27414];
+            int64_t eta_p_26208 = ((int64_t *) mem_27730.mem)[i_27414];
             
             // ./test_operations.fut:146:18-22
             
-            bool defunc_0_f_res_27152 = eta_p_27150 == eta_p_27151;
+            bool defunc_0_f_res_26209 = eta_p_26207 == eta_p_26208;
             
             // ./test_operations.fut:146:8-57
             
-            bool x_27155 = defunc_0_f_res_27152 && redout_28387;
-            bool redout_tmp_29237 = x_27155;
+            bool x_26212 = defunc_0_f_res_26209 && redout_27413;
+            bool redout_tmp_28273 = x_26212;
             
-            redout_28387 = redout_tmp_29237;
+            redout_27413 = redout_tmp_28273;
         }
-        defunc_0_reduce_res_27149 = redout_28387;
-        if (memblock_unref(ctx, &mem_28954, "mem_28954") != 0)
+        defunc_0_reduce_res_26206 = redout_27413;
+        if (memblock_unref(ctx, &mem_27984, "mem_27984") != 0)
             return 1;
-        cond_13405 = defunc_0_reduce_res_27149;
+        cond_13243 = defunc_0_reduce_res_26206;
     } else {
-        cond_13405 = 0;
+        cond_13243 = 0;
     }
-    if (memblock_unref(ctx, &mem_28680, "mem_28680") != 0)
+    if (memblock_unref(ctx, &mem_27730, "mem_27730") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28801, "mem_28801") != 0)
+    if (memblock_unref(ctx, &mem_27837, "mem_27837") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28887, "mem_28887") != 0)
+    if (memblock_unref(ctx, &mem_27931, "mem_27931") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28891, "mem_28891") != 0)
+    if (memblock_unref(ctx, &mem_27933, "mem_27933") != 0)
         return 1;
     // ./test_operations.fut:144:5-147:62
-    if (cond_13405) {
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:352:30-109
+    if (cond_13243) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:352:30-118
         
-        bool acc_cert_27165;
+        bool acc_cert_26221;
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:352:30-109
-        for (int64_t i_28390 = 0; i_28390 < defunc_0_reduce_res_27289; i_28390++) {
-            int64_t v_27169 = ((int64_t *) mem_28867.mem)[i_28390];
-            int64_t v_27170 = ((int64_t *) mem_28885.mem)[i_28390];
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:352:30-118
+        for (int64_t i_27416 = 0; i_27416 < defunc_0_reduce_res_26337; i_27416++) {
+            int64_t v_26225 = ((int64_t *) mem_27911.mem)[i_27416];
+            int64_t v_26226 = ((int64_t *) mem_27929.mem)[i_27416];
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:352:30-109
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:352:30-118
             // UpdateAcc
-            if (sle64((int64_t) 0, v_27169) && slt64(v_27169, result_sizze_21203)) {
-                ((int64_t *) mem_28799.mem)[v_27169] = v_27170;
+            if (sle64((int64_t) 0, v_26225) && slt64(v_26225, result_sizze_20830)) {
+                ((int64_t *) mem_27835.mem)[v_26225] = v_26226;
             }
         }
         // ./test_operations.fut:147:24-46
         
-        bool dim_match_27173 = (int64_t) 11 == result_sizze_21203;
+        bool dim_match_26229 = (int64_t) 11 == result_sizze_20830;
         
         // ./test_operations.fut:147:24-46
         
-        bool empty_or_match_cert_27174;
+        bool empty_or_match_cert_26230;
         
-        if (!dim_match_27173) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) result_sizze_21203, "] cannot match shape of type \"[", (long long) (int64_t) 11, "]i64\".", "-> #0  ./test_operations.fut:147:24-46\n"));
+        if (!dim_match_26229) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) result_sizze_20830, "] cannot match shape of type \"[", (long long) (int64_t) 11, "]i64\".", "-> #0  ./test_operations.fut:147:24-46\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         // ./test_operations.fut:147:8-61
         
-        bool defunc_0_reduce_res_27176;
-        bool redout_28391 = 1;
+        bool defunc_0_reduce_res_26232;
+        bool redout_27417 = 1;
         
-        for (int64_t i_28392 = 0; i_28392 < (int64_t) 11; i_28392++) {
-            int64_t eta_p_27177 = ((int64_t *) mem_28799.mem)[i_28392];
-            int64_t eta_p_27178 = ((int64_t *) mem_28681.mem)[i_28392];
+        for (int64_t i_27418 = 0; i_27418 < (int64_t) 11; i_27418++) {
+            int64_t eta_p_26233 = ((int64_t *) mem_27835.mem)[i_27418];
+            int64_t eta_p_26234 = ((int64_t *) mem_27731.mem)[i_27418];
             
             // ./test_operations.fut:147:18-22
             
-            bool defunc_0_f_res_27179 = eta_p_27177 == eta_p_27178;
+            bool defunc_0_f_res_26235 = eta_p_26233 == eta_p_26234;
             
             // ./test_operations.fut:147:8-61
             
-            bool x_27182 = defunc_0_f_res_27179 && redout_28391;
-            bool redout_tmp_29239 = x_27182;
+            bool x_26238 = defunc_0_f_res_26235 && redout_27417;
+            bool redout_tmp_28275 = x_26238;
             
-            redout_28391 = redout_tmp_29239;
+            redout_27417 = redout_tmp_28275;
         }
-        defunc_0_reduce_res_27176 = redout_28391;
-        ok_13414 = defunc_0_reduce_res_27176;
+        defunc_0_reduce_res_26232 = redout_27417;
+        ok_13252 = defunc_0_reduce_res_26232;
     } else {
-        ok_13414 = 0;
+        ok_13252 = 0;
     }
-    if (memblock_unref(ctx, &mem_28681, "mem_28681") != 0)
+    if (memblock_unref(ctx, &mem_27731, "mem_27731") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28799, "mem_28799") != 0)
+    if (memblock_unref(ctx, &mem_27835, "mem_27835") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28867, "mem_28867") != 0)
+    if (memblock_unref(ctx, &mem_27911, "mem_27911") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28885, "mem_28885") != 0)
+    if (memblock_unref(ctx, &mem_27929, "mem_27929") != 0)
         return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:104-109
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:368:39-65
+    if (memblock_alloc(ctx, &mem_27991, (int64_t) 32, "mem_27991")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:368:39-65
+    for (int64_t nest_i_28276 = 0; nest_i_28276 < (int64_t) 4; nest_i_28276++) {
+        ((int64_t *) mem_27991.mem)[nest_i_28276] = (int64_t) 0;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:366:117-122
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29240 = 0; nest_i_29240 < (int64_t) 4; nest_i_29240++) {
-        int64_t arr_elem_29241 = ((int64_t *) mem_28888.mem)[nest_i_29240];
+    for (int64_t nest_i_28277 = 0; nest_i_28277 < (int64_t) 4; nest_i_28277++) {
+        int64_t arr_elem_28278 = ((int64_t *) mem_27896.mem)[nest_i_28277];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29241, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28278, " ");
+    }
+    fprintf(ctx->log, "%s", "\n");
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:355:39-65
+    if (memblock_alloc(ctx, &mem_27992, (int64_t) 32, "mem_27992")) {
+        err = 1;
+        goto cleanup;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:355:39-65
+    for (int64_t nest_i_28279 = 0; nest_i_28279 < (int64_t) 4; nest_i_28279++) {
+        ((int64_t *) mem_27992.mem)[nest_i_28279] = (int64_t) 0;
+    }
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:355:22-368:105
+    for (int64_t iter_27419 = 0; iter_27419 < (int64_t) 4; iter_27419++) {
+        int64_t pixel_27422 = ((int64_t *) mem_27872.mem)[iter_27419];
+        int64_t pixel_27423 = ((int64_t *) mem_27896.mem)[iter_27419];
+        int64_t pixel_27425 = ((int64_t *) mem_27897.mem)[iter_27419];
+        bool less_than_zzero_27426 = slt64(pixel_27422, (int64_t) 0);
+        bool greater_than_sizze_27427 = sle64((int64_t) 4, pixel_27422);
+        bool outside_bounds_dim_27428 = less_than_zzero_27426 || greater_than_sizze_27427;
+        
+        if (!outside_bounds_dim_27428) {
+            int64_t read_hist_27430 = ((int64_t *) mem_27991.mem)[pixel_27422];
+            
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:368:67-70
+            
+            int64_t defunc_0_f_res_21607 = add64(pixel_27423, read_hist_27430);
+            
+            ((int64_t *) mem_27991.mem)[pixel_27422] = defunc_0_f_res_21607;
+        }
+        if (!outside_bounds_dim_27428) {
+            int64_t read_hist_27437 = ((int64_t *) mem_27992.mem)[pixel_27422];
+            
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:355:67-70
+            
+            int64_t defunc_0_f_res_21481 = add64(pixel_27425, read_hist_27437);
+            
+            ((int64_t *) mem_27992.mem)[pixel_27422] = defunc_0_f_res_21481;
+        }
+    }
+    if (memblock_unref(ctx, &mem_27872, "mem_27872") != 0)
+        return 1;
+    if (memblock_unref(ctx, &mem_27896, "mem_27896") != 0)
+        return 1;
+    if (memblock_unref(ctx, &mem_27897, "mem_27897") != 0)
+        return 1;
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:368:109-114
+    // Trace: trace
+    fprintf(ctx->log, "%s", "trace: ");
+    for (int64_t nest_i_28282 = 0; nest_i_28282 < (int64_t) 4; nest_i_28282++) {
+        int64_t arr_elem_28283 = ((int64_t *) mem_27991.mem)[nest_i_28282];
+        
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28283, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ./test_operations.fut:169:8-56
     
-    bool defunc_0_reduce_res_27316;
-    bool redout_28414 = 1;
+    bool defunc_0_reduce_res_26363;
+    bool redout_27461 = 1;
     
-    for (int64_t i_28415 = 0; i_28415 < (int64_t) 4; i_28415++) {
-        int64_t eta_p_22127 = ((int64_t *) mem_28740.mem)[i_28415];
-        int64_t eta_p_22128 = ((int64_t *) mem_28889.mem)[i_28415];
-        int64_t eta_p_22129 = ((int64_t *) mem_28671.mem)[i_28415];
+    for (int64_t i_27462 = 0; i_27462 < (int64_t) 4; i_27462++) {
+        int64_t eta_p_21719 = ((int64_t *) mem_27776.mem)[i_27462];
+        int64_t eta_p_21720 = ((int64_t *) mem_27992.mem)[i_27462];
+        int64_t eta_p_21721 = ((int64_t *) mem_27721.mem)[i_27462];
         
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:23-26
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:371:23-26
         
-        int64_t defunc_0_f_res_22130 = add64(eta_p_22127, eta_p_22128);
+        int64_t defunc_0_f_res_21722 = add64(eta_p_21719, eta_p_21720);
         
         // ./test_operations.fut:169:18-22
         
-        bool defunc_0_f_res_22132 = defunc_0_f_res_22130 == eta_p_22129;
+        bool defunc_0_f_res_21724 = defunc_0_f_res_21722 == eta_p_21721;
         
         // ./test_operations.fut:169:8-56
         
-        bool x_20711 = defunc_0_f_res_22132 && redout_28414;
-        bool redout_tmp_29242 = x_20711;
+        bool x_20357 = defunc_0_f_res_21724 && redout_27461;
+        bool redout_tmp_28284 = x_20357;
         
-        redout_28414 = redout_tmp_29242;
+        redout_27461 = redout_tmp_28284;
     }
-    defunc_0_reduce_res_27316 = redout_28414;
-    if (memblock_unref(ctx, &mem_28671, "mem_28671") != 0)
+    defunc_0_reduce_res_26363 = redout_27461;
+    if (memblock_unref(ctx, &mem_27721, "mem_27721") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28740, "mem_28740") != 0)
+    if (memblock_unref(ctx, &mem_27776, "mem_27776") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28889, "mem_28889") != 0)
+    if (memblock_unref(ctx, &mem_27992, "mem_27992") != 0)
         return 1;
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:370:84-89
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:369:89-94
     // Trace: trace
     fprintf(ctx->log, "%s", "trace: ");
-    for (int64_t nest_i_29243 = 0; nest_i_29243 < (int64_t) 4; nest_i_29243++) {
-        int64_t arr_elem_29244 = ((int64_t *) mem_28888.mem)[nest_i_29243];
+    for (int64_t nest_i_28285 = 0; nest_i_28285 < (int64_t) 4; nest_i_28285++) {
+        int64_t arr_elem_28286 = ((int64_t *) mem_27991.mem)[nest_i_28285];
         
-        fprintf(ctx->log, "%lld%s", (long long) arr_elem_29244, " ");
+        fprintf(ctx->log, "%lld%s", (long long) arr_elem_28286, " ");
     }
     fprintf(ctx->log, "%s", "\n");
     // ./test_operations.fut:168:5-171:61
     
-    bool cond_13484;
+    bool cond_13322;
     
-    if (defunc_0_reduce_res_27316) {
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:373:18-54
-        if (memblock_alloc(ctx, &mem_28961, (int64_t) 32, "mem_28961")) {
+    if (defunc_0_reduce_res_26363) {
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:18-54
+        if (memblock_alloc(ctx, &mem_28005, (int64_t) 32, "mem_28005")) {
             err = 1;
             goto cleanup;
         }
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:373:18-54
-        for (int64_t i_28420 = 0; i_28420 < (int64_t) 4; i_28420++) {
-            int64_t eta_p_27242 = ((int64_t *) mem_28739.mem)[i_28420];
-            int64_t eta_p_27243 = ((int64_t *) mem_28888.mem)[i_28420];
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:372:18-54
+        for (int64_t i_27467 = 0; i_27467 < (int64_t) 4; i_27467++) {
+            int64_t eta_p_26294 = ((int64_t *) mem_27775.mem)[i_27467];
+            int64_t eta_p_26295 = ((int64_t *) mem_27991.mem)[i_27467];
             
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:373:23-26
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:372:23-26
             
-            int64_t defunc_0_f_res_27244 = add64(eta_p_27242, eta_p_27243);
+            int64_t defunc_0_f_res_26296 = add64(eta_p_26294, eta_p_26295);
             
-            ((int64_t *) mem_28961.mem)[i_28420] = defunc_0_f_res_27244;
+            ((int64_t *) mem_28005.mem)[i_27467] = defunc_0_f_res_26296;
         }
         // ./test_operations.fut:170:8-56
         
-        bool defunc_0_reduce_res_27249;
-        bool redout_28422 = 1;
+        bool defunc_0_reduce_res_26300;
+        bool redout_27469 = 1;
         
-        for (int64_t i_28423 = 0; i_28423 < (int64_t) 4; i_28423++) {
-            int64_t eta_p_27250 = ((int64_t *) mem_28961.mem)[i_28423];
-            int64_t eta_p_27251 = ((int64_t *) mem_28672.mem)[i_28423];
+        for (int64_t i_27470 = 0; i_27470 < (int64_t) 4; i_27470++) {
+            int64_t eta_p_26301 = ((int64_t *) mem_28005.mem)[i_27470];
+            int64_t eta_p_26302 = ((int64_t *) mem_27722.mem)[i_27470];
             
             // ./test_operations.fut:170:18-22
             
-            bool defunc_0_f_res_27252 = eta_p_27250 == eta_p_27251;
+            bool defunc_0_f_res_26303 = eta_p_26301 == eta_p_26302;
             
             // ./test_operations.fut:170:8-56
             
-            bool x_27255 = defunc_0_f_res_27252 && redout_28422;
-            bool redout_tmp_29246 = x_27255;
+            bool x_26306 = defunc_0_f_res_26303 && redout_27469;
+            bool redout_tmp_28288 = x_26306;
             
-            redout_28422 = redout_tmp_29246;
+            redout_27469 = redout_tmp_28288;
         }
-        defunc_0_reduce_res_27249 = redout_28422;
-        if (memblock_unref(ctx, &mem_28961, "mem_28961") != 0)
+        defunc_0_reduce_res_26300 = redout_27469;
+        if (memblock_unref(ctx, &mem_28005, "mem_28005") != 0)
             return 1;
-        cond_13484 = defunc_0_reduce_res_27249;
+        cond_13322 = defunc_0_reduce_res_26300;
     } else {
-        cond_13484 = 0;
+        cond_13322 = 0;
     }
-    if (memblock_unref(ctx, &mem_28672, "mem_28672") != 0)
+    if (memblock_unref(ctx, &mem_27722, "mem_27722") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28739, "mem_28739") != 0)
+    if (memblock_unref(ctx, &mem_27775, "mem_27775") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28888, "mem_28888") != 0)
+    if (memblock_unref(ctx, &mem_27991, "mem_27991") != 0)
         return 1;
     // ./test_operations.fut:168:5-171:61
-    if (cond_13484) {
+    if (cond_13322) {
         // ./test_operations.fut:171:8-60
         
-        bool defunc_0_reduce_res_27272;
-        bool redout_28426 = 1;
+        bool defunc_0_reduce_res_26322;
+        bool redout_27473 = 1;
         
-        for (int64_t i_28427 = 0; i_28427 < (int64_t) 4; i_28427++) {
-            int64_t eta_p_27273 = ((int64_t *) mem_28738.mem)[i_28427];
-            int64_t eta_p_27274 = ((int64_t *) mem_28673.mem)[i_28427];
+        for (int64_t i_27474 = 0; i_27474 < (int64_t) 4; i_27474++) {
+            int64_t eta_p_26323 = ((int64_t *) mem_27774.mem)[i_27474];
+            int64_t eta_p_26324 = ((int64_t *) mem_27723.mem)[i_27474];
             
             // ./test_operations.fut:171:18-22
             
-            bool defunc_0_f_res_27275 = eta_p_27273 == eta_p_27274;
+            bool defunc_0_f_res_26325 = eta_p_26323 == eta_p_26324;
             
             // ./test_operations.fut:171:8-60
             
-            bool x_27278 = defunc_0_f_res_27275 && redout_28426;
-            bool redout_tmp_29247 = x_27278;
+            bool x_26328 = defunc_0_f_res_26325 && redout_27473;
+            bool redout_tmp_28289 = x_26328;
             
-            redout_28426 = redout_tmp_29247;
+            redout_27473 = redout_tmp_28289;
         }
-        defunc_0_reduce_res_27272 = redout_28426;
-        ok_13493 = defunc_0_reduce_res_27272;
+        defunc_0_reduce_res_26322 = redout_27473;
+        ok_13331 = defunc_0_reduce_res_26322;
     } else {
-        ok_13493 = 0;
+        ok_13331 = 0;
     }
-    if (memblock_unref(ctx, &mem_28673, "mem_28673") != 0)
+    if (memblock_unref(ctx, &mem_27723, "mem_27723") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28738, "mem_28738") != 0)
+    if (memblock_unref(ctx, &mem_27774, "mem_27774") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28961, "mem_28961") != 0)
+    if (memblock_unref(ctx, &mem_28005, "mem_28005") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28954, "mem_28954") != 0)
+    if (memblock_unref(ctx, &mem_27992, "mem_27992") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28946, "mem_28946") != 0)
+    if (memblock_unref(ctx, &mem_27991, "mem_27991") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28926, "mem_28926") != 0)
+    if (memblock_unref(ctx, &mem_27984, "mem_27984") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28918, "mem_28918") != 0)
+    if (memblock_unref(ctx, &mem_27976, "mem_27976") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28893, "mem_28893") != 0)
+    if (memblock_unref(ctx, &mem_27956, "mem_27956") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28891, "mem_28891") != 0)
+    if (memblock_unref(ctx, &mem_27948, "mem_27948") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28889, "mem_28889") != 0)
+    if (memblock_unref(ctx, &mem_27935, "mem_27935") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28888, "mem_28888") != 0)
+    if (memblock_unref(ctx, &mem_27933, "mem_27933") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28871, "mem_28871") != 0)
+    if (memblock_unref(ctx, &mem_27915, "mem_27915") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28869, "mem_28869") != 0)
+    if (memblock_unref(ctx, &mem_27913, "mem_27913") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28887, "mem_28887") != 0)
+    if (memblock_unref(ctx, &mem_27931, "mem_27931") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28885, "mem_28885") != 0)
+    if (memblock_unref(ctx, &mem_27929, "mem_27929") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28867, "mem_28867") != 0)
+    if (memblock_unref(ctx, &mem_27911, "mem_27911") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28859, "mem_28859") != 0)
+    if (memblock_unref(ctx, &mem_27897, "mem_27897") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28846, "mem_28846") != 0)
+    if (memblock_unref(ctx, &mem_27896, "mem_27896") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28845, "mem_28845") != 0)
+    if (memblock_unref(ctx, &mem_27889, "mem_27889") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28832, "mem_28832") != 0)
+    if (memblock_unref(ctx, &mem_27876, "mem_27876") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28830, "mem_28830") != 0)
+    if (memblock_unref(ctx, &mem_27874, "mem_27874") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28807, "mem_28807") != 0)
+    if (memblock_unref(ctx, &mem_27844, "mem_27844") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28806, "mem_28806") != 0)
+    if (memblock_unref(ctx, &mem_27843, "mem_27843") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28805, "mem_28805") != 0)
+    if (memblock_unref(ctx, &mem_27842, "mem_27842") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28828, "mem_28828") != 0)
+    if (memblock_unref(ctx, &mem_27841, "mem_27841") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28827, "mem_28827") != 0)
+    if (memblock_unref(ctx, &mem_27872, "mem_27872") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28826, "mem_28826") != 0)
+    if (memblock_unref(ctx, &mem_27871, "mem_27871") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28804, "mem_28804") != 0)
+    if (memblock_unref(ctx, &mem_27870, "mem_27870") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28803, "mem_28803") != 0)
+    if (memblock_unref(ctx, &mem_27869, "mem_27869") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28801, "mem_28801") != 0)
+    if (memblock_unref(ctx, &mem_27840, "mem_27840") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28799, "mem_28799") != 0)
+    if (memblock_unref(ctx, &mem_27839, "mem_27839") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28797, "mem_28797") != 0)
+    if (memblock_unref(ctx, &mem_27837, "mem_27837") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28796, "mem_28796") != 0)
+    if (memblock_unref(ctx, &mem_27835, "mem_27835") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28794, "mem_28794") != 0)
+    if (memblock_unref(ctx, &mem_27833, "mem_27833") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28780, "mem_28780") != 0)
+    if (memblock_unref(ctx, &mem_27832, "mem_27832") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28779, "mem_28779") != 0)
+    if (memblock_unref(ctx, &mem_27830, "mem_27830") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28766, "mem_28766") != 0)
+    if (memblock_unref(ctx, &mem_27816, "mem_27816") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28765, "mem_28765") != 0)
+    if (memblock_unref(ctx, &mem_27815, "mem_27815") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28758, "mem_28758") != 0)
+    if (memblock_unref(ctx, &mem_27802, "mem_27802") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28751, "mem_28751") != 0)
+    if (memblock_unref(ctx, &mem_27801, "mem_27801") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28750, "mem_28750") != 0)
+    if (memblock_unref(ctx, &mem_27794, "mem_27794") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28749, "mem_28749") != 0)
+    if (memblock_unref(ctx, &mem_27787, "mem_27787") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28748, "mem_28748") != 0)
+    if (memblock_unref(ctx, &mem_27786, "mem_27786") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28741, "mem_28741") != 0)
+    if (memblock_unref(ctx, &mem_27785, "mem_27785") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28740, "mem_28740") != 0)
+    if (memblock_unref(ctx, &mem_27784, "mem_27784") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28739, "mem_28739") != 0)
+    if (memblock_unref(ctx, &mem_27777, "mem_27777") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28738, "mem_28738") != 0)
+    if (memblock_unref(ctx, &mem_27776, "mem_27776") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28695, "mem_28695") != 0)
+    if (memblock_unref(ctx, &mem_27775, "mem_27775") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28694, "mem_28694") != 0)
+    if (memblock_unref(ctx, &mem_27774, "mem_27774") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28693, "mem_28693") != 0)
+    if (memblock_unref(ctx, &mem_27743, "mem_27743") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28692, "mem_28692") != 0)
+    if (memblock_unref(ctx, &mem_27742, "mem_27742") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28691, "mem_28691") != 0)
+    if (memblock_unref(ctx, &mem_27741, "mem_27741") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28690, "mem_28690") != 0)
+    if (memblock_unref(ctx, &mem_27740, "mem_27740") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28689, "mem_28689") != 0)
+    if (memblock_unref(ctx, &mem_27739, "mem_27739") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28682, "mem_28682") != 0)
+    if (memblock_unref(ctx, &mem_27732, "mem_27732") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28681, "mem_28681") != 0)
+    if (memblock_unref(ctx, &mem_27731, "mem_27731") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28680, "mem_28680") != 0)
+    if (memblock_unref(ctx, &mem_27730, "mem_27730") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28679, "mem_28679") != 0)
+    if (memblock_unref(ctx, &mem_27729, "mem_27729") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28678, "mem_28678") != 0)
+    if (memblock_unref(ctx, &mem_27728, "mem_27728") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28677, "mem_28677") != 0)
+    if (memblock_unref(ctx, &mem_27727, "mem_27727") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28676, "mem_28676") != 0)
+    if (memblock_unref(ctx, &mem_27726, "mem_27726") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28675, "mem_28675") != 0)
+    if (memblock_unref(ctx, &mem_27725, "mem_27725") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28674, "mem_28674") != 0)
+    if (memblock_unref(ctx, &mem_27724, "mem_27724") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28673, "mem_28673") != 0)
+    if (memblock_unref(ctx, &mem_27723, "mem_27723") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28672, "mem_28672") != 0)
+    if (memblock_unref(ctx, &mem_27722, "mem_27722") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28671, "mem_28671") != 0)
+    if (memblock_unref(ctx, &mem_27721, "mem_27721") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28670, "mem_28670") != 0)
+    if (memblock_unref(ctx, &mem_27720, "mem_27720") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28667, "ext_mem_28667") != 0)
+    if (memblock_unref(ctx, &ext_mem_27717, "ext_mem_27717") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28668, "ext_mem_28668") != 0)
+    if (memblock_unref(ctx, &ext_mem_27718, "ext_mem_27718") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28669, "ext_mem_28669") != 0)
+    if (memblock_unref(ctx, &ext_mem_27719, "ext_mem_27719") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28666, "mem_28666") != 0)
+    if (memblock_unref(ctx, &mem_27716, "mem_27716") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28659, "ext_mem_28659") != 0)
+    if (memblock_unref(ctx, &ext_mem_27709, "ext_mem_27709") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28660, "ext_mem_28660") != 0)
+    if (memblock_unref(ctx, &ext_mem_27710, "ext_mem_27710") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28661, "ext_mem_28661") != 0)
+    if (memblock_unref(ctx, &ext_mem_27711, "ext_mem_27711") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28662, "ext_mem_28662") != 0)
+    if (memblock_unref(ctx, &ext_mem_27712, "ext_mem_27712") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28663, "ext_mem_28663") != 0)
+    if (memblock_unref(ctx, &ext_mem_27713, "ext_mem_27713") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28664, "ext_mem_28664") != 0)
+    if (memblock_unref(ctx, &ext_mem_27714, "ext_mem_27714") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28665, "ext_mem_28665") != 0)
+    if (memblock_unref(ctx, &ext_mem_27715, "ext_mem_27715") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28658, "mem_28658") != 0)
+    if (memblock_unref(ctx, &mem_27708, "mem_27708") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28657, "mem_28657") != 0)
+    if (memblock_unref(ctx, &mem_27707, "mem_27707") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28650, "ext_mem_28650") != 0)
+    if (memblock_unref(ctx, &ext_mem_27700, "ext_mem_27700") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28651, "ext_mem_28651") != 0)
+    if (memblock_unref(ctx, &ext_mem_27701, "ext_mem_27701") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28652, "ext_mem_28652") != 0)
+    if (memblock_unref(ctx, &ext_mem_27702, "ext_mem_27702") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28653, "ext_mem_28653") != 0)
+    if (memblock_unref(ctx, &ext_mem_27703, "ext_mem_27703") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28654, "ext_mem_28654") != 0)
+    if (memblock_unref(ctx, &ext_mem_27704, "ext_mem_27704") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28655, "ext_mem_28655") != 0)
+    if (memblock_unref(ctx, &ext_mem_27705, "ext_mem_27705") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28656, "ext_mem_28656") != 0)
+    if (memblock_unref(ctx, &ext_mem_27706, "ext_mem_27706") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28649, "mem_28649") != 0)
+    if (memblock_unref(ctx, &mem_27699, "mem_27699") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28642, "ext_mem_28642") != 0)
+    if (memblock_unref(ctx, &ext_mem_27692, "ext_mem_27692") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28643, "ext_mem_28643") != 0)
+    if (memblock_unref(ctx, &ext_mem_27693, "ext_mem_27693") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28644, "ext_mem_28644") != 0)
+    if (memblock_unref(ctx, &ext_mem_27694, "ext_mem_27694") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28645, "ext_mem_28645") != 0)
+    if (memblock_unref(ctx, &ext_mem_27695, "ext_mem_27695") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28646, "ext_mem_28646") != 0)
+    if (memblock_unref(ctx, &ext_mem_27696, "ext_mem_27696") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28647, "ext_mem_28647") != 0)
+    if (memblock_unref(ctx, &ext_mem_27697, "ext_mem_27697") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28648, "ext_mem_28648") != 0)
+    if (memblock_unref(ctx, &ext_mem_27698, "ext_mem_27698") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28641, "mem_28641") != 0)
+    if (memblock_unref(ctx, &mem_27691, "mem_27691") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28640, "mem_28640") != 0)
+    if (memblock_unref(ctx, &mem_27690, "mem_27690") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28639, "mem_28639") != 0)
+    if (memblock_unref(ctx, &mem_27689, "mem_27689") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28638, "mem_28638") != 0)
+    if (memblock_unref(ctx, &mem_27688, "mem_27688") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28637, "mem_28637") != 0)
+    if (memblock_unref(ctx, &mem_27687, "mem_27687") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28636, "mem_28636") != 0)
+    if (memblock_unref(ctx, &mem_27686, "mem_27686") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28635, "mem_28635") != 0)
+    if (memblock_unref(ctx, &mem_27685, "mem_27685") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28634, "mem_28634") != 0)
+    if (memblock_unref(ctx, &mem_27684, "mem_27684") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28627, "ext_mem_28627") != 0)
+    if (memblock_unref(ctx, &ext_mem_27677, "ext_mem_27677") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28628, "ext_mem_28628") != 0)
+    if (memblock_unref(ctx, &ext_mem_27678, "ext_mem_27678") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28629, "ext_mem_28629") != 0)
+    if (memblock_unref(ctx, &ext_mem_27679, "ext_mem_27679") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28630, "ext_mem_28630") != 0)
+    if (memblock_unref(ctx, &ext_mem_27680, "ext_mem_27680") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28631, "ext_mem_28631") != 0)
+    if (memblock_unref(ctx, &ext_mem_27681, "ext_mem_27681") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28632, "ext_mem_28632") != 0)
+    if (memblock_unref(ctx, &ext_mem_27682, "ext_mem_27682") != 0)
         return 1;
-    if (memblock_unref(ctx, &ext_mem_28633, "ext_mem_28633") != 0)
+    if (memblock_unref(ctx, &ext_mem_27683, "ext_mem_27683") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28626, "mem_28626") != 0)
+    if (memblock_unref(ctx, &mem_27676, "mem_27676") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28625, "mem_28625") != 0)
+    if (memblock_unref(ctx, &mem_27675, "mem_27675") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28624, "mem_28624") != 0)
+    if (memblock_unref(ctx, &mem_27674, "mem_27674") != 0)
         return 1;
-    if (memblock_unref(ctx, &mem_28623, "mem_28623") != 0)
+    if (memblock_unref(ctx, &mem_27673, "mem_27673") != 0)
         return 1;
+    #undef ok_13169
+    #undef ok_13252
     #undef ok_13331
-    #undef ok_13414
-    #undef ok_13493
-    #undef x_19472
-    #undef x_19475
-    #undef x_19481
-    #undef x_19487
+    #undef x_19124
+    #undef x_19127
+    #undef x_19133
+    #undef x_19139
     
   cleanup:
     return err;
@@ -9950,1490 +9906,1490 @@ static int free_constants(struct futhark_context *ctx)
     return 0;
 }
 
-FUTHARK_FUN_ATTR int futrts_deleteVertices_7592(struct futhark_context *ctx, struct memblock *mem_out_p_29275, struct memblock *mem_out_p_29276, struct memblock *mem_out_p_29277, int64_t *out_prim_out_29278, struct memblock data_mem_28968, struct memblock lp_mem_28969, struct memblock rp_mem_28970, struct memblock keep_mem_28971, int64_t n_14357)
+FUTHARK_FUN_ATTR int futrts_deleteVertices_7584(struct futhark_context *ctx, struct memblock *mem_out_p_28317, struct memblock *mem_out_p_28318, struct memblock *mem_out_p_28319, int64_t *out_prim_out_28320, struct memblock data_mem_28012, struct memblock lp_mem_28013, struct memblock rp_mem_28014, struct memblock keep_mem_28015, int64_t n_14195)
 {
     (void) ctx;
     
     int err = 0;
-    int64_t mem_28973_cached_sizze_29279 = 0;
-    unsigned char *mem_28973 = NULL;
-    int64_t mem_28975_cached_sizze_29280 = 0;
-    unsigned char *mem_28975 = NULL;
-    int64_t mem_28977_cached_sizze_29281 = 0;
-    unsigned char *mem_28977 = NULL;
-    int64_t mem_28979_cached_sizze_29282 = 0;
-    unsigned char *mem_28979 = NULL;
-    int64_t mem_28981_cached_sizze_29283 = 0;
-    unsigned char *mem_28981 = NULL;
-    int64_t mem_28983_cached_sizze_29284 = 0;
-    unsigned char *mem_28983 = NULL;
-    int64_t mem_29020_cached_sizze_29285 = 0;
-    unsigned char *mem_29020 = NULL;
-    int64_t mem_29022_cached_sizze_29286 = 0;
-    unsigned char *mem_29022 = NULL;
-    int64_t mem_29024_cached_sizze_29287 = 0;
-    unsigned char *mem_29024 = NULL;
-    int64_t mem_29032_cached_sizze_29288 = 0;
-    unsigned char *mem_29032 = NULL;
-    int64_t mem_29034_cached_sizze_29289 = 0;
-    unsigned char *mem_29034 = NULL;
-    struct memblock mem_29040;
+    int64_t mem_28017_cached_sizze_28321 = 0;
+    unsigned char *mem_28017 = NULL;
+    int64_t mem_28019_cached_sizze_28322 = 0;
+    unsigned char *mem_28019 = NULL;
+    int64_t mem_28021_cached_sizze_28323 = 0;
+    unsigned char *mem_28021 = NULL;
+    int64_t mem_28023_cached_sizze_28324 = 0;
+    unsigned char *mem_28023 = NULL;
+    int64_t mem_28025_cached_sizze_28325 = 0;
+    unsigned char *mem_28025 = NULL;
+    int64_t mem_28027_cached_sizze_28326 = 0;
+    unsigned char *mem_28027 = NULL;
+    int64_t mem_28064_cached_sizze_28327 = 0;
+    unsigned char *mem_28064 = NULL;
+    int64_t mem_28066_cached_sizze_28328 = 0;
+    unsigned char *mem_28066 = NULL;
+    int64_t mem_28068_cached_sizze_28329 = 0;
+    unsigned char *mem_28068 = NULL;
+    int64_t mem_28076_cached_sizze_28330 = 0;
+    unsigned char *mem_28076 = NULL;
+    int64_t mem_28078_cached_sizze_28331 = 0;
+    unsigned char *mem_28078 = NULL;
+    struct memblock mem_28084;
     
-    mem_29040.references = NULL;
+    mem_28084.references = NULL;
     
-    struct memblock mem_29038;
+    struct memblock mem_28082;
     
-    mem_29038.references = NULL;
+    mem_28082.references = NULL;
     
-    struct memblock mem_29036;
+    struct memblock mem_28080;
     
-    mem_29036.references = NULL;
+    mem_28080.references = NULL;
     
-    struct memblock mem_out_29070;
+    struct memblock mem_out_28114;
     
-    mem_out_29070.references = NULL;
+    mem_out_28114.references = NULL;
     
-    struct memblock mem_out_29069;
+    struct memblock mem_out_28113;
     
-    mem_out_29069.references = NULL;
+    mem_out_28113.references = NULL;
     
-    struct memblock mem_out_29068;
+    struct memblock mem_out_28112;
     
-    mem_out_29068.references = NULL;
+    mem_out_28112.references = NULL;
     
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    int64_t prim_out_29071;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    int64_t prim_out_28115;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:242:27-32
     
-    int64_t dzlz7bUZLztZRz20U2z20Unz7dUzg_14362 = mul64((int64_t) 2, n_14357);
+    int64_t dzlz7bUZLztZRz20U2z20Unz7dUzg_14200 = mul64((int64_t) 2, n_14195);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t bytes_28972 = (int64_t) 8 * n_14357;
+    int64_t bytes_28016 = (int64_t) 8 * n_14195;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_28973_cached_sizze_29279 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28973, &mem_28973_cached_sizze_29279, bytes_28972);
+    if (mem_28017_cached_sizze_28321 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28017, &mem_28017_cached_sizze_28321, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_28975_cached_sizze_29280 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28975, &mem_28975_cached_sizze_29280, bytes_28972);
+    if (mem_28019_cached_sizze_28322 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28019, &mem_28019_cached_sizze_28322, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_28977_cached_sizze_29281 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28977, &mem_28977_cached_sizze_29281, bytes_28972);
+    if (mem_28021_cached_sizze_28323 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28021, &mem_28021_cached_sizze_28323, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_28979_cached_sizze_29282 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28979, &mem_28979_cached_sizze_29282, bytes_28972);
+    if (mem_28023_cached_sizze_28324 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28023, &mem_28023_cached_sizze_28324, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_28981_cached_sizze_29283 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28981, &mem_28981_cached_sizze_29283, bytes_28972);
+    if (mem_28025_cached_sizze_28325 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28025, &mem_28025_cached_sizze_28325, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_28983_cached_sizze_29284 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28983, &mem_28983_cached_sizze_29284, bytes_28972);
+    if (mem_28027_cached_sizze_28326 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28027, &mem_28027_cached_sizze_28326, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t discard_28451;
-    int64_t discard_28452;
-    int64_t discard_28453;
-    int64_t defunc_res_27883;
-    int64_t scanacc_28434;
-    int64_t scanacc_28435;
-    int64_t scanacc_28436;
-    int64_t redout_28440;
+    int64_t discard_27498;
+    int64_t discard_27499;
+    int64_t discard_27500;
+    int64_t defunc_res_26930;
+    int64_t scanacc_27481;
+    int64_t scanacc_27482;
+    int64_t scanacc_27483;
+    int64_t redout_27487;
     
-    scanacc_28434 = (int64_t) 0;
-    scanacc_28435 = (int64_t) 0;
-    scanacc_28436 = (int64_t) 0;
-    redout_28440 = (int64_t) 0;
-    for (int64_t i_28444 = 0; i_28444 < n_14357; i_28444++) {
-        bool eta_p_27749 = ((bool *) keep_mem_28971.mem)[i_28444];
+    scanacc_27481 = (int64_t) 0;
+    scanacc_27482 = (int64_t) 0;
+    scanacc_27483 = (int64_t) 0;
+    redout_27487 = (int64_t) 0;
+    for (int64_t i_27491 = 0; i_27491 < n_14195; i_27491++) {
+        bool eta_p_26796 = ((bool *) keep_mem_28015.mem)[i_27491];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:240:22-57
         
-        int64_t lifted_lambda_res_27753 = btoi_bool_i64(eta_p_27749);
+        int64_t lifted_lambda_res_26800 = btoi_bool_i64(eta_p_26796);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t defunc_0_op_res_20988 = add64(lifted_lambda_res_27753, scanacc_28434);
+        int64_t defunc_0_op_res_20614 = add64(lifted_lambda_res_26800, scanacc_27481);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t defunc_0_op_res_21038 = add64(lifted_lambda_res_27753, scanacc_28435);
+        int64_t defunc_0_op_res_20664 = add64(lifted_lambda_res_26800, scanacc_27482);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t defunc_0_op_res_21088 = add64(lifted_lambda_res_27753, scanacc_28436);
+        int64_t defunc_0_op_res_20714 = add64(lifted_lambda_res_26800, scanacc_27483);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:240:13-57
         
-        int64_t zp_res_20502 = add64(lifted_lambda_res_27753, redout_28440);
+        int64_t zp_res_20148 = add64(lifted_lambda_res_26800, redout_27487);
         
-        ((int64_t *) mem_28973)[i_28444] = defunc_0_op_res_20988;
-        ((int64_t *) mem_28975)[i_28444] = defunc_0_op_res_21038;
-        ((int64_t *) mem_28977)[i_28444] = defunc_0_op_res_21088;
-        ((int64_t *) mem_28979)[i_28444] = lifted_lambda_res_27753;
-        ((int64_t *) mem_28981)[i_28444] = lifted_lambda_res_27753;
-        ((int64_t *) mem_28983)[i_28444] = lifted_lambda_res_27753;
+        ((int64_t *) mem_28017)[i_27491] = defunc_0_op_res_20614;
+        ((int64_t *) mem_28019)[i_27491] = defunc_0_op_res_20664;
+        ((int64_t *) mem_28021)[i_27491] = defunc_0_op_res_20714;
+        ((int64_t *) mem_28023)[i_27491] = lifted_lambda_res_26800;
+        ((int64_t *) mem_28025)[i_27491] = lifted_lambda_res_26800;
+        ((int64_t *) mem_28027)[i_27491] = lifted_lambda_res_26800;
         
-        int64_t scanacc_tmp_29072 = defunc_0_op_res_20988;
-        int64_t scanacc_tmp_29073 = defunc_0_op_res_21038;
-        int64_t scanacc_tmp_29074 = defunc_0_op_res_21088;
-        int64_t redout_tmp_29078 = zp_res_20502;
+        int64_t scanacc_tmp_28116 = defunc_0_op_res_20614;
+        int64_t scanacc_tmp_28117 = defunc_0_op_res_20664;
+        int64_t scanacc_tmp_28118 = defunc_0_op_res_20714;
+        int64_t redout_tmp_28122 = zp_res_20148;
         
-        scanacc_28434 = scanacc_tmp_29072;
-        scanacc_28435 = scanacc_tmp_29073;
-        scanacc_28436 = scanacc_tmp_29074;
-        redout_28440 = redout_tmp_29078;
+        scanacc_27481 = scanacc_tmp_28116;
+        scanacc_27482 = scanacc_tmp_28117;
+        scanacc_27483 = scanacc_tmp_28118;
+        redout_27487 = redout_tmp_28122;
     }
-    discard_28451 = scanacc_28434;
-    discard_28452 = scanacc_28435;
-    discard_28453 = scanacc_28436;
-    defunc_res_27883 = redout_28440;
+    discard_27498 = scanacc_27481;
+    discard_27499 = scanacc_27482;
+    discard_27500 = scanacc_27483;
+    defunc_res_26930 = redout_27487;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t tmp_20991 = sub64(n_14357, (int64_t) 1);
-    
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    
-    bool y_20993 = slt64(tmp_20991, n_14357);
+    int64_t tmp_20617 = sub64(n_14195, (int64_t) 1);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool x_20992 = sle64((int64_t) 0, tmp_20991);
+    bool y_20619 = slt64(tmp_20617, n_14195);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool bounds_check_20994 = x_20992 && y_20993;
+    bool x_20618 = sle64((int64_t) 0, tmp_20617);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool cond_20989 = n_14357 == (int64_t) 0;
+    bool bounds_check_20620 = x_20618 && y_20619;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool protect_assert_disj_20995 = cond_20989 || bounds_check_20994;
+    bool cond_20615 = n_14195 == (int64_t) 0;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool index_certs_20996;
+    bool protect_assert_disj_20621 = cond_20615 || bounds_check_20620;
     
-    if (!protect_assert_disj_20995) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_20991, "] out of bounds for array of shape [", (long long) n_14357, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:252:14-32\n"));
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
+    
+    bool index_certs_20622;
+    
+    if (!protect_assert_disj_20621) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_20617, "] out of bounds for array of shape [", (long long) n_14195, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:252:14-32\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool x_20990 = !cond_20989;
+    bool x_20616 = !cond_20615;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_f_res_21097;
+    int64_t m_f_res_20723;
     
-    if (x_20990) {
+    if (x_20616) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t x_27879 = ((int64_t *) mem_28977)[tmp_20991];
+        int64_t x_26926 = ((int64_t *) mem_28021)[tmp_20617];
         
-        m_f_res_21097 = x_27879;
+        m_f_res_20723 = x_26926;
     } else {
-        m_f_res_21097 = (int64_t) 0;
+        m_f_res_20723 = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_21099;
+    int64_t m_20725;
     
-    if (cond_20989) {
-        m_21099 = (int64_t) 0;
+    if (cond_20615) {
+        m_20725 = (int64_t) 0;
     } else {
-        m_21099 = m_f_res_21097;
+        m_20725 = m_f_res_20723;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t bytes_29021 = (int64_t) 8 * m_21099;
+    int64_t bytes_28065 = (int64_t) 8 * m_20725;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:231:16-234:25
     
-    int64_t bytes_29023 = (int64_t) 16 * n_14357;
+    int64_t bytes_28067 = (int64_t) 16 * n_14195;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_f_res_21047;
+    int64_t m_f_res_20673;
     
-    if (x_20990) {
+    if (x_20616) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t x_27878 = ((int64_t *) mem_28975)[tmp_20991];
+        int64_t x_26925 = ((int64_t *) mem_28019)[tmp_20617];
         
-        m_f_res_21047 = x_27878;
+        m_f_res_20673 = x_26925;
     } else {
-        m_f_res_21047 = (int64_t) 0;
+        m_f_res_20673 = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_21049;
+    int64_t m_20675;
     
-    if (cond_20989) {
-        m_21049 = (int64_t) 0;
+    if (cond_20615) {
+        m_20675 = (int64_t) 0;
     } else {
-        m_21049 = m_f_res_21047;
+        m_20675 = m_f_res_20673;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t bytes_29031 = (int64_t) 8 * m_21049;
+    int64_t bytes_28075 = (int64_t) 8 * m_20675;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_f_res_20997;
+    int64_t m_f_res_20623;
     
-    if (x_20990) {
+    if (x_20616) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t x_27877 = ((int64_t *) mem_28973)[tmp_20991];
+        int64_t x_26924 = ((int64_t *) mem_28017)[tmp_20617];
         
-        m_f_res_20997 = x_27877;
+        m_f_res_20623 = x_26924;
     } else {
-        m_f_res_20997 = (int64_t) 0;
+        m_f_res_20623 = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_20999;
+    int64_t m_20625;
     
-    if (cond_20989) {
-        m_20999 = (int64_t) 0;
+    if (cond_20615) {
+        m_20625 = (int64_t) 0;
     } else {
-        m_20999 = m_f_res_20997;
+        m_20625 = m_f_res_20623;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t bytes_29033 = (int64_t) 8 * m_20999;
-    bool eq_x_y_22103 = defunc_res_27883 == (int64_t) 0;
-    bool eq_x_zz_22104 = defunc_res_27883 == m_f_res_20997;
-    bool p_and_eq_x_y_22105 = cond_20989 && eq_x_y_22103;
-    bool p_and_eq_x_y_22107 = x_20990 && eq_x_zz_22104;
-    bool dim_match_14419 = p_and_eq_x_y_22105 || p_and_eq_x_y_22107;
-    bool empty_or_match_cert_14420;
+    int64_t bytes_28077 = (int64_t) 8 * m_20625;
+    bool eq_x_y_21695 = defunc_res_26930 == (int64_t) 0;
+    bool eq_x_zz_21696 = defunc_res_26930 == m_f_res_20623;
+    bool p_and_eq_x_y_21697 = cond_20615 && eq_x_y_21695;
+    bool p_and_eq_x_y_21699 = x_20616 && eq_x_zz_21696;
+    bool dim_match_14257 = p_and_eq_x_y_21697 || p_and_eq_x_y_21699;
+    bool empty_or_match_cert_14258;
     
-    if (!dim_match_14419) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_20999, "] cannot match shape of type \"[", (long long) defunc_res_27883, "]i64\".", "-> #0  unknown location\n"));
+    if (!dim_match_14257) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_20625, "] cannot match shape of type \"[", (long long) defunc_res_26930, "]i64\".", "-> #0  unknown location\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
     
-    int64_t bytes_29035 = (int64_t) 8 * defunc_res_27883;
-    bool eq_x_zz_22110 = defunc_res_27883 == m_f_res_21047;
-    bool p_and_eq_x_y_22113 = x_20990 && eq_x_zz_22110;
-    bool dim_match_14428 = p_and_eq_x_y_22105 || p_and_eq_x_y_22113;
-    bool empty_or_match_cert_14429;
+    int64_t bytes_28079 = (int64_t) 8 * defunc_res_26930;
+    bool eq_x_zz_21702 = defunc_res_26930 == m_f_res_20673;
+    bool p_and_eq_x_y_21705 = x_20616 && eq_x_zz_21702;
+    bool dim_match_14266 = p_and_eq_x_y_21697 || p_and_eq_x_y_21705;
+    bool empty_or_match_cert_14267;
     
-    if (!dim_match_14428) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_21049, "] cannot match shape of type \"[", (long long) defunc_res_27883, "]i64\".", "-> #0  unknown location\n"));
+    if (!dim_match_14266) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_20675, "] cannot match shape of type \"[", (long long) defunc_res_26930, "]i64\".", "-> #0  unknown location\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
     
-    bool eq_x_zz_22116 = defunc_res_27883 == m_f_res_21097;
-    bool p_and_eq_x_y_22119 = x_20990 && eq_x_zz_22116;
-    bool dim_match_14437 = p_and_eq_x_y_22105 || p_and_eq_x_y_22119;
-    bool empty_or_match_cert_14438;
+    bool eq_x_zz_21708 = defunc_res_26930 == m_f_res_20723;
+    bool p_and_eq_x_y_21711 = x_20616 && eq_x_zz_21708;
+    bool dim_match_14275 = p_and_eq_x_y_21697 || p_and_eq_x_y_21711;
+    bool empty_or_match_cert_14276;
     
-    if (!dim_match_14437) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_21099, "] cannot match shape of type \"[", (long long) defunc_res_27883, "]i64\".", "-> #0  unknown location\n"));
+    if (!dim_match_14275) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Value of (desugared) shape [", (long long) m_20725, "] cannot match shape of type \"[", (long long) defunc_res_26930, "]i64\".", "-> #0  unknown location\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:242:16-39
-    if (mem_29020_cached_sizze_29285 < dzlz7bUZLztZRz20U2z20Unz7dUzg_14362) {
-        err = lexical_realloc(ctx, &mem_29020, &mem_29020_cached_sizze_29285, dzlz7bUZLztZRz20U2z20Unz7dUzg_14362);
+    if (mem_28064_cached_sizze_28327 < dzlz7bUZLztZRz20U2z20Unz7dUzg_14200) {
+        err = lexical_realloc(ctx, &mem_28064, &mem_28064_cached_sizze_28327, dzlz7bUZLztZRz20U2z20Unz7dUzg_14200);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:242:16-39
-    for (int64_t nest_i_29082 = 0; nest_i_29082 < dzlz7bUZLztZRz20U2z20Unz7dUzg_14362; nest_i_29082++) {
-        ((bool *) mem_29020)[nest_i_29082] = 0;
+    for (int64_t nest_i_28126 = 0; nest_i_28126 < dzlz7bUZLztZRz20U2z20Unz7dUzg_14200; nest_i_28126++) {
+        ((bool *) mem_28064)[nest_i_28126] = 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29022_cached_sizze_29286 < bytes_29021) {
-        err = lexical_realloc(ctx, &mem_29022, &mem_29022_cached_sizze_29286, bytes_29021);
+    if (mem_28066_cached_sizze_28328 < bytes_28065) {
+        err = lexical_realloc(ctx, &mem_28066, &mem_28066_cached_sizze_28328, bytes_28065);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool acc_cert_19807;
-    bool acc_cert_27318;
+    bool acc_cert_19459;
+    bool acc_cert_26365;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:242:7-244:32
-    for (int64_t i_28455 = 0; i_28455 < n_14357; i_28455++) {
-        int64_t v_20529 = ((int64_t *) lp_mem_28969.mem)[i_28455];
-        bool v_20530 = ((bool *) keep_mem_28971.mem)[i_28455];
-        int64_t v_20533 = ((int64_t *) rp_mem_28970.mem)[i_28455];
+    for (int64_t i_27502 = 0; i_27502 < n_14195; i_27502++) {
+        int64_t v_20175 = ((int64_t *) lp_mem_28013.mem)[i_27502];
+        bool v_20176 = ((bool *) keep_mem_28015.mem)[i_27502];
+        int64_t v_20179 = ((int64_t *) rp_mem_28014.mem)[i_27502];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:242:7-244:32
         // UpdateAcc
-        if (sle64((int64_t) 0, v_20529) && slt64(v_20529, dzlz7bUZLztZRz20U2z20Unz7dUzg_14362)) {
-            ((bool *) mem_29020)[v_20529] = v_20530;
+        if (sle64((int64_t) 0, v_20175) && slt64(v_20175, dzlz7bUZLztZRz20U2z20Unz7dUzg_14200)) {
+            ((bool *) mem_28064)[v_20175] = v_20176;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:242:7-244:32
         // UpdateAcc
-        if (sle64((int64_t) 0, v_20533) && slt64(v_20533, dzlz7bUZLztZRz20U2z20Unz7dUzg_14362)) {
-            ((bool *) mem_29020)[v_20533] = v_20530;
+        if (sle64((int64_t) 0, v_20179) && slt64(v_20179, dzlz7bUZLztZRz20U2z20Unz7dUzg_14200)) {
+            ((bool *) mem_28064)[v_20179] = v_20176;
         }
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    for (int64_t i_28457 = 0; i_28457 < n_14357; i_28457++) {
-        int64_t eta_p_27333 = ((int64_t *) mem_28979)[i_28457];
-        int64_t eta_p_27334 = ((int64_t *) mem_28977)[i_28457];
-        int64_t v_27336 = ((int64_t *) data_mem_28968.mem)[i_28457];
+    for (int64_t i_27504 = 0; i_27504 < n_14195; i_27504++) {
+        int64_t eta_p_26380 = ((int64_t *) mem_28023)[i_27504];
+        int64_t eta_p_26381 = ((int64_t *) mem_28021)[i_27504];
+        int64_t v_26383 = ((int64_t *) data_mem_28012.mem)[i_27504];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        bool cond_27337 = eta_p_27333 == (int64_t) 1;
+        bool cond_26384 = eta_p_26380 == (int64_t) 1;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t lifted_lambda_res_27338;
+        int64_t lifted_lambda_res_26385;
         
-        if (cond_27337) {
+        if (cond_26384) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
             
-            int64_t lifted_lambda_res_t_res_27852 = sub64(eta_p_27334, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_26899 = sub64(eta_p_26381, (int64_t) 1);
             
-            lifted_lambda_res_27338 = lifted_lambda_res_t_res_27852;
+            lifted_lambda_res_26385 = lifted_lambda_res_t_res_26899;
         } else {
-            lifted_lambda_res_27338 = (int64_t) -1;
+            lifted_lambda_res_26385 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27338) && slt64(lifted_lambda_res_27338, m_21099)) {
-            ((int64_t *) mem_29022)[lifted_lambda_res_27338] = v_27336;
+        if (sle64((int64_t) 0, lifted_lambda_res_26385) && slt64(lifted_lambda_res_26385, m_20725)) {
+            ((int64_t *) mem_28066)[lifted_lambda_res_26385] = v_26383;
         }
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:231:16-234:25
-    if (mem_29024_cached_sizze_29287 < bytes_29023) {
-        err = lexical_realloc(ctx, &mem_29024, &mem_29024_cached_sizze_29287, bytes_29023);
+    if (mem_28068_cached_sizze_28329 < bytes_28067) {
+        err = lexical_realloc(ctx, &mem_28068, &mem_28068_cached_sizze_28329, bytes_28067);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:231:16-234:25
     
-    int64_t inpacc_27887;
-    int64_t inpacc_27691 = (int64_t) 0;
+    int64_t inpacc_26934;
+    int64_t inpacc_26738 = (int64_t) 0;
     
-    for (int64_t i_28470 = 0; i_28470 < dzlz7bUZLztZRz20U2z20Unz7dUzg_14362; i_28470++) {
-        bool eta_p_28609 = ((bool *) mem_29020)[i_28470];
+    for (int64_t i_27517 = 0; i_27517 < dzlz7bUZLztZRz20U2z20Unz7dUzg_14200; i_27517++) {
+        bool eta_p_27659 = ((bool *) mem_28064)[i_27517];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:231:16-52
         
-        int64_t lifted_lambda_res_28610 = btoi_bool_i64(eta_p_28609);
+        int64_t lifted_lambda_res_27660 = btoi_bool_i64(eta_p_27659);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:232:19-22
         
-        int64_t defunc_0_op_res_28619 = add64(inpacc_27691, lifted_lambda_res_28610);
+        int64_t defunc_0_op_res_27669 = add64(inpacc_26738, lifted_lambda_res_27660);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:233:24-47
         
-        int64_t lifted_lambda_res_28620;
+        int64_t lifted_lambda_res_27670;
         
-        if (eta_p_28609) {
+        if (eta_p_27659) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:233:36-39
             
-            int64_t lifted_lambda_res_t_res_28621 = sub64(defunc_0_op_res_28619, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_27671 = sub64(defunc_0_op_res_27669, (int64_t) 1);
             
-            lifted_lambda_res_28620 = lifted_lambda_res_t_res_28621;
+            lifted_lambda_res_27670 = lifted_lambda_res_t_res_27671;
         } else {
-            lifted_lambda_res_28620 = (int64_t) -1;
+            lifted_lambda_res_27670 = (int64_t) -1;
         }
-        ((int64_t *) mem_29024)[i_28470] = lifted_lambda_res_28620;
+        ((int64_t *) mem_28068)[i_27517] = lifted_lambda_res_27670;
         
-        int64_t inpacc_tmp_29085 = defunc_0_op_res_28619;
+        int64_t inpacc_tmp_28129 = defunc_0_op_res_27669;
         
-        inpacc_27691 = inpacc_tmp_29085;
+        inpacc_26738 = inpacc_tmp_28129;
     }
-    inpacc_27887 = inpacc_27691;
+    inpacc_26934 = inpacc_26738;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29032_cached_sizze_29288 < bytes_29031) {
-        err = lexical_realloc(ctx, &mem_29032, &mem_29032_cached_sizze_29288, bytes_29031);
+    if (mem_28076_cached_sizze_28330 < bytes_28075) {
+        err = lexical_realloc(ctx, &mem_28076, &mem_28076_cached_sizze_28330, bytes_28075);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29034_cached_sizze_29289 < bytes_29033) {
-        err = lexical_realloc(ctx, &mem_29034, &mem_29034_cached_sizze_29289, bytes_29033);
+    if (mem_28078_cached_sizze_28331 < bytes_28077) {
+        err = lexical_realloc(ctx, &mem_28078, &mem_28078_cached_sizze_28331, bytes_28077);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool acc_cert_27419;
-    bool acc_cert_27477;
+    bool acc_cert_26466;
+    bool acc_cert_26524;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    for (int64_t i_28474 = 0; i_28474 < n_14357; i_28474++) {
-        bool eta_p_27786 = ((bool *) keep_mem_28971.mem)[i_28474];
-        int64_t eta_p_27787 = ((int64_t *) rp_mem_28970.mem)[i_28474];
-        int64_t eta_p_27788 = ((int64_t *) mem_28981)[i_28474];
-        int64_t eta_p_27789 = ((int64_t *) mem_28975)[i_28474];
-        int64_t eta_p_27791 = ((int64_t *) lp_mem_28969.mem)[i_28474];
-        int64_t eta_p_27792 = ((int64_t *) mem_28983)[i_28474];
-        int64_t eta_p_27793 = ((int64_t *) mem_28973)[i_28474];
+    for (int64_t i_27521 = 0; i_27521 < n_14195; i_27521++) {
+        bool eta_p_26833 = ((bool *) keep_mem_28015.mem)[i_27521];
+        int64_t eta_p_26834 = ((int64_t *) rp_mem_28014.mem)[i_27521];
+        int64_t eta_p_26835 = ((int64_t *) mem_28025)[i_27521];
+        int64_t eta_p_26836 = ((int64_t *) mem_28019)[i_27521];
+        int64_t eta_p_26838 = ((int64_t *) lp_mem_28013.mem)[i_27521];
+        int64_t eta_p_26839 = ((int64_t *) mem_28027)[i_27521];
+        int64_t eta_p_26840 = ((int64_t *) mem_28017)[i_27521];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:247:23-54
         
-        int64_t lifted_lambda_res_27796;
+        int64_t lifted_lambda_res_26843;
         
-        if (eta_p_27786) {
+        if (eta_p_26833) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46
             
-            bool x_27859 = sle64((int64_t) 0, eta_p_27791);
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46
-            
-            bool y_27860 = slt64(eta_p_27791, dzlz7bUZLztZRz20U2z20Unz7dUzg_14362);
+            bool x_26906 = sle64((int64_t) 0, eta_p_26838);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46
             
-            bool bounds_check_27861 = x_27859 && y_27860;
+            bool y_26907 = slt64(eta_p_26838, dzlz7bUZLztZRz20U2z20Unz7dUzg_14200);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46
             
-            bool index_certs_27862;
+            bool bounds_check_26908 = x_26906 && y_26907;
             
-            if (!bounds_check_27861) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_27791, "] out of bounds for array of shape [", (long long) dzlz7bUZLztZRz20U2z20Unz7dUzg_14362, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46\n"));
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46
+            
+            bool index_certs_26909;
+            
+            if (!bounds_check_26908) {
+                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_26838, "] out of bounds for array of shape [", (long long) dzlz7bUZLztZRz20U2z20Unz7dUzg_14200, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46\n"));
                 err = FUTHARK_PROGRAM_ERROR;
                 goto cleanup;
             }
             // ../lib/github.com/diku-dk/vtree/vtree.fut:247:33-46
             
-            int64_t lifted_lambda_res_t_res_27863 = ((int64_t *) mem_29024)[eta_p_27791];
+            int64_t lifted_lambda_res_t_res_26910 = ((int64_t *) mem_28068)[eta_p_26838];
             
-            lifted_lambda_res_27796 = lifted_lambda_res_t_res_27863;
+            lifted_lambda_res_26843 = lifted_lambda_res_t_res_26910;
         } else {
-            lifted_lambda_res_27796 = (int64_t) -1;
+            lifted_lambda_res_26843 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        bool cond_27802 = eta_p_27792 == (int64_t) 1;
+        bool cond_26849 = eta_p_26839 == (int64_t) 1;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t lifted_lambda_res_27803;
+        int64_t lifted_lambda_res_26850;
         
-        if (cond_27802) {
+        if (cond_26849) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
             
-            int64_t lifted_lambda_res_t_res_27864 = sub64(eta_p_27793, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_26911 = sub64(eta_p_26840, (int64_t) 1);
             
-            lifted_lambda_res_27803 = lifted_lambda_res_t_res_27864;
+            lifted_lambda_res_26850 = lifted_lambda_res_t_res_26911;
         } else {
-            lifted_lambda_res_27803 = (int64_t) -1;
+            lifted_lambda_res_26850 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27803) && slt64(lifted_lambda_res_27803, m_20999)) {
-            ((int64_t *) mem_29034)[lifted_lambda_res_27803] = lifted_lambda_res_27796;
+        if (sle64((int64_t) 0, lifted_lambda_res_26850) && slt64(lifted_lambda_res_26850, m_20625)) {
+            ((int64_t *) mem_28078)[lifted_lambda_res_26850] = lifted_lambda_res_26843;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:250:23-54
         
-        int64_t lifted_lambda_res_27809;
+        int64_t lifted_lambda_res_26856;
         
-        if (eta_p_27786) {
+        if (eta_p_26833) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46
             
-            bool x_27865 = sle64((int64_t) 0, eta_p_27787);
-            
-            // ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46
-            
-            bool y_27866 = slt64(eta_p_27787, dzlz7bUZLztZRz20U2z20Unz7dUzg_14362);
+            bool x_26912 = sle64((int64_t) 0, eta_p_26834);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46
             
-            bool bounds_check_27867 = x_27865 && y_27866;
+            bool y_26913 = slt64(eta_p_26834, dzlz7bUZLztZRz20U2z20Unz7dUzg_14200);
             
             // ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46
             
-            bool index_certs_27868;
+            bool bounds_check_26914 = x_26912 && y_26913;
             
-            if (!bounds_check_27867) {
-                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_27787, "] out of bounds for array of shape [", (long long) dzlz7bUZLztZRz20U2z20Unz7dUzg_14362, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46\n"));
+            // ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46
+            
+            bool index_certs_26915;
+            
+            if (!bounds_check_26914) {
+                set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_26834, "] out of bounds for array of shape [", (long long) dzlz7bUZLztZRz20U2z20Unz7dUzg_14200, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46\n"));
                 err = FUTHARK_PROGRAM_ERROR;
                 goto cleanup;
             }
             // ../lib/github.com/diku-dk/vtree/vtree.fut:250:33-46
             
-            int64_t lifted_lambda_res_t_res_27869 = ((int64_t *) mem_29024)[eta_p_27787];
+            int64_t lifted_lambda_res_t_res_26916 = ((int64_t *) mem_28068)[eta_p_26834];
             
-            lifted_lambda_res_27809 = lifted_lambda_res_t_res_27869;
+            lifted_lambda_res_26856 = lifted_lambda_res_t_res_26916;
         } else {
-            lifted_lambda_res_27809 = (int64_t) -1;
+            lifted_lambda_res_26856 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        bool cond_27815 = eta_p_27788 == (int64_t) 1;
+        bool cond_26862 = eta_p_26835 == (int64_t) 1;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t lifted_lambda_res_27816;
+        int64_t lifted_lambda_res_26863;
         
-        if (cond_27815) {
+        if (cond_26862) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
             
-            int64_t lifted_lambda_res_t_res_27870 = sub64(eta_p_27789, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_26917 = sub64(eta_p_26836, (int64_t) 1);
             
-            lifted_lambda_res_27816 = lifted_lambda_res_t_res_27870;
+            lifted_lambda_res_26863 = lifted_lambda_res_t_res_26917;
         } else {
-            lifted_lambda_res_27816 = (int64_t) -1;
+            lifted_lambda_res_26863 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27816) && slt64(lifted_lambda_res_27816, m_21049)) {
-            ((int64_t *) mem_29032)[lifted_lambda_res_27816] = lifted_lambda_res_27809;
+        if (sle64((int64_t) 0, lifted_lambda_res_26863) && slt64(lifted_lambda_res_26863, m_20675)) {
+            ((int64_t *) mem_28076)[lifted_lambda_res_26863] = lifted_lambda_res_26856;
         }
     }
-    if (memblock_alloc(ctx, &mem_29036, bytes_29035, "mem_29036")) {
+    if (memblock_alloc(ctx, &mem_28080, bytes_28079, "mem_28080")) {
         err = 1;
         goto cleanup;
     }
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_29036.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_29034, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_res_27883});
-    if (memblock_alloc(ctx, &mem_29038, bytes_29035, "mem_29038")) {
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28080.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28078, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_res_26930});
+    if (memblock_alloc(ctx, &mem_28082, bytes_28079, "mem_28082")) {
         err = 1;
         goto cleanup;
     }
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_29038.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_29032, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_res_27883});
-    if (memblock_alloc(ctx, &mem_29040, bytes_29035, "mem_29040")) {
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28082.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28076, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_res_26930});
+    if (memblock_alloc(ctx, &mem_28084, bytes_28079, "mem_28084")) {
         err = 1;
         goto cleanup;
     }
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_29040.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_29022, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_res_27883});
-    if (memblock_set(ctx, &mem_out_29068, &mem_29040, "mem_29040") != 0)
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28084.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28066, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {defunc_res_26930});
+    if (memblock_set(ctx, &mem_out_28112, &mem_28084, "mem_28084") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29069, &mem_29036, "mem_29036") != 0)
+    if (memblock_set(ctx, &mem_out_28113, &mem_28080, "mem_28080") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29070, &mem_29038, "mem_29038") != 0)
+    if (memblock_set(ctx, &mem_out_28114, &mem_28082, "mem_28082") != 0)
         return 1;
-    prim_out_29071 = defunc_res_27883;
-    if (memblock_set(ctx, &*mem_out_p_29275, &mem_out_29068, "mem_out_29068") != 0)
+    prim_out_28115 = defunc_res_26930;
+    if (memblock_set(ctx, &*mem_out_p_28317, &mem_out_28112, "mem_out_28112") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29276, &mem_out_29069, "mem_out_29069") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28318, &mem_out_28113, "mem_out_28113") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29277, &mem_out_29070, "mem_out_29070") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28319, &mem_out_28114, "mem_out_28114") != 0)
         return 1;
-    *out_prim_out_29278 = prim_out_29071;
+    *out_prim_out_28320 = prim_out_28115;
     
   cleanup:
     {
-        free(mem_28973);
-        free(mem_28975);
-        free(mem_28977);
-        free(mem_28979);
-        free(mem_28981);
-        free(mem_28983);
-        free(mem_29020);
-        free(mem_29022);
-        free(mem_29024);
-        free(mem_29032);
-        free(mem_29034);
-        if (memblock_unref(ctx, &mem_29040, "mem_29040") != 0)
+        free(mem_28017);
+        free(mem_28019);
+        free(mem_28021);
+        free(mem_28023);
+        free(mem_28025);
+        free(mem_28027);
+        free(mem_28064);
+        free(mem_28066);
+        free(mem_28068);
+        free(mem_28076);
+        free(mem_28078);
+        if (memblock_unref(ctx, &mem_28084, "mem_28084") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29038, "mem_29038") != 0)
+        if (memblock_unref(ctx, &mem_28082, "mem_28082") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29036, "mem_29036") != 0)
+        if (memblock_unref(ctx, &mem_28080, "mem_28080") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29070, "mem_out_29070") != 0)
+        if (memblock_unref(ctx, &mem_out_28114, "mem_out_28114") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29069, "mem_out_29069") != 0)
+        if (memblock_unref(ctx, &mem_out_28113, "mem_out_28113") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29068, "mem_out_29068") != 0)
+        if (memblock_unref(ctx, &mem_out_28112, "mem_out_28112") != 0)
             return 1;
     }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_delete_vertices(struct futhark_context *ctx, bool *out_prim_out_29290)
+FUTHARK_FUN_ATTR int futrts_entry_test_delete_vertices(struct futhark_context *ctx, bool *out_prim_out_28332)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = ok_13331;
-    *out_prim_out_29290 = prim_out_29068;
+    prim_out_28112 = ok_13169;
+    *out_prim_out_28332 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_merge_no_subtrees(struct futhark_context *ctx, bool *out_prim_out_29291)
+FUTHARK_FUN_ATTR int futrts_entry_test_merge_no_subtrees(struct futhark_context *ctx, bool *out_prim_out_28333)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = ok_13493;
-    *out_prim_out_29291 = prim_out_29068;
+    prim_out_28112 = ok_13331;
+    *out_prim_out_28333 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_merge_tree(struct futhark_context *ctx, bool *out_prim_out_29292)
+FUTHARK_FUN_ATTR int futrts_entry_test_merge_tree(struct futhark_context *ctx, bool *out_prim_out_28334)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = ok_13414;
-    *out_prim_out_29292 = prim_out_29068;
+    prim_out_28112 = ok_13252;
+    *out_prim_out_28334 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_split(struct futhark_context *ctx, bool *out_prim_out_29293)
+FUTHARK_FUN_ATTR int futrts_entry_test_split(struct futhark_context *ctx, bool *out_prim_out_28335)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = x_19472;
-    *out_prim_out_29293 = prim_out_29068;
+    prim_out_28112 = x_19124;
+    *out_prim_out_28335 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_split_at_leaf(struct futhark_context *ctx, bool *out_prim_out_29294)
+FUTHARK_FUN_ATTR int futrts_entry_test_split_at_leaf(struct futhark_context *ctx, bool *out_prim_out_28336)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = x_19475;
-    *out_prim_out_29294 = prim_out_29068;
+    prim_out_28112 = x_19127;
+    *out_prim_out_28336 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_split_multiple(struct futhark_context *ctx, bool *out_prim_out_29295)
+FUTHARK_FUN_ATTR int futrts_entry_test_split_multiple(struct futhark_context *ctx, bool *out_prim_out_28337)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = x_19481;
-    *out_prim_out_29295 = prim_out_29068;
+    prim_out_28112 = x_19133;
+    *out_prim_out_28337 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_entry_test_split_none(struct futhark_context *ctx, bool *out_prim_out_29296)
+FUTHARK_FUN_ATTR int futrts_entry_test_split_none(struct futhark_context *ctx, bool *out_prim_out_28338)
 {
     (void) ctx;
     
     int err = 0;
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    bool prim_out_29068;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    bool prim_out_28112;
     
-    prim_out_29068 = x_19487;
-    *out_prim_out_29296 = prim_out_29068;
+    prim_out_28112 = x_19139;
+    *out_prim_out_28338 = prim_out_28112;
     
   cleanup:
     { }
     return err;
 }
-FUTHARK_FUN_ATTR int futrts_split_7593(struct futhark_context *ctx, struct memblock *mem_out_p_29297, struct memblock *mem_out_p_29298, struct memblock *mem_out_p_29299, struct memblock *mem_out_p_29300, struct memblock *mem_out_p_29301, struct memblock *mem_out_p_29302, struct memblock *mem_out_p_29303, int64_t *out_prim_out_29304, int64_t *out_prim_out_29305, int64_t *out_prim_out_29306, struct memblock data_mem_28968, struct memblock lp_mem_28969, struct memblock rp_mem_28970, struct memblock splits_mem_28971, int64_t n_15266)
+FUTHARK_FUN_ATTR int futrts_split_7585(struct futhark_context *ctx, struct memblock *mem_out_p_28339, struct memblock *mem_out_p_28340, struct memblock *mem_out_p_28341, struct memblock *mem_out_p_28342, struct memblock *mem_out_p_28343, struct memblock *mem_out_p_28344, struct memblock *mem_out_p_28345, int64_t *out_prim_out_28346, int64_t *out_prim_out_28347, int64_t *out_prim_out_28348, struct memblock data_mem_28012, struct memblock lp_mem_28013, struct memblock rp_mem_28014, struct memblock splits_mem_28015, int64_t n_15104)
 {
     (void) ctx;
     
     int err = 0;
-    int64_t mem_28973_cached_sizze_29307 = 0;
-    unsigned char *mem_28973 = NULL;
-    int64_t mem_28975_cached_sizze_29308 = 0;
-    unsigned char *mem_28975 = NULL;
-    int64_t mem_28983_cached_sizze_29309 = 0;
-    unsigned char *mem_28983 = NULL;
-    int64_t mem_28985_cached_sizze_29310 = 0;
-    unsigned char *mem_28985 = NULL;
-    int64_t mem_28993_cached_sizze_29311 = 0;
-    unsigned char *mem_28993 = NULL;
-    int64_t mem_29001_cached_sizze_29312 = 0;
-    unsigned char *mem_29001 = NULL;
-    int64_t mem_29003_cached_sizze_29313 = 0;
-    unsigned char *mem_29003 = NULL;
-    int64_t mem_29005_cached_sizze_29314 = 0;
-    unsigned char *mem_29005 = NULL;
-    int64_t mem_29007_cached_sizze_29315 = 0;
-    unsigned char *mem_29007 = NULL;
-    int64_t mem_29008_cached_sizze_29316 = 0;
-    unsigned char *mem_29008 = NULL;
-    int64_t mem_29010_cached_sizze_29317 = 0;
-    unsigned char *mem_29010 = NULL;
-    int64_t mem_29012_cached_sizze_29318 = 0;
-    unsigned char *mem_29012 = NULL;
-    struct memblock ext_mem_29065;
+    int64_t mem_28017_cached_sizze_28349 = 0;
+    unsigned char *mem_28017 = NULL;
+    int64_t mem_28019_cached_sizze_28350 = 0;
+    unsigned char *mem_28019 = NULL;
+    int64_t mem_28027_cached_sizze_28351 = 0;
+    unsigned char *mem_28027 = NULL;
+    int64_t mem_28029_cached_sizze_28352 = 0;
+    unsigned char *mem_28029 = NULL;
+    int64_t mem_28037_cached_sizze_28353 = 0;
+    unsigned char *mem_28037 = NULL;
+    int64_t mem_28045_cached_sizze_28354 = 0;
+    unsigned char *mem_28045 = NULL;
+    int64_t mem_28047_cached_sizze_28355 = 0;
+    unsigned char *mem_28047 = NULL;
+    int64_t mem_28049_cached_sizze_28356 = 0;
+    unsigned char *mem_28049 = NULL;
+    int64_t mem_28051_cached_sizze_28357 = 0;
+    unsigned char *mem_28051 = NULL;
+    int64_t mem_28052_cached_sizze_28358 = 0;
+    unsigned char *mem_28052 = NULL;
+    int64_t mem_28054_cached_sizze_28359 = 0;
+    unsigned char *mem_28054 = NULL;
+    int64_t mem_28056_cached_sizze_28360 = 0;
+    unsigned char *mem_28056 = NULL;
+    struct memblock ext_mem_28109;
     
-    ext_mem_29065.references = NULL;
+    ext_mem_28109.references = NULL;
     
-    struct memblock ext_mem_29066;
+    struct memblock ext_mem_28110;
     
-    ext_mem_29066.references = NULL;
+    ext_mem_28110.references = NULL;
     
-    struct memblock ext_mem_29067;
+    struct memblock ext_mem_28111;
     
-    ext_mem_29067.references = NULL;
+    ext_mem_28111.references = NULL;
     
-    struct memblock mem_29063;
+    struct memblock mem_28107;
     
-    mem_29063.references = NULL;
+    mem_28107.references = NULL;
     
-    struct memblock mem_29062;
+    struct memblock mem_28106;
     
-    mem_29062.references = NULL;
+    mem_28106.references = NULL;
     
-    struct memblock mem_29060;
+    struct memblock mem_28104;
     
-    mem_29060.references = NULL;
+    mem_28104.references = NULL;
     
-    struct memblock mem_29058;
+    struct memblock mem_28102;
     
-    mem_29058.references = NULL;
+    mem_28102.references = NULL;
     
-    struct memblock mem_29056;
+    struct memblock mem_28100;
     
-    mem_29056.references = NULL;
+    mem_28100.references = NULL;
     
-    struct memblock mem_out_29074;
+    struct memblock mem_out_28118;
     
-    mem_out_29074.references = NULL;
+    mem_out_28118.references = NULL;
     
-    struct memblock mem_out_29073;
+    struct memblock mem_out_28117;
     
-    mem_out_29073.references = NULL;
+    mem_out_28117.references = NULL;
     
-    struct memblock mem_out_29072;
+    struct memblock mem_out_28116;
     
-    mem_out_29072.references = NULL;
+    mem_out_28116.references = NULL;
     
-    struct memblock mem_out_29071;
+    struct memblock mem_out_28115;
     
-    mem_out_29071.references = NULL;
+    mem_out_28115.references = NULL;
     
-    struct memblock mem_out_29070;
+    struct memblock mem_out_28114;
     
-    mem_out_29070.references = NULL;
+    mem_out_28114.references = NULL;
     
-    struct memblock mem_out_29069;
+    struct memblock mem_out_28113;
     
-    mem_out_29069.references = NULL;
+    mem_out_28113.references = NULL;
     
-    struct memblock mem_out_29068;
+    struct memblock mem_out_28112;
     
-    mem_out_29068.references = NULL;
+    mem_out_28112.references = NULL;
     
+    bool ok_13169 = ctx->constants->ok_13169;
+    bool ok_13252 = ctx->constants->ok_13252;
     bool ok_13331 = ctx->constants->ok_13331;
-    bool ok_13414 = ctx->constants->ok_13414;
-    bool ok_13493 = ctx->constants->ok_13493;
-    bool x_19472 = ctx->constants->x_19472;
-    bool x_19475 = ctx->constants->x_19475;
-    bool x_19481 = ctx->constants->x_19481;
-    bool x_19487 = ctx->constants->x_19487;
-    int64_t prim_out_29075;
-    int64_t prim_out_29076;
-    int64_t prim_out_29077;
+    bool x_19124 = ctx->constants->x_19124;
+    bool x_19127 = ctx->constants->x_19127;
+    bool x_19133 = ctx->constants->x_19133;
+    bool x_19139 = ctx->constants->x_19139;
+    int64_t prim_out_28119;
+    int64_t prim_out_28120;
+    int64_t prim_out_28121;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:210:24-29
     
-    int64_t dzlz7bUZLztZRz20U2z20Unz7dUzg_22055 = mul64((int64_t) 2, n_15266);
+    int64_t dzlz7bUZLztZRz20U2z20Unz7dUzg_21647 = mul64((int64_t) 2, n_15104);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:210:13-33
     
-    int64_t bytes_28972 = (int64_t) 16 * n_15266;
+    int64_t bytes_28016 = (int64_t) 16 * n_15104;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:210:13-33
-    if (mem_28973_cached_sizze_29307 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28973, &mem_28973_cached_sizze_29307, bytes_28972);
+    if (mem_28017_cached_sizze_28349 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28017, &mem_28017_cached_sizze_28349, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:210:13-33
-    for (int64_t nest_i_29078 = 0; nest_i_29078 < dzlz7bUZLztZRz20U2z20Unz7dUzg_22055; nest_i_29078++) {
-        ((int64_t *) mem_28973)[nest_i_29078] = (int64_t) 0;
+    for (int64_t nest_i_28122 = 0; nest_i_28122 < dzlz7bUZLztZRz20U2z20Unz7dUzg_21647; nest_i_28122++) {
+        ((int64_t *) mem_28017)[nest_i_28122] = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
     
-    int64_t bytes_28982 = (int64_t) 8 * n_15266;
+    int64_t bytes_28026 = (int64_t) 8 * n_15104;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
-    if (mem_28975_cached_sizze_29308 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_28975, &mem_28975_cached_sizze_29308, bytes_28982);
+    if (mem_28019_cached_sizze_28350 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28019, &mem_28019_cached_sizze_28350, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
-    if (mem_28983_cached_sizze_29309 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_28983, &mem_28983_cached_sizze_29309, bytes_28982);
+    if (mem_28027_cached_sizze_28351 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28027, &mem_28027_cached_sizze_28351, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
     
-    bool acc_cert_27789;
+    bool acc_cert_26836;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
-    for (int64_t i_28431 = 0; i_28431 < n_15266; i_28431++) {
-        bool eta_p_27802 = ((bool *) splits_mem_28971.mem)[i_28431];
-        int64_t eta_p_27803 = ((int64_t *) lp_mem_28969.mem)[i_28431];
+    for (int64_t i_27478 = 0; i_27478 < n_15104; i_27478++) {
+        bool eta_p_26849 = ((bool *) splits_mem_28015.mem)[i_27478];
+        int64_t eta_p_26850 = ((int64_t *) lp_mem_28013.mem)[i_27478];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:266:25-49
         
-        int64_t lifted_lambda_res_27806;
+        int64_t lifted_lambda_res_26853;
         
-        if (eta_p_27802) {
-            lifted_lambda_res_27806 = eta_p_27803;
+        if (eta_p_26849) {
+            lifted_lambda_res_26853 = eta_p_26850;
         } else {
-            lifted_lambda_res_27806 = (int64_t) 0;
+            lifted_lambda_res_26853 = (int64_t) 0;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
         // UpdateAcc
-        if (sle64((int64_t) 0, eta_p_27803) && slt64(eta_p_27803, dzlz7bUZLztZRz20U2z20Unz7dUzg_22055)) {
-            ((int64_t *) mem_28973)[eta_p_27803] = lifted_lambda_res_27806;
+        if (sle64((int64_t) 0, eta_p_26850) && slt64(eta_p_26850, dzlz7bUZLztZRz20U2z20Unz7dUzg_21647)) {
+            ((int64_t *) mem_28017)[eta_p_26850] = lifted_lambda_res_26853;
         }
-        ((int64_t *) mem_28975)[i_28431] = lifted_lambda_res_27806;
+        ((int64_t *) mem_28019)[i_27478] = lifted_lambda_res_26853;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:211:13-30
-    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28983, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28975, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {n_15266});
+    lmad_copy_8b(ctx, 1, (uint64_t *) mem_28027, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint64_t *) mem_28019, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {n_15104});
     // ../lib/github.com/diku-dk/vtree/vtree.fut:212:13-39
     
-    bool acc_cert_27744;
+    bool acc_cert_26791;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:212:13-39
-    for (int64_t i_28434 = 0; i_28434 < n_15266; i_28434++) {
-        int64_t eta_p_27756 = ((int64_t *) mem_28983)[i_28434];
-        int64_t v_27758 = ((int64_t *) rp_mem_28970.mem)[i_28434];
+    for (int64_t i_27481 = 0; i_27481 < n_15104; i_27481++) {
+        int64_t eta_p_26803 = ((int64_t *) mem_28027)[i_27481];
+        int64_t v_26805 = ((int64_t *) rp_mem_28014.mem)[i_27481];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:268:31-38
         
-        int64_t neg_res_27759 = -eta_p_27756;
+        int64_t neg_res_26806 = -eta_p_26803;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:212:13-39
         // UpdateAcc
-        if (sle64((int64_t) 0, v_27758) && slt64(v_27758, dzlz7bUZLztZRz20U2z20Unz7dUzg_22055)) {
-            ((int64_t *) mem_28973)[v_27758] = neg_res_27759;
+        if (sle64((int64_t) 0, v_26805) && slt64(v_26805, dzlz7bUZLztZRz20U2z20Unz7dUzg_21647)) {
+            ((int64_t *) mem_28017)[v_26805] = neg_res_26806;
         }
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
-    if (mem_28985_cached_sizze_29310 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28985, &mem_28985_cached_sizze_29310, bytes_28972);
+    if (mem_28029_cached_sizze_28352 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28029, &mem_28029_cached_sizze_28352, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:132:24-36
     
-    int64_t discard_28440;
-    int64_t scanacc_28436 = (int64_t) 0;
+    int64_t discard_27487;
+    int64_t scanacc_27483 = (int64_t) 0;
     
-    for (int64_t i_28438 = 0; i_28438 < dzlz7bUZLztZRz20U2z20Unz7dUzg_22055; i_28438++) {
-        int64_t x_22077 = ((int64_t *) mem_28973)[i_28438];
+    for (int64_t i_27485 = 0; i_27485 < dzlz7bUZLztZRz20U2z20Unz7dUzg_21647; i_27485++) {
+        int64_t x_21669 = ((int64_t *) mem_28017)[i_27485];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:268:23-30
         
-        int64_t zp_res_22080 = add64(x_22077, scanacc_28436);
+        int64_t zp_res_21672 = add64(x_21669, scanacc_27483);
         
-        ((int64_t *) mem_28985)[i_28438] = zp_res_22080;
+        ((int64_t *) mem_28029)[i_27485] = zp_res_21672;
         
-        int64_t scanacc_tmp_29082 = zp_res_22080;
+        int64_t scanacc_tmp_28126 = zp_res_21672;
         
-        scanacc_28436 = scanacc_tmp_29082;
+        scanacc_27483 = scanacc_tmp_28126;
     }
-    discard_28440 = scanacc_28436;
+    discard_27487 = scanacc_27483;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:130:5-132:37
-    if (mem_28993_cached_sizze_29311 < bytes_28972) {
-        err = lexical_realloc(ctx, &mem_28993, &mem_28993_cached_sizze_29311, bytes_28972);
+    if (mem_28037_cached_sizze_28353 < bytes_28016) {
+        err = lexical_realloc(ctx, &mem_28037, &mem_28037_cached_sizze_28353, bytes_28016);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:130:5-132:37
-    for (int64_t i_28443 = 0; i_28443 < dzlz7bUZLztZRz20U2z20Unz7dUzg_22055; i_28443++) {
+    for (int64_t i_27490 = 0; i_27490 < dzlz7bUZLztZRz20U2z20Unz7dUzg_21647; i_27490++) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t zv_lhs_27737 = add64((int64_t) -1, i_28443);
-        
-        // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
-        
-        int64_t tmp_27738 = smod64(zv_lhs_27737, dzlz7bUZLztZRz20U2z20Unz7dUzg_22055);
+        int64_t zv_lhs_26784 = add64((int64_t) -1, i_27490);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_27739 = ((int64_t *) mem_28985)[tmp_27738];
+        int64_t tmp_26785 = smod64(zv_lhs_26784, dzlz7bUZLztZRz20U2z20Unz7dUzg_21647);
+        
+        // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
+        
+        int64_t lifted_lambda_res_26786 = ((int64_t *) mem_28029)[tmp_26785];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        bool cond_27741 = i_28443 == (int64_t) 0;
+        bool cond_26788 = i_27490 == (int64_t) 0;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_27742;
+        int64_t lifted_lambda_res_26789;
         
-        if (cond_27741) {
-            lifted_lambda_res_27742 = (int64_t) 0;
+        if (cond_26788) {
+            lifted_lambda_res_26789 = (int64_t) 0;
         } else {
-            lifted_lambda_res_27742 = lifted_lambda_res_27739;
+            lifted_lambda_res_26789 = lifted_lambda_res_26786;
         }
-        ((int64_t *) mem_28993)[i_28443] = lifted_lambda_res_27742;
+        ((int64_t *) mem_28037)[i_27490] = lifted_lambda_res_26789;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29001_cached_sizze_29312 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_29001, &mem_29001_cached_sizze_29312, bytes_28982);
+    if (mem_28045_cached_sizze_28354 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28045, &mem_28045_cached_sizze_28354, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29003_cached_sizze_29313 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_29003, &mem_29003_cached_sizze_29313, bytes_28982);
+    if (mem_28047_cached_sizze_28355 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28047, &mem_28047_cached_sizze_28355, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29005_cached_sizze_29314 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_29005, &mem_29005_cached_sizze_29314, bytes_28982);
+    if (mem_28049_cached_sizze_28356 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28049, &mem_28049_cached_sizze_28356, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29007_cached_sizze_29315 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_29007, &mem_29007_cached_sizze_29315, bytes_28982);
+    if (mem_28051_cached_sizze_28357 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28051, &mem_28051_cached_sizze_28357, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29008_cached_sizze_29316 < n_15266) {
-        err = lexical_realloc(ctx, &mem_29008, &mem_29008_cached_sizze_29316, n_15266);
+    if (mem_28052_cached_sizze_28358 < n_15104) {
+        err = lexical_realloc(ctx, &mem_28052, &mem_28052_cached_sizze_28358, n_15104);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29010_cached_sizze_29317 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_29010, &mem_29010_cached_sizze_29317, bytes_28982);
+    if (mem_28054_cached_sizze_28359 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28054, &mem_28054_cached_sizze_28359, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (mem_29012_cached_sizze_29318 < bytes_28982) {
-        err = lexical_realloc(ctx, &mem_29012, &mem_29012_cached_sizze_29318, bytes_28982);
+    if (mem_28056_cached_sizze_28360 < bytes_28026) {
+        err = lexical_realloc(ctx, &mem_28056, &mem_28056_cached_sizze_28360, bytes_28026);
         if (err != FUTHARK_SUCCESS)
             goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t discard_28470;
-    int64_t discard_28471;
-    int64_t discard_28472;
-    int64_t scanacc_28452;
-    int64_t scanacc_28453;
-    int64_t scanacc_28454;
+    int64_t discard_27517;
+    int64_t discard_27518;
+    int64_t discard_27519;
+    int64_t scanacc_27499;
+    int64_t scanacc_27500;
+    int64_t scanacc_27501;
     
-    scanacc_28452 = (int64_t) 0;
-    scanacc_28453 = (int64_t) 0;
-    scanacc_28454 = (int64_t) 0;
-    for (int64_t i_28462 = 0; i_28462 < n_15266; i_28462++) {
-        int64_t eta_p_27929 = ((int64_t *) lp_mem_28969.mem)[i_28462];
+    scanacc_27499 = (int64_t) 0;
+    scanacc_27500 = (int64_t) 0;
+    scanacc_27501 = (int64_t) 0;
+    for (int64_t i_27509 = 0; i_27509 < n_15104; i_27509++) {
+        int64_t eta_p_26976 = ((int64_t *) lp_mem_28013.mem)[i_27509];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23
         
-        bool x_27933 = sle64((int64_t) 0, eta_p_27929);
+        bool x_26980 = sle64((int64_t) 0, eta_p_26976);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23
         
-        bool y_27934 = slt64(eta_p_27929, dzlz7bUZLztZRz20U2z20Unz7dUzg_22055);
+        bool y_26981 = slt64(eta_p_26976, dzlz7bUZLztZRz20U2z20Unz7dUzg_21647);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23
         
-        bool bounds_check_27935 = x_27933 && y_27934;
+        bool bounds_check_26982 = x_26980 && y_26981;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23
         
-        bool index_certs_27936;
+        bool index_certs_26983;
         
-        if (!bounds_check_27935) {
-            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_27929, "] out of bounds for array of shape [", (long long) dzlz7bUZLztZRz20U2z20Unz7dUzg_22055, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:216:64-217:21\n   #2  ../lib/github.com/diku-dk/vtree/vtree.fut:267:7-268:22\n"));
+        if (!bounds_check_26982) {
+            set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) eta_p_26976, "] out of bounds for array of shape [", (long long) dzlz7bUZLztZRz20U2z20Unz7dUzg_21647, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23\n   #1  ../lib/github.com/diku-dk/vtree/vtree.fut:216:64-217:21\n   #2  ../lib/github.com/diku-dk/vtree/vtree.fut:267:7-268:22\n"));
             err = FUTHARK_PROGRAM_ERROR;
             goto cleanup;
         }
         
-        bool eta_p_27928 = ((bool *) splits_mem_28971.mem)[i_28462];
-        int64_t eta_p_27930 = ((int64_t *) rp_mem_28970.mem)[i_28462];
-        int64_t eta_p_27931 = ((int64_t *) mem_28983)[i_28462];
+        bool eta_p_26975 = ((bool *) splits_mem_28015.mem)[i_27509];
+        int64_t eta_p_26977 = ((int64_t *) rp_mem_28014.mem)[i_27509];
+        int64_t eta_p_26978 = ((int64_t *) mem_28027)[i_27509];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:214:19-23
         
-        int64_t lifted_lambda_res_27937 = ((int64_t *) mem_28993)[eta_p_27929];
+        int64_t lifted_lambda_res_26984 = ((int64_t *) mem_28037)[eta_p_26976];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:268:23-30
         
-        int64_t zp_res_27938 = add64(eta_p_27931, lifted_lambda_res_27937);
+        int64_t zp_res_26985 = add64(eta_p_26978, lifted_lambda_res_26984);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:273:33-37
         
-        bool lifted_lambda_res_27939 = zp_res_27938 == (int64_t) 0;
+        bool lifted_lambda_res_26986 = zp_res_26985 == (int64_t) 0;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:273:33-37
         
-        bool lifted_lambda_res_27940 = !lifted_lambda_res_27939;
+        bool lifted_lambda_res_26987 = !lifted_lambda_res_26986;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         
-        int64_t defunc_0_f_res_27941 = btoi_bool_i64(lifted_lambda_res_27940);
+        int64_t defunc_0_f_res_26988 = btoi_bool_i64(lifted_lambda_res_26987);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:287:40-43
         
-        int64_t zp_lhs_27942 = sub64(eta_p_27930, eta_p_27929);
+        int64_t zp_lhs_26989 = sub64(eta_p_26977, eta_p_26976);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:287:44-47
         
-        int64_t zs_lhs_27943 = add64((int64_t) 1, zp_lhs_27942);
+        int64_t zs_lhs_26990 = add64((int64_t) 1, zp_lhs_26989);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:287:49-52
         
-        int64_t lifted_lambda_res_27944 = sdiv64(zs_lhs_27943, (int64_t) 2);
+        int64_t lifted_lambda_res_26991 = sdiv64(zs_lhs_26990, (int64_t) 2);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:288:36-55
         
-        int64_t lifted_lambda_res_27945;
+        int64_t lifted_lambda_res_26992;
         
-        if (eta_p_27928) {
-            lifted_lambda_res_27945 = lifted_lambda_res_27944;
+        if (eta_p_26975) {
+            lifted_lambda_res_26992 = lifted_lambda_res_26991;
         } else {
-            lifted_lambda_res_27945 = (int64_t) 0;
+            lifted_lambda_res_26992 = (int64_t) 0;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t defunc_0_f_res_27949 = btoi_bool_i64(eta_p_27928);
+        int64_t defunc_0_f_res_26996 = btoi_bool_i64(eta_p_26975);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         
-        int64_t defunc_0_op_res_20787 = add64(defunc_0_f_res_27941, scanacc_28452);
+        int64_t defunc_0_op_res_20433 = add64(defunc_0_f_res_26988, scanacc_27499);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:289:37-40
         
-        int64_t defunc_0_op_res_20846 = add64(lifted_lambda_res_27945, scanacc_28453);
+        int64_t defunc_0_op_res_20492 = add64(lifted_lambda_res_26992, scanacc_27500);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t defunc_0_op_res_20988 = add64(defunc_0_f_res_27949, scanacc_28454);
+        int64_t defunc_0_op_res_20614 = add64(defunc_0_f_res_26996, scanacc_27501);
         
-        ((int64_t *) mem_29001)[i_28462] = defunc_0_op_res_20787;
-        ((int64_t *) mem_29003)[i_28462] = defunc_0_op_res_20846;
-        ((int64_t *) mem_29005)[i_28462] = defunc_0_op_res_20988;
-        ((int64_t *) mem_29007)[i_28462] = defunc_0_f_res_27949;
-        ((bool *) mem_29008)[i_28462] = lifted_lambda_res_27939;
-        ((int64_t *) mem_29010)[i_28462] = defunc_0_f_res_27941;
-        ((int64_t *) mem_29012)[i_28462] = zp_res_27938;
+        ((int64_t *) mem_28045)[i_27509] = defunc_0_op_res_20433;
+        ((int64_t *) mem_28047)[i_27509] = defunc_0_op_res_20492;
+        ((int64_t *) mem_28049)[i_27509] = defunc_0_op_res_20614;
+        ((int64_t *) mem_28051)[i_27509] = defunc_0_f_res_26996;
+        ((bool *) mem_28052)[i_27509] = lifted_lambda_res_26986;
+        ((int64_t *) mem_28054)[i_27509] = defunc_0_f_res_26988;
+        ((int64_t *) mem_28056)[i_27509] = zp_res_26985;
         
-        int64_t scanacc_tmp_29085 = defunc_0_op_res_20787;
-        int64_t scanacc_tmp_29086 = defunc_0_op_res_20846;
-        int64_t scanacc_tmp_29087 = defunc_0_op_res_20988;
+        int64_t scanacc_tmp_28129 = defunc_0_op_res_20433;
+        int64_t scanacc_tmp_28130 = defunc_0_op_res_20492;
+        int64_t scanacc_tmp_28131 = defunc_0_op_res_20614;
         
-        scanacc_28452 = scanacc_tmp_29085;
-        scanacc_28453 = scanacc_tmp_29086;
-        scanacc_28454 = scanacc_tmp_29087;
+        scanacc_27499 = scanacc_tmp_28129;
+        scanacc_27500 = scanacc_tmp_28130;
+        scanacc_27501 = scanacc_tmp_28131;
     }
-    discard_28470 = scanacc_28452;
-    discard_28471 = scanacc_28453;
-    discard_28472 = scanacc_28454;
+    discard_27517 = scanacc_27499;
+    discard_27518 = scanacc_27500;
+    discard_27519 = scanacc_27501;
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    int64_t tmp_20790 = sub64(n_15266, (int64_t) 1);
-    
-    // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
-    
-    bool y_20792 = slt64(tmp_20790, n_15266);
+    int64_t tmp_20436 = sub64(n_15104, (int64_t) 1);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    bool x_20791 = sle64((int64_t) 0, tmp_20790);
+    bool y_20438 = slt64(tmp_20436, n_15104);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    bool bounds_check_20793 = x_20791 && y_20792;
+    bool x_20437 = sle64((int64_t) 0, tmp_20436);
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    bool cond_20788 = n_15266 == (int64_t) 0;
+    bool bounds_check_20439 = x_20437 && y_20438;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    bool protect_assert_disj_20794 = cond_20788 || bounds_check_20793;
+    bool cond_20434 = n_15104 == (int64_t) 0;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    bool index_certs_20795;
+    bool protect_assert_disj_20440 = cond_20434 || bounds_check_20439;
     
-    if (!protect_assert_disj_20794) {
-        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_20790, "] out of bounds for array of shape [", (long long) n_15266, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51\n"));
+    // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
+    
+    bool index_certs_20441;
+    
+    if (!protect_assert_disj_20440) {
+        set_error(ctx, msgprintf("Error: %s%lld%s%lld%s\n\nBacktrace:\n%s", "Index [", (long long) tmp_20436, "] out of bounds for array of shape [", (long long) n_15104, "].", "-> #0  ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51\n"));
         err = FUTHARK_PROGRAM_ERROR;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    bool x_20789 = !cond_20788;
+    bool x_20435 = !cond_20434;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_f_res_20997;
+    int64_t m_f_res_20623;
     
-    if (x_20789) {
+    if (x_20435) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t x_28045 = ((int64_t *) mem_29005)[tmp_20790];
+        int64_t x_27092 = ((int64_t *) mem_28049)[tmp_20436];
         
-        m_f_res_20997 = x_28045;
+        m_f_res_20623 = x_27092;
     } else {
-        m_f_res_20997 = (int64_t) 0;
+        m_f_res_20623 = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t m_20999;
+    int64_t m_20625;
     
-    if (cond_20788) {
-        m_20999 = (int64_t) 0;
+    if (cond_20434) {
+        m_20625 = (int64_t) 0;
     } else {
-        m_20999 = m_f_res_20997;
+        m_20625 = m_f_res_20623;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    int64_t bytes_29055 = (int64_t) 8 * m_20999;
+    int64_t bytes_28099 = (int64_t) 8 * m_20625;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    int64_t m_f_res_20796;
+    int64_t m_f_res_20442;
     
-    if (x_20789) {
+    if (x_20435) {
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         
-        int64_t x_28044 = ((int64_t *) mem_29001)[tmp_20790];
+        int64_t x_27091 = ((int64_t *) mem_28045)[tmp_20436];
         
-        m_f_res_20796 = x_28044;
+        m_f_res_20442 = x_27091;
     } else {
-        m_f_res_20796 = (int64_t) 0;
+        m_f_res_20442 = (int64_t) 0;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    int64_t m_20798;
+    int64_t m_20444;
     
-    if (cond_20788) {
-        m_20798 = (int64_t) 0;
+    if (cond_20434) {
+        m_20444 = (int64_t) 0;
     } else {
-        m_20798 = m_f_res_20796;
+        m_20444 = m_f_res_20442;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
     
-    int64_t bytes_29057 = (int64_t) 8 * m_20798;
+    int64_t bytes_28101 = (int64_t) 8 * m_20444;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    if (memblock_alloc(ctx, &mem_29056, bytes_29055, "mem_29056")) {
+    if (memblock_alloc(ctx, &mem_28100, bytes_28099, "mem_28100")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
-    if (memblock_alloc(ctx, &mem_29058, bytes_29057, "mem_29058")) {
+    if (memblock_alloc(ctx, &mem_28102, bytes_28101, "mem_28102")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
-    if (memblock_alloc(ctx, &mem_29060, bytes_29057, "mem_29060")) {
+    if (memblock_alloc(ctx, &mem_28104, bytes_28101, "mem_28104")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
-    if (memblock_alloc(ctx, &mem_29062, bytes_29057, "mem_29062")) {
+    if (memblock_alloc(ctx, &mem_28106, bytes_28101, "mem_28106")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
     
-    bool acc_cert_27394;
-    bool acc_cert_27638;
-    bool acc_cert_27639;
-    bool acc_cert_27640;
+    bool acc_cert_26441;
+    bool acc_cert_26685;
+    bool acc_cert_26686;
+    bool acc_cert_26687;
     
     // ../lib/github.com/diku-dk/vtree/vtree.fut:271:17-279:51
-    for (int64_t i_28476 = 0; i_28476 < n_15266; i_28476++) {
-        int64_t eta_p_27675 = ((int64_t *) lp_mem_28969.mem)[i_28476];
-        int64_t eta_p_27676 = ((int64_t *) mem_29012)[i_28476];
-        int64_t eta_p_27677 = ((int64_t *) rp_mem_28970.mem)[i_28476];
-        int64_t eta_p_27678 = ((int64_t *) mem_29010)[i_28476];
-        int64_t eta_p_27679 = ((int64_t *) mem_29001)[i_28476];
-        int64_t v_27683 = ((int64_t *) data_mem_28968.mem)[i_28476];
+    for (int64_t i_27523 = 0; i_27523 < n_15104; i_27523++) {
+        int64_t eta_p_26722 = ((int64_t *) lp_mem_28013.mem)[i_27523];
+        int64_t eta_p_26723 = ((int64_t *) mem_28056)[i_27523];
+        int64_t eta_p_26724 = ((int64_t *) rp_mem_28014.mem)[i_27523];
+        int64_t eta_p_26725 = ((int64_t *) mem_28054)[i_27523];
+        int64_t eta_p_26726 = ((int64_t *) mem_28045)[i_27523];
+        int64_t v_26730 = ((int64_t *) data_mem_28012.mem)[i_27523];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:271:22-25
         
-        int64_t defunc_0_f_res_27685 = sub64(eta_p_27675, eta_p_27676);
+        int64_t defunc_0_f_res_26732 = sub64(eta_p_26722, eta_p_26723);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:272:22-25
         
-        int64_t defunc_0_f_res_27687 = sub64(eta_p_27677, eta_p_27676);
+        int64_t defunc_0_f_res_26734 = sub64(eta_p_26724, eta_p_26723);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         
-        bool cond_27688 = eta_p_27678 == (int64_t) 1;
+        bool cond_26735 = eta_p_26725 == (int64_t) 1;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         
-        int64_t lifted_lambda_res_27689;
+        int64_t lifted_lambda_res_26736;
         
-        if (cond_27688) {
+        if (cond_26735) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
             
-            int64_t lifted_lambda_res_t_res_28032 = sub64(eta_p_27679, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_27079 = sub64(eta_p_26726, (int64_t) 1);
             
-            lifted_lambda_res_27689 = lifted_lambda_res_t_res_28032;
+            lifted_lambda_res_26736 = lifted_lambda_res_t_res_27079;
         } else {
-            lifted_lambda_res_27689 = (int64_t) -1;
+            lifted_lambda_res_26736 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27689) && slt64(lifted_lambda_res_27689, m_20798)) {
-            ((int64_t *) mem_29062.mem)[lifted_lambda_res_27689] = defunc_0_f_res_27685;
+        if (sle64((int64_t) 0, lifted_lambda_res_26736) && slt64(lifted_lambda_res_26736, m_20444)) {
+            ((int64_t *) mem_28106.mem)[lifted_lambda_res_26736] = defunc_0_f_res_26732;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27689) && slt64(lifted_lambda_res_27689, m_20798)) {
-            ((int64_t *) mem_29060.mem)[lifted_lambda_res_27689] = defunc_0_f_res_27687;
+        if (sle64((int64_t) 0, lifted_lambda_res_26736) && slt64(lifted_lambda_res_26736, m_20444)) {
+            ((int64_t *) mem_28104.mem)[lifted_lambda_res_26736] = defunc_0_f_res_26734;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:278:5-279:51
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27689) && slt64(lifted_lambda_res_27689, m_20798)) {
-            ((int64_t *) mem_29058.mem)[lifted_lambda_res_27689] = v_27683;
+        if (sle64((int64_t) 0, lifted_lambda_res_26736) && slt64(lifted_lambda_res_26736, m_20444)) {
+            ((int64_t *) mem_28102.mem)[lifted_lambda_res_26736] = v_26730;
         }
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
-    for (int64_t i_28478 = 0; i_28478 < n_15266; i_28478++) {
-        int64_t eta_p_27420 = ((int64_t *) mem_29007)[i_28478];
-        int64_t eta_p_27421 = ((int64_t *) mem_29005)[i_28478];
+    for (int64_t i_27525 = 0; i_27525 < n_15104; i_27525++) {
+        int64_t eta_p_26467 = ((int64_t *) mem_28051)[i_27525];
+        int64_t eta_p_26468 = ((int64_t *) mem_28049)[i_27525];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t zv_lhs_27424 = add64((int64_t) -1, i_28478);
+        int64_t zv_lhs_26471 = add64((int64_t) -1, i_27525);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t tmp_27425 = smod64(zv_lhs_27424, n_15266);
+        int64_t tmp_26472 = smod64(zv_lhs_26471, n_15104);
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:132:11-36
         
-        int64_t lifted_lambda_res_27426 = ((int64_t *) mem_29003)[tmp_27425];
+        int64_t lifted_lambda_res_26473 = ((int64_t *) mem_28047)[tmp_26472];
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        bool cond_27428 = i_28478 == (int64_t) 0;
+        bool cond_26475 = i_27525 == (int64_t) 0;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:130:19-43
         
-        int64_t lifted_lambda_res_27429;
+        int64_t lifted_lambda_res_26476;
         
-        if (cond_27428) {
-            lifted_lambda_res_27429 = (int64_t) 0;
+        if (cond_26475) {
+            lifted_lambda_res_26476 = (int64_t) 0;
         } else {
-            lifted_lambda_res_27429 = lifted_lambda_res_27426;
+            lifted_lambda_res_26476 = lifted_lambda_res_26473;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        bool cond_27430 = eta_p_27420 == (int64_t) 1;
+        bool cond_26477 = eta_p_26467 == (int64_t) 1;
         
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         
-        int64_t lifted_lambda_res_27431;
+        int64_t lifted_lambda_res_26478;
         
-        if (cond_27430) {
+        if (cond_26477) {
             // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
             
-            int64_t lifted_lambda_res_t_res_28033 = sub64(eta_p_27421, (int64_t) 1);
+            int64_t lifted_lambda_res_t_res_27080 = sub64(eta_p_26468, (int64_t) 1);
             
-            lifted_lambda_res_27431 = lifted_lambda_res_t_res_28033;
+            lifted_lambda_res_26478 = lifted_lambda_res_t_res_27080;
         } else {
-            lifted_lambda_res_27431 = (int64_t) -1;
+            lifted_lambda_res_26478 = (int64_t) -1;
         }
         // ../lib/github.com/diku-dk/vtree/vtree.fut:237:15-40
         // UpdateAcc
-        if (sle64((int64_t) 0, lifted_lambda_res_27431) && slt64(lifted_lambda_res_27431, m_20999)) {
-            ((int64_t *) mem_29056.mem)[lifted_lambda_res_27431] = lifted_lambda_res_27429;
+        if (sle64((int64_t) 0, lifted_lambda_res_26478) && slt64(lifted_lambda_res_26478, m_20625)) {
+            ((int64_t *) mem_28100.mem)[lifted_lambda_res_26478] = lifted_lambda_res_26476;
         }
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:258:12-292:42
-    if (memblock_alloc(ctx, &mem_29063, n_15266, "mem_29063")) {
+    if (memblock_alloc(ctx, &mem_28107, n_15104, "mem_28107")) {
         err = 1;
         goto cleanup;
     }
     // ../lib/github.com/diku-dk/vtree/vtree.fut:258:12-292:42
     // ../lib/github.com/diku-dk/vtree/vtree.fut:258:12-292:42
-    lmad_copy_1b(ctx, 1, (uint8_t *) mem_29063.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) mem_29008, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {n_15266});
+    lmad_copy_1b(ctx, 1, (uint8_t *) mem_28107.mem, (int64_t) 0, (int64_t []) {(int64_t) 1}, (uint8_t *) mem_28052, (int64_t) 0, (int64_t []) {(int64_t) 1}, (int64_t []) {n_15104});
     // ../lib/github.com/diku-dk/vtree/vtree.fut:258:12-292:42
     
-    int64_t split_res_15363;
+    int64_t split_res_15201;
     
-    if (futrts_deleteVertices_7592(ctx, &ext_mem_29067, &ext_mem_29066, &ext_mem_29065, &split_res_15363, data_mem_28968, lp_mem_28969, rp_mem_28970, mem_29063, n_15266) != 0) {
+    if (futrts_deleteVertices_7584(ctx, &ext_mem_28111, &ext_mem_28110, &ext_mem_28109, &split_res_15201, data_mem_28012, lp_mem_28013, rp_mem_28014, mem_28107, n_15104) != 0) {
         err = 1;
         goto cleanup;
     }
-    if (memblock_unref(ctx, &mem_29063, "mem_29063") != 0)
+    if (memblock_unref(ctx, &mem_28107, "mem_28107") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29068, &mem_29056, "mem_29056") != 0)
+    if (memblock_set(ctx, &mem_out_28112, &mem_28100, "mem_28100") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29069, &mem_29058, "mem_29058") != 0)
+    if (memblock_set(ctx, &mem_out_28113, &mem_28102, "mem_28102") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29070, &mem_29062, "mem_29062") != 0)
+    if (memblock_set(ctx, &mem_out_28114, &mem_28106, "mem_28106") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29071, &mem_29060, "mem_29060") != 0)
+    if (memblock_set(ctx, &mem_out_28115, &mem_28104, "mem_28104") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29072, &ext_mem_29067, "ext_mem_29067") != 0)
+    if (memblock_set(ctx, &mem_out_28116, &ext_mem_28111, "ext_mem_28111") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29073, &ext_mem_29066, "ext_mem_29066") != 0)
+    if (memblock_set(ctx, &mem_out_28117, &ext_mem_28110, "ext_mem_28110") != 0)
         return 1;
-    if (memblock_set(ctx, &mem_out_29074, &ext_mem_29065, "ext_mem_29065") != 0)
+    if (memblock_set(ctx, &mem_out_28118, &ext_mem_28109, "ext_mem_28109") != 0)
         return 1;
-    prim_out_29075 = m_20999;
-    prim_out_29076 = m_20798;
-    prim_out_29077 = split_res_15363;
-    if (memblock_set(ctx, &*mem_out_p_29297, &mem_out_29068, "mem_out_29068") != 0)
+    prim_out_28119 = m_20625;
+    prim_out_28120 = m_20444;
+    prim_out_28121 = split_res_15201;
+    if (memblock_set(ctx, &*mem_out_p_28339, &mem_out_28112, "mem_out_28112") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29298, &mem_out_29069, "mem_out_29069") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28340, &mem_out_28113, "mem_out_28113") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29299, &mem_out_29070, "mem_out_29070") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28341, &mem_out_28114, "mem_out_28114") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29300, &mem_out_29071, "mem_out_29071") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28342, &mem_out_28115, "mem_out_28115") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29301, &mem_out_29072, "mem_out_29072") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28343, &mem_out_28116, "mem_out_28116") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29302, &mem_out_29073, "mem_out_29073") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28344, &mem_out_28117, "mem_out_28117") != 0)
         return 1;
-    if (memblock_set(ctx, &*mem_out_p_29303, &mem_out_29074, "mem_out_29074") != 0)
+    if (memblock_set(ctx, &*mem_out_p_28345, &mem_out_28118, "mem_out_28118") != 0)
         return 1;
-    *out_prim_out_29304 = prim_out_29075;
-    *out_prim_out_29305 = prim_out_29076;
-    *out_prim_out_29306 = prim_out_29077;
+    *out_prim_out_28346 = prim_out_28119;
+    *out_prim_out_28347 = prim_out_28120;
+    *out_prim_out_28348 = prim_out_28121;
     
   cleanup:
     {
-        free(mem_28973);
-        free(mem_28975);
-        free(mem_28983);
-        free(mem_28985);
-        free(mem_28993);
-        free(mem_29001);
-        free(mem_29003);
-        free(mem_29005);
-        free(mem_29007);
-        free(mem_29008);
-        free(mem_29010);
-        free(mem_29012);
-        if (memblock_unref(ctx, &ext_mem_29065, "ext_mem_29065") != 0)
+        free(mem_28017);
+        free(mem_28019);
+        free(mem_28027);
+        free(mem_28029);
+        free(mem_28037);
+        free(mem_28045);
+        free(mem_28047);
+        free(mem_28049);
+        free(mem_28051);
+        free(mem_28052);
+        free(mem_28054);
+        free(mem_28056);
+        if (memblock_unref(ctx, &ext_mem_28109, "ext_mem_28109") != 0)
             return 1;
-        if (memblock_unref(ctx, &ext_mem_29066, "ext_mem_29066") != 0)
+        if (memblock_unref(ctx, &ext_mem_28110, "ext_mem_28110") != 0)
             return 1;
-        if (memblock_unref(ctx, &ext_mem_29067, "ext_mem_29067") != 0)
+        if (memblock_unref(ctx, &ext_mem_28111, "ext_mem_28111") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29063, "mem_29063") != 0)
+        if (memblock_unref(ctx, &mem_28107, "mem_28107") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29062, "mem_29062") != 0)
+        if (memblock_unref(ctx, &mem_28106, "mem_28106") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29060, "mem_29060") != 0)
+        if (memblock_unref(ctx, &mem_28104, "mem_28104") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29058, "mem_29058") != 0)
+        if (memblock_unref(ctx, &mem_28102, "mem_28102") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_29056, "mem_29056") != 0)
+        if (memblock_unref(ctx, &mem_28100, "mem_28100") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29074, "mem_out_29074") != 0)
+        if (memblock_unref(ctx, &mem_out_28118, "mem_out_28118") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29073, "mem_out_29073") != 0)
+        if (memblock_unref(ctx, &mem_out_28117, "mem_out_28117") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29072, "mem_out_29072") != 0)
+        if (memblock_unref(ctx, &mem_out_28116, "mem_out_28116") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29071, "mem_out_29071") != 0)
+        if (memblock_unref(ctx, &mem_out_28115, "mem_out_28115") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29070, "mem_out_29070") != 0)
+        if (memblock_unref(ctx, &mem_out_28114, "mem_out_28114") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29069, "mem_out_29069") != 0)
+        if (memblock_unref(ctx, &mem_out_28113, "mem_out_28113") != 0)
             return 1;
-        if (memblock_unref(ctx, &mem_out_29068, "mem_out_29068") != 0)
+        if (memblock_unref(ctx, &mem_out_28112, "mem_out_28112") != 0)
             return 1;
     }
     return err;
@@ -11441,22 +11397,22 @@ FUTHARK_FUN_ATTR int futrts_split_7593(struct futhark_context *ctx, struct membl
 
 int futhark_entry_test_delete_vertices(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_delete_vertices(ctx, &prim_out_29068);
+        ret = futrts_entry_test_delete_vertices(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);
@@ -11464,22 +11420,22 @@ int futhark_entry_test_delete_vertices(struct futhark_context *ctx, bool *out0)
 }
 int futhark_entry_test_merge_no_subtrees(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_merge_no_subtrees(ctx, &prim_out_29068);
+        ret = futrts_entry_test_merge_no_subtrees(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);
@@ -11487,22 +11443,22 @@ int futhark_entry_test_merge_no_subtrees(struct futhark_context *ctx, bool *out0
 }
 int futhark_entry_test_merge_tree(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_merge_tree(ctx, &prim_out_29068);
+        ret = futrts_entry_test_merge_tree(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);
@@ -11510,22 +11466,22 @@ int futhark_entry_test_merge_tree(struct futhark_context *ctx, bool *out0)
 }
 int futhark_entry_test_split(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_split(ctx, &prim_out_29068);
+        ret = futrts_entry_test_split(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);
@@ -11533,22 +11489,22 @@ int futhark_entry_test_split(struct futhark_context *ctx, bool *out0)
 }
 int futhark_entry_test_split_at_leaf(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_split_at_leaf(ctx, &prim_out_29068);
+        ret = futrts_entry_test_split_at_leaf(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);
@@ -11556,22 +11512,22 @@ int futhark_entry_test_split_at_leaf(struct futhark_context *ctx, bool *out0)
 }
 int futhark_entry_test_split_multiple(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_split_multiple(ctx, &prim_out_29068);
+        ret = futrts_entry_test_split_multiple(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);
@@ -11579,22 +11535,22 @@ int futhark_entry_test_split_multiple(struct futhark_context *ctx, bool *out0)
 }
 int futhark_entry_test_split_none(struct futhark_context *ctx, bool *out0)
 {
-    bool prim_out_29068 = 0;
+    bool prim_out_28112 = 0;
     int ret = 0;
     
     lock_lock(&ctx->lock);
     if (ret == 0) {
-        ret = futrts_entry_test_split_none(ctx, &prim_out_29068);
+        ret = futrts_entry_test_split_none(ctx, &prim_out_28112);
         if (ret == 0) {
+            bool ok_13169 = ctx->constants->ok_13169;
+            bool ok_13252 = ctx->constants->ok_13252;
             bool ok_13331 = ctx->constants->ok_13331;
-            bool ok_13414 = ctx->constants->ok_13414;
-            bool ok_13493 = ctx->constants->ok_13493;
-            bool x_19472 = ctx->constants->x_19472;
-            bool x_19475 = ctx->constants->x_19475;
-            bool x_19481 = ctx->constants->x_19481;
-            bool x_19487 = ctx->constants->x_19487;
+            bool x_19124 = ctx->constants->x_19124;
+            bool x_19127 = ctx->constants->x_19127;
+            bool x_19133 = ctx->constants->x_19133;
+            bool x_19139 = ctx->constants->x_19139;
             
-            *out0 = prim_out_29068;
+            *out0 = prim_out_28112;
         }
     }
     lock_unlock(&ctx->lock);

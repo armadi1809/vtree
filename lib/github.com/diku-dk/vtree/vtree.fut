@@ -53,7 +53,7 @@ module type vtree = {
   val getData 'a [n] : t a [n] -> {lp: [n]i64, rp: [n]i64, data: [n]a}
 
   val merge 'a [n][m][k] :
-  ({subtrees: t a [n], offsets: [k]i64}) ->  -- There are k subtrees, n vertices in total
+  ({subtrees: t a [n], subtree_offsets: [k]i64}) ->  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m]) ->                  -- Parent has m vertices
   (parent_pointers: [m]i64) -> t a []
 }
@@ -294,27 +294,27 @@ def split 'a [n]
   in ({ subtrees, offsets }, remainder)
 
   def merge 'a [n][m][k] 
-  ({subtrees: t a [n], offsets: [k]i64})  -- There are k subtrees, n vertices in total
+  ({subtrees: t a [n], subtree_offsets: [k]i64})  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m])                  -- Parent has m vertices
   (parent_pointers: [m]i64): t a [] = 
-    let sgm_sizes = map (\i -> (if i < k - 1 then offsets[i+1] else n) - offsets[i]) (iota k) 
-    let sizes_alloc = map (\i -> if i >= 0 then sgm_sizes[i] else 0) parent_pointers 
-    let offsets_from_pointers = exscan (+) 0 sizes_alloc
-    let sizes_inc_alloc = map (+1) sizes_alloc 
-    let parent_is = exscan (+) 0 sizes_inc_alloc 
+    let subtree_segment_sizes = map (\i -> (if i < k - 1 then subtree_offsets[i+1] else n) - subtree_offsets[i]) (iota k) 
+    let size_to_allocate_for_each_parent = map (\i -> if i < 0 then 0 else subtree_segment_sizes[i]) parent_pointers 
+    let number_of_new_children_to_the_left_of_each_parent = exscan (+) 0 size_to_allocate_for_each_parent
+    let distances_between_parents = map (+1) size_to_allocate_for_each_parent 
+    let parent_indices = exscan (+) 0 distances_between_parents 
 
-    let num_of_children = reduce (+) 0 sizes_alloc 
+    let num_of_children = reduce (+) 0 size_to_allocate_for_each_parent 
     let result_size = m + num_of_children 
 
     -- The indices in the result which are not parent indices
-    let child_is = 
+    let child_indices = 
       let flag_basis = replicate result_size true
-      let flag_array = scatter flag_basis parent_is (replicate m false)
+      let flag_array = scatter flag_basis parent_indices (replicate m false)
       in filter (\i -> flag_array[i]) (iota result_size) :> [num_of_children]i64 
 
-    let spacious_parent_lp = scatter (replicate result_size 0i64) parent_is parent_tree.lp 
-    let spacious_parent_rp = scatter (replicate result_size 0i64) parent_is parent_tree.rp 
-    let spacious_parent_data = scatter (replicate result_size parent_tree.data[0]) parent_is parent_tree.data 
+    let spacious_parent_lp = scatter (replicate result_size 0i64) parent_indices parent_tree.lp 
+    let spacious_parent_rp = scatter (replicate result_size 0i64) parent_indices parent_tree.rp 
+    let spacious_parent_data = scatter (replicate result_size parent_tree.data[0]) parent_indices parent_tree.data 
     
     let segmented_scan 't [n] (g:t->t->t) (ne: t) (flags: [n]bool) (vals: [n]t): [n]t =
       let pairs = scan ( \ (v1,f1) (v2,f2) ->
@@ -340,34 +340,33 @@ def split 'a [n]
       in map (\x -> x-1) iotas
       
     -- The indices of the vertices of subtrees which are to be inserted  
-    let child_vs_is =
-      let flags = scatter (replicate num_of_children false) offsets_from_pointers (replicate m true) 
-      let iotas = segmented_iota flags 
-      let chosen_offsets = map (\i -> if i == -1 then -1 else offsets[i]) parent_pointers
-      let iota_offsets = segmented_replicate sizes_alloc chosen_offsets 
+    let subtree_indices =
+      let iota_flags = scatter (replicate num_of_children false) number_of_new_children_to_the_left_of_each_parent (replicate m true) 
+      let iotas = segmented_iota iota_flags 
+      let iota_subtrees = segmented_replicate size_to_allocate_for_each_parent parent_pointers 
+      let iota_offsets = map (\i -> subtree_offsets[i]) iota_subtrees
       in map2 (+) iotas iota_offsets  
 
-    let filled_parent_lp = scatter spacious_parent_lp child_is (map (\i -> subtrees.lp[i]) child_vs_is) 
-    let filled_parent_rp = scatter spacious_parent_rp child_is (map (\i -> subtrees.rp[i]) child_vs_is) 
-    let filled_parent_data = scatter spacious_parent_data child_is (map (\i -> subtrees.data[i]) child_vs_is) 
+    let filled_parent_lp = scatter spacious_parent_lp child_indices (map (\i -> subtrees.lp[i]) subtree_indices) 
+    let filled_parent_rp = scatter spacious_parent_rp child_indices (map (\i -> subtrees.rp[i]) subtree_indices) 
+    let filled_parent_data = scatter spacious_parent_data child_indices (map (\i -> subtrees.data[i]) subtree_indices) 
 
-    let double_sizes = map (2*) sizes_alloc 
-    let lp_parent_offsets = exscan (+) 0 double_sizes 
-    let lp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_is lp_parent_offsets 
-    let lp_child_offsets = map (\i -> filled_parent_lp[i] + lp_offsets[i] + 1) parent_is  
-    let lp_child_offsets = segmented_replicate sizes_alloc lp_child_offsets 
-    let lp_offsets = reduce_by_index lp_offsets (+) 0 child_is lp_child_offsets 
+    let lp_parent_offsets = map (2*) number_of_new_children_to_the_left_of_each_parent
+    let lp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_indices lp_parent_offsets 
+    let lp_child_offsets = map (\i -> filled_parent_lp[i] + lp_offsets[i] + 1) parent_indices  
+    let lp_child_offsets = segmented_replicate size_to_allocate_for_each_parent lp_child_offsets 
+    let lp_offsets = reduce_by_index lp_offsets (+) 0 child_indices lp_child_offsets 
     
     let parent_tree_with_child_counts = lprp {
-      data = sizes_alloc,
+      data = size_to_allocate_for_each_parent,
       lp = parent_tree.lp,
       rp = parent_tree.rp
-    } |> trace
-    let subtree_sizes = ileaffix (+) i64.neg 0i64 parent_tree_with_child_counts |> trace
-    let rp_parent_offsets = map (2*) (map2 (+) offsets_from_pointers subtree_sizes |> trace)
+    } 
+    let total_number_of_new_children_under_each_parent = ileaffix (+) i64.neg 0i64 parent_tree_with_child_counts 
+    let rp_parent_offsets = map2 (+) lp_parent_offsets (map (2*) total_number_of_new_children_under_each_parent) 
     let rp_child_offsets = lp_child_offsets
-    let rp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_is rp_parent_offsets |> trace
-    let rp_offsets = reduce_by_index rp_offsets (+) 0 child_is rp_child_offsets |> trace
+    let rp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_indices rp_parent_offsets 
+    let rp_offsets = reduce_by_index rp_offsets (+) 0 child_indices rp_child_offsets 
 
     let new_lp = map2 (+) filled_parent_lp lp_offsets
     let new_rp = map2 (+) filled_parent_rp rp_offsets
