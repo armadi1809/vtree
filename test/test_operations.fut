@@ -147,7 +147,31 @@ entry test_merge_tree =
     && and (map2 (==) (sized (11) actual.data) expected.data)
   in ok
 
+entry test_merge_no_subtrees = 
+  let parent_tree: T.t i64 [4] =
+    T.lprp {
+    lp = [0,1,3,4],
+    rp = [7,2,6,5],
+    data = [0,1,2,3]
+  }
+  let subtrees: T.t i64 [0] =
+    T.lprp {
+      lp = [],
+      rp = [],
+      data = []
+    }
+  let offsets = []
+  let parent_pointers = [-1i64,-1i64,-1i64,-1i64]
+  let expected = T.getData parent_tree
+  let actual = T.getData (T.merge {subtrees = subtrees, offsets = offsets} parent_tree parent_pointers)
+  let ok = 
+    length actual.data == 4
+    && and (map2 (==) (sized (4) actual.lp) expected.lp) 
+    && and (map2 (==) (sized (4) actual.rp) expected.rp) 
+    && and (map2 (==) (sized (4) actual.data) expected.data)
+  in ok
+
 -- Tests 
 -- ==
--- entry: test_split test_split_at_leaf test_split_multiple test_split_none test_delete_vertices test_merge_tree
+-- entry: test_split test_split_at_leaf test_split_multiple test_split_none test_delete_vertices test_merge_tree test_merge_no_subtrees
 -- input {} output { true }
