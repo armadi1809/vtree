@@ -312,7 +312,7 @@ def split 'a [n]
     let child_indices = 
       let flag_basis = replicate result_size true
       let flag_array = scatter flag_basis parent_indices (replicate m false)
-      in filter (\i -> flag_array[i]) (iota result_size) :> [num_of_children]i64 
+      in filter (\i -> flag_array[i]) (iota result_size) |> sized num_of_children
 
     let spacious_parent_lp = scatter (replicate result_size 0i64) parent_indices parent_tree.lp 
     let spacious_parent_rp = scatter (replicate result_size 0i64) parent_indices parent_tree.rp 
@@ -326,9 +326,9 @@ def split 'a [n]
     let subtree_indices =
       let iota_flags = scatter (replicate num_of_children false) number_of_new_children_to_the_left_of_each_parent (replicate m true) 
       let iotas = segmented_iota iota_flags 
-      let iota_subtrees = segmented_replicate size_to_allocate_for_each_parent parent_pointers 
+      let iota_subtrees = segmented_replicate size_to_allocate_for_each_parent parent_pointers |> sized num_of_children
       let iota_offsets = map (\i -> subtree_offsets[i]) iota_subtrees
-      in map2 (+) iotas (iota_offsets :> [num_of_children]i64)  
+      in map2 (+) iotas iota_offsets
 
     let filled_parent_lp = scatter spacious_parent_lp child_indices (map (\i -> subtrees.lp[i]) subtree_indices) 
     let filled_parent_rp = scatter spacious_parent_rp child_indices (map (\i -> subtrees.rp[i]) subtree_indices) 
