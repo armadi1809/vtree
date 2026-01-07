@@ -48,8 +48,9 @@ module type vtree = {
          }
        , t a []
        )
-  val deleteVertices 'a[n]: t a [n] -> [n]bool -> t a []
-  val getData 'a[n]: t a [n] -> {lp: [n]i64, rp: [n]i64, data: [n]a}
+
+  val deleteVertices 'a [n] : t a [n] -> [n]bool -> t a []
+  val getData 'a [n] : t a [n] -> {lp: [n]i64, rp: [n]i64, data: [n]a}
 }
 
 -- [mk_preorder a] creates a vtree from the preorder specification `a` of a tree
@@ -245,7 +246,7 @@ module vtree : vtree = {
           (zip keep t.rp)
     let lp = pack keep new_left :> [m]i64
     let rp = pack keep new_right :> [m]i64
-    let data = pack keep t.data :> [m] a
+    let data = pack keep t.data :> [m]a
     in {lp, rp, data}
 
   def split 'a [n]
@@ -255,44 +256,100 @@ module vtree : vtree = {
                                   }
                                 , t a []
                                 ) =
+    -- Phase 1: Mark roots of split subtrees and prepare root values
+
+    -- For each vertex, keep its left-parenthesis index if it is
+    -- marked as a split root, otherwise 0. This will later allow
+    -- us to propagate the root index down each subtree.
     let root_idx =
       map2 (\is_root l -> if is_root then l else 0)
            splits
            t.lp
+    -- Build a temporary tree where the data field stores the
+    -- root index at subtree roots and 0 elsewhere.
     let t_root =
       { lp = t.lp
       , rp = t.rp
       , data = root_idx
       }
+
+    -- Phase 2: Distribute root indices to all vertices in subtrees
+
+    -- Use a +-rootfix to propagate the root index from each
+    -- marked root to all vertices in its subtree. Because
+    -- subtrees are disjoint, this correctly assigns each vertex
+    -- the left-parenthesis index of its subtree root.
     let dist =
       irootfix (i64.+) i64.neg 0 t_root
+
+    -- Phase 3: Reindex parentheses locally within each subtree
+
+    -- Subtract the propagated root index from each vertex’s
+    -- left and right parentheses, producing indices local
+    -- to each extracted subtree.
     let L_local = map2 (-) t.lp dist
     let R_local = map2 (-) t.rp dist
+    -- Identify vertices that belong to some extracted subtree
+    -- (i.e., those that received a non-zero root index).
     let is_sub = map (\d -> d != 0) dist
-    let t_splits = { lp = t.lp, rp = t.rp, data = map (\b -> if b then 1i64 else 0i64) splits }
-    let in_subtree_count = irootfix (i64.+) i64.neg 0 t_splits
+
+    -- Phase 4: Identify vertices belonging to split subtrees
+
+    -- Convert split markers to integer form so we can count
+    -- subtree membership via a rootfix.
+    let t_splits =
+      { lp = t.lp
+      , rp = t.rp
+      , data = map (\b -> if b then 1i64 else 0i64) splits
+      }
+    -- Count how many split roots are above each vertex.
+    -- A positive value means the vertex lies within a subtree.
+    let in_subtree_count =
+      irootfix (i64.+) i64.neg 0 t_splits
+    -- Boolean flag indicating subtree membership.
     let in_subtree = map (> 0) in_subtree_count
+    -- Vertices not belonging to any extracted subtree remain
+    -- in the original (remainder) tree.
     let is_rem = map not in_subtree
 
+    -- Phase 5: Extract subtree vertices and build subtree forest
+
+    -- Filter out vertices that belong to subtrees and collect
+    -- their locally reindexed parentheses and data.
     let sub_zipped =
       filter (\(keep, _, _, _) -> keep)
              (zip4 is_sub L_local R_local t.data)
     let sub_L = map (.1) sub_zipped
     let sub_R = map (.2) sub_zipped
     let sub_data = map (.3) sub_zipped
+    -- Construct the forest of extracted subtrees. Since subtree
+    -- vertices are contiguous, they form valid independent trees.
     let subtrees =
       { lp = sub_L
       , rp = sub_R
       , data = sub_data
       }
 
-    let offsets =
-      exscan (+)
-             0
-             (map (\_ -> 1i64)
-                  (filter id splits))
+    -- Phase 6: Compute subtree segment offsets
 
+    -- Generate segment offsets for the extracted subtrees.
+    -- Each split root contributes one new subtree segment.
+    -- Compute sizes of each subtree using ileaffix
+    let t_ones = {lp = t.lp, rp = t.rp, data = map (\_ -> 1i64) t.data} 
+    let subtree_sizes = ileaffix (i64.+) i64.neg 0 t_ones
+
+    -- Get sizes at split points, exclusive scan, then pack
+    let split_sizes = map2 (\s sz -> if s then sz else 0) splits subtree_sizes
+    let offsets = pack splits (exscan (+) 0 split_sizes)
+
+    -- Phase 7: Construct the remainder tree
+
+    -- Remove all subtree vertices from the original tree,
+    -- reindexing the remaining vertices using the delete operation
     let remainder = deleteVertices t is_rem
+
+    -- Final result: subtree forest with offsets and remainder tree
+
     in ( { subtrees = subtrees
          , offsets = offsets
          }
@@ -306,11 +363,9 @@ module vtree : vtree = {
     let t' = map (\_ -> 1) t
     in rootfix (i64.+) i64.neg 0 t'
 
-  def getData 'a[n] (t: t a [n]): {lp: [n]i64, rp: [n]i64, data: [n]a} = 
-    {
-      lp =  t.lp, 
-      rp = t.rp, 
-      data = t.data
+  def getData 'a [n] (t: t a [n]) : {lp: [n]i64, rp: [n]i64, data: [n]a} =
+    { lp = t.lp
+    , rp = t.rp
+    , data = t.data
     }
-
 }

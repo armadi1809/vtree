@@ -80,7 +80,7 @@ entry test_split_multiple =
   -- Offsets should be [0, 1] for two subtrees
   let offsets_ok =
     length subtree_res.offsets == 2
-    && and (map2 (==) (sized (2) subtree_res.offsets) [0i64, 1])
+    && and (map2 (==) (sized (2) subtree_res.offsets) [0i64, 4])
   -- Remainder should only be root (node 0)
   let remainder_ok =
     length rem.data == 1
