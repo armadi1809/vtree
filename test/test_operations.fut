@@ -137,14 +137,14 @@ entry test_merge_tree =
   let expected = {
       lp = [0,1,2,5,6,7,9,13,14,15,18],
       rp = [21,4,3,12,11,8,10,20,17,16,19],
-      data = [0,4,5,2,6,7,8,2,4,5,3]
+      data = [0,4,5,1,6,7,8,2,4,5,3]
     }
   let actual = T.getData (T.merge {subtrees = subtrees, offsets = offsets} parent_tree parent_pointers)
   let ok = 
     length actual.data == 11
-    -- && and (map2 (==) (sized (11) actual.lp) expected.lp) 
-    -- && and (map2 (==) (sized (11) actual.rp) expected.rp) 
-    -- && and (map2 (==) (sized (11) actual.data) expected.data)
+    && and (map2 (==) (sized (11) actual.lp) expected.lp) 
+    && and (map2 (==) (sized (11) actual.rp) expected.rp) 
+    && and (map2 (==) (sized (11) actual.data) expected.data)
   in ok
 
 -- Tests 
