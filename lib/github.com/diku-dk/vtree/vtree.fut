@@ -333,6 +333,7 @@ def split 'a [n]
       let iotas = segmented_scan (+) 0 flags (replicate n 1)
       in map (\x -> x-1) iotas
       
+    -- The indices of the vertices of subtrees which are to be inserted  
     let child_vs_is =
       let flags = scatter (replicate num_of_children false) offsets (replicate k true)
       let iotas = segmented_iota flags
@@ -343,11 +344,16 @@ def split 'a [n]
     let filled_parent_rp = ???
     let filled_parent_data = ???
 
+    let double_sizes = map (2*) sizes_alloc
+    let lp_parent_offsets = exscan (+) 0 double_sizes
+    let lp_offsets = reduce_by_index (replicate result_size 0i64) (+) 0 parent_is lp_parent_offsets
+    let lp_child_offsets = map (\i -> filled_parent_lp[i] + lp_offsets[i] + 1) parent_is 
+    let lp_child_offsets = segmented_replicate sizes_alloc lp_child_offsets
+    let lp_offsets = reduce_by_index lp_offsets (+) 0 child_is lp_child_offsets
+    let new_lp = map2 (+) filled_parent_lp lp_offsets
 
-    let lp_parent_offsets = ???
-    let lp_child_offsets = ???
     
-    let new_lp = map2 (+) filled_parent_lp lp_parent_offsets
+
     in {
       lp = ???,
       rp = ???,
