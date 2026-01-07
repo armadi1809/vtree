@@ -297,10 +297,10 @@ def split 'a [n]
   ({subtrees: t a [n], offsets: [k]i64})  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m])                  -- Parent has m vertices
   (parent_pointers: [m]i64): t a [] = 
-    let sgm_sizes = map (\i -> (if i < k - 1 then offsets[i+1] else k) - offsets[i]) (iota k)
-    let sizes_alloc = map (\i -> if i >= 0 then sgm_sizes[i] else 0) parent_pointers
-    let sizes_inc_alloc = map (+1) sizes_alloc
-    let parent_is = exscan (+) 0 sizes_inc_alloc
+    let sgm_sizes = map (\i -> (if i < k - 1 then offsets[i+1] else k) - offsets[i]) (iota k) |> trace
+    let sizes_alloc = map (\i -> if i >= 0 then sgm_sizes[i] else 0) parent_pointers |> trace
+    let sizes_inc_alloc = map (+1) sizes_alloc |> trace
+    let parent_is = exscan (+) 0 sizes_inc_alloc |> trace
 
     let num_of_children = reduce (+) 0 sizes_alloc
     let result_size = m + num_of_children
