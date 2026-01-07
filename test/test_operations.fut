@@ -119,6 +119,33 @@ entry test_delete_vertices =
     && and (map2 (==) (sized (3) res.data) [0, 1, 5])
   in ok
 
+entry test_merge_tree = 
+  let parent: T.t i64 [4] =
+    T.lprp {
+    lp = [0,1,3,4],
+    rp = [7,2,6,5],
+    data = [0,1,2,3]
+  }
+  let subtrees: T.t i64 [5] =
+    T.lprp {
+      lp = [0,1,0,1,3],
+      rp = [3,2,5,2,4],
+      data = [4,5,6,7,8]
+    }
+  let offsets = [0,2]
+  let parent_pointers = [0,1,0,-1]
+  let expected = {
+      lp = [0,1,2,5,6,7,9,13,14,15,18],
+      rp = [21,4,3,12,11,8,10,20,17,16,19],
+      data = [0,4,5,2,6,7,8,2,4,5,3]
+    }
+  let actual = T.getData (T.merge {subtrees = subtrees, offsets = offsets} parent parent_pointers)
+  let ok = 
+    length actual.data == 11 &&
+    and (map2 (==) (sized (11) actual.lp) expected.lp) &&
+    and (map2 (==) (sized (11) actual.rp) expected.rp) &&
+    and (map2 (==) (sized (11) actual.data) expected.data)
+  in ok
 
 -- Tests 
 -- ==
