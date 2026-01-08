@@ -119,8 +119,59 @@ entry test_delete_vertices =
     && and (map2 (==) (sized (3) res.data) [0, 1, 5])
   in ok
 
+entry test_merge_tree = 
+  let parent_tree: T.t i64 [4] =
+    T.lprp {
+    lp = [0,1,3,4],
+    rp = [7,2,6,5],
+    data = [0,1,2,3]
+  }
+  let subtrees: T.t i64 [5] =
+    T.lprp {
+      lp = [0,1,0,1,3],
+      rp = [3,2,5,2,4],
+      data = [4,5,6,7,8]
+    }
+  let subtree_offsets = [0i64,2i64]
+  let parent_pointers = [0i64,1i64,0i64,-1i64]
+  let expected = {
+      lp = [0,1,2,5,6,7,9,13,14,15,18],
+      rp = [21,4,3,12,11,8,10,20,17,16,19],
+      data = [0,4,5,1,6,7,8,2,4,5,3]
+    }
+  let actual = T.getData (T.merge {subtrees = subtrees, subtree_offsets = subtree_offsets} parent_tree parent_pointers)
+  let ok = 
+    length actual.data == 11
+    && and (map2 (==) (sized (11) actual.lp) expected.lp) 
+    && and (map2 (==) (sized (11) actual.rp) expected.rp) 
+    && and (map2 (==) (sized (11) actual.data) expected.data)
+  in ok
+
+entry test_merge_no_subtrees = 
+  let parent_tree: T.t i64 [4] =
+    T.lprp {
+    lp = [0,1,3,4],
+    rp = [7,2,6,5],
+    data = [0,1,2,3]
+  }
+  let subtrees: T.t i64 [0] =
+    T.lprp {
+      lp = [],
+      rp = [],
+      data = []
+    }
+  let subtree_offsets = []
+  let parent_pointers = [-1i64,-1i64,-1i64,-1i64]
+  let expected = T.getData parent_tree
+  let actual = T.getData (T.merge {subtrees = subtrees, subtree_offsets = subtree_offsets} parent_tree parent_pointers)
+  let ok = 
+    length actual.data == 4
+    && and (map2 (==) (sized (4) actual.lp) expected.lp) 
+    && and (map2 (==) (sized (4) actual.rp) expected.rp) 
+    && and (map2 (==) (sized (4) actual.data) expected.data)
+  in ok
 
 -- Tests 
 -- ==
--- entry: test_split test_split_at_leaf test_split_multiple test_split_none test_delete_vertices
+-- entry: test_split test_split_at_leaf test_split_multiple test_split_none test_delete_vertices test_merge_tree test_merge_no_subtrees
 -- input {} output { true }
