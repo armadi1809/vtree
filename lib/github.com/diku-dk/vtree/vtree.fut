@@ -298,11 +298,10 @@ def split 'a [n]
   in ({ subtrees, offsets }, remainder)
 
   def merge 'a [n][m][k] 
-  ({subtrees: t a [n], subtree_offsets: [k]i64})  -- There are k subtrees, n vertices in total
+  ({subtrees: t a [n], subtrees_shape: [k]i64})  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m])                  -- Parent has m vertices
   (parent_pointers: [m]i64): t a [] = 
-    let subtree_segment_sizes = map (\i -> (if i < k - 1 then subtree_offsets[i+1] else n) - subtree_offsets[i]) (iota k) 
-    let size_to_allocate_for_each_parent = map (\i -> if i < 0 then 0 else subtree_segment_sizes[i]) parent_pointers 
+    let size_to_allocate_for_each_parent = map (\i -> if i < 0 then 0 else subtrees_shape[i]) parent_pointers 
     let number_of_new_children_to_the_left_of_each_parent = exscan (+) 0 size_to_allocate_for_each_parent
     let distances_between_parents = map (+1) size_to_allocate_for_each_parent 
     let parent_indices = exscan (+) 0 distances_between_parents 
