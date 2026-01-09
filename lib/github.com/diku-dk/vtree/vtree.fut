@@ -46,7 +46,7 @@ module type vtree = {
     t a [n]
     -> [n]bool
     -> ( { subtrees: t a []
-         , offsets: []i64
+         , subtrees_shape: []i64
          }
        , t a []
        )
@@ -55,7 +55,7 @@ module type vtree = {
   val getData 'a [n] : t a [n] -> {lp: [n]i64, rp: [n]i64, data: [n]a}
 
   val merge 'a [n][m][k] :
-  ({subtrees: t a [n], subtree_offsets: [k]i64}) ->  -- There are k subtrees, n vertices in total
+  ({subtrees: t a [n], subtrees_shape: [k]i64}) ->  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m]) ->                  -- Parent has m vertices
   (parent_pointers: [m]i64) -> t a []
 }
@@ -261,7 +261,7 @@ module vtree : vtree = {
 def split 'a [n]
           (t: t a [n])
           (splits: [n]bool) : ( { subtrees: t a []
-                                , offsets: []i64
+                                , subtrees_shape: []i64
                                 }
                               , t a []
                               ) =
@@ -288,16 +288,15 @@ def split 'a [n]
     }
 
   -- Phase 4: Compute offsets from subtree sizes
-  let subtree_sizes = map2 (\l r -> (r - l + 1) / 2) t.lp t.rp
-  let split_sizes = map2 (\s sz -> if s then sz else 0) splits subtree_sizes
-  let offsets = pack splits (exscan (+) 0 split_sizes)
+  let subtrees_shape = map2 (\l r -> (r - l + 1) / 2) t.lp t.rp
+  let result_shape = pack splits subtrees_shape
 
   -- Phase 5: Build remainder
   let remainder = deleteVertices t is_rem
 
-  in ({ subtrees, offsets }, remainder)
+  in ({ subtrees, subtrees_shape = result_shape }, remainder)
 
-  def merge 'a [n][m][k] 
+def merge 'a [n][m][k] 
   ({subtrees: t a [n], subtrees_shape: [k]i64})  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m])                  -- Parent has m vertices
   (parent_pointers: [m]i64): t a [] = 
@@ -328,6 +327,7 @@ def split 'a [n]
       let iota_flags = scatter (replicate num_of_children false) number_of_new_children_to_the_left_of_each_parent (replicate m true) 
       let iotas = segmented_iota iota_flags 
       let iota_subtrees = segmented_replicate size_to_allocate_for_each_parent parent_pointers |> sized num_of_children
+      let subtree_offsets = exscan (+) 0 subtrees_shape
       let iota_offsets = map (\i -> subtree_offsets[i]) iota_subtrees
       in map2 (+) iotas iota_offsets
 
