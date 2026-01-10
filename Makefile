@@ -1,4 +1,4 @@
-.PHONY: test bench bench-gpu generate-data clean
+.PHONY: test bench-gpu generate-data clean
 
 test:
     futhark test test/test_operations.fut
@@ -18,3 +18,6 @@ generate-data: benchmarks/bench
 clean:
     rm -f benchmarks/bench
     rm -rf benchmarks/data
+	rm -rf benchmarks/*.c
+	rm -rf test/*.c
+	rm -rf test/test_operations
