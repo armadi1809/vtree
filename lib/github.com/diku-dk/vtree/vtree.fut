@@ -308,7 +308,6 @@ def merge 'a [n][m][k]
     let num_of_children = reduce (+) 0 size_to_allocate_for_each_parent 
     let result_size = m + num_of_children 
 
-    -- The indices in the result which are not parent indices
     let child_indices = 
       let flag_basis = replicate result_size true
       let flag_array = scatter flag_basis parent_indices (replicate m false)
