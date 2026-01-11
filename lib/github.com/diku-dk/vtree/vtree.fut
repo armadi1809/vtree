@@ -3,6 +3,7 @@
 -- Computing, MIT Press, 1990" (https://www.cs.cmu.edu/~guyb/papers/Ble90.pdf)
 
 import "../segmented/segmented"
+import "../sorts/radix_sort"
 
 module type vtree = {
   type t 'a [n]
@@ -58,6 +59,7 @@ module type vtree = {
   ({subtrees: t a [n], subtrees_shape: [k]i64}) ->  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m]) ->                  -- Parent has m vertices
   (parent_pointers: [m]i64) -> t a []
+  val from_parent 'a [n] : [n]i64 -> [n]a -> t a [n]
 }
 
 -- [mk_preorder a] creates a vtree from the preorder specification `a` of a tree
@@ -360,6 +362,120 @@ def merge 'a [n][m][k]
       rp = new_rp,
       data = new_data
     }
+
+def from_parent 'a [n] (parent: [n]i64) (data: [n]a) : t a [n] =
+  if n == 1 then
+    {lp = replicate n 0i64, rp = replicate n 1i64, data}
+  else
+    let root_candidates : [n]i64 =
+      map2 (\v p -> if p == v then v else i64.highest) (iota n) parent
+    let root : i64 =
+      reduce i64.min i64.highest root_candidates
+
+    let children : []i64 =
+      filter (\v -> v != root) (iota n)
+    let p_of_child : []i64 =
+      map (\v -> parent[v]) children
+
+    let ones : []i64 =
+      map (\_ -> 1i64) p_of_child
+    let child_count : [n]i64 =
+      reduce_by_index (replicate n 0i64)
+                      (i64.+)
+                      0i64
+                      p_of_child
+                      ones
+
+    let segd : [n]i64 =
+      tabulate n (\v -> child_count[v] + i64.bool (v != root))
+
+    let starts : [n]i64 =
+      exscan (i64.+) 0i64 segd
+    let m : i64 =
+      reduce (i64.+) 0i64 segd
+
+    let parent_slot : [n]i64 =
+      tabulate n (\v -> if v == root then -1i64 else starts[v])
+
+    let edges : []{p:i64, u:i64} =
+      map2 (\p u -> {p, u}) p_of_child children
+
+    let sedges : []{p:i64, u:i64} =
+      radix_sort_int_by_key (.p)
+                            64i32
+                            (\bit k -> i32.i64 ((k >> i64.i32 bit) & 1i64))
+                            edges
+
+    let sp : []i64 = map (.p) sedges
+    let su : []i64 = map (.u) sedges
+    let is : []i64 = indices sp
+
+    let flags : []i64 =
+      map (\i ->
+            if i == 0i64 then 1i64
+            else i64.bool (sp[i] != sp[i-1i64]))
+          is
+
+    let marks : []i64 =
+      map2 (\i f -> if f == 1i64 then i else -1i64) is flags
+
+    let group_start : []i64 =
+      scan i64.max (-1i64) marks
+
+    let rank_in_group : []i64 =
+      map2 (i64.-) is group_start
+
+    let pos_in_parent_sorted : []i64 =
+      map2 (\p r -> starts[p] + i64.bool (p != root) + r) sp rank_in_group
+
+    let pos_in_parent : [n]i64 =
+      scatter (replicate n (-1i64)) su pos_in_parent_sorted
+
+    let child_slots : []i64 =
+      map (\u -> parent_slot[u]) children
+    let parent_slots : []i64 =
+      map (\u -> pos_in_parent[u]) children
+
+    let cross0 : [m]i64 = replicate m (-1i64)
+    let cross1 : [m]i64 = scatter cross0 child_slots  parent_slots
+    let cross  : [m]i64 = scatter cross1 parent_slots child_slots
+
+    let owner : [m]i64 =
+      scan i64.max (-1i64) (scatter (replicate m (-1i64)) starts (iota n))
+
+    let next_in_seg : [m]i64 =
+      tabulate m (\i ->
+        let v   = owner[i]
+        let s   = starts[v]
+        let deg = segd[v]
+        in if i + 1i64 < s + deg then i + 1i64 else s)
+
+    let succ : [m]i64 =
+      map (\c -> next_in_seg[c]) cross
+
+    let head : i64 =
+      starts[root]
+
+    let pred : [m]i64 =
+      (scatter (replicate m (-1i64)) succ (iota m)) with [head] = (-1i64)
+
+    let init_vals : [m]i64 =
+      (replicate m 1i64) with [head] = 0i64
+
+    let rank : [m]i64 =
+      wyllie_scan (i64.+) init_vals pred
+
+    let lp : [n]i64 =
+      tabulate n (\v ->
+        if v == root then 0i64
+        else 1i64 + rank[pos_in_parent[v]])
+
+    let rp : [n]i64 =
+      tabulate n (\v ->
+        if v == root then 2i64 * n - 1i64
+        else 1i64 + rank[parent_slot[v]])
+
+    in {lp, rp, data}
 
   def map 'a 'b [n] (f: a -> b) ({lp, rp, data}: t a [n]) : t b [n] =
     {lp, rp, data = map f data}

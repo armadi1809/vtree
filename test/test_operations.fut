@@ -175,3 +175,59 @@ entry test_merge_no_subtrees =
 -- ==
 -- entry: test_split test_split_at_leaf test_split_multiple test_split_none test_delete_vertices test_merge_tree test_merge_no_subtrees
 -- input {} output { true }
+
+
+-- Tests for from_parent():
+
+def subtree_sizes [n] (t: T.t i64 [n]) : [n]i64 =
+  let ones = T.map (\_ -> 1i64) t
+  in T.ileaffix (i64.+) i64.neg 0 ones
+
+def path_sums [n] (t: T.t i64 [n]) : [n]i64 =
+  T.rootfix (i64.+) i64.neg 0 t
+
+
+-- Helper: avoid deprecated array "==" by comparing elementwise.
+def eq_i64s (xs: []i64) (ys: []i64) : bool =
+  length xs == length ys && and (map2 (==) xs ys)
+
+
+-- ==
+-- entry: test_parent_singleton_simple
+-- input  { [0i64]
+--          [42i64] }
+-- output { true }
+entry test_parent_singleton_simple (parent: []i64) (data: []i64) : bool =
+  let t = T.from_parent parent data
+  in eq_i64s (T.depth t) [0i64]
+     && eq_i64s (subtree_sizes t) [1i64]
+     && eq_i64s (path_sums t) [0i64]
+
+
+-- ==
+-- entry: test_parent_chain4_root0_simple
+-- input  { [0i64, 0i64, 1i64, 2i64]
+--          [5i64, 7i64, 11i64, 13i64] }
+-- output { true }
+entry test_parent_chain4_root0_simple (parent: []i64) (data: []i64) : bool =
+  let t = T.from_parent parent data
+  in eq_i64s (T.depth t)        [0i64, 1i64, 2i64, 3i64]
+     && eq_i64s (subtree_sizes t)   [4i64, 3i64, 2i64, 1i64]
+     -- path_sums excludes the node itself, includes ancestors:
+     -- node1: data[0]=5
+     -- node2: data[0]+data[1]=5+7=12
+     -- node3: 5+7+11=23
+     && eq_i64s (path_sums t)       [0i64, 5i64, 12i64, 23i64]
+
+
+-- ==
+-- entry: test_parent_star5_root3_simple
+-- input  { [3i64, 3i64, 3i64, 3i64, 3i64]
+--          [10i64, 20i64, 30i64, 40i64, 50i64] }
+-- output { true }
+entry test_parent_star5_root3_simple (parent: []i64) (data: []i64) : bool =
+  let t = T.from_parent parent data
+  in eq_i64s (T.depth t)        [1i64, 1i64, 1i64, 0i64, 1i64]
+     && eq_i64s (subtree_sizes t)   [1i64, 1i64, 1i64, 5i64, 1i64]
+     -- every leaf has only the root (3) as ancestor, root has 0:
+     && eq_i64s (path_sums t)       [40i64, 40i64, 40i64, 0i64, 40i64]
