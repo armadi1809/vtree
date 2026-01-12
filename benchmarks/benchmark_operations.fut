@@ -23,7 +23,8 @@ entry gen_random_tree (n: i64) (seed: i64): ([]i64, []i64, []i64) =
 -- entry: bench_delete
 -- input @ data/random_10k.in
 -- input @ data/random_100k.in
--- input @ data/random_500k.in
+-- input @ data/random_1m.in
+-- input @ data/random_10m.in
 
 entry bench_delete [n] (lp: [n]i64) (rp: [n]i64) (data: [n]i64) : i64 =
   let t = T.lprp {lp, rp, data}
@@ -35,7 +36,8 @@ entry bench_delete [n] (lp: [n]i64) (rp: [n]i64) (data: [n]i64) : i64 =
 -- entry: bench_split
 -- input @ data/random_10k.in
 -- input @ data/random_100k.in
--- input @ data/random_500k.in
+-- input @ data/random_1m.in
+-- input @ data/random_10m.in
 
 entry bench_split [n] (lp: [n]i64) (rp: [n]i64) (data: [n]i64) : i64 =
   let t = T.lprp {lp, rp, data}
