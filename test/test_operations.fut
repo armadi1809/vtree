@@ -30,21 +30,6 @@ entry test_split =
     && and (map2 (==) (sized (2) rem.rp) [3i64, 2])
   in subtrees_ok && shape_ok && remainder_ok
 
--- entry test_split_at_root =
---   let t: T.t i64 [6] =
---     T.lprp { lp = [0, 1, 2, 4, 6, 9]
---            , rp = [11, 8, 3, 5, 7, 10]
---            , data = iota 6
---            }
---   let splits = [true, false, false, false, false, false]
---   let (subtree_res, remainder) = T.split t splits
---   let subtrees = T.getData subtree_res.subtrees
---   let rem = T.getData remainder
---   -- Entire tree becomes subtree, remainder is empty
---   let subtrees_ok = length subtrees.data == 6
---   let remainder_ok = length rem.data == 0
---   in subtrees_ok && remainder_ok
-
 entry test_split_at_leaf =
   let t: T.t i64 [6] =
     T.lprp { lp = [0, 1, 2, 4, 6, 9]

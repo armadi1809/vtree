@@ -3,11 +3,11 @@
 test:
 	futhark test test/test_operations.fut
 
-bench-gpu:
+bench-gpu: generate-data
 	futhark bench benchmarks/benchmark_operations.fut --backend=cuda
 
 benchmarks/bench: benchmarks/benchmark_operations.fut
-	futhark c benchmarks/benchmark_operations.fut -o benchmarks/bench
+	futhark c benchmarks/benchmark_operations.fut
 
 generate-data: benchmarks/bench
 	mkdir -p benchmarks/data
@@ -21,3 +21,4 @@ clean:
 	rm -rf benchmarks/*.c
 	rm -rf test/*.c
 	rm -rf test/test_operations
+all: test bench-gpu
