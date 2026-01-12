@@ -233,12 +233,13 @@ entry test_parent_star5_root3_simple (parent: []i64) (data: []i64) : bool =
      && eq_i64s (path_sums t)       [40i64, 40i64, 40i64, 0i64, 40i64]
 
 -- ==
--- entry: test_parent_star5_root3_simple
--- input  { [0i64, 0i64, 1i64, 1i64, 1i64, 0i64]
+-- entry: blelloch_example
+-- input  { [0i64, 0i64, 0i64, 1i64, 1i64, 1i64]
 --          [0i64, 1i64, 5i64, 2i64, 3i64, 4i64] }
 -- output { true }
 entry blelloch_example (parent: []i64) (data: []i64) : bool =
-  let t = vtree.from_parent parent data
-  in eq_i64s (vtree.depth t) [0i64, 1i64, 1i64, 2i64, 2i64, 2i64]
-     && eq_i64s t.lp [0i64, 1i64, 2i64, 4i64, 6i64, 9i64]
-     && eq_i64s t.rp [11i64, 8i64, 3i64, 5i64, 7i64, 10i64]
+  let t = T.from_parent parent data
+  let tree = T.getData t
+  in eq_i64s (T.depth t) [0i64, 1i64, 1i64, 2i64, 2i64, 2i64]
+     && eq_i64s tree.lp [0i64, 1i64, 9i64, 2i64, 4i64, 6i64]
+     && eq_i64s tree.rp [11i64, 8i64, 10i64, 3i64, 5i64, 7i64]
