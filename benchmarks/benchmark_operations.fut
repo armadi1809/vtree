@@ -21,32 +21,36 @@ entry gen_random_tree (n: i64) (seed: i64): ([]i64, []i64, []i64) =
 
 -- ==
 -- entry: bench_delete
--- input @ data/random_10k.in
--- input @ data/random_100k.in
--- input @ data/random_1m.in
--- input @ data/random_10m.in
+-- script input { mk_delete_test 10000 }
+-- script input { mk_delete_test 100000 }
+-- script input { mk_delete_test 1000000 }
+-- script input { mk_delete_test 10000000 }
 
-entry bench_delete [n] (lp: [n]i64) (rp: [n]i64) (data: [n]i64) : i64 =
-  let t = T.lprp {lp, rp, data}
-  let keep = tabulate n (\i -> i % 2 == 0)
-  let result = T.deleteVertices t keep
+entry bench_delete [n] (tree: T.t i64[n]) (keep: [n]bool) : i64 =
+  let result = T.deleteVertices tree keep
   in length (T.getData result).data
+
+entry mk_delete_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) = 
+  let (lp, rp, data) = gen_random_tree numNodes 42
+  let keep = tabulate numNodes (\i -> i % 2 == 0)
+  in (T.lprp {lp, rp, data}, keep)
 
 -- ==
 -- entry: bench_split
--- input @ data/random_10k.in
--- input @ data/random_100k.in
--- input @ data/random_1m.in
--- input @ data/random_10m.in
-
-entry bench_split [n] (lp: [n]i64) (rp: [n]i64) (data: [n]i64) : i64 =
-  let t = T.lprp {lp, rp, data}
-  let split_node = 1 + (n / 2)  -- split at middle node
-  let splits = tabulate n (\i -> i == split_node)
-  let (subtree_res, _) = T.split t splits
+-- script input { mk_split_test 10000 }
+-- script input { mk_split_test 100000 }
+-- script input { mk_split_test 1000000 }
+-- script input { mk_split_test 10000000 }
+entry bench_split [n] (tree: T.t i64[n]) (splits: [n]bool) : i64 =
+  let (subtree_res, _) = T.split tree splits
   in length subtree_res.subtrees_shape
 
 
+entry mk_split_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) = 
+  let (lp, rp, data) = gen_random_tree numNodes 42
+  let split_node = 1 + (numNodes / 2)  -- split at middle node
+  let splits = tabulate numNodes (\i -> i == split_node)
+  in (T.lprp {lp, rp, data}, splits)
 
 -- ==
 -- entry: bench_merge
