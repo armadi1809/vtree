@@ -313,7 +313,7 @@ def merge 'a [n][m][k]
 
     -- Phase 2: Compute the new parentheses of the parent nodes in the result
     let double_children_left = map (2*) num_children_left_of_each_parent
-    let new_parents_lp = map2 (+) parent_tree.lp double_children_left |> trace
+    let new_parents_lp = map2 (+) parent_tree.lp double_children_left
 
     let parent_tree_with_child_counts = lprp {
       data = size_to_allocate_for_each_parent,
