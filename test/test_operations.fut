@@ -116,14 +116,14 @@ entry test_merge_tree =
       lp = [0,1,0,1,3],
       rp = [3,2,5,2,4],
       data = [4,5,6,7,8]
-    }
+  }
   let subtrees_shape = [2i64,3i64]
   let parent_pointers = [0i64,1i64,0i64,-1i64]
   let expected = {
-      lp = [0,1,2,5,6,7,9,13,14,15,18],
-      rp = [21,4,3,12,11,8,10,20,17,16,19],
-      data = [0,4,5,1,6,7,8,2,4,5,3]
-    }
+    lp = [0,1,2,5,6,7,9,13,14,15,18],
+    rp = [21,4,3,12,11,8,10,20,17,16,19],
+    data = [0,4,5,1,6,7,8,2,4,5,3]
+  }
   let actual = T.getData (T.merge {subtrees = subtrees, subtrees_shape = subtrees_shape} parent_tree parent_pointers)
   let ok = 
     length actual.data == 11
