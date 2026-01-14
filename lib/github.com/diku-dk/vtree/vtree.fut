@@ -135,6 +135,9 @@ module vtree : vtree = {
          (indices xs)
          (rotate (-1) (scan f ne xs))
 
+  def segmented_replicate [n] (reps:[n]i64) (vs:[n]i64) : []i64 = 
+      map (\i -> vs[i]) (replicated_iota reps)
+
   def size (h: i64) : i64 =
     (1 << h) - 1
 
@@ -302,59 +305,56 @@ def merge 'a [n][m][k]
   ({subtrees: t a [n], subtrees_shape: [k]i64})  -- There are k subtrees, n vertices in total
   (parent_tree: t a [m])                  -- Parent has m vertices
   (parent_pointers: [m]i64): t a [] = 
-    let segmented_replicate [n] (reps:[n]i64) (vs:[n]i64) : []i64 =
-      let idxs = replicated_iota reps
-      in map (\i -> vs[i]) idxs
-
+    -- Phase 1: Compute indices of parent nodes in the result
     let size_to_allocate_for_each_parent = map (\i -> if i < 0 then 0 else subtrees_shape[i]) parent_pointers 
-    let number_of_new_children_to_the_left_of_each_parent = exscan (+) 0 size_to_allocate_for_each_parent
+    let num_children_left_of_each_parent = exscan (+) 0 size_to_allocate_for_each_parent
     let distances_between_parents = map (+1) size_to_allocate_for_each_parent 
     let parent_indices = exscan (+) 0 distances_between_parents 
 
-    let double_noncttloep = map (2*) number_of_new_children_to_the_left_of_each_parent
-    let new_parents_lp = map2 (+) parent_tree.lp double_noncttloep |> trace
+    -- Phase 2: Compute the new parentheses of the parent nodes in the result
+    let double_children_left = map (2*) num_children_left_of_each_parent
+    let new_parents_lp = map2 (+) parent_tree.lp double_children_left |> trace
 
     let parent_tree_with_child_counts = lprp {
       data = size_to_allocate_for_each_parent,
       lp = parent_tree.lp,
       rp = parent_tree.rp
     } 
-
-    let total_number_of_new_children_under_each_parent = ileaffix (+) i64.neg 0i64 parent_tree_with_child_counts
-    let double_tnoncuep = map (2*) total_number_of_new_children_under_each_parent
-    let new_parents_rp = map3 (\a b c -> a+b+c) parent_tree.rp double_noncttloep double_tnoncuep
+    let num_children_under_each_parent = ileaffix (+) i64.neg 0i64 parent_tree_with_child_counts
+    let double_children_under = map (2*) num_children_under_each_parent
+    let new_parents_rp = map3 (\a b c -> a+b+c) parent_tree.rp double_children_left double_children_under
     
-    let num_of_children = reduce (+) 0 size_to_allocate_for_each_parent 
+    -- Phase 3: Compute indices of child nodes in the result
+    let num_of_children = num_children_left_of_each_parent[m - 1] + size_to_allocate_for_each_parent[m - 1] 
     let result_size = m + num_of_children 
 
-    -- The indices of non-parent vertices in the final tree 
     let child_indices = 
       let flag_basis = replicate result_size true
       let flag_array = scatter flag_basis parent_indices (replicate m false)
       in filter (\i -> flag_array[i]) (iota result_size) |> sized num_of_children
 
-    -- The indices of the vertices of subtrees which are to be inserted  
+    -- Phase 4: Compute the indices in subtrees of the result
     let subtree_indices =
-      let iota_flags = scatter (replicate num_of_children false) number_of_new_children_to_the_left_of_each_parent (replicate m true) 
+      let iota_flags = scatter (replicate num_of_children false) num_children_left_of_each_parent (replicate m true) 
       let iotas = segmented_iota iota_flags 
       let iota_subtrees = segmented_replicate size_to_allocate_for_each_parent parent_pointers |> sized num_of_children
       let subtree_offsets = exscan (+) 0 subtrees_shape
       let iota_offsets = map (\i -> subtree_offsets[i]) iota_subtrees
       in map2 (+) iotas iota_offsets
 
+    -- Phase 5: Compute lp and rp arrays of the children to be inserted in the allocated space
     let chosen_children_lp = map (\i -> subtrees.lp[i]) subtree_indices 
     let chosen_children_rp = map (\i -> subtrees.rp[i]) subtree_indices 
     let children_offset_values = map (1+) new_parents_lp
     let children_offsets = segmented_replicate size_to_allocate_for_each_parent children_offset_values |> sized num_of_children
-
     let new_children_lp = map2 (+) chosen_children_lp children_offsets
     let new_children_rp = map2 (+) chosen_children_rp children_offsets
 
+    -- Phase 6: Combine parent values with children values in result
     let new_lp = scatter (replicate result_size 0i64) parent_indices new_parents_lp
     let new_lp = scatter new_lp child_indices new_children_lp
     let new_rp = scatter (replicate result_size 0i64) parent_indices new_parents_rp
     let new_rp = scatter new_rp child_indices new_children_rp
-    
     let new_data = scatter (replicate result_size parent_tree.data[0]) parent_indices parent_tree.data
     let new_data = scatter new_data child_indices (map (\i -> subtrees.data[i]) subtree_indices)
 
