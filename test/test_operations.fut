@@ -104,63 +104,58 @@ entry test_delete_vertices =
     && and (map2 (==) (sized (3) res.data) [0, 1, 5])
   in ok
 
-entry test_merge_tree = 
+entry test_merge_tree =
   let parent_tree: T.t i64 [4] =
-    T.lprp {
-    lp = [0,1,3,4],
-    rp = [7,2,6,5],
-    data = [0,1,2,3]
-  }
+    T.lprp { lp = [0, 1, 3, 4]
+           , rp = [7, 2, 6, 5]
+           , data = [0, 1, 2, 3]
+           }
   let subtrees: T.t i64 [5] =
-    T.lprp {
-      lp = [0,1,0,1,3],
-      rp = [3,2,5,2,4],
-      data = [4,5,6,7,8]
-  }
-  let subtrees_shape = [2i64,3i64]
-  let parent_pointers = [0i64,1i64,0i64,-1i64]
-  let expected = {
-    lp = [0,1,2,5,6,7,9,13,14,15,18],
-    rp = [21,4,3,12,11,8,10,20,17,16,19],
-    data = [0,4,5,1,6,7,8,2,4,5,3]
-  }
+    T.lprp { lp = [0, 1, 0, 1, 3]
+           , rp = [3, 2, 5, 2, 4]
+           , data = [4, 5, 6, 7, 8]
+           }
+  let subtrees_shape = [2i64, 3i64]
+  let parent_pointers = [0i64, 1i64, 0i64, -1i64]
+  let expected =
+    { lp = [0, 1, 2, 5, 6, 7, 9, 13, 14, 15, 18]
+    , rp = [21, 4, 3, 12, 11, 8, 10, 20, 17, 16, 19]
+    , data = [0, 4, 5, 1, 6, 7, 8, 2, 4, 5, 3]
+    }
   let actual = T.getData (T.merge {subtrees = subtrees, subtrees_shape = subtrees_shape} parent_tree parent_pointers)
-  let ok = 
+  let ok =
     length actual.data == 11
-    && and (map2 (==) (sized (11) actual.lp) expected.lp) 
-    && and (map2 (==) (sized (11) actual.rp) expected.rp) 
+    && and (map2 (==) (sized (11) actual.lp) expected.lp)
+    && and (map2 (==) (sized (11) actual.rp) expected.rp)
     && and (map2 (==) (sized (11) actual.data) expected.data)
   in ok
 
-entry test_merge_no_subtrees = 
+entry test_merge_no_subtrees =
   let parent_tree: T.t i64 [4] =
-    T.lprp {
-    lp = [0,1,3,4],
-    rp = [7,2,6,5],
-    data = [0,1,2,3]
-  }
+    T.lprp { lp = [0, 1, 3, 4]
+           , rp = [7, 2, 6, 5]
+           , data = [0, 1, 2, 3]
+           }
   let subtrees: T.t i64 [0] =
-    T.lprp {
-      lp = [],
-      rp = [],
-      data = []
-    }
+    T.lprp { lp = []
+           , rp = []
+           , data = []
+           }
   let subtrees_shape = []
-  let parent_pointers = [-1i64,-1i64,-1i64,-1i64]
+  let parent_pointers = [-1i64, -1i64, -1i64, -1i64]
   let expected = T.getData parent_tree
   let actual = T.getData (T.merge {subtrees = subtrees, subtrees_shape = subtrees_shape} parent_tree parent_pointers)
-  let ok = 
+  let ok =
     length actual.data == 4
-    && and (map2 (==) (sized (4) actual.lp) expected.lp) 
-    && and (map2 (==) (sized (4) actual.rp) expected.rp) 
+    && and (map2 (==) (sized (4) actual.lp) expected.lp)
+    && and (map2 (==) (sized (4) actual.rp) expected.rp)
     && and (map2 (==) (sized (4) actual.data) expected.data)
   in ok
 
--- Tests 
+-- Tests
 -- ==
 -- entry: test_split test_split_at_leaf test_split_multiple test_split_none test_delete_vertices test_merge_tree test_merge_no_subtrees
 -- input {} output { true }
-
 
 -- Tests for from_parent():
 
@@ -171,11 +166,9 @@ def subtree_sizes [n] (t: T.t i64 [n]) : [n]i64 =
 def path_sums [n] (t: T.t i64 [n]) : [n]i64 =
   T.rootfix (i64.+) i64.neg 0 t
 
-
 -- Helper: avoid deprecated array "==" by comparing elementwise.
 def eq_i64s (xs: []i64) (ys: []i64) : bool =
   length xs == length ys && and (map2 (==) xs ys)
-
 
 -- ==
 -- entry: test_parent_singleton_simple
@@ -188,7 +181,6 @@ entry test_parent_singleton_simple (parent: []i64) (data: []i64) : bool =
      && eq_i64s (subtree_sizes t) [1i64]
      && eq_i64s (path_sums t) [0i64]
 
-
 -- ==
 -- entry: test_parent_chain4_root0_simple
 -- input  { [0i64, 0i64, 1i64, 2i64]
@@ -196,14 +188,13 @@ entry test_parent_singleton_simple (parent: []i64) (data: []i64) : bool =
 -- output { true }
 entry test_parent_chain4_root0_simple (parent: []i64) (data: []i64) : bool =
   let t = T.from_parent parent data
-  in eq_i64s (T.depth t)        [0i64, 1i64, 2i64, 3i64]
-     && eq_i64s (subtree_sizes t)   [4i64, 3i64, 2i64, 1i64]
-     -- path_sums excludes the node itself, includes ancestors:
-     -- node1: data[0]=5
-     -- node2: data[0]+data[1]=5+7=12
-     -- node3: 5+7+11=23
-     && eq_i64s (path_sums t)       [0i64, 5i64, 12i64, 23i64]
-
+  in eq_i64s (T.depth t) [0i64, 1i64, 2i64, 3i64]
+     && eq_i64s (subtree_sizes t) [4i64, 3i64, 2i64, 1i64]
+     && -- path_sums excludes the node itself, includes ancestors:
+        -- node1: data[0]=5
+        -- node2: data[0]+data[1]=5+7=12
+        -- node3: 5+7+11=23
+        eq_i64s (path_sums t) [0i64, 5i64, 12i64, 23i64]
 
 -- ==
 -- entry: test_parent_star5_root3_simple
@@ -212,10 +203,10 @@ entry test_parent_chain4_root0_simple (parent: []i64) (data: []i64) : bool =
 -- output { true }
 entry test_parent_star5_root3_simple (parent: []i64) (data: []i64) : bool =
   let t = T.from_parent parent data
-  in eq_i64s (T.depth t)        [1i64, 1i64, 1i64, 0i64, 1i64]
-     && eq_i64s (subtree_sizes t)   [1i64, 1i64, 1i64, 5i64, 1i64]
-     -- every leaf has only the root (3) as ancestor, root has 0:
-     && eq_i64s (path_sums t)       [40i64, 40i64, 40i64, 0i64, 40i64]
+  in eq_i64s (T.depth t) [1i64, 1i64, 1i64, 0i64, 1i64]
+     && eq_i64s (subtree_sizes t) [1i64, 1i64, 1i64, 5i64, 1i64]
+     && -- every leaf has only the root (3) as ancestor, root has 0:
+        eq_i64s (path_sums t) [40i64, 40i64, 40i64, 0i64, 40i64]
 
 -- ==
 -- entry: blelloch_example_preorder_ids
@@ -223,8 +214,8 @@ entry test_parent_star5_root3_simple (parent: []i64) (data: []i64) : bool =
 --          [0i64, 1i64, 2i64, 3i64, 4i64, 5i64] }
 -- output { true }
 entry blelloch_example_preorder_ids (parent: []i64) (data: []i64) : bool =
-  let t    = T.from_parent parent data
+  let t = T.from_parent parent data
   let tree = T.getData t
-  in  eq_i64s (T.depth t) [0i64, 1i64, 2i64, 2i64, 2i64, 1i64]
-      && eq_i64s tree.lp  [0i64, 1i64, 2i64, 4i64, 6i64, 9i64]
-      && eq_i64s tree.rp  [11i64, 8i64, 3i64, 5i64, 7i64, 10i64]
+  in eq_i64s (T.depth t) [0i64, 1i64, 2i64, 2i64, 2i64, 1i64]
+     && eq_i64s tree.lp [0i64, 1i64, 2i64, 4i64, 6i64, 9i64]
+     && eq_i64s tree.rp [11i64, 8i64, 3i64, 5i64, 7i64, 10i64]
