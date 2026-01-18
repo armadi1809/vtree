@@ -54,9 +54,10 @@ entry mk_split_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) =
 
 -- ==
 -- entry: bench_merge
--- script input { mk_merge_test 10 10 100 }
--- script input { mk_merge_test 10 10 1000 }
--- script input { mk_merge_test 10 10 10000 }
+-- script input { mk_merge_test 10000 1 1 }
+-- script input { mk_merge_test 10000 1 10 }
+-- script input { mk_merge_test 10000 1 100 }
+-- script input { mk_merge_test 10000 1 1000 }
 -- script input { mk_merge_test 100 10 100 }
 -- script input { mk_merge_test 1000 10 100 }
 -- script input { mk_merge_test 10000 10 100 }
