@@ -13,8 +13,8 @@ def random_parents (n: i64) (seed: i64) : [n]i64 =
        if i == 0 then 0i64 
        else i64.u64 (hash (u64.i64 (seed + i))) % i)
 
--- Data generation entry
-entry gen_random_tree (n: i64) (seed: i64): ([]i64, []i64, []i64) =
+-- Random tree generation function
+def gen_random_tree (n: i64) (seed: i64): ([]i64, []i64, []i64) =
   let parents = random_parents n seed
   let tree = T.getData(T.from_parent parents (iota n))
   in (tree.lp, tree.rp, tree.data)
