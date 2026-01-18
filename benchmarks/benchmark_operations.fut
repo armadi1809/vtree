@@ -61,13 +61,12 @@ entry mk_split_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) =
 -- script input { mk_merge_test 1000 10 100 }
 -- script input { mk_merge_test 10000 10 100 }
 -- script input { mk_merge_test 100000 10 100 }
-
-entry bench_merge [n] [m] [k] (lp: [n]i64) (rp: [n]i64) (data: [n]i64) 
-  (lpsub: [m]i64) (rpsub: [m]i64) (datasub: [m]i64) (shp: [k]i64) (parent_pointers: [n]i64): i64 = 
+entry bench_merge [n] [m] [k] (lp: [n]i64) (rp: [n]i64) (data: [n]i64)
+  (lpsub: [m]i64) (rpsub: [m]i64) (datasub: [m]i64) (shp: [k]i64) (parent_pointers: [n]i64): T.t i64 [] = 
   let parent = T.lprp {lp, rp, data}
   let children = T.lprp {lp = lpsub, rp = rpsub, data = datasub}
   let merged_tree = T.merge {subtrees = children, subtrees_shape = shp} parent parent_pointers
-  in length (T.getData merged_tree).lp
+  in merged_tree
 
 entry mk_subtrees (num_subtrees: i64) (subtree_size: i64): 
   ([num_subtrees*subtree_size]i64, [num_subtrees*subtree_size]i64, [num_subtrees*subtree_size]i64) =  
