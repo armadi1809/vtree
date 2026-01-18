@@ -26,9 +26,8 @@ entry gen_random_tree (n: i64) (seed: i64): ([]i64, []i64, []i64) =
 -- script input { mk_delete_test 1000000 }
 -- script input { mk_delete_test 10000000 }
 
-entry bench_delete [n] (tree: T.t i64[n]) (keep: [n]bool) : i64 =
-  let result = T.deleteVertices tree keep
-  in length (T.getData result).data
+entry bench_delete [n] (tree: T.t i64[n]) (keep: [n]bool) =
+  T.deleteVertices tree keep
 
 entry mk_delete_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) = 
   let (lp, rp, data) = gen_random_tree numNodes 42
@@ -41,9 +40,8 @@ entry mk_delete_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) =
 -- script input { mk_split_test 100000 }
 -- script input { mk_split_test 1000000 }
 -- script input { mk_split_test 10000000 }
-entry bench_split [n] (tree: T.t i64[n]) (splits: [n]bool) : i64 =
-  let (subtree_res, _) = T.split tree splits
-  in length subtree_res.subtrees_shape
+entry bench_split [n] (tree: T.t i64[n]) (splits: [n]bool) =
+  T.split tree splits
 
 
 entry mk_split_test (numNodes: i64): (T.t i64[numNodes], [numNodes]bool) = 
