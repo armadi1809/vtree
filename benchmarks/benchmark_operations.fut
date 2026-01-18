@@ -97,3 +97,18 @@ entry mk_merge_test (num_parents: i64) (num_subtrees: i64) (subtree_size: i64) :
     let shp = replicate num_subtrees subtree_size
     in (lp1, rp1, data1, lp2, rp2, data2, shp, ptrs)
 
+-- ==
+-- entry: bench_from_parent
+-- script input { mk_from_parent_test 10000 }
+-- script input { mk_from_parent_test 100000 }
+-- script input { mk_from_parent_test 1000000 }
+-- script input { mk_from_parent_test 10000000 }
+
+entry bench_from_parent [n] (parent: [n]i64) (data: [n]i64) : T.t i64 [n] =
+  T.from_parent parent data
+
+entry mk_from_parent_test (numNodes: i64) : ([numNodes]i64, [numNodes]i64) =
+  let parent = random_parents numNodes 42
+  let data   = iota numNodes
+  in (parent, data)
+
