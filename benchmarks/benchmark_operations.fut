@@ -1,12 +1,17 @@
 import "../lib/github.com/diku-dk/vtree/vtree"
 
 module T = vtree
-def random_parents (n: i64) (seed: i64) : []i64 =
-  let lcg s = (s * 1103515245 + 12345) % (1 << 31)
-  let (parents, _) = 
-    loop (ps, s) = (replicate n 0i64, seed) for i in 1..<n do
-      (ps with [i] = s % i, lcg s)
-  in parents
+def random_parents (n: i64) (seed: i64) : [n]i64 =
+  -- Simple hash function (based on MurmurHash3)
+  let hash (x: u64) : u64 =
+    let x = x ^ (x >> 30)
+    let x = x * 0xbf58476d1ce4e5b9u64
+    let x = x ^ (x >> 27)
+    let x = x * 0x94d049bb133111ebu64
+    in x ^ (x >> 31)
+  in tabulate n (\i -> 
+       if i == 0 then 0i64 
+       else i64.u64 (hash (u64.i64 (seed + i))) % i)
 
 -- Data generation entry
 entry gen_random_tree (n: i64) (seed: i64): ([]i64, []i64, []i64) =
